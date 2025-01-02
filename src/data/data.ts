@@ -24,7 +24,7 @@ export const data = [
         image: "/assets/images/projects/retail 360/Retail 360 Acquire.png",
         description: "Track and optimize marketing efforts to attract potential customers by analyzing traffic sources, social media engagement, and website performance.",
         title: "Retail 360 Acquire",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/3QqjO",
         industry: "",
       },
       {
@@ -32,7 +32,7 @@ export const data = [
         image: "/assets/images/projects/retail 360/Retail 360 Convert.png",
         description: "Improve conversion rates by analyzing sales funnels, product performance, and cart abandonment trends to turn prospects into paying customers.",
         title: "Retail 360 Convert",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/4QrkV",
         industry: "",
       },
       {
@@ -40,7 +40,7 @@ export const data = [
         image: "/assets/images/projects/retail 360/Retail 360 Stock Analysis.png",
         description: "Ensure efficient inventory management by tracking stock levels, demand forecasts, and supplier performance to meet customer demand.",
         title: "Retail 360 Stock Analysis",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/5QvlK",
         industry: "",
       },
       {
@@ -48,7 +48,7 @@ export const data = [
         image: "/assets/images/projects/retail 360/Retail 360 Retain.png",
         description: "Build customer loyalty by analyzing retention rates, churn rates, and loyalty program performance to encourage repeat purchases",
         title: "Retail 360 Retain",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/6XwmV",
         industry: "",
       },
       {
@@ -56,7 +56,7 @@ export const data = [
         image: "/assets/images/projects/retail 360/Retail 360 Engage.png",
         description: "Monitor customer interaction with the brand through customer journey analysis, email campaigns, and website engagement metrics to enhance interest.",
         title: "Retail 360 Engage",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/71xny",
         industry: "",
       },
       {
@@ -64,7 +64,7 @@ export const data = [
         image: "/assets/images/projects/retail 360/Retail 360 Store.png",
         description: "Evaluate store sales, foot traffic, and operational metrics to identify top performers and optimize store operations.",
         title: "Retail 360 Store",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/81yog",
         industry: "",
       },
       {
@@ -72,7 +72,7 @@ export const data = [
         image: "/assets/images/projects/retail 360/Retail 360 Product Performance.png",
         description: "Identify top products and assess return rates, sales, and average order values for strategic inventory and marketing decisions.",
         title: "Retail 360 Product Performance",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/91zpB",
         industry: "",
       },
       {
@@ -80,7 +80,7 @@ export const data = [
         image: "/assets/images/projects/retail 360/Retail 360 Repurchase.png",
         description: "Boost repeat purchases by focusing on upselling, referral programs, and customer lifetime value for sustained growth.",
         title: "Retail 360 Repurchase",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/0Yn2y",
         industry: "",
       },
       {
@@ -88,7 +88,7 @@ export const data = [
         image: "/assets/images/projects/retail 360/Retail 360 Market Intelligence.png",
         description: "Gain insights into market trends, competitors, and consumer preferences to drive informed strategic decisions.",
         title: "Retail 360 Market Intelligence",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/2xpg1",
         industry: "",
       },
       {
@@ -96,7 +96,7 @@ export const data = [
         image: "/assets/images/projects/retail 360/Retail 360 Executive Level Dashboard.png",
         description: "Provide high-level performance summaries, financial insights, and strategic initiative tracking for executive decision-making.",
         title: "Retail 360 Executive Level Dashboard",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/gZqxG",
         industry: "",
       }
     ],
