@@ -69,9 +69,6 @@ const SubProjectDetailsPage = () => {
                           <div className="container">
                             <div className=" post-item-description">
                               <h2 className="single-post-heading font_weight_600">{item.title}</h2>
-                              <div className="post-meta">
-                                <span className="post-meta-category color01"><a href=""><i className="fa fa-tag"></i>Lifestyle, Magazine</a></span>
-                              </div>
                               <div>{item.description}</div>
                             </div>
                             <div className="post-tags">

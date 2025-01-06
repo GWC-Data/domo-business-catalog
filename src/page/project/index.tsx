@@ -97,10 +97,16 @@ const ProjectPage = () => {
                   <Link to={`/project/${val.id}`} className="col-lg-4 col-md-4 col-sm-6 col-12" >
                     <div className="case-box overlay">
                       <div className="overlay-image">
-                        <img src={val.image} alt="" className="w-100 rounded" />
+                        {
+                          val.image ? (
+                            <img src={val.image} alt="" className="w-100 rounded" />
+                          ) : (
+                            <img src="\assets\images\case-image1.jpg" alt="" className="w-100 rounded" />
+                          )
+                        }
                       </div>
                       <div className="content">
-                        <span className="text-white">Development</span>
+                        <span className="text-white">{val.industry}</span>
                         <h5 className="text-white">{val.title}</h5>
                       </div>
                     </div>
