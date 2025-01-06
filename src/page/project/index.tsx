@@ -17,6 +17,22 @@ const ProjectPage = () => {
     }
   };
 
+  const [keywordValue, setKeywordValue] = useState("");
+  const handleKeywordSearch = (keyword: string) => {
+    setKeywordValue(keyword);
+    if (!keyword) {
+      setFilteredData(data);
+      return;
+    }
+    const keywordSearch = filteredData.filter((item) =>
+      Object.values(item.keywords.split(","))
+        .join(" ")
+        .toLowerCase()
+        .includes(keyword.toLowerCase())
+    );
+    setFilteredData(keywordSearch);
+  };
+
   
   return (
     <>
@@ -67,27 +83,22 @@ const ProjectPage = () => {
                 </figure>
               </div>
             </div>
-            {/* <div style={{zIndex: 100}} className="mb-5 ">
-              <select className="industry_filter">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+            <div className="d-flex">
+              <select 
+                onChange={(event) => handleIndustryFilter(event.target.value)} 
+                className="form-select mb-4 w-25 mr-2" 
+                aria-placeholder="Industry Filter" 
+                style={{zIndex: 100}} 
+                aria-label="Default select example">
+                <option selected value="all">All Industries</option>
+                {
+                  industries?.map((val, index) => (
+                    <option value={val} key={index}>{val}</option>
+                  ))
+                }
               </select>
-            </div> */}
-            <select 
-              onChange={(event) => handleIndustryFilter(event.target.value)} 
-              className="form-select mb-4 w-25 m-2" 
-              aria-placeholder="Industry Filter" 
-              style={{zIndex: 100}} 
-              aria-label="Default select example">
-              <option selected value="all">All Industries</option>
-              {
-                industries?.map((val, index) => (
-                  <option value={val} key={index}>{val}</option>
-                ))
-              }
-            </select>
+              <input className="form-control mb-4 w-75" placeholder="Keyword Search..." onChange={(event) => handleKeywordSearch(event.target.value)} value={keywordValue} style={{ zIndex: 100}} />
+            </div>
           </div>
         
           <div className="project_wrapper">

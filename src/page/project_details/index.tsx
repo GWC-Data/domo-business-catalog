@@ -17,6 +17,9 @@ const ProjectDetailsPage = () => {
     });
   },[]);
 
+  const keywords = project?.map((item: any) => item.keywords.split(","));
+  
+
   return (
     <div>
       <div className="sub-banner">
@@ -88,9 +91,9 @@ const ProjectDetailsPage = () => {
                 <div className="">
                   <div className="row">
                     {
-                      project.map((item: any) => (
+                      project.map((item: any, index: number) => (
                                 
-                        <div className="col-xl-12 col-lg-12">
+                        <div className="col-xl-12 col-lg-12" key={index}>
                           <div id="blog" className="single-post01">
                             <div className="post-item">
                               <div className="post-item-wrap">
@@ -109,11 +112,12 @@ const ProjectDetailsPage = () => {
                                     <h2 className="single-post-heading font_weight_600">{item.title}</h2>
                                     <div className="">{item.description}</div>
                                   </div>
-                                  <div className="post-tags">
-                                    <a href="#">Life</a>
-                                    <a href="#">Sport</a>
-                                    <a href="#">Tech</a>
-                                    <a href="#">Travel</a>
+                                  <div className="d-flex flex-wrap">
+                                    {
+                                      keywords[0].map((item: any, index: number) => (
+                                        <div key={index} className="mr-3 my-2 rounded px-3 text-sm py-1 text-left border text-capitalize" style={{ fontSize: "14px"}}>{item}</div>
+                                      ))
+                                    }
                                   </div>
                                 </div>
                               </div>
@@ -122,6 +126,7 @@ const ProjectDetailsPage = () => {
                         </div>
                       ))
                     }
+                   
                   </div>
                 </div>
               </section>

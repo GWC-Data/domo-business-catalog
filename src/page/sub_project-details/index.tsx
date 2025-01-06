@@ -17,6 +17,8 @@ const SubProjectDetailsPage = () => {
     });
   },[]);
 
+  const keywords = subProject?.map((item: any) => item.keywords.split(","));
+
   return (
     <div>
       <div className="sub-banner">
@@ -71,11 +73,12 @@ const SubProjectDetailsPage = () => {
                               <h2 className="single-post-heading font_weight_600">{item.title}</h2>
                               <div>{item.description}</div>
                             </div>
-                            <div className="post-tags">
-                              <a href="#">Life</a>
-                              <a href="#">Sport</a>
-                              <a href="#">Tech</a>
-                              <a href="#">Travel</a>
+                            <div className="d-flex flex-wrap">
+                              {
+                                keywords[0].map((item: any, index: number) => (
+                                  <div key={index} className="mr-3 my-2 rounded px-3 text-sm py-1 text-left border text-capitalize" style={{ fontSize: "14px"}}>{item}</div>
+                                ))
+                              }
                             </div>
                           </div>
                         </div>
