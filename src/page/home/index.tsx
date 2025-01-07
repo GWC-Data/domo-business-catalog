@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable max-lines */
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer";
@@ -15,19 +16,13 @@ const HomePage = () => {
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-5 col-md-12 col-sm-12 col-12" data-aos="fade-right">
-                <div className="social-icons position-relative" data-aos="fade-up">
-                  <ul className="list-unstyled position-absolute">
-                    <li><Link to=""  className="text-decoration-none"><i className="fa-brands fa-facebook-f social-networks"></i></Link></li>
-                    <li><Link to=""  className="text-decoration-none"><i className="fa-brands fa-twitter social-networks"></i></Link></li>
-                    <li><Link to=""  className="text-decoration-none"><i className="fa-brands fa-google-plus-g social-networks"></i></Link></li>
-                    <li><Link to=""  className="text-decoration-none"><i className="fa-brands fa-instagram social-networks"></i></Link></li>
-                  </ul>
-                </div>
                 <div className="banner_content">
                   <figure className="banner-line mb-0"><img src="./assets/images/banner-line.png" alt="" className="img-fluid" /></figure>
                   <h6 className="text-white">WE PROVIDE OUTSOURCED</h6>
                   <h1 className="text-white">IT Services & Solutions</h1>
-                  <p>Doidunt eget semper nec ruam sed hendrerit morbi ac feliseao augue pellentesue morbi acer.</p>
+                  <p>
+                  At GWC Data.ai, we empower businesses with cutting-edge Data Analytics, Engineering, and AI solutions, driven by innovation, technology, and a relentless pursuit of value. Partner with us to transform challenges into opportunities with customer-centric excellence!
+                  </p>
                   <Link to="" className="get_started button1 text-white text-decoration-none">Get Started
                     <figure className="mb-0"><img src="./assets/images/button-arrow.png" alt="" className="img-fluid" /></figure>
                   </Link>
