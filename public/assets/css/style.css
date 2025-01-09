@@ -2778,3 +2778,38 @@ p {
 /* .single-post .single-post-heading {
     font-size: 30px !important;
 } */
+
+
+
+/* custom style */
+
+
+.domogwc-section{
+    position: relative;
+    padding: 60px 0 182px;
+    overflow: hidden;
+}
+.domogwc-box {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 60px;
+    margin: 1rem;
+}
+
+.domogwc-box img {
+    width: 50px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.domogwc-box p {
+    font-weight: 600;
+    color: #000;
+}
+
+
