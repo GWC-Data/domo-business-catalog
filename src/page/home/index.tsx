@@ -219,15 +219,15 @@ const HomePage = () => {
                     </figure>
                   </div>
                   <section className="w-75 row col-12 col-lg-8 col-md-8 col-sm-8" style={{zIndex: 100}}>
-                    <div className="domogwc-box col-14 col-lg-4">
+                    <div className="domogwc-box col-12 col-lg-4">
                       <img src="./assets/images/achievement-clienticon.png" alt="" className="" />
                       <p className="text-size-18 mb-0">200+ DOMO Certified Experts</p>
                     </div> 
-                    <div className="domogwc-box domogwc-box col-14 col-lg-4">
+                    <div className="domogwc-box domogwc-box col-12 col-lg-4">
                       <img src="./assets/images/achievement-projecticon.png" alt="" className="" />
                       <p className="text-size-18 mb-0">Award WinningInnovation & Reusable assets</p>
                     </div>
-                    <div className="domogwc-box col-14 col-lg-4">
+                    <div className="domogwc-box col-12 col-lg-4">
                       <img src="./assets/images/achievement-teamicon.png" alt="" className="" />
                       <p className="text-size-18 mb-0">50K+ Hours of Delivery</p>
                     </div> 
