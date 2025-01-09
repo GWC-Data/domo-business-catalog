@@ -19,8 +19,8 @@ Project:  Technofy
 11. Footer Section
 */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
 :root {
     --e-global-color-primary: #202020;
     --e-global-color-secondary: #f86823;
@@ -38,8 +38,7 @@ Project:  Technofy
 }
 
 body{
-    /* font-family: 'Rajdhani', sans-serif; */
-    font-family: "Montserrat", serif;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .h1, h1 {
@@ -82,13 +81,13 @@ body{
     color: var(--e-global-color-secondary);
 }
 p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 30px;
     font-weight: 500;
     color: var(--e-global-color-text);
 }
 .text-size-18 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
     color: var(--e-global-color-text);
 }
@@ -145,7 +144,8 @@ p {
     display: inherit; 
 }
 .navbar-nav .nav-item a{
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 30px;
     font-weight: 500;
     color: var(--e-global-color-white) !important;
 }
@@ -269,7 +269,6 @@ p {
     padding: 202px 200px 290px 246px;
     z-index: 1;
 }
-
 .banner-section .banner_content .banner-line{
     position: absolute;
     display: block;
@@ -279,16 +278,14 @@ p {
 .banner-section .banner_content h6{
     margin-bottom: 18px;
     padding-left: 88px;
-    font-size: 16px;
 }
 .banner-section .banner_content h1{
     margin-bottom: 14px;
-    font-weight: 800;
 }
 .banner-section .banner_content p{
-    font-size: 18px;
+    font-size: 22px;
     line-height: 33px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 28px;
     color: var(--e-global-color-light-white);
 }
@@ -1521,7 +1518,6 @@ p {
 }
 .footer-section .middle-portion .icons input {
     font-family: 'Nunito', sans-serif;
-    /* font-family: "Montserrat", serif; */
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -2777,7 +2773,7 @@ p {
 }
 
 .blog-posts {
-    padding: 50px 0 20px;
+    padding: 120px 0 20px;
 }
 /* .single-post .single-post-heading {
     font-size: 30px !important;

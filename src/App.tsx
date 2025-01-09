@@ -7,7 +7,7 @@ import ServicePage from "./page/service";
 import ProjectPage from "./page/project";
 import ContactPage from "./page/contact";
 import ProjectDetailsPage from "./page/project_details";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import SubProjectDetailsPage from "./page/sub_project-details";
 function App() {
   AOS.init();

@@ -16,12 +16,11 @@ const Footer = () => {
               <div className="first-column">
                 <Link to="/">
                   <figure className="footer-logo">
-                    <img src="./assets/images/logo.png" className="img-fluid" alt="" />
+                    <img src="./assets/images/logo.svg" width="250" height="250" alt="Logo" className="img-fluid" />
                   </figure>
                 </Link>
                 <p className="text-size-18 footer-text">
-                  Grursus mal suada faci lisis lorem ipsum dolaror more ameion consectetur elit
-                  vesti at bulum ne odio aea the dumm ipsum dolocons.
+                We ensure better services and better quality at every product you might be interested in and we shall help grow better.
                 </p>
                 <div className="lower">
                   <div className="lower-content">
@@ -31,11 +30,11 @@ const Footer = () => {
                     <div className="content">
                       <span className="text-white">Call us:</span>
                       <Link to="/" className="text-size-18 mb-0 text text-decoration-none">
-                        +61 3 837 6284
+                        +91 95914 33122
                       </Link>
                     </div>
                   </div>
-                  <div className="lower-content">
+                  <div className="lower-content ">
                     <figure className="icon">
                       <img
                         src="./assets/images/footer-emailicon.png"
@@ -46,7 +45,7 @@ const Footer = () => {
                     <div className="content">
                       <span className="text-white">Email us:</span>
                       <Link to="/" className="text-size-18 mb-0 text-decoration-none">
-                        info@technofy.com
+                        indiahr@gwcdata.ai
                       </Link>
                     </div>
                   </div>
