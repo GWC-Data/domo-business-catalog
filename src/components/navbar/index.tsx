@@ -58,20 +58,20 @@ const Navbar = ({ activeNav }:props) => {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav">
-                <li className="nav-item active">
+                <li className={activeNav === "home" ? "nav-item active" : "nav-item"}>
                   <Link to="/" className="nav-link">Home</Link>
                 </li>
-                <li className="nav-item">
-                  <Link to="/about" className="nav-link">About</Link>
+                <li className={activeNav === "service" ? "nav-item active" : "nav-item"}>
+                  <a href="/#/service" className="nav-link">Services</a>
                 </li>
-                <li className="nav-item">
+                <li className={activeNav === "project" ? "nav-item active" : "nav-item"}>
                   <Link to="/project" className="nav-link">Projects</Link>
                 </li>
-                <li className="nav-item">
-                  <Link to="/service" className="nav-link">Services</Link>
+                <li className={activeNav === "product" ? "nav-item active" : "nav-item"}>
+                  <Link to="/product" className="nav-link">Products</Link>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="./service.html">360 Apps</a>
+                <li className={activeNav === "app" ? "nav-item active ml-2" : "nav-item ml-2"}>
+                  <Link to="/app" className="nav-link">360 Apps</Link>
                 </li>
               </ul>
             </div>
