@@ -5,7 +5,6 @@ type props = {
     activeNav: string
 }
 const Navbar = ({ activeNav }:props) => {
-  console.log(activeNav);
   return (
     // <header className="header">
     //   <div className="main-header">
