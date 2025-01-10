@@ -297,7 +297,9 @@ const ServicePage = () => {
                     </figure>
                     <div className="image_content">
                       <div className="content">
-                      <h2 className="text-white">{post.logo}</h2>
+                      <h3 className="text-white fs-5 d-flex justify-content-center align-items-center" style={{height:'50px'}}>
+                        {post.logo}
+                      </h3>
                       </div>
                     </div>
                   </div>
