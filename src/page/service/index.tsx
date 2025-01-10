@@ -1,6 +1,46 @@
 import Navbar from "../../components/navbar";
 
 const ServicePage = () => {
+  const blogPosts = [
+    {
+      title: 'DOMO BI Implementation',
+      excerpt: 'Delivering seamless implementation of DOMO for real-time data insights.',
+      image: './assets/images/services/domo_bi.jpg',
+      link: './single-post.html',
+    },
+    {
+      title: 'DOMO App Development',
+      excerpt: 'Creating custom apps tailored to your unique business needs.',
+      image: './assets/images/services/app_development.jpg',
+      link: './single-post.html',
+    },
+    {
+      title: 'Migration to DOMO',
+      excerpt: 'Ensuring smooth transitions to DOMO with minimal disruptions.',
+      image: './assets/images/services/migration.jpg',
+      link: './single-post.html',
+    },
+    {
+      title: 'Embedded Analytics DOMO Everywhere',
+      excerpt: 'Empowering workflows with integrated and actionable analytics.',
+      image: './assets/images/services/embed.jpg',
+      link: './single-post.html',
+    },
+    {
+      title: 'Data Science & AI',
+      excerpt: 'Unlocking advanced insights with predictive analytics and AI solutions.',
+      image: './assets/images/services/data_science.jpg',
+      link: './single-post.html',
+    },
+    {
+      title: 'Governanace & Managed Services',
+      excerpt: 'Managing and securing your DOMO environment for peak performance.',
+      image: './assets/images/services/governance.jpg',
+      link: './single-post.html',
+    },
+    // Add more blog posts as needed
+  ];
+
   return (
     <>
       {/* <div className="banner_outer">
@@ -62,7 +102,7 @@ const ServicePage = () => {
         </figure>
       </div>
 
-      <section className="servicepage-section service-section">
+      {/* <section className="servicepage-section service-section">
         <figure className="service-leftlayer mb-0">
           <img src="./assets/images/service-leftlayer.png" alt="" className="img-fluid" />
         </figure>
@@ -213,7 +253,64 @@ const ServicePage = () => {
         <figure className="service-rightlayer mb-0">
           <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
         </figure>
-      </section>
+      </section> */}
+
+      <section className="blog-section">
+      <figure className="offer-toplayer mb-0">
+        <img src="./assets/images/offer-toplayer.png" alt="" className="img-fluid" />
+      </figure>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="blog_content" data-aos="fade-right">
+
+              <h2>Our Latest Blog Posts</h2>
+              <p>
+                Grursus mal suada faci lisis lorem ipsum dolarorit more ame ion consectetur elit vesti at bulum nec odio aea the
+                dumm recreo that dolocons.
+              </p>
+              <figure className="offer-circleimage mb-0">
+                <img src="./assets/images/offer-circleimage.png" alt="" className="img-fluid" />
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="owl-carousel owl-theme">
+            {blogPosts.map((post, index) => (
+              <div className="item" key={index}>
+                <div className="blog_boxcontent">
+                  <div className="upper_portion">
+                    <figure className="mb-0">
+                      <img src={post.image} className="article_img" alt={post.title} />
+                    </figure>
+                    <div className="image_content">
+                      <div className="content">
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lower_portion_wrapper">
+                    <div className="lower_portion">
+                      <h4>{post.title}</h4>
+                      <p className="text-size-18">{post.excerpt}</p>
+                      <a className="read_more text-decoration-none" href={post.link}>
+                        Read More
+                        <figure className="arrow mb-0">
+                          <img src="./assets/images/blog-arrow.png" alt="" className="img-fluid" />
+                        </figure>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <figure className="offer-bottomlayer mb-0">
+        <img src="./assets/images/offer-bottomlayer.png" alt="" className="img-fluid" />
+      </figure>
+    </section>
     </>
   );
 };

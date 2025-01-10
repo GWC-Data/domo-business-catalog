@@ -240,6 +240,34 @@ const HomePage = () => {
         {/* <figure className="offer-bottomlayer mb-0" style={{zIndex: -1}}>
           <img src="./assets/images/offer-bottomlayer.png" alt="" className="img-fluid" />
         </figure> */}
+      </section>
+
+      <section className="partnership-section py-5">
+        <div className="container text-center">
+          <h2 className="mb-4">Partnership</h2>
+          <div className="row">
+            <div className="col-6 col-md-3 mb-4">
+              <figure>
+                <img src="./assets/images/partner1-logo.png" alt="Partner 1" className="img-fluid" />
+              </figure>
+            </div>
+            <div className="col-6 col-md-3 mb-4">
+              <figure>
+                <img src="./assets/images/partner2-logo.png" alt="Partner 2" className="img-fluid" />
+              </figure>
+            </div>
+            <div className="col-6 col-md-3 mb-4">
+              <figure>
+                <img src="./assets/images/partner3-logo.png" alt="Partner 3" className="img-fluid" />
+              </figure>
+            </div>
+            <div className="col-6 col-md-3 mb-4">
+              <figure>
+                <img src="./assets/images/partner4-logo.png" alt="Partner 4" className="img-fluid" />
+              </figure>
+            </div>
+          </div>
+        </div>
       </section>    
       <Footer />
     </>
