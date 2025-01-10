@@ -1,4 +1,10 @@
 import Navbar from "../../components/navbar";
+import { IoBarChartSharp } from "react-icons/io5";
+import { RiApps2AiFill } from "react-icons/ri";
+import { FaFileMedicalAlt } from "react-icons/fa";
+import { ImEmbed2 } from "react-icons/im";
+import { BsDatabaseFillUp } from "react-icons/bs";
+import { MdVerifiedUser } from "react-icons/md";
 
 const ServicePage = () => {
   const blogPosts = [
@@ -6,36 +12,42 @@ const ServicePage = () => {
       title: 'DOMO BI Implementation',
       excerpt: 'Delivering seamless implementation of DOMO for real-time data insights.',
       image: './assets/images/services/domo_bi.jpg',
+      logo: <IoBarChartSharp />,
       link: './single-post.html',
     },
     {
       title: 'DOMO App Development',
       excerpt: 'Creating custom apps tailored to your unique business needs.',
       image: './assets/images/services/app_development.jpg',
+      logo: <RiApps2AiFill />,
       link: './single-post.html',
     },
     {
       title: 'Migration to DOMO',
       excerpt: 'Ensuring smooth transitions to DOMO with minimal disruptions.',
       image: './assets/images/services/migration.jpg',
+      logo: <FaFileMedicalAlt />,
       link: './single-post.html',
     },
     {
       title: 'Embedded Analytics DOMO Everywhere',
       excerpt: 'Empowering workflows with integrated and actionable analytics.',
       image: './assets/images/services/embed.jpg',
+      logo: <ImEmbed2 />,
       link: './single-post.html',
     },
     {
       title: 'Data Science & AI',
       excerpt: 'Unlocking advanced insights with predictive analytics and AI solutions.',
       image: './assets/images/services/data_science.jpg',
+      logo: <BsDatabaseFillUp />,
       link: './single-post.html',
     },
     {
       title: 'Governanace & Managed Services',
       excerpt: 'Managing and securing your DOMO environment for peak performance.',
       image: './assets/images/services/governance.jpg',
+      logo: <MdVerifiedUser />,
       link: './single-post.html',
     },
     // Add more blog posts as needed
@@ -285,6 +297,7 @@ const ServicePage = () => {
                     </figure>
                     <div className="image_content">
                       <div className="content">
+                      <h2 className="text-white">{post.logo}</h2>
                       </div>
                     </div>
                   </div>
