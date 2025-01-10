@@ -264,10 +264,9 @@ const ServicePage = () => {
           <div className="col-12">
             <div className="blog_content" data-aos="fade-right">
 
-              <h2>Our Latest Blog Posts</h2>
+              <h2>Services</h2>
               <p>
-                Grursus mal suada faci lisis lorem ipsum dolarorit more ame ion consectetur elit vesti at bulum nec odio aea the
-                dumm recreo that dolocons.
+              Transforming data into actionable insights with tailored DOMO solutions to drive business success.
               </p>
               <figure className="offer-circleimage mb-0">
                 <img src="./assets/images/offer-circleimage.png" alt="" className="img-fluid" />
@@ -276,20 +275,20 @@ const ServicePage = () => {
           </div>
         </div>
         <div className="row">
-          <div className="owl-carousel owl-theme">
+          <div className="owl-carousel owl-theme" style={{ height: '400px' }}>
             {blogPosts.map((post, index) => (
               <div className="item" key={index}>
                 <div className="blog_boxcontent">
                   <div className="upper_portion">
                     <figure className="mb-0">
-                      <img src={post.image} className="article_img" alt={post.title} />
+                      <img src={post.image} className="article_img" alt={post.title} style={{ height: '200px', objectFit: 'cover' }}/>
                     </figure>
                     <div className="image_content">
                       <div className="content">
                       </div>
                     </div>
                   </div>
-                  <div className="lower_portion_wrapper">
+                  <div className="lower_portion_wrapper" style={{ height: '250px' }}>
                     <div className="lower_portion">
                       <h4>{post.title}</h4>
                       <p className="text-size-18">{post.excerpt}</p>

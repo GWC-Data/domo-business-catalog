@@ -242,28 +242,38 @@ const HomePage = () => {
         </figure> */}
       </section>
 
-      <section className="partnership-section py-5">
-        <div className="container text-center">
+      <section className="py-5">
+        <div className="container">
           <h2 className="mb-4">Partnership</h2>
-          <div className="row">
-            <div className="col-6 col-md-3 mb-4">
+          <div className="row text-center mt-5">
+            <div className="col-6 col-md-2 mb-4">
               <figure>
-                <img src="./assets/images/partner1-logo.png" alt="Partner 1" className="img-fluid" />
+                <img src="./assets/images/partners/Picture5.jpg" alt="Partner 1" className="img-fluid" />
               </figure>
             </div>
-            <div className="col-6 col-md-3 mb-4">
+            <div className="col-6 col-md-2 mb-4">
               <figure>
-                <img src="./assets/images/partner2-logo.png" alt="Partner 2" className="img-fluid" />
+                <img src="./assets/images/partners/Picture6.jpg" alt="Partner 2" className="img-fluid" />
               </figure>
             </div>
-            <div className="col-6 col-md-3 mb-4">
+            <div className="col-6 col-md-2 mb-4">
               <figure>
-                <img src="./assets/images/partner3-logo.png" alt="Partner 3" className="img-fluid" />
+                <img src="./assets/images/partners/Picture7.jpg" alt="Partner 3" className="img-fluid" />
               </figure>
             </div>
-            <div className="col-6 col-md-3 mb-4">
+            <div className="col-6 col-md-2 mb-4">
               <figure>
-                <img src="./assets/images/partner4-logo.png" alt="Partner 4" className="img-fluid" />
+                <img src="./assets/images/partners/Picture8.jpg" alt="Partner 4" className="img-fluid" />
+              </figure>
+            </div>
+            <div className="col-6 col-md-2 mb-4">
+              <figure>
+                <img src="./assets/images/partners/Picture9.jpg" alt="Partner 5" className="img-fluid" />
+              </figure>
+            </div>
+            <div className="col-6 col-md-2 mb-4">
+              <figure>
+                <img src="./assets/images/partners/Picture10.jpg" alt="Partner 6" className="img-fluid" />
               </figure>
             </div>
           </div>
