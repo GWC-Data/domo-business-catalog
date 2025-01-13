@@ -1,67 +1,10 @@
 /* eslint-disable max-len */
- 
- 
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 
 const HomePage = () => {
   return (
     <>
-      {/* <div className="banner_outer">
-        <Navbar activeNav="home" />
-        <figure className="banner-layerright mb-0">
-          <img src="./assets/images/banner-layerright.png" className="img-fluid" alt="" />
-        </figure>
-        <section className="banner-section">
-          <div className="container-fluid container">
-            <div className="row">
-              <div className="col-lg-5 col-md-12 col-sm-12 col-12" data-aos="fade-right">
-                <div className="banner_content">
-                  <figure className="banner-line mb-0"><img src="./assets/images/banner-line.png" alt="" className="img-fluid" /></figure>
-                  <h6 className="text-white">WE PROVIDE OUTSOURCED</h6>
-                  <h1 className="text-white">IT Services & Solutions</h1>
-                  <p>
-                  Empowering Business with Data & AI Insights to Drive Informed Actions.
-                  </p>
-                  <Link to="" className="get_started button1 text-white text-decoration-none">Get Started
-                    <figure className="mb-0"><img src="./assets/images/button-arrow.png" alt="" className="img-fluid" /></figure>
-                  </Link>
-                  <Link to="" className="get_started button2 text-white text-decoration-none">Contact Us
-                    <figure className="mb-0"><img src="./assets/images/button-arrow.png" alt="" className="img-fluid" /></figure>
-                  </Link>
-                  <figure className="banner-circleleft mb-0">
-                    <img src="./assets/images/banner-circleleft.png" className="img-fluid" alt="" />
-                  </figure>
-                  <figure className="banner-dotleft mb-0">
-                    <img src="./assets/images/banner-dotleft.png" className="img-fluid" alt="" />
-                  </figure>
-                </div>
-              </div>
-              <div className="col-lg-7 col-md-12 col-sm-12 col-12">
-                <div className="banner_wrapper">
-                  <figure className="mb-0 banner-image">
-                    <img src="./assets/images/banner-image.jpg" alt="" className="img-fluid" />
-                  </figure>
-                  <div className="position-relative">
-                    <Link className="popup-vimeo" to="https://video-previews.elements.envatousercontent.com/h264-video-previews/d1c81f1e-849f-4d45-ae57-b61c2f5db34a/25628048.mp4">
-                      <figure className="mb-0 banner-vedioimage">
-                        <img className="thumb img-fluid" style={{cursor: "pointer"}} src="./assets/images/banner-vedioimage.png" alt="" />
-                      </figure>
-                    </Link>
-                  </div>
-                  <figure className="banner-circleright mb-0">
-                    <img src="./assets/images/banner-circleright.png" className="img-fluid" alt="" />
-                  </figure>
-                  <figure className="banner-dotright mb-0">
-                    <img src="./assets/images/banner-dotright.png" className="img-fluid" alt="" />
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div> */}
-
       <div className="banner_outer">
         <Navbar activeNav="home" />
         <figure className="banner-layerright mb-0">
@@ -90,7 +33,7 @@ const HomePage = () => {
               <div className="col-lg-7 col-md-12 col-sm-12 col-12">
                 <div className="banner_wrapper">
                   <figure className="mb-0 banner-image">
-                    <img src="./assets/images/banner.png" alt="" className="img-fluid" />
+                    <img src="./assets/images/banner_2.png" alt="" className="img-fluid" />
                     {/* <video autoPlay muted loop className="img-fluid" />
                       <source src="./assets/images/Homepage.mp4" type="video/mp4" />
                     </video> */}
@@ -191,55 +134,83 @@ const HomePage = () => {
         </figure>
       </section>
 
-      <section className="blog-section">
-        <figure className="offer-toplayer mb-0">
-          <img src="./assets/images/offer-toplayer.png" alt="" className="img-fluid" />
+      <section className="service-section" >
+        <figure className="service-dotimage mb-0">
+          <img src="./assets/images/service-dotimage.png" alt="" className="img-fluid" />
         </figure>
         <div className="container">
           <div className="row">
-            <div className="col-12">
-              <div className="" data-aos="fade-right">
-                {/* <h6>News and articles</h6> */}
-                <h2>why gwc for domo?</h2>
-                {/* <p>Grursus mal suada faci lisis lorem ipsum dolarorit more ame ion consectetur elit vesti at bulum nec
-                        odio aea the dumm recreo that dolocons.</p> */}
-                {/* <figure className="offer-circleimage mb-0">
-                  <img src="./assets/images/offer-circleimage.png" alt="" className="img-fluid" />
-                </figure> */}
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-md-1 order-2">
+              <div className="service_contentbox">
                 <div className="row">
-                  <div className="w-25 row col-12 col-lg-4 col-md-4 col-sm-4">
-                    <figure className="col-12 col-lg-12 col-md-12 col-sm-12">
-                      <img src="./assets/images/certi1-HQSy2jez.png" alt="" width="160" className="img-fluid" />
-                    </figure>
-                    <figure className="col-12 col-lg-12 col-md-12 col-sm-12">
-                      <img src="./assets/images/certi1-HQSy2jez.png" alt="" width="160" className="img-fluid" />
-                    </figure>
-                    <figure className="col-12 col-lg-12 col-md-12 col-sm-12">
-                      <img src="./assets/images/certi1-HQSy2jez.png" alt="" width="160" className="img-fluid" />
-                    </figure>
+                  <div className="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div className="service-box box-mb">
+                      <figure className="service-marketicon">
+                        <img src="./assets/images/service-marketicon.png" alt="" className="img-fluid" />
+                      </figure> 
+                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>200+ Domo Certified Experts</div>
+                      {/* <p className="text-size-18">Our team consists of highly skilled professionals, certified across Domo’s ecosystem—ensuring exceptional service delivery and expertise.</p> */}
+                      {/* <a className="arrow text-decoration-none" href="./service.html"><i className="circle fa-thin fa-arrow-right"></i></a> */}
+                    </div>   
                   </div>
-                  <section className="w-75 row col-12 col-lg-8 col-md-8 col-sm-8" style={{zIndex: 100}}>
-                    <div className="domogwc-box col-12 col-lg-4">
-                      <img src="./assets/images/achievement-clienticon.png" alt="" className="" />
-                      <p className="text-size-18 mb-0">200+ DOMO Certified Experts</p>
-                    </div> 
-                    <div className="domogwc-box domogwc-box col-12 col-lg-4">
-                      <img src="./assets/images/achievement-projecticon.png" alt="" className="" />
-                      <p className="text-size-18 mb-0">Award WinningInnovation & Reusable assets</p>
+                  <div className="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div className="box-top">
+                      <div className="service-box box-mb">
+                        <figure className="service-producticon">
+                          <img src="./assets/images/service-producticon.png" alt="" className="img-fluid" />
+                        </figure>
+                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>100,000+ Hours of Delivery</div>
+                        {/* <p className="text-size-18">With over 100K hours dedicated to building and scaling Domo solutions, we’ve set the standard for quality, speed, and innovation.</p> */}
+                        {/* <a className="arrow text-decoration-none" href="./service.html"><i className="circle fa-thin fa-arrow-right"></i></a> */}
+                      </div>
                     </div>
-                    <div className="domogwc-box col-12 col-lg-4">
-                      <img src="./assets/images/achievement-teamicon.png" alt="" className="" />
-                      <p className="text-size-18 mb-0">50K+ Hours of Delivery</p>
-                    </div> 
-                  </section>
+                  </div>
                 </div>
+                <div className="row">
+                  <div className="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div className="service-box">
+                      <figure className="service-designicon">
+                        <img src="./assets/images/service-designicon.png" alt="" className="img-fluid" />
+                      </figure>
+                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>300+ Tailored Solutions Delivered</div>
+                      {/* <p className="text-size-18">We have successfully delivered over 300 innovative Domo solutions, including dashboards, apps, integrations, and AI-driven analytics—customized to meet unique business needs.</p> */}
+                      {/* <a className="arrow text-decoration-none" href="./service.html"><i className="circle fa-thin fa-arrow-right"></i></a> */}
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div className="box-top">
+                      <div className="service-box">
+                        <figure className="service-dataicon">
+                          <img src="./assets/images/service-dataicon.png" alt="" className="img-fluid" />
+                        </figure>
+                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Award-Winning Innovation</div>
+                        {/* <p className="text-size-18">Our focus on crafting cutting-edge solutions and solving complex challenges has solidified our reputation as Domo’s go-to partner.</p> */}
+                        {/* <a className="arrow text-decoration-none" href="./service.html"><i className="circle fa-thin fa-arrow-right"></i></a> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-md-2 order-1">
+              <div className="service_content position-relative" data-aos="fade-right" style={{paddingTop: "120px" }}>
+                <figure className="service-rightcircle mb-0">
+                  <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
+                </figure>
+                {/* <h6>Our Services</h6> */}
+                <h2>Why gwc for domo</h2>
+                <p>As the implementation partner for Domo, GWC provides intuitive experiences infused with AI, data science, and a robust data foundation. Seamlessly integrating with your current cloud and legacy systems, our solutions ignite curiosity and drive substantial business impact.
+                </p>
+                <img src="./assets/images/domo_certificate/Picture1.png" width="113" height="114" alt="" />
+                <img src="./assets/images/domo_certificate/Picture2.png" width="113" height="114" className="mx-3" alt="" />
+                <img src="./assets/images/domo_certificate/Picture3.png" width="113" height="114" alt="" />
               </div>
             </div>
           </div>
         </div>
-        {/* <figure className="offer-bottomlayer mb-0" style={{zIndex: -1}}>
-          <img src="./assets/images/offer-bottomlayer.png" alt="" className="img-fluid" />
-        </figure> */}
+        <figure className="service-rightlayer mb-0">
+          <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
+        </figure>
       </section>
 
       <section className="py-5">

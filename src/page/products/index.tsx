@@ -1,6 +1,6 @@
 import Navbar from "../../components/navbar";
 
-const AboutPage = () => {
+const ProductPage = () => {
   return (
     <div>
       <div className="sub-banner sub-banner2">
@@ -16,7 +16,7 @@ const AboutPage = () => {
                   <figure className="project-rightcircle service-rightcircle mb-0">
                     <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
                   </figure>
-                  <h1 className="text-white">About Us</h1>
+                  <h1 className="text-white">Products</h1>
                   <p>Roidunt eget semper nec ruam sed hendrerit morbi ac feliseao augue pellentesue morbi acer.</p>
                 </div>
               </div>
@@ -34,4 +34,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ProductPage;

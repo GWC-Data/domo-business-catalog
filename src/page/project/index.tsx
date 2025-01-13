@@ -92,7 +92,7 @@ const ProjectPage = () => {
               aria-placeholder="Industry Filter" 
               style={{zIndex: 100}} 
               aria-label="Default select example">
-              <option selected value="all">All Industries</option>
+              <option value="all">All Industries</option>
               {
                 industries?.map((val, index) => (
                   <option value={val} key={index}>{val}</option>
@@ -105,8 +105,8 @@ const ProjectPage = () => {
           <div className="project_wrapper">
             <div className="row" data-aos="fade-up">
               {
-                filteredData?.map((val) => (
-                  <Link to={`/project/${val.id}`} className="col-lg-4 col-md-4 col-sm-6 col-12" >
+                filteredData?.map((val, index) => (
+                  <Link to={`/project/${val.id}`} className="col-lg-4 col-md-4 col-sm-6 col-12" key={index}>
                     <div className="case-box overlay">
                       <div className="overlay-image">
                         {
