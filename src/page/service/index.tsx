@@ -95,7 +95,7 @@ const ServicePage = () => {
                     <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
                   </figure>
                   <h1 className="text-white">Our Services</h1>
-                  <p>Eoidunt eget semper nec ruam sed hendrerit morbi ac feliseao augue pellentesue morbi acer.</p>
+                  <p>Transforming data into actionable insights with tailored DOMO solutions to drive business success.</p>
                   <div className="box">
                     <span className="mb-0">Home</span>
                     <figure className="mb-0 arrow"><img src="./assets/images/button-arrow.png" alt="" className="img-fluid" /></figure>
@@ -275,11 +275,6 @@ const ServicePage = () => {
         <div className="row">
           <div className="col-12">
             <div className="blog_content" data-aos="fade-right">
-
-              <h2>Services</h2>
-              <p>
-              Transforming data into actionable insights with tailored DOMO solutions to drive business success.
-              </p>
               <figure className="offer-circleimage mb-0">
                 <img src="./assets/images/offer-circleimage.png" alt="" className="img-fluid" />
               </figure>
