@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import Navbar from "../../components/navbar";
 import { IoBarChartSharp } from "react-icons/io5";
 import { RiApps2AiFill } from "react-icons/ri";
@@ -5,6 +6,13 @@ import { FaFileMedicalAlt } from "react-icons/fa";
 import { ImEmbed2 } from "react-icons/im";
 import { BsDatabaseFillUp } from "react-icons/bs";
 import { MdVerifiedUser } from "react-icons/md";
+
+declare global {
+  interface Window {
+    jQuery: any;
+    $: any;
+  }
+}
 
 const ServicePage = () => {
   const blogPosts = [
@@ -49,38 +57,55 @@ const ServicePage = () => {
       image: './assets/images/services/governance.jpg',
       logo: <MdVerifiedUser />,
       link: './single-post.html',
-    },
-    // Add more blog posts as needed
+    }
   ];
+
+  useEffect(() => {
+    // Initialize owl carousel
+    const initCarousel = () => {
+      const $ = window.jQuery;
+      if ($ && $.fn.owlCarousel) {
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 15,
+          nav: false,
+          responsive: {
+            0: {
+              items: 1
+            },
+            768: {
+              items: 2
+            },
+            1024: {
+              items: 3
+            }
+          },
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true
+        });
+      }
+    };
+
+    initCarousel();
+
+    // If not successful, try again after a short delay
+    const timer = setTimeout(() => {
+      initCarousel();
+    }, 500);
+
+    // Cleanup function
+    return () => {
+      clearTimeout(timer);
+      const $ = window.jQuery;
+      if ($ && $.fn.owlCarousel) {
+        $('.owl-carousel').owlCarousel('destroy');
+      }
+    };
+  }, []);
 
   return (
     <>
-      {/* <div className="banner_outer">
-        <Navbar activeNav="home" />
-        <figure className="banner-layerright mb-0">
-          <img src="./assets/images/banner-layerright.png" className="img-fluid" alt="" />
-        </figure>
-        <section className="banner-section">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                <div className="banner_content" data-aos="fade-up">
-                  <figure className="service-rightcircle mb-0">
-                    <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
-                  </figure>
-                  <h1 className="text-white">Our Services</h1>
-                  <p>Eoidunt eget semper nec ruam sed hendrerit morbi ac feliseao augue pellentesue morbi acer.</p>
-                  <div className="box">
-                    <span className="mb-0">Home</span>
-                    <figure className="mb-0 arrow"><img src="./assets/images/button-arrow.png" alt="" className="img-fluid" /></figure>
-                    <span className="mb-0 box_span">Services</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>    
-        </section>
-      </div> */}
       <div className="sub-banner sub-banner4">
         <figure className="sub-bannerleftlayer mb-0">
           <img src="./assets/images/sub-bannerleftlayer.png" alt="" className="img-fluid" />
@@ -114,58 +139,58 @@ const ServicePage = () => {
         </figure>
       </div>
       <section className="blog-section">
-      <figure className="offer-toplayer mb-0">
-        <img src="./assets/images/offer-toplayer.png" alt="" className="img-fluid" />
-      </figure>
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="blog_content" data-aos="fade-right">
-              <figure className="offer-circleimage mb-0">
-                <img src="./assets/images/offer-circleimage.png" alt="" className="img-fluid" />
-              </figure>
+        <figure className="offer-toplayer mb-0">
+          <img src="./assets/images/offer-toplayer.png" alt="" className="img-fluid" />
+        </figure>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="blog_content" data-aos="fade-right">
+                <figure className="offer-circleimage mb-0">
+                  <img src="./assets/images/offer-circleimage.png" alt="" className="img-fluid" />
+                </figure>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="row">
-          <div className="owl-carousel owl-theme" style={{ height: '400px' }}>
-            {blogPosts.map((post, index) => (
-              <div className="item" key={index}>
-                <div className="blog_boxcontent">
-                  <div className="upper_portion">
-                    <figure className="mb-0">
-                      <img src={post.image} className="article_img" alt={post.title} style={{ height: '200px', objectFit: 'cover' }}/>
-                    </figure>
-                    <div className="image_content">
-                      <div className="content">
-                      <h3 className="text-white fs-5 d-flex justify-content-center align-items-center" style={{height:'50px'}}>
-                        {post.logo}
-                      </h3>
+          <div className="row">
+            <div className="owl-carousel owl-theme" style={{ height: '400px' }}>
+              {blogPosts.map((post, index) => (
+                <div className="item" key={index}>
+                  <div className="blog_boxcontent">
+                    <div className="upper_portion">
+                      <figure className="mb-0">
+                        <img src={post.image} className="article_img" alt={post.title} style={{ height: '200px', objectFit: 'cover' }}/>
+                      </figure>
+                      <div className="image_content">
+                        <div className="content">
+                          <h3 className="text-white fs-5 d-flex justify-content-center align-items-center" style={{height:'50px'}}>
+                            {post.logo}
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="lower_portion_wrapper" style={{ height: '250px' }}>
+                      <div className="lower_portion">
+                        <h4>{post.title}</h4>
+                        <p className="text-size-18">{post.excerpt}</p>
+                        <a className="read_more text-decoration-none" href={post.link}>
+                          Read More
+                          <figure className="arrow mb-0">
+                            <img src="./assets/images/blog-arrow.png" alt="" className="img-fluid" />
+                          </figure>
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <div className="lower_portion_wrapper" style={{ height: '250px' }}>
-                    <div className="lower_portion">
-                      <h4>{post.title}</h4>
-                      <p className="text-size-18">{post.excerpt}</p>
-                      <a className="read_more text-decoration-none" href={post.link}>
-                        Read More
-                        <figure className="arrow mb-0">
-                          <img src="./assets/images/blog-arrow.png" alt="" className="img-fluid" />
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-      <figure className="offer-bottomlayer mb-0">
-        <img src="./assets/images/offer-bottomlayer.png" alt="" className="img-fluid" />
-      </figure>
-    </section>
+        <figure className="offer-bottomlayer mb-0">
+          <img src="./assets/images/offer-bottomlayer.png" alt="" className="img-fluid" />
+        </figure>
+      </section>
     </>
   );
 };
