@@ -72,7 +72,7 @@
   transition: all 0.3s ease-in-out;
   box-shadow: 1px 21px 46px rgb(0 0 0 / 4%);
 }
-.gwc_domo-section .gwc_domo_contentbox .gwc_domo-box:hover {
+/* .gwc_domo-section .gwc_domo_contentbox .gwc_domo-box:hover {
   background-image: linear-gradient(to right, var(--e-button-gradient-1) 0%, var(--e-button-gradient-2) 100%);
   transform: translateY(-5px);
 }
@@ -81,7 +81,7 @@
 } 
 .gwc_domo-section .gwc_domo-box:hover p{
   color: var(--e-global-color-white);
-} 
+}  */
 .gwc_domo-section .gwc_domo_contentbox .gwc_domo-box figure {
   background: var(--e-global-color-very-pale-orange);
   border-radius: 100px;

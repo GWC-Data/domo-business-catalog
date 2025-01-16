@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { useEffect } from "react";
 import Navbar from "../../components/navbar";
 import { IoBarChartSharp } from "react-icons/io5";
 import { RiApps2AiFill } from "react-icons/ri";
@@ -17,46 +18,46 @@ declare global {
 const ServicePage = () => {
   const blogPosts = [
     {
-      title: 'DOMO BI Implementation',
-      excerpt: 'Delivering seamless implementation of DOMO for real-time data insights.',
-      image: './assets/images/services/domo_bi.jpg',
+      title: "DOMO BI Implementation",
+      excerpt: "Delivering seamless implementation of DOMO for real-time data insights.",
+      image: "./assets/images/services/domo_bi.jpg",
       logo: <IoBarChartSharp />,
-      link: './single-post.html',
+      link: "./single-post.html",
     },
     {
-      title: 'DOMO App Development',
-      excerpt: 'Creating custom apps tailored to your unique business needs.',
-      image: './assets/images/services/app_development.jpg',
+      title: "DOMO App Development",
+      excerpt: "Creating custom apps tailored to your unique business needs.",
+      image: "./assets/images/services/app_development.jpg",
       logo: <RiApps2AiFill />,
-      link: './single-post.html',
+      link: "./single-post.html",
     },
     {
-      title: 'Migration to DOMO',
-      excerpt: 'Ensuring smooth transitions to DOMO with minimal disruptions.',
-      image: './assets/images/services/migration.jpg',
+      title: "Migration to DOMO",
+      excerpt: "Ensuring smooth transitions to DOMO with minimal disruptions.",
+      image: "./assets/images/services/migration.jpg",
       logo: <FaFileMedicalAlt />,
-      link: './single-post.html',
+      link: "./single-post.html",
     },
     {
-      title: 'DOMO Everywhere',
-      excerpt: 'Empowering workflows with integrated and actionable analytics.',
-      image: './assets/images/services/embed.jpg',
+      title: "DOMO Everywhere",
+      excerpt: "Empowering workflows with integrated and actionable analytics.",
+      image: "./assets/images/services/embed.jpg",
       logo: <ImEmbed2 />,
-      link: './single-post.html',
+      link: "./single-post.html",
     },
     {
-      title: 'Data Science & AI',
-      excerpt: 'Unlocking advanced insights with predictive analytics and AI solutions.',
-      image: './assets/images/services/data_science.jpg',
+      title: "Data Science & AI",
+      excerpt: "Unlocking advanced insights with predictive analytics and AI solutions.",
+      image: "./assets/images/services/data_science.jpg",
       logo: <BsDatabaseFillUp />,
-      link: './single-post.html',
+      link: "./single-post.html",
     },
     {
-      title: 'Governanace & Managed Services',
-      excerpt: 'Managing and securing your DOMO environment for peak performance.',
-      image: './assets/images/services/governance.jpg',
+      title: "Governanace & Managed Services",
+      excerpt: "Managing and securing your DOMO environment for peak performance.",
+      image: "./assets/images/services/governance.jpg",
       logo: <MdVerifiedUser />,
-      link: './single-post.html',
+      link: "./single-post.html",
     }
   ];
 
@@ -65,7 +66,7 @@ const ServicePage = () => {
     const initCarousel = () => {
       const $ = window.jQuery;
       if ($ && $.fn.owlCarousel) {
-        $('.owl-carousel').owlCarousel({
+        $(".owl-carousel").owlCarousel({
           loop: true,
           margin: 15,
           nav: false,
@@ -99,7 +100,7 @@ const ServicePage = () => {
       clearTimeout(timer);
       const $ = window.jQuery;
       if ($ && $.fn.owlCarousel) {
-        $('.owl-carousel').owlCarousel('destroy');
+        $(".owl-carousel").owlCarousel("destroy");
       }
     };
   }, []);
@@ -121,11 +122,6 @@ const ServicePage = () => {
                   </figure>
                   <h1 className="text-white">Our Services</h1>
                   <p>Transforming data into actionable insights with tailored DOMO solutions to drive business success.</p>
-                  <div className="box">
-                    <span className="mb-0">Home</span>
-                    <figure className="mb-0 arrow"><img src="./assets/images/button-arrow.png" alt="" className="img-fluid" /></figure>
-                    <span className="mb-0 box_span">Services</span>
-                  </div>
                 </div>
               </div>
             </div>
@@ -153,23 +149,23 @@ const ServicePage = () => {
             </div>
           </div>
           <div className="row">
-            <div className="owl-carousel owl-theme" style={{ height: '400px' }}>
+            <div className="owl-carousel owl-theme" style={{ height: "400px" }}>
               {blogPosts.map((post, index) => (
                 <div className="item" key={index}>
                   <div className="blog_boxcontent">
                     <div className="upper_portion">
                       <figure className="mb-0">
-                        <img src={post.image} className="article_img" alt={post.title} style={{ height: '200px', objectFit: 'cover' }}/>
+                        <img src={post.image} className="article_img" alt={post.title} style={{ height: "200px", objectFit: "cover" }}/>
                       </figure>
                       <div className="image_content">
                         <div className="content">
-                          <h3 className="text-white fs-5 d-flex justify-content-center align-items-center" style={{height:'50px'}}>
+                          <h3 className="text-white fs-5 d-flex justify-content-center align-items-center" style={{height:"50px"}}>
                             {post.logo}
                           </h3>
                         </div>
                       </div>
                     </div>
-                    <div className="lower_portion_wrapper" style={{ height: '250px' }}>
+                    <div className="lower_portion_wrapper" style={{ height: "250px" }}>
                       <div className="lower_portion">
                         <h4>{post.title}</h4>
                         <p className="text-size-18">{post.excerpt}</p>
