@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 export const apps = [
   {
-    id: 2,
+    id: 1,
     title: "360° Retail Analytics",
     description:
     "The retail stores can range from small local shops to large chain stores, offering products like clothing, groceries, electronics, or household items. Retail stores serve as the final point in the supply chain, providing customers with convenient access to products and often focusing on customer service and in-store experiences. \n \n The Retail 360 POC features a comprehensive suite of dashboards designed to enhance business insights. These include dashboards for upsell/cross-sell opportunities, customer advocacy, lifetime value (LTV), competitor analysis, consumer trends, geospatial data, executive summaries, financial performance, and strategic initiatives. Each dashboard provides valuable analytics to improve decision-making, track customer behaviors, monitor competitive positioning, and assess overall financial health. This holistic approach enables businesses to optimize their strategies and enhance customer satisfaction effectively.",
@@ -103,7 +103,7 @@ export const apps = [
     ],
   },
   {
-    id: 5,
+    id: 2,
     title: "The Recipe for Data-Driven F&B Operations",
     description:
     "A Food and Beverage company focuses on sourcing quality ingredients, producing safe products, engaging customers, managing efficient supply chains, ensuring financial health, and adhering to regulations while promoting sustainability and innovation. \n \n We implemented a comprehensive analysis for the Food and Beverage industry, covering key areas such as sales, inventory, competitor insights, customer metrics, finance, footfall and density, marketing effectiveness, quality control, franchise performance, and employee productivity. This analysis provided detailed insights into sales trends, inventory management, and competitor positioning, while also evaluating customer satisfaction and financial health. Additionally, we assessed foot traffic patterns and marketing impact, ultimately enhancing operational efficiency and strategic decision-making across all facets of the business.",
@@ -183,6 +183,329 @@ export const apps = [
         embed: "https://embed.domo.com/embed/pages/vlM5V",
         industry: "Food & Beverage Sector",
         keywords: "NPS, Promotors, Passives, Detractors, Customer Reviews, Customer Complaint Resolution, Recurring Complaints"
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Comprehensive Insights for Healthcare Operations",
+    description:
+    "Developing Dashboards to cover all 360 view of healthcare domain. This dashboards speaks about Operational management, finance, pharmacy, patient satisfaction, Physician performance, etc. Domo features - Using field parameters, App studio to make the dashboard dynamic.",
+    image: "",
+    embed: "",
+    industry: "Healthcare",
+    keywords: "Healthcare Analytics, Patient Care, Operational Efficiency, Financial Performance, Medical Insights, Resource Optimization, Healthcare Performance, Cost Efficiency, Patient Satisfaction, Workforce Management",
+    subDashboard: [
+      {
+        id: 1,
+        title: "Optimizing Workflow and Resource Utilization",
+        description: "This report provides overview of the hospital performance.",
+        image: "",
+        embed: "",
+        industry: "Healthcare",
+        keywords: "Appointment Scheduling, Patient Flow, Resource Allocation, Department Utilization, Healthcare Efficiency, Operational Metrics, Staff Productivity, Utilization Rates, Patient Overview, Resource Optimization"
+      },
+      {
+        id: 2,
+        title: "Improving Employee and Patient Efficiency",
+        description: "This report provides insights about the Physician attendance, staffs, utilization of resource.",
+        image: "",
+        embed: "",
+        industry: "Healthcare",
+        keywords: "Workforce Analytics, Employee Performance, Patient Care Efficiency, Logistics Management, Employee Overview, Caregiver Productivity, Workforce Utilization, Logistics Optimization, Performance Insights, Staff Scheduling"
+      },
+      {
+        id: 3,
+        title: "Evaluating Clinical and Quality Metrics",
+        description: "This report speaks about the physicians and their performance.",
+        image: "",
+        embed: "",
+        industry: "Healthcare",
+        keywords: "Physician Performance, Clinical Metrics, Quality Assessment, Healthcare Quality, Performance Insights, Physician Productivity, Care Quality, Medical Outcomes, Physician Efficiency, Clinical Analysis"
+      },
+      {
+        id: 4,
+        title: "Managing Stock and Fulfillment Efficiency",
+        description: "This dashboard is designed to give healthcare administrators and inventory managers a comprehensive view of their inventory, helping them track supplies, manage stock levels, and optimize ordering processes. It aims to ensure that critical supplies are always available and to streamline inventory management",
+        image: "",
+        embed: "",
+        industry: "Healthcare",
+        keywords: "Inventory Management, Stock Analysis, Order Fulfillment, Operational Efficiency, Financial Performance, Inventory Optimization, Fulfillment Metrics, Stock Availability, Cost Efficiency, Order Performance"
+      },
+      {
+        id: 5,
+        title: "Driving Revenue and Cost Optimization",
+        description: "A Finance Dashboard for Healthcare 360 is designed to provide a comprehensive view of financial metrics and performance indicators specific to the healthcare sector. It helps in monitoring, analyzing, and managing the financial aspects of healthcare operations.",
+        image: "",
+        embed: "",
+        industry: "Healthcare",
+        keywords: "Revenue Analysis, Profitability Metrics, Cost Efficiency, Financial Performance, Operational Costs, Revenue Growth, Expense Management, Patient Financials, Operational Metrics, Profit Margins"
+      },
+      {
+        id: 6,
+        title: "Insights on Medicine, Revenue, and Suppliers",
+        description: "This report gives information about the pharmacy sales, stocks, manpower and suppliers.",
+        image: "",
+        embed: "",
+        industry: "Healthcare",
+        keywords: "Medicine Stock, Revenue Analysis, Supplier Performance, Pharmaceutical Revenue, Inventory Management, Stock Levels, Profitability Metrics, Supplier Efficiency, Cost Analysis, Pharmaceutical Supply"
+      },
+      {
+        id: 7,
+        title: "Diagnostics and Historical Patient Data",
+        description: "The Laboratory & Scan Analysis module is designed to provide comprehensive insights into laboratory results and scan reports for patients. This module aids healthcare providers in diagnosing, monitoring, and managing patient health conditions by offering detailed analyses of various tests and scans.",
+        image: "",
+        embed: "",
+        industry: "Healthcare",
+        keywords: "Laboratory Analysis, Scan Reports, Patient Data, Historical Data, Diagnostic Insights, Medical Imaging, Test Results, Healthcare Analytics, Scan Performance, Patient Outcomes"
+      },
+      {
+        id: 8,
+        title: "Reducing Waste and Maximizing Savings",
+        description: "This dashboard offers insights into waste generation, disposal, and recycling within a healthcare facility. It aims to track and optimize waste management practices, ensure compliance with regulations, and identify opportunities for reducing waste and improving sustainability.",
+        image: "",
+        embed: "",
+        industry: "Healthcare",
+        keywords: "Waste Management, Cost Efficiency, Recycling Savings, Waste Reduction, Environmental Impact, Sustainability Metrics, Operational Efficiency, Waste Disposal, Savings Analysis, Resource Optimization"
+      },
+      {
+        id: 9,
+        title: "Facility and Equipment Performance Insights",
+        description: "The Maintenance Dashboard in the Healthcare, tracks equipment maintenance history, upcoming service schedules, and monitors energy consumption. It helps Facilities Managers optimize upkeep, ensure compliance, and identify cost-saving opportunities through efficient asset management.",
+        image: "",
+        embed: "",
+        industry: "Healthcare",
+        keywords: "Equipment Performance, Maintenance Efficiency, Facility Operations, Environmental Impact, Operational Efficiency, Healthcare Maintenance, Equipment Uptime, Sustainability Metrics, Facility Optimization, Patient Care Efficiency"
+      },
+      {
+        id: 10,
+        title: "Streamlining Claims and Reimbursements",
+        description: "The Insurance Dashboard in healthcare captures detailed insights into insurance companies, claim statuses, and reimbursement timelines, helping streamline operations for Financial and Claims Management teams.",
+        image: "",
+        embed: "",
+        industry: "Healthcare",
+        keywords: "Claim Processing, Revenue Analysis, Reimbursement Metrics, Insurance Claims, Financial Reimbursement, Operational Efficiency, Claims Performance, Insurance Revenue, Claim Approval, Payment Recovery"
+      },
+      {
+        id: 11,
+        title: "Improving Feedback and Care Quality",
+        description: "This dashboard shows how satisfied patients are with their healthcare experience. It includes key metrics like overall satisfaction scores, wait times, communication with doctors, and cleanliness. The dashboard helps healthcare teams track patient feedback and identify areas that need improvement to ensure better care and service quality.",
+        image: "",
+        embed: "",
+        industry: "Healthcare",
+        keywords: "Patient Satisfaction, Patient Feedback, Healthcare Experience, Patient Engagement, Satisfaction Metrics, Service Quality, Patient Insights, Feedback Analysis, Experience Metrics, Care Quality"
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Manufacturing 360",
+    description:
+    "Provides comprehensive insights into key operational areas, including supply chain, production, quality, and workforce, to drive efficiency and strategic growth. It integrates data into a unified platform for real-time monitoring and decision-making.",
+    image: "",
+    embed: "",
+    industry: "Manufacturing",
+    keywords: "",
+    subDashboard: [
+      {
+        id: 1,
+        title: "KPi Score card analysis",
+        description: "KPI Scorecard is used to find key performance indicators to track and measure organizational progress toward strategic goals.",
+        image: "",
+        embed: "",
+        industry: "Manufacturing",
+        keywords: "Scorecard, Overview, Threshold, Targets"
+      },
+      {
+        id: 2,
+        title: "Inventory Management Analysis",
+        description: "Manages inventory levels and ensures a smooth supply chain.",
+        image: "",
+        embed: "",
+        industry: "Manufacturing",
+        keywords: "Inventory, Supplier, Aeging, Stock, Turnover, Stock, COGS, Delivary, Fullfillment, Delay, on-Time, Orders, Reasons, Suppliers"
+      },
+      {
+        id: 3,
+        title: "Supply chain and Forecasting Analysis",
+        description: "Manages the entire supply chain from suppliers to delivery.",
+        image: "",
+        embed: "",
+        industry: "Manufacturing",
+        keywords: "Supply chain, Perfect Order, Inventory, Ratio, Lead Time, Profit, Distributor, order Volume, Automotive, Order Tracking, Forcasting, Demand, Cost, Price, Accuracy, Stock Out, Mean Absolute, Lead time, Service Level, relaiability, on-time, Fill rate"
+      },
+      {
+        id: 4,
+        title: "Scrap amd Defect Analysis",
+        description: "Ensures that products meet quality standards and identifies areas for improvement.",
+        image: "",
+        embed: "",
+        industry: "Manufacturing",
+        keywords: "Scrap, Defects, products, Cost, pareto, First Pass Yield, FPY Improvements, Root Cause, defect Reasons, issue, root cause accuracy, Resolution, issue fixes, root cause effectiveness"
+      },
+      {
+        id: 5,
+        title: "Maintenance Frequency and Downtime Analysis",
+        description: "Monitors the maintenance activities and health of equipment.",
+        image: "",
+        embed: "",
+        industry: "Manufacturing",
+        keywords: "Maintanance, Repairs, MTTR, Completed, Failure, Defects, Downtime, Forecast, Cost, Incident, Equipment, Machine, Idle time, Utilization, Production"
+      },
+      {
+        id: 6,
+        title: "Labor Productivity and Employee Satisfaction analysis",
+        description: "Optimizes the management of the workforce to ensure productivity, safety, and employee satisfaction.",
+        image: "",
+        embed: "",
+        industry: "Manufacturing",
+        keywords: "Labour, Productivity, Efficiency, overtime, Actuals, targets, Labour Cost, Productivity, Performance, Attendance, Absentees, Login, Employees, LRC, Shift, Satisfaction, Retention, hires, Active Employee, inactive Employee, NPS"
+      },
+      {
+        id: 7,
+        title: "Energy Consumption and Carbon footprint analysis",
+        description: "Monitors and improves the energy efficiency and environmental impact of manufacturing operations.",
+        image: "",
+        embed: "",
+        industry: "Manufacturing",
+        keywords: "Energy Consumption, Cost, Efficiency, Intensity, peak energy, Demand, Carbon, emission, scope, Reduction, certification, savings, cost, gains, waste, target, sustainability, programs"
+      },
+      {
+        id: 8,
+        title: "Finance Dashboard",
+        description: "Tracks the financial performance and cost efficiency of manufacturing operations.",
+        image: "",
+        embed: "",
+        industry: "Manufacturing",
+        keywords: "Net Profit, Gross, P&L, Account payable, Expense, CCC, income, profit, Margin, Expenses, Liqudity, Financial Roatio, Turnovers, Cash"
+      },
+      {
+        id: 9,
+        title: "Customer Satisfaction Dashboard",
+        description: "Measures and improves the satisfaction and experience of customers with the manufactured products.",
+        image: "",
+        embed: "",
+        industry: "Manufacturing",
+        keywords: "Delivary, Shipping, Orders, Accuracy, Pack, backorder, Ontime, Shipping, Carrier, Customer Satisfaction, Warehouse, Shipment, Complaint, Resolution, SLA, RCR, Ticket, NPS, Customer Loyalty, Promotor, Detractor, Passives"
+      },
+      {
+        id: 10,
+        title: "Safety and Compliance Dashboard",
+        description: "Ensures that safety standards and regulatory requirements are met.",
+        image: "",
+        embed: "",
+        industry: "Manufacturing",
+        keywords: "Incident, Loses,Severity, Compliance, SLA, Issues, Production, maintanance, Quality Assurance, Logistics, Saftyy, Employees, Fail, Pass, Success, Training"
+      },
+      {
+        id: 11,
+        title: "Production Volume Dashbaord",
+        description: "Monitors the overall production performance and efficiency.",
+        image: "",
+        embed: "",
+        industry: "Manufacturing",
+        keywords: "Production, defects, Supplier, OEE, Weekly analysis, , products, managers, Utilization, Uptime, Throughput, maintanance, capacity, Yield, Quality, Rework, Returns, COPQ, Downtime"
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Entertainment 360",
+    description:"",
+    image: "",
+    embed: "",
+    industry: "Entertainment & Online Ticketing",
+    keywords: "",
+    subDashboard: [
+      {
+        id: 1,
+        title: "Ticket Booking Trends & Performance Analysis",
+        description: "Analyzes booking trends, customer preferences, and performance across different events and shows.",
+        image: "",
+        embed: "https://embed.domo.com/embed/pages/xn4KJ",
+        industry: "Entertainment & Online Ticketing",
+        keywords: "Ticket Booking, Trends, Performance, Sales, Conversion, Booking Patterns, Revenue Tracking, User Behavior"
+      },
+      {
+        id: 2,
+        title: "Cross-Selling and Upselling Performance Insights",
+        description: "Tracks the effectiveness of cross-selling and upselling strategies to increase customer spend.",
+        image: "",
+        embed: "https://embed.domo.com/embed/pages/yogLV",
+        industry: "Entertainment & Online Ticketing",
+        keywords: "Cross-Selling, Upselling, Revenue Generation, Sales Insights, Marketing Strategy, Customer Engagement, Conversion Rate"
+      },
+      {
+        id: 3,
+        title: "Customer Segmentation & Behavior Insights",
+        description: "Segments customers based on behavior, demographics, and preferences to improve targeting and personalization.",
+        image: "",
+        embed: "https://embed.domo.com/embed/pages/zvjMr",
+        industry: "Entertainment & Online Ticketing",
+        keywords: "Customer Segmentation, Behavior Analysis, Demographics, Target Audience, Market Segmentation, Personalization, Consumer Trends"
+      },
+      {
+        id: 4,
+        title: "Detailed Expense Tracking & Cost Management",
+        description: "Provides insights into the company’s expenses, identifying areas of cost-saving and financial efficiency.",
+        image: "",
+        embed: "https://embed.domo.com/embed/pages/ANk3B",
+        industry: "Entertainment & Online Ticketing",
+        keywords: "Cost Management, Financial Analysis, Budgeting, Expense Tracking, Profitability, Cost Efficiency, Spending Insights"
+      },
+      {
+        id: 5,
+        title: "Customer Feedback & Sentiment Analysis",
+        description: "Analyzes customer feedback to gauge satisfaction, identify pain points, and improve services.",
+        image: "",
+        embed: "https://embed.domo.com/embed/pages/BN03x",
+        industry: "Entertainment & Online Ticketing",
+        keywords: "Customer Feedback, Sentiment Analysis, Customer Satisfaction, Reviews, Ratings, Opinion Mining, Customer Insights, Feedback Trends"
+      },
+      {
+        id: 6,
+        title: "Geographic Distribution & Regional Insights",
+        description: "Segments data based on geographic locations to tailor marketing and event strategies for different regions.",
+        image: "",
+        embed: "https://embed.domo.com/embed/pages/D1n3B",
+        industry: "Entertainment & Online Ticketing",
+        keywords: "Geographic Segmentation, Regional Analysis, Location Insights, Market Distribution, Regional Trends, Local Preferences, Geographic Performance"
+      },
+      {
+        id: 7,
+        title: "Marketing Campaign Performance & Effectiveness",
+        description: "Tracks and evaluates the effectiveness of marketing campaigns and initiatives to boost engagement and sales.",
+        image: "",
+        embed: "https://embed.domo.com/embed/pages/E8o3N",
+        industry: "Entertainment & Online Ticketing",
+        keywords: "Marketing Campaign, Performance, ROI, Effectiveness, Advertising, Campaign Analytics, Customer Acquisition, Marketing Strategy"
+      },
+      {
+        id: 8,
+        title: "Movie and Event Performance & Audience Engagement",
+        description: "Analyzes the performance and popularity of movies and events to optimize offerings and scheduling.",
+        image: "",
+        embed: "https://embed.domo.com/embed/pages/Gvq3y",
+        industry: "Entertainment & Online Ticketing",
+        keywords: "Movie Analysis, Event Performance, Audience Engagement, Box Office, Viewer Insights, Event Popularity, User Engagement"
+      },
+      {
+        id: 9,
+        title: "Revenue Trends & Profitability Insights",
+        description: "Provides detailed insights into revenue streams and profitability, helping to identify growth opportunities and financial health.",
+        image: "",
+        embed: "https://embed.domo.com/embed/pages/1WoYV",
+        industry: "Entertainment & Online Ticketing",
+        keywords: "Revenue Analysis, Profitability, Financial Performance, Trends, Profit Margins, Growth, Sales Performance, Revenue Insights"
+      },
+      {
+        id: 10,
+        title: "Theater Utilization & Seating Efficiency Analysis",
+        description: "Focuses on evaluating and optimizing marketing strategies, campaigns, and return on investment for entertainment offerings.",
+        image: "",
+        embed: "https://embed.domo.com/embed/pages/JywvD",
+        industry: "Entertainment & Online Ticketing",
+        keywords: "Theater Utilization, Seating Efficiency, Occupancy Rate, Venue Management, Theater Performance, Capacity Utilization, Audience Distribution"
       },
     ],
   },

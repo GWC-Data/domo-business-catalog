@@ -6,7 +6,7 @@ import ServicePage from "./page/service";
 import ProjectPage from "./page/project";
 import ProjectDetailsPage from "./page/project_details";
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import ProductPage from "./page/products";
+import ProductPage from "./page/product";
 import AppsPage from "./page/app";
 import AppSubDashboard from "./page/app_subdashboard";
 import AppDashboardDetailsPage from "./page/app_dashboard_details";

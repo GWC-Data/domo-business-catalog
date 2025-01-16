@@ -63,11 +63,11 @@ const Navbar = ({ activeNav }:props) => {
                 <li className={activeNav === "service" ? "nav-item active" : "nav-item"}>
                   <a href="/#/service" className="nav-link">Services</a>
                 </li>
-                <li className={activeNav === "project" ? "nav-item active" : "nav-item"}>
-                  <Link to="/project" className="nav-link">Projects</Link>
-                </li>
                 <li className={activeNav === "product" ? "nav-item active" : "nav-item"}>
                   <Link to="/product" className="nav-link">Products</Link>
+                </li>
+                <li className={activeNav === "project" ? "nav-item active" : "nav-item"}>
+                  <Link to="/project" className="nav-link">Projects</Link>
                 </li>
                 <li className={activeNav === "app" ? "nav-item active ml-2" : "nav-item ml-2"}>
                   <Link to="/app" className="nav-link">360 Apps</Link>

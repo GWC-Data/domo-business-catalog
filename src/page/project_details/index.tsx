@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useParams } from "react-router-dom";
-import { data } from "../../data/data";
+import { projects } from "../../data/projects";
 import Navbar from "../../components/navbar";
 import { useEffect } from "react";
 
@@ -8,7 +8,7 @@ const ProjectDetailsPage = () => {
 
   const { id }:any = useParams();
   
-  const project:any = data?.filter((item) => item.id === parseInt(id));
+  const project:any = projects?.filter((item) => item.id === parseInt(id));
 
   useEffect(() => {
     window.scrollTo({
