@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import Navbar from "../../components/navbar";
 
 const ProductPage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  },[]);
   return (
     <div>
       <div className="sub-banner sub-banner2">

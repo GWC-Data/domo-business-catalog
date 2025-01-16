@@ -1,19 +1,26 @@
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
-import { data } from "../../data/data";
-import { useState } from "react";
+import { projects } from "../../data/projects";
+import { useEffect, useState } from "react";
 const ProjectPage = () => {
 
-  const [filteredData, setFilteredData] = useState(data);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  },[]);
 
-  const industries = [...new Set(data.map((item) => item.industry))];
+  const [filteredData, setFilteredData] = useState(projects);
+
+  const industries = [...new Set(projects.map((item) => item.industry))];
     
   const handleIndustryFilter = (industry: string) => {
     if (industry === "all" || !industry) {
-      setFilteredData(data);
+      setFilteredData(projects);
     } else {
-      setFilteredData(data.filter((item) => item.industry === industry));
+      setFilteredData(projects.filter((item) => item.industry === industry));
     }
   };
 
@@ -21,7 +28,7 @@ const ProjectPage = () => {
   const handleKeywordSearch = (keyword: string) => {
     setKeywordValue(keyword);
     if (!keyword) {
-      setFilteredData(data);
+      setFilteredData(projects);
       return;
     }
     const keywordSearch = filteredData.filter((item) =>

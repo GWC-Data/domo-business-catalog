@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { data } from "../../data/data";
 import Navbar from "../../components/navbar";
 import { useEffect } from "react";
@@ -21,7 +21,7 @@ const ProjectDetailsPage = () => {
   
 
   return (
-    <div>
+    <div style={{overflow: "hidden"}}>
       <div className="sub-banner">
         <figure className="sub-bannerleftlayer mb-0">
           <img src="../assetsimages/sub-bannerleftlayer.png" alt="" className="img-fluid" />
@@ -47,93 +47,53 @@ const ProjectDetailsPage = () => {
         </figure>
       </div>
 
-      {
-        project[0]?.subDashboard.length > 0 ? (
-          <section className="project-section projectpage-section">
-            <figure className="offer-toplayer mb-0">
-              <img src="./assets/images/offer-toplayer.png" alt="" className="img-fluid" />
-            </figure>
-            <div className="container">
-              <div className="project_wrapper">
-                <div className="row" data-aos="fade-up">
-                  {
-                    project[0]?.subDashboard?.map((val: any) => (
-                      <Link to={`/project/${id}/sub-project/${val.id}`} className="col-lg-4 col-md-4 col-sm-6 col-12" >
-                        <div className="case-box overlay">
-                          <div className="overlay-image">
-                            {
-                              val.image ? (
-                                <img src={val.image} alt="" className="w-100 rounded" />
-                              ) : (
-                                <img src="\assets\images\case-image1.jpg" alt="" className="w-100 rounded" />
-                              )
-                            }
-                          </div>
-                          <div className="content">
-                            <span className="text-white">{val.industry}</span>
-                            <h5 className="text-white">{val.title}</h5>
-                          </div>
-                        </div>
-                      </Link>
-                    ))
-                  }
-                </div>
-              </div>
-            </div>
-            <figure className="offer-bottomlayer mb-0">
-              <img src="./assets/images/offer-bottomlayer.png" alt="" className="img-fluid" />
-            </figure>
-          </section>
-        ) : (
-          <>
-            {project.length > 0 && (
-              <section className="blog-posts">
-                <div className="">
-                  <div className="row">
-                    {
-                      project.map((item: any, index: number) => (
+      <>
+        {project.length > 0 && (
+          <section className="blog-posts">
+            <div className="">
+              <div className="row">
+                {
+                  project.map((item: any, index: number) => (
                                 
-                        <div className="col-xl-12 col-lg-12" key={index}>
-                          <div id="blog" className="single-post01">
-                            <div className="post-item">
-                              <div className="post-item-wrap">
-                                <div className="post-image mx-3" data-aos="fade-up">
-                                  {
-                                    item.embed ? (
-                                      <iframe src={item.embed} width="100%" height="1500" frameBorder={"0"}></iframe>
-                                    ) : (
-                                      <img alt="" src="/assets/images/post-featured.jpg" />
-                                    )
-                                  }
+                    <div className="col-xl-12 col-lg-12" key={index}>
+                      <div id="blog" className="single-post01">
+                        <div className="post-item">
+                          <div className="post-item-wrap">
+                            <div className="post-image mx-3" data-aos="fade-up">
+                              {
+                                item.embed ? (
+                                  <iframe src={item.embed} width="100%" height="1500" frameBorder={"0"}></iframe>
+                                ) : (
+                                  <img alt="" src="/assets/images/post-featured.jpg" />
+                                )
+                              }
                                                     
-                                </div>
-                                <div className="container">
-                                  <div className=" post-item-description">
-                                    <h2 className="single-post-heading font_weight_600">{item.title}</h2>
-                                    <div className="">{item.description}</div>
-                                  </div>
-                                  <div className="d-flex flex-wrap">
-                                    {
-                                      keywords[0].map((item: any, index: number) => (
-                                        <div key={index} className="mr-3 my-2 rounded px-3 text-sm py-1 text-left border text-capitalize" style={{ fontSize: "14px"}}>{item}</div>
-                                      ))
-                                    }
-                                  </div>
-                                </div>
+                            </div>
+                            <div className="container">
+                              <div className=" post-item-description">
+                                <h2 className="single-post-heading font_weight_600">{item.title}</h2>
+                                <div className="">{item.description}</div>
+                              </div>
+                              <div className="d-flex flex-wrap">
+                                {
+                                  keywords[0].map((item: any, index: number) => (
+                                    <div key={index} className="mr-3 my-2 rounded px-3 text-sm py-1 text-left border text-capitalize" style={{ fontSize: "14px"}}>{item}</div>
+                                  ))
+                                }
                               </div>
                             </div>
                           </div>
                         </div>
-                      ))
-                    }
+                      </div>
+                    </div>
+                  ))
+                }
                    
-                  </div>
-                </div>
-              </section>
-            )}
-          </>
-        )
-      }
+              </div>
+            </div>
+          </section>
+        )}
+      </>
     </div>
   );
 };

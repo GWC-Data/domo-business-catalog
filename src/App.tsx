@@ -6,9 +6,10 @@ import ServicePage from "./page/service";
 import ProjectPage from "./page/project";
 import ProjectDetailsPage from "./page/project_details";
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import SubProjectDetailsPage from "./page/sub_project-details";
 import ProductPage from "./page/products";
-import AppsPage from "./page/apps";
+import AppsPage from "./page/app";
+import AppSubDashboard from "./page/app_subdashboard";
+import AppDashboardDetailsPage from "./page/app_dashboard_details";
 function App() {
   AOS.init();
 
@@ -20,9 +21,10 @@ function App() {
           <Route path="/product" element={<ProductPage />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/project" element={<ProjectPage />} />
-          <Route path="/app" element={<AppsPage />} />
           <Route path="/project/:id" element={<ProjectDetailsPage />} />
-          <Route path="/project/:id/sub-project/:sub_project_id" element={<SubProjectDetailsPage />} />
+          <Route path="/app" element={<AppsPage />} />
+          <Route path="/app/:id" element={<AppSubDashboard />} />
+          <Route path="/app/:id/sub-dashboard/:sub_project_id" element={<AppDashboardDetailsPage />} />
         </Routes>
       </HashRouter>
     </>

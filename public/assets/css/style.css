@@ -1197,7 +1197,7 @@ p {
 .footer-section::before{
     content: "";
     width: 62%;
-    height: 449px;
+    height: 350px;
     position: absolute;
     left: 0;
     top: 0;

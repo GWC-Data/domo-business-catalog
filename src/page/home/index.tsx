@@ -1,9 +1,16 @@
 /* eslint-disable max-len */
+import { useEffect } from "react";
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import "./home.css";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  },[]);
   return (
     <>
       <div className="banner_outer">
@@ -39,13 +46,13 @@ const HomePage = () => {
                       <source src="./assets/images/Homepage.mp4" type="video/mp4" />
                     </video> */}
                   </figure>
-                  <div className="position-relative">
+                  {/* <div className="position-relative">
                     <a className="popup-vimeo" href="https://video-previews.elements.envatousercontent.com/h264-video-previews/d1c81f1e-849f-4d45-ae57-b61c2f5db34a/25628048.mp4">
                       <figure className="mb-0 banner-vedioimage">
                         <img className="thumb img-fluid" src="./assets/images/banner-vedioimage.png" alt="" />
                       </figure>
                     </a>
-                  </div>
+                  </div> */}
                   <figure className="banner-circleright mb-0">
                     <img src="./assets/images/banner-circleright.png" className="img-fluid" alt="" />
                   </figure>

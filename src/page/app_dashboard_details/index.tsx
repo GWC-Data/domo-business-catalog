@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import {useParams } from "react-router-dom";
-import { data } from "../../data/data";
+import { apps } from "../../data/apps";
 import Navbar from "../../components/navbar";
 import { useEffect } from "react";
 
-const SubProjectDetailsPage = () => {
+const AppDashboardDetailsPage = () => {
 
   const { id, sub_project_id }:any = useParams();
-  const project:any = data?.filter((item) => item.id === parseInt(id));
+  const project:any = apps?.filter((item) => item.id === parseInt(id));
   const subProject: any = project[0]?.subDashboard?.filter((item: any) => item.id === parseInt(sub_project_id));
 
   useEffect(() => {
@@ -20,12 +20,12 @@ const SubProjectDetailsPage = () => {
   const keywords = subProject?.map((item: any) => item.keywords.split(","));
 
   return (
-    <div>
+    <div style={{overflow: "hidden"}}>
       <div className="sub-banner">
         <figure className="sub-bannerleftlayer mb-0">
           <img src="../assetsimages/sub-bannerleftlayer.png" alt="" className="img-fluid" />
         </figure>
-        <Navbar activeNav="project" />
+        <Navbar activeNav="app" />
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-12 mb-5">
@@ -96,4 +96,4 @@ const SubProjectDetailsPage = () => {
   );
 };
 
-export default SubProjectDetailsPage;
+export default AppDashboardDetailsPage;

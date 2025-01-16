@@ -7,6 +7,7 @@ import { FaFileMedicalAlt } from "react-icons/fa";
 import { ImEmbed2 } from "react-icons/im";
 import { BsDatabaseFillUp } from "react-icons/bs";
 import { MdVerifiedUser } from "react-icons/md";
+import Footer from "../../components/footer";
 
 declare global {
   interface Window {
@@ -60,6 +61,13 @@ const ServicePage = () => {
       link: "./single-post.html",
     }
   ];
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  },[]);
 
   useEffect(() => {
     // Initialize owl carousel
@@ -187,6 +195,8 @@ const ServicePage = () => {
           <img src="./assets/images/offer-bottomlayer.png" alt="" className="img-fluid" />
         </figure>
       </section>
+
+      <Footer />
     </>
   );
 };

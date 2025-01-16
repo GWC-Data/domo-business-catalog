@@ -327,7 +327,7 @@ p {font-size: 18px; line-height: 28px;}
 .blog-section .owl-carousel .owl-dots .owl-dot span {width: 13px; height: 13px;}
 .blog-section .owl-carousel .owl-dots .owl-dot.active span {width: 16px; height: 16px;}
 .footer-section {padding: 110px 0 0;}
-.footer-section::before {height: 472px;}
+.footer-section::before {height: 350px;}
 .footer-section .middle-portion {margin-bottom: 40px;}
 .footer-section .middle-portion .first-column p {margin-bottom: 12px;}
 .footer-section .middle-portion .lower .icon {top: 0; margin-bottom: 10px;}
