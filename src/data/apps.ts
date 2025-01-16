@@ -191,7 +191,7 @@ export const apps = [
     title: "Comprehensive Insights for Healthcare Operations",
     description:
     "Developing Dashboards to cover all 360 view of healthcare domain. This dashboards speaks about Operational management, finance, pharmacy, patient satisfaction, Physician performance, etc. Domo features - Using field parameters, App studio to make the dashboard dynamic.",
-    image: "",
+    image: "/assets/images/projects/apps/Comprehensive Insights for Healthcare Operations.png",
     embed: "",
     industry: "Healthcare",
     keywords: "Healthcare Analytics, Patient Care, Operational Efficiency, Financial Performance, Medical Insights, Resource Optimization, Healthcare Performance, Cost Efficiency, Patient Satisfaction, Workforce Management",
@@ -302,7 +302,7 @@ export const apps = [
     title: "Manufacturing 360",
     description:
     "Provides comprehensive insights into key operational areas, including supply chain, production, quality, and workforce, to drive efficiency and strategic growth. It integrates data into a unified platform for real-time monitoring and decision-making.",
-    image: "",
+    image: "/assets/images/projects/apps/Manufacturing.png",
     embed: "",
     industry: "Manufacturing",
     keywords: "",
@@ -412,7 +412,7 @@ export const apps = [
     id: 5,
     title: "Entertainment 360",
     description:"",
-    image: "",
+    image: "/assets/images/projects/apps/Entertainment.png",
     embed: "",
     industry: "Entertainment & Online Ticketing",
     keywords: "",
