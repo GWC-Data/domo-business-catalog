@@ -201,7 +201,7 @@ export const apps = [
         title: "Optimizing Workflow and Resource Utilization",
         description: "This report provides overview of the hospital performance.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/ROA6w",
         industry: "Healthcare",
         keywords: "Appointment Scheduling, Patient Flow, Resource Allocation, Department Utilization, Healthcare Efficiency, Operational Metrics, Staff Productivity, Utilization Rates, Patient Overview, Resource Optimization"
       },
@@ -210,7 +210,7 @@ export const apps = [
         title: "Improving Employee and Patient Efficiency",
         description: "This report provides insights about the Physician attendance, staffs, utilization of resource.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/VAGOo",
         industry: "Healthcare",
         keywords: "Workforce Analytics, Employee Performance, Patient Care Efficiency, Logistics Management, Employee Overview, Caregiver Productivity, Workforce Utilization, Logistics Optimization, Performance Insights, Staff Scheduling"
       },
@@ -219,7 +219,7 @@ export const apps = [
         title: "Evaluating Clinical and Quality Metrics",
         description: "This report speaks about the physicians and their performance.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/WLJ6o",
         industry: "Healthcare",
         keywords: "Physician Performance, Clinical Metrics, Quality Assessment, Healthcare Quality, Performance Insights, Physician Productivity, Care Quality, Medical Outcomes, Physician Efficiency, Clinical Analysis"
       },
@@ -228,7 +228,7 @@ export const apps = [
         title: "Managing Stock and Fulfillment Efficiency",
         description: "This dashboard is designed to give healthcare administrators and inventory managers a comprehensive view of their inventory, helping them track supplies, manage stock levels, and optimize ordering processes. It aims to ensure that critical supplies are always available and to streamline inventory management",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/XLKDV",
         industry: "Healthcare",
         keywords: "Inventory Management, Stock Analysis, Order Fulfillment, Operational Efficiency, Financial Performance, Inventory Optimization, Fulfillment Metrics, Stock Availability, Cost Efficiency, Order Performance"
       },
@@ -237,7 +237,7 @@ export const apps = [
         title: "Driving Revenue and Cost Optimization",
         description: "A Finance Dashboard for Healthcare 360 is designed to provide a comprehensive view of financial metrics and performance indicators specific to the healthcare sector. It helps in monitoring, analyzing, and managing the financial aspects of healthcare operations.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/YWLEY",
         industry: "Healthcare",
         keywords: "Revenue Analysis, Profitability Metrics, Cost Efficiency, Financial Performance, Operational Costs, Revenue Growth, Expense Management, Patient Financials, Operational Metrics, Profit Margins"
       },
@@ -246,7 +246,7 @@ export const apps = [
         title: "Insights on Medicine, Revenue, and Suppliers",
         description: "This report gives information about the pharmacy sales, stocks, manpower and suppliers.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/ZYM6g",
         industry: "Healthcare",
         keywords: "Medicine Stock, Revenue Analysis, Supplier Performance, Pharmaceutical Revenue, Inventory Management, Stock Levels, Profitability Metrics, Supplier Efficiency, Cost Analysis, Pharmaceutical Supply"
       },
@@ -255,7 +255,7 @@ export const apps = [
         title: "Diagnostics and Historical Patient Data",
         description: "The Laboratory & Scan Analysis module is designed to provide comprehensive insights into laboratory results and scan reports for patients. This module aids healthcare providers in diagnosing, monitoring, and managing patient health conditions by offering detailed analyses of various tests and scans.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/1WZwq",
         industry: "Healthcare",
         keywords: "Laboratory Analysis, Scan Reports, Patient Data, Historical Data, Diagnostic Insights, Medical Imaging, Test Results, Healthcare Analytics, Scan Performance, Patient Outcomes"
       },
@@ -264,7 +264,7 @@ export const apps = [
         title: "Reducing Waste and Maximizing Savings",
         description: "This dashboard offers insights into waste generation, disposal, and recycling within a healthcare facility. It aims to track and optimize waste management practices, ensure compliance with regulations, and identify opportunities for reducing waste and improving sustainability.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/5QZyX",
         industry: "Healthcare",
         keywords: "Waste Management, Cost Efficiency, Recycling Savings, Waste Reduction, Environmental Impact, Sustainability Metrics, Operational Efficiency, Waste Disposal, Savings Analysis, Resource Optimization"
       },
@@ -273,7 +273,7 @@ export const apps = [
         title: "Facility and Equipment Performance Insights",
         description: "The Maintenance Dashboard in the Healthcare, tracks equipment maintenance history, upcoming service schedules, and monitors energy consumption. It helps Facilities Managers optimize upkeep, ensure compliance, and identify cost-saving opportunities through efficient asset management.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/71Z3B",
         industry: "Healthcare",
         keywords: "Equipment Performance, Maintenance Efficiency, Facility Operations, Environmental Impact, Operational Efficiency, Healthcare Maintenance, Equipment Uptime, Sustainability Metrics, Facility Optimization, Patient Care Efficiency"
       },
@@ -282,7 +282,7 @@ export const apps = [
         title: "Streamlining Claims and Reimbursements",
         description: "The Insurance Dashboard in healthcare captures detailed insights into insurance companies, claim statuses, and reimbursement timelines, helping streamline operations for Financial and Claims Management teams.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/3Q81p",
         industry: "Healthcare",
         keywords: "Claim Processing, Revenue Analysis, Reimbursement Metrics, Insurance Claims, Financial Reimbursement, Operational Efficiency, Claims Performance, Insurance Revenue, Claim Approval, Payment Recovery"
       },
@@ -291,7 +291,7 @@ export const apps = [
         title: "Improving Feedback and Care Quality",
         description: "This dashboard shows how satisfied patients are with their healthcare experience. It includes key metrics like overall satisfaction scores, wait times, communication with doctors, and cleanliness. The dashboard helps healthcare teams track patient feedback and identify areas that need improvement to ensure better care and service quality.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/4QZxJ",
         industry: "Healthcare",
         keywords: "Patient Satisfaction, Patient Feedback, Healthcare Experience, Patient Engagement, Satisfaction Metrics, Service Quality, Patient Insights, Feedback Analysis, Experience Metrics, Care Quality"
       },
@@ -306,13 +306,14 @@ export const apps = [
     embed: "",
     industry: "Manufacturing",
     keywords: "",
+    
     subDashboard: [
       {
         id: 1,
-        title: "KPi Score card analysis",
+        title: "KPI Score card analysis",
         description: "KPI Scorecard is used to find key performance indicators to track and measure organizational progress toward strategic goals.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/BNZBo",
         industry: "Manufacturing",
         keywords: "Scorecard, Overview, Threshold, Targets"
       },
@@ -321,7 +322,7 @@ export const apps = [
         title: "Inventory Management Analysis",
         description: "Manages inventory levels and ensures a smooth supply chain.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/D1jkk",
         industry: "Manufacturing",
         keywords: "Inventory, Supplier, Aeging, Stock, Turnover, Stock, COGS, Delivary, Fullfillment, Delay, on-Time, Orders, Reasons, Suppliers"
       },
@@ -330,7 +331,7 @@ export const apps = [
         title: "Supply chain and Forecasting Analysis",
         description: "Manages the entire supply chain from suppliers to delivery.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/E8kRl",
         industry: "Manufacturing",
         keywords: "Supply chain, Perfect Order, Inventory, Ratio, Lead Time, Profit, Distributor, order Volume, Automotive, Order Tracking, Forcasting, Demand, Cost, Price, Accuracy, Stock Out, Mean Absolute, Lead time, Service Level, relaiability, on-time, Fill rate"
       },
@@ -339,7 +340,7 @@ export const apps = [
         title: "Scrap amd Defect Analysis",
         description: "Ensures that products meet quality standards and identifies areas for improvement.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/Gvm65",
         industry: "Manufacturing",
         keywords: "Scrap, Defects, products, Cost, pareto, First Pass Yield, FPY Improvements, Root Cause, defect Reasons, issue, root cause accuracy, Resolution, issue fixes, root cause effectiveness"
       },
@@ -348,7 +349,7 @@ export const apps = [
         title: "Maintenance Frequency and Downtime Analysis",
         description: "Monitors the maintenance activities and health of equipment.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/Jyp6y",
         industry: "Manufacturing",
         keywords: "Maintanance, Repairs, MTTR, Completed, Failure, Defects, Downtime, Forecast, Cost, Incident, Equipment, Machine, Idle time, Utilization, Production"
       },
@@ -357,7 +358,7 @@ export const apps = [
         title: "Labor Productivity and Employee Satisfaction analysis",
         description: "Optimizes the management of the workforce to ensure productivity, safety, and employee satisfaction.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/K1qr8",
         industry: "Manufacturing",
         keywords: "Labour, Productivity, Efficiency, overtime, Actuals, targets, Labour Cost, Productivity, Performance, Attendance, Absentees, Login, Employees, LRC, Shift, Satisfaction, Retention, hires, Active Employee, inactive Employee, NPS"
       },
@@ -366,7 +367,7 @@ export const apps = [
         title: "Energy Consumption and Carbon footprint analysis",
         description: "Monitors and improves the energy efficiency and environmental impact of manufacturing operations.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/L7r9v",
         industry: "Manufacturing",
         keywords: "Energy Consumption, Cost, Efficiency, Intensity, peak energy, Demand, Carbon, emission, scope, Reduction, certification, savings, cost, gains, waste, target, sustainability, programs"
       },
@@ -375,7 +376,7 @@ export const apps = [
         title: "Finance Dashboard",
         description: "Tracks the financial performance and cost efficiency of manufacturing operations.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/Mwv81",
         industry: "Manufacturing",
         keywords: "Net Profit, Gross, P&L, Account payable, Expense, CCC, income, profit, Margin, Expenses, Liqudity, Financial Roatio, Turnovers, Cash"
       },
@@ -384,7 +385,7 @@ export const apps = [
         title: "Customer Satisfaction Dashboard",
         description: "Measures and improves the satisfaction and experience of customers with the manufactured products.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/NLwk8",
         industry: "Manufacturing",
         keywords: "Delivary, Shipping, Orders, Accuracy, Pack, backorder, Ontime, Shipping, Carrier, Customer Satisfaction, Warehouse, Shipment, Complaint, Resolution, SLA, RCR, Ticket, NPS, Customer Loyalty, Promotor, Detractor, Passives"
       },
@@ -393,7 +394,7 @@ export const apps = [
         title: "Safety and Compliance Dashboard",
         description: "Ensures that safety standards and regulatory requirements are met.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/OMxYE",
         industry: "Manufacturing",
         keywords: "Incident, Loses,Severity, Compliance, SLA, Issues, Production, maintanance, Quality Assurance, Logistics, Saftyy, Employees, Fail, Pass, Success, Training"
       },
@@ -402,7 +403,7 @@ export const apps = [
         title: "Production Volume Dashbaord",
         description: "Monitors the overall production performance and efficiency.",
         image: "",
-        embed: "",
+        embed: "https://embed.domo.com/embed/pages/P7yN6",
         industry: "Manufacturing",
         keywords: "Production, defects, Supplier, OEE, Weekly analysis, , products, managers, Utilization, Uptime, Throughput, maintanance, capacity, Yield, Quality, Rework, Returns, COPQ, Downtime"
       },

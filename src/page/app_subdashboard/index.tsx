@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Link, useParams } from "react-router-dom";
 import { apps } from "../../data/apps";
@@ -45,6 +46,7 @@ const AppSubDashboard = () => {
             <img src="../assetsimages/sub-bannerrightlayer.png" alt="" className="img-fluid" />
           </figure>
         </div>
+        
 
         {
           project[0]?.subDashboard.length > 0 ? (
@@ -53,37 +55,88 @@ const AppSubDashboard = () => {
                 <img src="./assets/images/offer-toplayer.png" alt="" className="img-fluid" />
               </figure>
               <div className="container">
-
-                <div>
-                  {project.length > 0 && (
-                    <section className="blog-posts">
-                      <div className="">
-                        <div className="row">
-                          {
-                            project.map((item: any, index: number) => (
-                              <div className="col-xl-12 col-lg-12" key={index}>
-                                <div id="blog" className="single-post01">
-                                  <div className="post-item">
-                                    <div className="post-item-wrap">
-                                      <div className="container">
-                                        <div className=" post-item-description">
-                                          <h2 className="single-post-heading font_weight_600">{item.title}</h2>
-                                          <div className="">{item.description}</div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            ))
-                          }
-                        </div>
-                      </div>
-                    </section>
-                  )}
-                </div>
-
                 <div className="project_wrapper">
+                  {
+                    project[0]?.title === "Manufacturing 360°" && (
+                      <section className="mb-5">
+                        <div>
+                          <h5>What is Manufacturing360?</h5>
+                          <p>Manufacturing360 is a comprehensive, data-driven analytics solution designed specifically for the manufacturing industry. It provides actionable insights into all key areas of operations, helping organizations optimize performance, reduce costs, and achieve sustainable growth. With dashboards tailored for every aspect of manufacturing, Manufacturing360 empowers teams to make smarter decisions and stay competitive in a dynamic market.</p>
+                        </div>
+                        <div className="row position-relative mt-4">
+                          <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 article_padding">
+                            <h5 className="text-center mb-3">Why Manufacturing 360?</h5>
+                            <p>
+                              <ul className="list-unstyled mb-0">
+                                <li className="text text-size-18">
+                                  <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                                  <strong>Holistic Visibility: </strong> Get a 360° view of the entire manufacturing process—from supply chain to production, inventory, and quality management.
+                                </li>
+                                <li className="text text-size-18">
+                                  <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                                  <strong>Proactive Monitoring: </strong> SIdentify issues and opportunities in real-time to minimize downtime and maximize productivity.
+                                </li>
+                                <li className="text text-size-18">
+                                  <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                                  <strong>Industry-Specific Insights: </strong> Tailored dashboards and KPIs for the unique challenges of manufacturing.
+                                </li>
+                                <li className="text text-size-18">
+                                  <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                                  <strong>Enhanced Collaboration: </strong> Align cross-functional teams with centralized data and shared insights.
+                                </li>
+                                <li className="text text-size-18">
+                                  <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                                  <strong>Sustainability & Innovation: </strong> Drive green initiatives and innovation with energy and waste management dashboards.
+                                </li>
+                                <li className="text text-size-18">
+                                  <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                                  <strong>Future-Ready Analytics: </strong> Leverage predictive and prescriptive analytics to adapt to evolving demands.
+                                </li>
+                              </ul>
+                            </p>
+                          </div>
+                          <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 article_padding">
+                            <h5 className="text-center mb-3">Business Outcomes</h5>
+                            <p>
+                              <ul className="list-unstyled mb-0">
+                                <li className="text text-size-18">
+                                  <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                                  <strong>Increased Operational Efficiency: </strong>
+                                  Optimize workflows and reduce production downtime.
+                                </li>
+                                <li className="text text-size-18">
+                                  <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                                  <strong>Cost Reduction: </strong>
+                                  Identify inefficiencies and minimize expenses.
+                                </li>
+                                <li className="text text-size-18">
+                                  <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                                  <strong>Revenue Growth: </strong>
+                                  Align production and inventory strategies to market demands.
+                                </li>
+                                <li className="text text-size-18">
+                                  <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                                  <strong>Customer Satisfaction: </strong>
+                                  Deliver high-quality products and on-time deliveries.
+                                </li>
+                                <li className="text text-size-18">
+                                  <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                                  <strong>Sustainability:: </strong>
+                                  Reduce environmental impact and meet regulatory standards.
+                                </li>
+                                <li className="text text-size-18">
+                                  <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                                  <strong>Informed Decision-Making: </strong>
+                                  Provide decision-makers with accurate, actionable data.
+                                </li>
+                              </ul>
+                            </p>
+                          </div>
+                        </div>
+                      </section>
+                    )
+                  }
+        
                   <div className="row" data-aos="fade-up">
                     {
                       project[0]?.subDashboard?.map((val: any) => (
