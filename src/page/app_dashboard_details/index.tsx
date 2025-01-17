@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import {useParams } from "react-router-dom";
+import {Link, useParams } from "react-router-dom";
 import { apps } from "../../data/apps";
 import Navbar from "../../components/navbar";
 import { useEffect } from "react";
@@ -33,6 +33,7 @@ const AppDashboardDetailsPage = () => {
                 <figure className="service-rightcircle mb-0">
                   <img src="../assetsimages/service-rightcircle.png" alt="" className="img-fluid" />
                 </figure>
+                <Link to={`/app/${project[0]?.id}`} className="text-white h5" style={{zIndex: 100}}>{project[0]?.title}</Link>
                 <h1 className="text-white">{subProject[0]?.title}</h1>
               </div>
             </div>
@@ -54,7 +55,7 @@ const AppDashboardDetailsPage = () => {
               {
                 subProject.map((item: any) => (
                                 
-                  <div className="col-xl-12 col-lg-12">
+                  <div className="col-xl-12 col-lg-12" key={item.id}>
                     <div id="blog" className="single-post01">
                       <div className="post-item">
                         <div className="post-item-wrap">

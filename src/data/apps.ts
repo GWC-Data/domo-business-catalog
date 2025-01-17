@@ -116,7 +116,7 @@ export const apps = [
         id: 1,
         title: "Financial Performance",
         description: "P&L Analysis provided a detailed view of the hotel's financial performance, highlighting profitability across different departments. Financial Breakdown helped assess the cost structure, pinpointing areas for cost-saving without compromising quality. Supplier Cost Analysis evaluated vendor pricing and negotiated better deals, improving margins. Cashflow Analysis ensured that the hotel maintained healthy liquidity, tracking the inflow and outflow of funds. Liquidity Ratio analysis assessed the hotel's ability to meet short-term obligations, providing insights into financial stability and operational efficiency.",
-        image: "",
+        image: "/assets/images/projects/fb_360/Financial Performance.png",
         embed: "https://embed.domo.com/embed/pages/mOz6p",
         industry: "Food & Beverage Sector",
         keywords: "P&L Analysis, Financial Breakdown, Supplier Cost Analysis, Cashflow Analysis, Liquidity Ratio"
@@ -125,16 +125,16 @@ export const apps = [
         id: 2,
         title: "Inventory Analysis",
         description: "Inventory Turnover Analysis tracked how efficiently the hotel managed its food and beverage stock, ensuring optimal inventory levels and minimizing waste. Regional Stock analysis helped tailor inventory to specific locations, ensuring demand was met across different outlets. Reorder Levels were optimized to prevent stockouts while avoiding overstocking, balancing supply with demand. Stock Out and Overstock Analysis identified areas where inventory management could be improved, reducing waste and ensuring product availability. Supplier Performance evaluation assessed the reliability and quality of suppliers, while Supplier Compliance ensured adherence to agreed-upon terms, enhancing operational efficiency and maintaining consistent product quality.",
-        image: "",
+        image: "/assets/images/projects/fb_360/Inventory Analysis.png",
         embed: "https://embed.domo.com/embed/pages/nxAX4",
         industry: "Food & Beverage Sector",
         keywords: "Inventory Turnover Analysis, Regional Stock, Reorder Levels, Stock out and Overstock Analysis, Supplier Performance,  Supplier Compliance"
       },
       {
         id: 3,
-        title: "Quality Dashboard",
+        title: "Quality Analysis",
         description: "Food Inspection Analysis ensured that food safety standards were consistently met, identifying areas for improvement in hygiene and preparation. Employee Training Rate evaluated the effectiveness of staff training programs, ensuring employees were well-equipped to maintain high service standards. Violations were tracked to ensure compliance with health regulations, minimizing risks. Customer Complaints provided insights into service and quality issues, helping to address concerns proactively. Customer Satisfaction analysis gauged overall dining experience, while Food Quality assessments identified areas for enhancement. Meal Ratings gathered direct feedback from guests, enabling continuous improvement in menu offerings and dining services.",
-        image: "",
+        image: "/assets/images/projects/fb_360/Quality Analysis.png",
         embed: "https://embed.domo.com/embed/pages/oVBKz",
         industry: "Food & Beverage Sector",
         keywords: "Food Inspection Analysis, Employee Training rate,  Violations, Customer Complaints, Customer Satisfaction, Food Quality, Meal Ratings"
@@ -143,7 +143,7 @@ export const apps = [
         id: 4,
         title: "Employee Performance",
         description: "Employee Productivity was assessed to identify areas for improvement and ensure optimal output across teams. Billable Hours analysis tracked the time spent on revenue-generating tasks, helping to maximize profitability. Handling Time was evaluated to streamline processes and improve efficiency in customer service or operational tasks. Employee Turnover Rate provided insights into retention challenges, while Tenure analysis highlighted employee loyalty and experience within the company. Return on Training Investment measured the impact of training programs, ensuring that employee development efforts translated into improved performance and business outcomes.",
-        image: "",
+        image: "/assets/images/projects/fb_360/Employee Performance.png",
         embed: "https://embed.domo.com/embed/pages/oVBKz",
         industry: "Food & Beverage Sector",
         keywords: "Employee Productivity, Billable Hours, Handling Time, Employee Turnover Rate, Tenure, Return on Training Investment"
@@ -152,16 +152,16 @@ export const apps = [
         id: 5,
         title: "Sales Analysis",
         description: "Daily Sales analysis tracked overall revenue, providing insights into sales trends and daily performance. Online vs. In-Person Food Sales comparison highlighted the balance between digital and in-store purchases, guiding marketing and service strategies. Promotional Sales were evaluated to measure the effectiveness of special offers, ensuring they drove customer traffic and increased revenue. Product Performance analysis identified top-selling and underperforming items, allowing for menu adjustments. Menu Profitability was assessed to ensure high-margin items were prioritized. Pareto Analysis (80/20 Rule) highlighted the most impactful products, guiding decision-making. Lastly, Food Waste Rate analysis identified inefficiencies in inventory and portion control, helping reduce waste and improve profitability.",
-        image: "",
+        image: "/assets/images/projects/fb_360/Sales Analysis.png",
         embed: "https://embed.domo.com/embed/pages/p8DK1",
         industry: "Food & Beverage Sector",
         keywords: "Daily Sales, Online vs. In-Person Food Sales, Promotional Sales, Product Performance, Menu Profitability, Pareto Analysis, Food Waste Rate"
       },
       {
         id: 6,
-        title: "Marketing",
+        title: "Marketing Analysis",
         description: "Campaign Performance tracked the effectiveness of marketing initiatives, measuring reach and impact on sales. Engagement and Conversion Analysis provided insights into how well marketing efforts resonated with customers, identifying areas to boost conversions. Cost Per Lead evaluated the efficiency of lead generation efforts, helping optimize marketing spend. Marketing ROI assessed the return on investment for campaigns, ensuring that resources were used effectively to drive revenue. Customer Segment analysis allowed for targeted marketing, tailoring campaigns to the needs and preferences of specific customer groups, maximizing engagement and sales.",
-        image: "",
+        image: "/assets/images/projects/fb_360/Comprehensive Insights for Healthcare Operations.png",
         embed: "https://embed.domo.com/embed/pages/q7E53",
         industry: "Food & Beverage Sector",
         keywords: "Campaign Performance, Engagement and Conversion Analysis, Cost Per Lead, Marketing ROI, Customer Segment"
@@ -170,7 +170,7 @@ export const apps = [
         id: 7,
         title: "Footfall and Density Analysis",
         description: "Customer Footfall analysis tracked the number of visitors, providing insights into peak times and overall traffic patterns. The Impact of Promotions was measured to assess how special offers influenced foot traffic and sales during specific periods. Periodical Analysis identified trends over different timeframes, helping to optimize marketing and operational strategies. Traffic Flow during peak hours was evaluated to manage crowding and improve customer experience. Customer Density and Space Utilization analyses helped optimize store layout, ensuring efficient use of space and improving flow. Customer Density per Square Foot was assessed to avoid overcrowding and ensure a comfortable shopping environment.",
-        image: "",
+        image: "/assets/images/projects/fb_360/Footfall and Density Analysis.png",
         embed: "https://embed.domo.com/embed/pages/r8G5w",
         industry: "Food & Beverage Sector",
         keywords: "Customer Footfall, Impact of Promotions, Periodical Analysis, Traffic Flow in peak Hours, Customer Density, Space Utilization, Customer Density per Square Foot, Customer Density per Square Foot"
@@ -179,7 +179,7 @@ export const apps = [
         id: 8,
         title: "Customer Feedback",
         description: "NPS (Net Promoter Score) was used to measure overall customer satisfaction, categorizing customers into Promoters, Passives, and Detractors. Promoters were identified as loyal advocates, while Passives indicated satisfied but unenthusiastic customers, and Detractors highlighted areas requiring attention. Customer Reviews provided direct feedback, helping pinpoint strengths and weaknesses. Customer Complaint Resolution was analyzed to evaluate the effectiveness of addressing issues, while Recurring Complaints identified persistent problems, guiding improvements in products or services to enhance the overall customer experience.",
-        image: "",
+        image: "/assets/images/projects/fb_360/Customer Feedback.png",
         embed: "https://embed.domo.com/embed/pages/vlM5V",
         industry: "Food & Beverage Sector",
         keywords: "NPS, Promotors, Passives, Detractors, Customer Reviews, Customer Complaint Resolution, Recurring Complaints"
