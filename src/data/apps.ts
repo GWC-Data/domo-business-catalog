@@ -2,7 +2,7 @@
 export const apps = [
   {
     id: 1,
-    title: "360° Retail Analytics",
+    title: "Retail 360°",
     description:
     "The retail stores can range from small local shops to large chain stores, offering products like clothing, groceries, electronics, or household items. Retail stores serve as the final point in the supply chain, providing customers with convenient access to products and often focusing on customer service and in-store experiences. \n \n The Retail 360 POC features a comprehensive suite of dashboards designed to enhance business insights. These include dashboards for upsell/cross-sell opportunities, customer advocacy, lifetime value (LTV), competitor analysis, consumer trends, geospatial data, executive summaries, financial performance, and strategic initiatives. Each dashboard provides valuable analytics to improve decision-making, track customer behaviors, monitor competitive positioning, and assess overall financial health. This holistic approach enables businesses to optimize their strategies and enhance customer satisfaction effectively.",
     image: "/assets/images/projects/Retail Analytics.png",
@@ -104,7 +104,7 @@ export const apps = [
   },
   {
     id: 2,
-    title: "The Recipe for Data-Driven F&B Operations",
+    title: "Food Beverage 360°",
     description:
     "A Food and Beverage company focuses on sourcing quality ingredients, producing safe products, engaging customers, managing efficient supply chains, ensuring financial health, and adhering to regulations while promoting sustainability and innovation. \n \n We implemented a comprehensive analysis for the Food and Beverage industry, covering key areas such as sales, inventory, competitor insights, customer metrics, finance, footfall and density, marketing effectiveness, quality control, franchise performance, and employee productivity. This analysis provided detailed insights into sales trends, inventory management, and competitor positioning, while also evaluating customer satisfaction and financial health. Additionally, we assessed foot traffic patterns and marketing impact, ultimately enhancing operational efficiency and strategic decision-making across all facets of the business.",
     image: "/assets/images/projects/The Recipe for Data-Driven FB Operations.png",
@@ -188,7 +188,7 @@ export const apps = [
   },
   {
     id: 3,
-    title: "Comprehensive Insights for Healthcare Operations",
+    title: "Healthcare 360°",
     description:
     "Developing Dashboards to cover all 360 view of healthcare domain. This dashboards speaks about Operational management, finance, pharmacy, patient satisfaction, Physician performance, etc. Domo features - Using field parameters, App studio to make the dashboard dynamic.",
     image: "/assets/images/projects/apps/Comprehensive Insights for Healthcare Operations.png",
@@ -299,7 +299,7 @@ export const apps = [
   },
   {
     id: 4,
-    title: "Manufacturing 360",
+    title: "Manufacturing 360°",
     description:
     "Provides comprehensive insights into key operational areas, including supply chain, production, quality, and workforce, to drive efficiency and strategic growth. It integrates data into a unified platform for real-time monitoring and decision-making.",
     image: "/assets/images/projects/apps/Manufacturing.png",
@@ -410,7 +410,7 @@ export const apps = [
   },
   {
     id: 5,
-    title: "Entertainment 360",
+    title: "Entertainment 360°",
     description:"",
     image: "/assets/images/projects/apps/Entertainment.png",
     embed: "",

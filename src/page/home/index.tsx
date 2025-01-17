@@ -27,9 +27,6 @@ const HomePage = () => {
                   <h6 className="text-white">WE PROVIDE OUTSOURCED</h6>
                   <h1 className="text-white">IT Services & Solutions</h1>
                   <p>Empowering Business with Data & AI Insights to Drive Informed Actions.</p>
-                  <a className="get_started button1 text-white text-decoration-none" href="./contact.html">Get Started
-                    <figure className="mb-0"><img src="./assets/images/button-arrow.png" alt="" className="img-fluid" /></figure>
-                  </a>
                   <figure className="banner-circleleft mb-0">
                     <img src="./assets/images/banner-circleleft.png" className="img-fluid" alt="" />
                   </figure>

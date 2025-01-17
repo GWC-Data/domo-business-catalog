@@ -177,12 +177,6 @@ const ServicePage = () => {
                       <div className="lower_portion">
                         <h4>{post.title}</h4>
                         <p className="text-size-18">{post.excerpt}</p>
-                        <a className="read_more text-decoration-none" href={post.link}>
-                          Read More
-                          <figure className="arrow mb-0">
-                            <img src="./assets/images/blog-arrow.png" alt="" className="img-fluid" />
-                          </figure>
-                        </a>
                       </div>
                     </div>
                   </div>

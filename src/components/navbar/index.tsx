@@ -69,10 +69,30 @@ const Navbar = ({ activeNav }:props) => {
                 <li className={activeNav === "project" ? "nav-item active" : "nav-item"}>
                   <Link to="/project" className="nav-link">Projects</Link>
                 </li>
-                <li className={activeNav === "app" ? "nav-item active ml-2" : "nav-item ml-2"}>
-                  <Link to="/app" className="nav-link">360 Apps</Link>
+                <li className={activeNav === "app" ? "nav-space nav-item dropdown active ml-2" : "nav-space nav-item dropdown ml-2"}>
+                  <Link to="/app" className="nav-link dropdown-toggle dropdown-color navbar-text-color app_nav" id="navbarDropdownmain" role="button" data-toggle="dropdown"> 360 Apps</Link>
+                  <div className="dropdown-menu drop-down-content app_nav_content">
+                    <ul className="list-unstyled drop-down-pages">
+                      <li className="nav-item">
+                        <Link to="/app/1" className="dropdown-item nav-link">Retail 360°</Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to="/app/2" className="dropdown-item nav-link">Food Beverage 360°</Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to="/app/3" className="dropdown-item nav-link">Healthcare 360°</Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to="/app/4" className="dropdown-item nav-link">Manufacturing 360°</Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to="/app/5" className="dropdown-item nav-link">Entertainment 360°</Link>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
+              
             </div>
           </nav>
         </div>

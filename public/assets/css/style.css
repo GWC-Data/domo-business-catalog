@@ -2650,3 +2650,26 @@ p {
 }
 
 
+
+/* Ensure the dropdown menu appears on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Optional: Add a smooth transition effect */
+.dropdown-menu {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    /* display: block; */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-toggle::after {
+    vertical-align: 0.1em !important;
+    border-radius: 10px !important;
+}
