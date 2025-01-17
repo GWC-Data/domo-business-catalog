@@ -57,7 +57,7 @@ const ProjectPage = () => {
                     <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
                   </figure>
                   <h1 className="text-white">Our projects</h1>
-                  <p>Roidunt eget semper nec ruam sed hendrerit morbi ac feliseao augue pellentesue morbi acer.</p>
+                  <p>Explore our diverse range of projects, crafted with precision and creativity. See how we bring ideas to life for our clients.</p>
                 </div>
               </div>
             </div>
@@ -83,8 +83,7 @@ const ProjectPage = () => {
               <div className="project_content" data-aos="fade-right">
                 <h6>RECENT PROJECTS</h6>
                 <h2>Our Latest Case Studies</h2>
-                <p>Dursus mal suada faci lisis lorem ipsum dolarorit more ame ion consectetur elit vesti at bulum nec
-                        odio aea the dumm recreo that dolocons.</p>
+                <p>Explore our latest projects showcasing innovation and excellence. Discover how we deliver tailored solutions for diverse industries.</p>
                 <figure className="offer-circleimage mb-0">
                   <img src="./assets/images/offer-circleimage.png" alt="" className="img-fluid" />
                 </figure>

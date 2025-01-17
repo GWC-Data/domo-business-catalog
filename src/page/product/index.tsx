@@ -23,8 +23,8 @@ const ProductPage = () => {
                   <figure className="project-rightcircle service-rightcircle mb-0">
                     <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
                   </figure>
-                  <h1 className="text-white">Products</h1>
-                  <p>Roidunt eget semper nec ruam sed hendrerit morbi ac feliseao augue pellentesue morbi acer.</p>
+                  <h1 className="text-white">our Products</h1>
+                  <p>Discover our range of innovative products designed to meet your needs. Quality and performance are at the heart of everything we create.</p>
                 </div>
               </div>
             </div>
