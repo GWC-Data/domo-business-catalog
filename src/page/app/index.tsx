@@ -55,7 +55,7 @@ const AppsPage = () => {
                   <figure className="project-rightcircle service-rightcircle mb-0">
                     <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
                   </figure>
-                  <h1 className="text-white">360 APPS</h1>
+                  <h1 className="text-white">360°APPS</h1>
                   <p>Insights That Move Your Industry Forward</p>
                 </div>
               </div>
