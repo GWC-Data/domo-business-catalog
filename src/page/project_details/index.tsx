@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { projects } from "../../data/projects";
 import Navbar from "../../components/navbar";
 import { useEffect } from "react";
@@ -47,53 +47,53 @@ const ProjectDetailsPage = () => {
         </figure>
       </div>
 
-      <>
-        {project.length > 0 && (
-          <section className="blog-posts">
-            <div className="">
-              <div className="row">
-                {
-                  project.map((item: any, index: number) => (
-                                
-                    <div className="col-xl-12 col-lg-12" key={index}>
-                      <div id="blog" className="single-post01">
-                        <div className="post-item">
-                          <div className="post-item-wrap">
-                            <div className="post-image mx-3" data-aos="fade-up">
-                              {
-                                item.embed ? (
-                                  <iframe src={item.embed} width="100%" height="1500" frameBorder={"0"}></iframe>
-                                ) : (
-                                  <img alt="" src="/assets/images/post-featured.jpg" />
-                                )
-                              }
-                                                    
+      <Link to="/project" className="btn btn-warning m-3 font-weight-bold text-white" style={{ background: "#F37B64"}}>Go to Back</Link>
+
+      {project.length > 0 && (
+        <section className="blog-posts" style={{paddingTop: "0px"}}>
+          <div className="">
+            <div className="row">
+              {
+                project.map((item: any, index: number) => (
+                              
+                  <div className="col-xl-12 col-lg-12" key={index}>
+                    <div id="blog" className="single-post01">
+                      <div className="post-item">
+                        <div className="post-item-wrap">
+                          <div className="post-image mx-3" data-aos="fade-up">
+                            {
+                              item.embed ? (
+                                <iframe src={item.embed} width="100%" height="1500" frameBorder={"0"}></iframe>
+                              ) : (
+                                <img alt="" src="/assets/images/post-featured.jpg" />
+                              )
+                            }
+                                                  
+                          </div>
+                          <div className="container">
+                            <div className=" post-item-description">
+                              <h2 className="single-post-heading font_weight_600">{item.title}</h2>
+                              <div className="">{item.description}</div>
                             </div>
-                            <div className="container">
-                              <div className=" post-item-description">
-                                <h2 className="single-post-heading font_weight_600">{item.title}</h2>
-                                <div className="">{item.description}</div>
-                              </div>
-                              <div className="d-flex flex-wrap">
-                                {
-                                  keywords[0].map((item: any, index: number) => (
-                                    <div key={index} className="mr-3 my-2 rounded px-3 text-sm py-1 text-left border text-capitalize" style={{ fontSize: "14px"}}>{item}</div>
-                                  ))
-                                }
-                              </div>
+                            <div className="d-flex flex-wrap">
+                              {
+                                keywords[0].map((item: any, index: number) => (
+                                  <div key={index} className="mr-3 my-2 rounded px-3 text-sm py-1 text-left border text-capitalize" style={{ fontSize: "14px"}}>{item}</div>
+                                ))
+                              }
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  ))
-                }
-                   
-              </div>
+                  </div>
+                ))
+              }
+                  
             </div>
-          </section>
-        )}
-      </>
+          </div>
+        </section>
+      )}
     </div>
   );
 };

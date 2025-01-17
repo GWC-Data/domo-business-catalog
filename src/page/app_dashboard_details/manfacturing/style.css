@@ -1,0 +1,296 @@
+/* domo_app */
+
+
+.domo_app-section{
+  /* background-image: linear-gradient(to right, var(--e-button-gradient-1) 0%, var(--e-button-gradient-2) 100%); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  /* padding: 277px 0 254px; */
+}
+.domo_app-section::before{
+  content: "";
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 0 0 600px;
+  /* background: var(--e-global-color-very-dark-mostly-black-blue); */
+
+}
+/* .domo_app-section::after{
+  content: ""; */
+  /* background-image: url('../images/about-background.jpg'); */
+  /* border-radius: 0 0 0 600px;
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 10%;
+} */
+
+/* .domo_app-section {
+    position: relative;
+    padding: 130px 0 150px;
+    overflow: hidden;
+} */
+.domo_app-section .domo_app-leftlayer{
+  position: absolute;
+  top: 0;
+  left: 116px;
+}
+.domo_app-section .domo_app-rightlayer{
+  position: absolute;
+  bottom: -20px;
+  right: 112px;
+}
+.domo_app-section .domo_app-dotimage{
+  position: absolute;
+  left: 334px;
+  bottom: 102px;
+}
+.domo_app-section .domo_app-box h4{
+  padding-right: 65px;
+}
+.domo_app-section .domo_app-box p{
+  margin-bottom: 10px;
+  color: var(--e-global-color-text);
+}
+.domo_app-section .domo_app_contentbox .box-top {
+  padding-top: 37px;
+}
+.domo_app-section .domo_app_contentbox .domo_app-box {
+  background: var(--e-global-color-white);
+  border-radius: 10px;
+  padding: 38px 24px 28px 30px;
+  margin-bottom: -12px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  /* box-shadow: 1px 21px 46px rgb(0 0 0 / 4%); */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+/* .domo_app-section .domo_app_contentbox .domo_app-box:hover {
+  background-image: linear-gradient(to right, var(--e-button-gradient-1) 0%, var(--e-button-gradient-2) 100%);
+  transform: translateY(-5px);
+}
+.domo_app-section .domo_app-box:hover h4{
+  color: var(--e-global-color-white);
+} 
+.domo_app-section .domo_app-box:hover p{
+  color: var(--e-global-color-white);
+}  */
+.domo_app-section .domo_app_contentbox .domo_app-box figure {
+  background: var(--e-global-color-very-pale-orange);
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: inline-block;
+  margin-left: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.domo_app-section .domo_app_contentbox .domo_app-box figure:hover {
+  transform: translateY(-5px);
+}
+.domo_app-section .domo_app-box:hover figure{
+  background: var(--e-global-color-bright-orange);
+}
+.domo_app-section .domo_app-box:hover img{
+  filter: brightness(0) invert(1);
+}
+.domo_app-section .domo_app-box .circle {
+  background-image: linear-gradient(to right, var(--e-button-gradient-1) 0%, var(--e-button-gradient-2) 100%);
+  border-radius: 100px;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  margin-left: -2px;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.domo_app-section .domo_app-box .circle:hover {
+  transform: translateY(-5px);
+}
+.domo_app-section .domo_app-box:hover .circle {
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 51%, #ffffff 100%);
+}
+.domo_app-section .domo_app-box .circle:before {
+  font-size: 18px;
+  padding-top: 2px;
+  font-family: 'FontAwesome';
+  transition: all 0.3s ease;
+  color: var(--e-global-color-white);
+}
+.domo_app-section .domo_app-box:hover .circle:before {
+  color: var(--e-global-color-accent);
+}
+.domo_app-section .domo_app_content .domo_app-rightcircle{
+  position: absolute;
+  right: -38px;
+  top: 162px;
+}
+.domo_app-section .domo_app_content{
+  padding-left: 48px;
+  padding-top: 194px;
+  color: #000000;
+}
+.domo_app-section .domo_app_content h2{
+  margin-bottom: 18px;
+  padding-right: 10px;
+  color: #000000;
+
+}
+.domo_app-section .domo_app_content p{
+  margin-bottom: 12px;
+  color: #000000;
+}
+
+.domo_app-section .domo_app_content .text {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--e-global-color-primary);
+}
+.domo_app-section .domo_app_content .text:hover{
+  color: var(--e-global-color-secondary);
+}
+.domo_app-section .domo_app_content ul li .circle {
+  background-image: linear-gradient(to right, var(--e-button-gradient-1) 0%, var(--e-button-gradient-2) 100%);
+  border-radius: 100px;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  text-align: center;
+  margin-right: 12px;
+  margin-left: 0;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.domo_app-section .domo_app_content ul li .circle:before {
+  font-size: 12px;
+  padding-top: 2px;
+  font-family: 'FontAwesome';
+  transition: all 0.3s ease;
+  color: var(--e-global-color-white);
+}
+.domo_app-section .domo_app_content .text1 {
+  margin-bottom: 36px;
+}
+.domo_app-section .domo_app_content .get_started{
+  background-image: linear-gradient(to right, var(--e-button-gradient-1) 0%, var(--e-button-gradient-2) 100%);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 15px 25px 15px 43px; 
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.domo_app-section .domo_app_content .get_started figure {
+  display: inline-block;
+  margin-left: 16px;
+}
+.domo_app-section .domo_app_content .get_started:hover{
+  background-image: linear-gradient(to right, var(--e-global-color-desaturated-blue) 0%, var(--e-global-color-desaturated-blue) 100%);
+}
+
+
+@media screen and (max-width: 1440px){
+.domo_app-section {padding: 0px 0;}
+.domo_app-section .domo_app-leftlayer {left: 78px;}
+.domo_app-section .domo_app-dotimage {left: -8px; bottom: 78px;}
+.domo_app-section .domo_app-rightlayer {bottom: -172px; right: 82px;}
+}
+
+@media only screen and (max-width : 1199px){
+.domo_app-section {padding: 0px 0 120px;}
+.domo_app-section .domo_app-leftlayer {left: 44px;}
+.domo_app-section .domo_app-leftlayer img{width: 160px;}
+.domo_app-section .domo_app-rightlayer  {bottom: -168px; right: 20px;}
+.domo_app-section .domo_app-rightlayer img {width: 170px;}
+.domo_app-section .domo_app-dotimage {left: -8px; bottom: 90px;}
+.domo_app-section .domo_app-dotimage img{width: 130px;}
+.domo_app-section .domo_app_contentbox .domo_app-box {padding: 20px 12px; margin-bottom: -15px;}
+.domo_app-section .domo_app_contentbox .domo_app-box figure {height: 90px; width: 90px; line-height: 90px; margin-bottom: 15px;}
+.domo_app-section .domo_app_contentbox .domo_app-box figure img{width: 52px;}
+.domo_app-section .domo_app-box h4 {padding-right: 65px; margin-bottom: 4px;}
+.domo_app-section .domo_app-box .circle {height: 42px; width: 42px; line-height: 42px; margin-left: 0px;}
+.domo_app-section .domo_app_content {padding-left: 0; padding-top: 170px;}
+.domo_app-section .domo_app_content h6 {margin-bottom: 0;}
+.domo_app-section .domo_app_content h2 {margin-bottom: 5px; padding-right: 30px;}
+.domo_app-section .domo_app_content p {margin-bottom: 6px;}
+.domo_app-section .domo_app_content ul li .circle {height: 16px; width: 16px; line-height: 16px; margin-right: 8px;}
+.domo_app-section .domo_app_content ul li .circle:before {font-size: 10px; padding-top: 0;}
+.domo_app-section .domo_app_content .text {font-size: 18px; line-height: 26px;}
+.domo_app-section .domo_app_content .text1 {margin-bottom: 28px;}
+.domo_app-section .domo_app_content  .get_started {font-size: 18px; line-height: 26px; padding: 12px 18px;}
+.domo_app-section .domo_app_content .get_started figure {margin-left: 6px;}
+.domo_app-section .domo_app_content .domo_app-rightcircle {right: 20px; top: 48px;}
+.domo_app-section .domo_app_content .domo_app-rightcircle img{width: 44px;}
+}
+
+@media only screen and (max-width : 991px) {
+  .domo_app-section {padding: 0px 0;}
+.domo_app-section .domo_app-rightlayer {display: none;}
+.domo_app-section .domo_app-dotimage {display: none;}
+.domo_app-section .domo_app_content h6 {margin-bottom: 4px;}
+.domo_app-section .domo_app_content .text {font-size: 16px; line-height: 24px;}
+.domo_app-section .domo_app_contentbox{position: relative; z-index: 0;}
+.domo_app-section .domo_app_contentbox .domo_app-box {padding: 20px; margin-bottom: -20px; text-align: center;}
+.domo_app-section .domo_app-box h4 {padding-right: 0; margin-bottom: 4px;}
+.domo_app-section .domo_app-box p {margin-bottom: 14px;}
+.domo_app-section .domo_app_contentbox .domo_app-box figure {height: 85px;width: 85px; line-height: 85px; margin-bottom: 10px;}
+.domo_app-section .domo_app_contentbox .domo_app-box figure img {width: 50px;}
+.domo_app-section .domo_app-box .circle {height: 40px; width: 40px; line-height: 40px;}
+.domo_app-section .domo_app-box .circle:before {font-size: 16px; padding-top: 0;}
+.domo_app-section .domo_app_content {padding-top: 85px; text-align: center;}
+.domo_app-section .domo_app_content .domo_app-rightcircle {top: 100px;}
+.domo_app-section .domo_app_content h2 {margin-bottom: 10px; padding: 0 154px;}
+.domo_app-section .domo_app_content p {margin-bottom: 10px; padding: 0 60px;}
+.domo_app-section .domo_app_content .text1 {margin-bottom: 25px;}
+.domo_app-section .domo_app_content ul li .circle {display: none;}
+.domo_app-section .domo_app_content .get_started {font-size: 16px; line-height: 24px; padding: 10px 16px;}
+}
+
+
+@media only screen and (max-width : 767px){
+  .domo_app-section {padding: 0px 0;}
+.domo_app-section .domo_app-leftlayer img {width: 140px;}
+.domo_app-section .domo_app_contentbox .domo_app-box {padding: 15px 10px; margin-bottom: -18px;}
+.domo_app-section .domo_app_contentbox .domo_app-box figure {height: 80px; width: 80px; line-height: 80px; margin-bottom: 10px;}
+.domo_app-section .domo_app_contentbox .domo_app-box figure img {width: 45px;}
+.domo_app-section .domo_app-box p {margin-bottom: 15px;}
+.domo_app-section .domo_app-box .circle {height: 35px; width: 35px; line-height: 35px;}
+.domo_app-section .domo_app-box .circle:before {font-size: 14px;}
+.domo_app-section .domo_app_content {padding-top: 60px;}
+.domo_app-section .domo_app_content h2 {padding: 0 90px;}
+.domo_app-section .domo_app_content p {margin-bottom: 10px; padding: 0;}
+.domo_app-section .domo_app_content ul {padding-left: 22px;}
+.domo_app-section .domo_app_content .text {font-size: 14px; line-height: 20px;}
+.domo_app-section .domo_app_content .text1 {margin-bottom: 18px;}
+.domo_app-section .domo_app_content .get_started {font-size: 14px; line-height: 20px; padding: 10px 24px;}
+.domo_app-section .domo_app_content .get_started figure {margin-left: 4px;}
+.domo_app-section .domo_app_content .get_started figure img{width: 16px;}
+.domo_app-section .domo_app_content .domo_app-rightcircle img {width: 35px;}
+}
+
+@media only screen and (max-width : 575px){
+  .domo_app-section {padding: 0px 0 60px;}
+  .domo_app-section .domo_app-leftlayer img {width: 120px;}
+.domo_app-section .domo_app_content {padding-top: 30px;}
+.domo_app-section .domo_app_content h2 {padding: 0; margin-bottom: 5px;}
+.domo_app-section .domo_app_content p {margin-bottom: 14px; padding: 0;}
+.domo_app-section .domo_app_content .text {font-size: 14px; line-height: 22px;}
+.domo_app-section .domo_app_content ul {padding-left: 0;}
+.domo_app-section .domo_app_content .domo_app-rightcircle {display: none;}
+.domo_app-section .domo_app_contentbox .box-top {padding-top: 0;}
+.domo_app-section .domo_app_contentbox .domo_app-box {padding: 15px 10px; margin-bottom: 16px;}
+}
