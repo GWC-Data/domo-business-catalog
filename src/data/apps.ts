@@ -312,7 +312,7 @@ export const apps = [
         id: 1,
         title: "KPI Score card analysis",
         description: "KPI Scorecard is used to find key performance indicators to track and measure organizational progress toward strategic goals.",
-        image: "",
+        image: "/assets/images/projects/manufacturing_360/KPI Score card analysis.png",
         embed: "https://embed.domo.com/embed/pages/BNZBo",
         industry: "Manufacturing",
         keywords: "Scorecard, Overview, Threshold, Targets"
@@ -321,7 +321,7 @@ export const apps = [
         id: 2,
         title: "Inventory Management Analysis",
         description: "Manages inventory levels and ensures a smooth supply chain.",
-        image: "",
+        image: "/assets/images/projects/manufacturing_360/Inventory Management Analysis.png",
         embed: "https://embed.domo.com/embed/pages/D1jkk",
         industry: "Manufacturing",
         keywords: "Inventory, Supplier, Aeging, Stock, Turnover, Stock, COGS, Delivary, Fullfillment, Delay, on-Time, Orders, Reasons, Suppliers"
@@ -330,16 +330,16 @@ export const apps = [
         id: 3,
         title: "Supply chain and Forecasting Analysis",
         description: "Manages the entire supply chain from suppliers to delivery.",
-        image: "",
+        image: "/assets/images/projects/manufacturing_360/Supply chain and Forecasting Analysis.png",
         embed: "https://embed.domo.com/embed/pages/E8kRl",
         industry: "Manufacturing",
         keywords: "Supply chain, Perfect Order, Inventory, Ratio, Lead Time, Profit, Distributor, order Volume, Automotive, Order Tracking, Forcasting, Demand, Cost, Price, Accuracy, Stock Out, Mean Absolute, Lead time, Service Level, relaiability, on-time, Fill rate"
       },
       {
         id: 4,
-        title: "Scrap amd Defect Analysis",
+        title: "Scrap and Defect Analysis",
         description: "Ensures that products meet quality standards and identifies areas for improvement.",
-        image: "",
+        image: "/assets/images/projects/manufacturing_360/Scrap and Defect Analysis.png",
         embed: "https://embed.domo.com/embed/pages/Gvm65",
         industry: "Manufacturing",
         keywords: "Scrap, Defects, products, Cost, pareto, First Pass Yield, FPY Improvements, Root Cause, defect Reasons, issue, root cause accuracy, Resolution, issue fixes, root cause effectiveness"
@@ -348,7 +348,7 @@ export const apps = [
         id: 5,
         title: "Maintenance Frequency and Downtime Analysis",
         description: "Monitors the maintenance activities and health of equipment.",
-        image: "",
+        image: "/assets/images/projects/manufacturing_360/Maintenance Frequency and Downtime Analysis.png",
         embed: "https://embed.domo.com/embed/pages/Jyp6y",
         industry: "Manufacturing",
         keywords: "Maintanance, Repairs, MTTR, Completed, Failure, Defects, Downtime, Forecast, Cost, Incident, Equipment, Machine, Idle time, Utilization, Production"
@@ -357,7 +357,7 @@ export const apps = [
         id: 6,
         title: "Labor Productivity and Employee Satisfaction analysis",
         description: "Optimizes the management of the workforce to ensure productivity, safety, and employee satisfaction.",
-        image: "",
+        image: "/assets/images/projects/manufacturing_360/Labor Productivity and Employee Satisfaction analysis.png",
         embed: "https://embed.domo.com/embed/pages/K1qr8",
         industry: "Manufacturing",
         keywords: "Labour, Productivity, Efficiency, overtime, Actuals, targets, Labour Cost, Productivity, Performance, Attendance, Absentees, Login, Employees, LRC, Shift, Satisfaction, Retention, hires, Active Employee, inactive Employee, NPS"
@@ -366,7 +366,7 @@ export const apps = [
         id: 7,
         title: "Energy Consumption and Carbon footprint analysis",
         description: "Monitors and improves the energy efficiency and environmental impact of manufacturing operations.",
-        image: "",
+        image: "/assets/images/projects/manufacturing_360/Energy Consumption and Carbon footprint analysis.png",
         embed: "https://embed.domo.com/embed/pages/L7r9v",
         industry: "Manufacturing",
         keywords: "Energy Consumption, Cost, Efficiency, Intensity, peak energy, Demand, Carbon, emission, scope, Reduction, certification, savings, cost, gains, waste, target, sustainability, programs"
@@ -375,7 +375,7 @@ export const apps = [
         id: 8,
         title: "Finance Dashboard",
         description: "Tracks the financial performance and cost efficiency of manufacturing operations.",
-        image: "",
+        image: "/assets/images/projects/manufacturing_360/Finance Dashboard.png",
         embed: "https://embed.domo.com/embed/pages/Mwv81",
         industry: "Manufacturing",
         keywords: "Net Profit, Gross, P&L, Account payable, Expense, CCC, income, profit, Margin, Expenses, Liqudity, Financial Roatio, Turnovers, Cash"
@@ -384,7 +384,7 @@ export const apps = [
         id: 9,
         title: "Customer Satisfaction Dashboard",
         description: "Measures and improves the satisfaction and experience of customers with the manufactured products.",
-        image: "",
+        image: "/assets/images/projects/manufacturing_360/Customer Satisfaction Dashboard.png",
         embed: "https://embed.domo.com/embed/pages/NLwk8",
         industry: "Manufacturing",
         keywords: "Delivary, Shipping, Orders, Accuracy, Pack, backorder, Ontime, Shipping, Carrier, Customer Satisfaction, Warehouse, Shipment, Complaint, Resolution, SLA, RCR, Ticket, NPS, Customer Loyalty, Promotor, Detractor, Passives"
@@ -393,7 +393,7 @@ export const apps = [
         id: 10,
         title: "Safety and Compliance Dashboard",
         description: "Ensures that safety standards and regulatory requirements are met.",
-        image: "",
+        image: "/assets/images/projects/manufacturing_360/Safety and Compliance Dashboard.png",
         embed: "https://embed.domo.com/embed/pages/OMxYE",
         industry: "Manufacturing",
         keywords: "Incident, Loses,Severity, Compliance, SLA, Issues, Production, maintanance, Quality Assurance, Logistics, Saftyy, Employees, Fail, Pass, Success, Training"
@@ -402,7 +402,7 @@ export const apps = [
         id: 11,
         title: "Production Volume Dashbaord",
         description: "Monitors the overall production performance and efficiency.",
-        image: "",
+        image: "/assets/images/projects/manufacturing_360/Production Volume Dashbaord.png",
         embed: "https://embed.domo.com/embed/pages/P7yN6",
         industry: "Manufacturing",
         keywords: "Production, defects, Supplier, OEE, Weekly analysis, , products, managers, Utilization, Uptime, Throughput, maintanance, capacity, Yield, Quality, Rework, Returns, COPQ, Downtime"
