@@ -5,6 +5,7 @@ import { apps } from "../../data/apps";
 import Navbar from "../../components/navbar";
 import { useEffect } from "react";
 import KpiScore from "./manfacturing/KpiScore";
+import InventoryAnalysis from "./manfacturing/InventoryAnalysis";
 
 const AppDashboardDetailsPage = () => {
 
@@ -92,6 +93,13 @@ const AppDashboardDetailsPage = () => {
             subProject[0]?.title === "KPI Score card analysis" && (
               <div className="container">
                 <KpiScore />
+              </div>
+            )
+          }
+          {
+            subProject[0]?.title === "Inventory Management Analysis" && (
+              <div className="container">
+                <InventoryAnalysis />
               </div>
             )
           }

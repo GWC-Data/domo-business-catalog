@@ -7,6 +7,8 @@ const KpiScore = () => {
     <div>
       <section className="domo_app-section" >
         <div className="container">
+          <h5>KPIs</h5>
+          <p>Analyze and optimize your supply chain to drive efficiency, reduce costs, and improve customer satisfaction.</p>
           <div className="row" style={{ padding:"50px 0"}}>
             <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-md-1 order-2">
               <div className="domo_app_contentbox">

@@ -294,3 +294,169 @@
 .domo_app-section .domo_app_contentbox .box-top {padding-top: 0;}
 .domo_app-section .domo_app_contentbox .domo_app-box {padding: 15px 10px; margin-bottom: 16px;}
 }
+
+
+/* DESIGN 2 */
+.design_two{
+  position: relative;
+  padding: 80px 0;
+}
+.design_two .offer-toplayer{
+  position: absolute;
+  left: -36px;
+  top: 0;
+}
+.design_two .offer-bottomlayer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.design_two .blog_content{
+  position: relative;
+  text-align: center;
+}
+.design_two .blog_content h2{
+  margin-bottom: 18px;
+}
+.design_two .blog_content p{
+  padding: 0 150px;
+  margin-bottom: 40px;
+}
+.design_two .blog_content .offer-circleimage{
+  position: absolute;
+  right: -90px;
+  top: 138px;
+}
+.design_two .blog_boxcontent{
+  width: 100%;
+  border-radius: 10px;
+  background: var(--e-global-color-white);
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin: 10px;
+}
+/* .design_two .blog_boxcontent:hover{
+  background: var(--e-global-color-desaturated-blue);
+} */
+/* .design_two .blog_boxcontent:hover h4{
+  color: var(--e-global-color-white);
+}
+.design_two .blog_boxcontent:hover p{
+  color: var(--e-global-color-white);
+} */
+.design_two .blog_boxcontent .upper_portion{
+  position: relative;
+}
+.design_two .blog_boxcontent .upper_portion figure img{
+  border-radius: 10px 10px 0 0;
+}
+.design_two .blog_boxcontent .upper_portion .image_content {
+  background-image: linear-gradient(to right, var(--e-button-gradient-1) 0%, var(--e-button-gradient-2) 100%);
+  box-shadow: 8px 2px 20px rgb(0 0 0 / 10%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 100px;
+  height: 93px;
+  width: 93px;
+  line-height: 93px;
+  text-align: center;
+  left: 120px;
+  bottom: -42px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+.design_two .blog_boxcontent .upper_portion .image_content:hover {
+  background-image: linear-gradient(to right, var(--e-button-gradient-2) 0%, var(--e-button-gradient-1) 100%);
+  transform: translateY(-5px);
+}
+.design_two .blog_boxcontent .upper_portion .image_content .content{
+  position: relative;
+  top: 22px;
+}
+.design_two .blog_boxcontent .upper_portion .image_content .content h3{
+  margin-bottom: 0;
+}
+.design_two .blog_boxcontent .upper_portion .image_content .content span{
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  display: block;
+}
+.design_two .blog_boxcontent .lower_portion_wrapper {
+  padding: 30px 30px 30px;
+}
+.design_two .blog_boxcontent .lower_portion_wrapper h4 {
+  margin-bottom: 6px;
+}
+.design_two .blog_boxcontent .lower_portion_wrapper p {
+  margin-bottom: 14px;
+}
+.design_two .blog_boxcontent .lower_portion_wrapper .read_more {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: var(--e-global-color-secondary);
+  transition: all 0.3s ease-in-out;
+}
+.design_two .blog_boxcontent:hover .read_more{
+  color: var(--e-global-color-white);
+}
+.design_two .blog_boxcontent .lower_portion_wrapper .read_more figure {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+
+
+
+.design_two .blog_boxcontent .lower_portion_wrapper .read_more:hover {
+  /* transform: translateY(-5px); */
+  /* color: var(--e-global-color-secondary); */
+  font-size: 22px;
+  line-height: 30px;
+}
+
+
+
+
+
+.design_two .blog_boxcontent:hover .arrow{
+  filter: brightness(0) invert(1);
+}
+.design_two .owl-carousel .owl-dots {
+  display: block !important;
+  margin-top: 40px !important;
+  line-height: 0;
+}
+.design_two .owl-carousel .owl-dots .owl-dot span {
+  background: #d3d3d3;
+  width: 15px;
+  height: 15px;
+  margin: 0 8px;
+  transition: all 0.3s ease-in-out;
+}
+.design_two .owl-carousel .owl-dots .owl-dot:hover span {
+  background-image: linear-gradient(to right, var(--e-button-gradient-1) 0%, var(--e-button-gradient-2) 100%);
+}
+.design_two .owl-carousel .owl-dots .owl-dot.active span {
+  background-image: linear-gradient(to right, var(--e-button-gradient-1) 0%, var(--e-button-gradient-2) 100%);
+  width: 20px;
+  height: 20px;
+}
+.design_two .owl-carousel .owl-dots .owl-dot:focus {
+  outline: none;
+}
+
+.design_two .icon {
+  background-color: #ee8953;
+  width: 70px;
+  height: 70px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 100px;
+  padding: .8rem;
+  margin-bottom: 1.4rem;
+}
+.design_two .icon img{
+  width: 100%;
+  height: 100%;
+}
