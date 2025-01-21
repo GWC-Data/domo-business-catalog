@@ -6,6 +6,7 @@ import Navbar from "../../components/navbar";
 import { useEffect } from "react";
 import KpiScore from "./manfacturing/KpiScore";
 import InventoryAnalysis from "./manfacturing/InventoryAnalysis";
+import SupplyChain from "./manfacturing/SupplyChain";
 
 const AppDashboardDetailsPage = () => {
 
@@ -75,12 +76,6 @@ const AppDashboardDetailsPage = () => {
                             }
                                                     
                           </div>
-                          <div className="container">
-                            <div className="mt-5">
-                              <h4>{item.title}</h4>
-                              <p className="text-size-18">{item.description}</p>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -91,16 +86,17 @@ const AppDashboardDetailsPage = () => {
           </div>
           {
             subProject[0]?.title === "KPI Score card analysis" && (
-              <div className="container">
-                <KpiScore />
-              </div>
+              <KpiScore />
             )
           }
           {
             subProject[0]?.title === "Inventory Management Analysis" && (
-              <div className="container">
-                <InventoryAnalysis />
-              </div>
+              <InventoryAnalysis />
+            )
+          }
+          {
+            subProject[0]?.title === "Supply chain and Forecasting Analysis" && (
+              <SupplyChain />
             )
           }
           <div className="container d-flex flex-wrap mt-5">

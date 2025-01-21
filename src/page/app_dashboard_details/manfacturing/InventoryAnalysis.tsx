@@ -55,133 +55,133 @@ const InventoryAnalysis = () => {
   }, []);
 
   return (
-    <div>
-      <div className="container">
-        <section className="design_two">
-          <div className="container">
-            <h5>KPIs</h5>
-            <p>Balance inventory levels to meet demand, reduce costs, and enhance operational efficiency.</p>
-            <div className="row">
-              <div className="owl-carousel owl-theme">
-                <div className="item">
-                  <div className="blog_boxcontent">
-                    <div className="lower_portion_wrapper">
-                      <div className="icon">
-                        <img src={Icon1} alt="" />
-                      </div>
-                      <div className="lower_portion">
-                        <h4>Inventory Turnover Analysis</h4>
-                        <p className="text-size-18">
-                          Monitor inventory movement to optimize stock utilization and reduce carrying costs.
-                        </p>
-                        <ul className="list-unstyled mb-0">
-                          <li className="text text-size-18">
-                            <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                            Improve inventory turnover ratio.
-                          </li>
-                          <li className="text text-size-18">
-                            <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                            Minimize days sales of inventory (DSI).
-                          </li>
-                          <li className="text text-size-18">
-                            <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                            Lower inventory carrying costs.
-                          </li>
-                        </ul>
-                      </div>
+    <div className="container mt-5">
+      <div>
+        <h4>Inventory Management Analysis</h4>
+        <p>Balance inventory levels to meet demand, reduce costs, and enhance operational efficiency.</p>
+      </div>
+      <section className="design_two">
+        <div className="container">
+          <div className="row">
+            <div className="owl-carousel owl-theme">
+              <div className="item">
+                <div className="blog_boxcontent">
+                  <div className="lower_portion_wrapper">
+                    <div className="icon">
+                      <img src={Icon1} alt="" />
+                    </div>
+                    <div className="lower_portion">
+                      <h4>Inventory Turnover Analysis</h4>
+                      <p className="text-size-18">
+                        Monitor inventory movement to optimize stock utilization and reduce carrying costs.
+                      </p>
+                      <ul className="list-unstyled mb-0">
+                        <li className="text text-size-18">
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          Improve inventory turnover ratio.
+                        </li>
+                        <li className="text text-size-18">
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          Minimize days sales of inventory (DSI).
+                        </li>
+                        <li className="text text-size-18">
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          Lower inventory carrying costs.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div className="item">
-                  <div className="blog_boxcontent">
-                    <div className="lower_portion_wrapper">
-                      <div className="icon">
-                        <img src={Icon2} alt="" />
-                      </div>
-                      <div className="lower_portion">
-                        <h4>Stock Level Analysis</h4>
-                        <p className="text-size-18">
-                          Ensure accurate stock levels to avoid disruptions and maintain customer satisfaction.
-                        </p>
-                        <ul className="list-unstyled mb-0">
-                          <li className="text text-size-18">
-                            <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                            Optimize safety stock levels.
-                          </li>
-                          <li className="text text-size-18">
-                            <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                            Reduce overstock and stock-out scenarios.
-                          </li>
-                          <li className="text text-size-18">
-                            <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                            Track stock levels by product category in real time.
-                          </li>
-                        </ul>
-                      </div>
+              </div>
+              <div className="item">
+                <div className="blog_boxcontent">
+                  <div className="lower_portion_wrapper">
+                    <div className="icon">
+                      <img src={Icon2} alt="" />
+                    </div>
+                    <div className="lower_portion">
+                      <h4>Stock Level Analysis</h4>
+                      <p className="text-size-18">
+                        Ensure accurate stock levels to avoid disruptions and maintain customer satisfaction.
+                      </p>
+                      <ul className="list-unstyled mb-0">
+                        <li className="text text-size-18">
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          Optimize safety stock levels.
+                        </li>
+                        <li className="text text-size-18">
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          Reduce overstock and stock-out scenarios.
+                        </li>
+                        <li className="text text-size-18">
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          Track stock levels by product category in real time.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div className="item">
-                  <div className="blog_boxcontent mb-0">
-                    <div className="lower_portion_wrapper">
-                      <div className="icon">
-                        <img src={Icon3} alt="" />
-                      </div>
-                      <div className="lower_portion">
-                        <h4>Lead Time Analysis</h4>
-                        <p className="text-size-18">Analyze and improve lead times to enhance supply chain efficiency.</p>
-                        <ul className="list-unstyled mb-0">
-                          <li className="text text-size-18">
-                            <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                            Reduce supplier lead times and variability.
-                          </li>
-                          <li className="text text-size-18">
-                            <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                            Streamline procurement cycles by material or product.
-                          </li>
-                          <li className="text text-size-18">
-                            <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                            Minimize delays in production due to supply gaps.
-                          </li>
-                        </ul>
-                      </div>
+              </div>
+              <div className="item">
+                <div className="blog_boxcontent mb-0">
+                  <div className="lower_portion_wrapper">
+                    <div className="icon">
+                      <img src={Icon3} alt="" />
+                    </div>
+                    <div className="lower_portion">
+                      <h4>Lead Time Analysis</h4>
+                      <p className="text-size-18">Analyze and improve lead times to enhance supply chain efficiency.</p>
+                      <ul className="list-unstyled mb-0">
+                        <li className="text text-size-18">
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          Reduce supplier lead times and variability.
+                        </li>
+                        <li className="text text-size-18">
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          Streamline procurement cycles by material or product.
+                        </li>
+                        <li className="text text-size-18">
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          Minimize delays in production due to supply gaps.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div className="item">
-                  <div className="blog_boxcontent">
-                    <div className="lower_portion_wrapper">
-                      <div className="icon">
-                        <img src={Icon4} alt="" />
-                      </div>
-                      <div className="lower_portion">
-                        <h4>Supplier Performance Analysis</h4>
-                        <p className="text-size-18">
-                          Evaluate supplier reliability to strengthen procurement strategies.
-                        </p>
-                        <ul className="list-unstyled mb-0">
-                          <li className="text text-size-18">
-                            <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                            Improve on-time delivery rates.
-                          </li>
-                          <li className="text text-size-18">
-                            <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                            Enhance supplier quality scores.
-                          </li>
-                          <li className="text text-size-18">
-                            <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                            Reduce supplier defect rates to improve product quality.
-                          </li>
-                        </ul>
-                      </div>
+              </div>
+              <div className="item">
+                <div className="blog_boxcontent">
+                  <div className="lower_portion_wrapper">
+                    <div className="icon">
+                      <img src={Icon4} alt="" />
+                    </div>
+                    <div className="lower_portion">
+                      <h4>Supplier Performance Analysis</h4>
+                      <p className="text-size-18">
+                        Evaluate supplier reliability to strengthen procurement strategies.
+                      </p>
+                      <ul className="list-unstyled mb-0">
+                        <li className="text text-size-18">
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          Improve on-time delivery rates.
+                        </li>
+                        <li className="text text-size-18">
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          Enhance supplier quality scores.
+                        </li>
+                        <li className="text text-size-18">
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          Reduce supplier defect rates to improve product quality.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
   );
 };

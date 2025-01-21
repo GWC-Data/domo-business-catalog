@@ -4,11 +4,13 @@ import "./style.css";
 const KpiScore = () => {
   const [selected, setSelected] = useState(1);
   return (
-    <div>
+    <div className="container mt-5">
+      <div>
+        <h4>KPI Score card analysis</h4>
+        <p>Analyze and optimize your supply chain to drive efficiency, reduce costs, and improve customer satisfaction.</p>
+      </div>
       <section className="domo_app-section" >
         <div className="container">
-          <h5>KPIs</h5>
-          <p>Analyze and optimize your supply chain to drive efficiency, reduce costs, and improve customer satisfaction.</p>
           <div className="row" style={{ padding:"50px 0"}}>
             <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-md-1 order-2">
               <div className="domo_app_contentbox">
@@ -59,7 +61,7 @@ const KpiScore = () => {
                 {
                   selected === 1 && (
                     <React.Fragment>
-                      <h2>Operational Efficiency</h2>
+                      <h2>Operational <br /> Efficiency</h2>
                       <p>
                   Gain insights into order accuracy, cash flow, and operational performance to streamline end-to-end supply chain processes.
                       </p>
