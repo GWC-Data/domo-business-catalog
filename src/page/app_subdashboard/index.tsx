@@ -37,7 +37,7 @@ interface Project {
 const industryContent: IndustryContentMap = {
   "Manufacturing 360°": {
     description: "Manufacturing360 is a comprehensive, data-driven analytics solution designed specifically for the manufacturing industry. It provides actionable insights into all key areas of operations, helping organizations optimize performance, reduce costs, and achieve sustainable growth. With dashboards tailored for every aspect of manufacturing, Manufacturing360 empowers teams to make smarter decisions and stay competitive in a dynamic market.",
-    mainImage: "./assets/images/apps/manufacturing.jpg",
+    mainImage: "./assets/images/apps/manufacturing1.jpg",
     businessImage: "./assets/images/apps/business.jpg",
     keyFeatures: [
       {
@@ -93,230 +93,202 @@ const industryContent: IndustryContentMap = {
     ]
   },
   "Retail 360°": {
-    description: "Retail360 is an advanced analytics platform tailored for retail businesses. It delivers real-time insights into sales, inventory, customer behavior, and store operations, enabling retailers to optimize their operations and enhance customer experience across all channels.",
+    description: "Retail360 is a comprehensive, data-driven analytics solution designed specifically for the retail industry. It provides actionable insights into key retail operations, helping organizations optimize sales, improve customer experience, and drive sustainable growth. With tailored dashboards for every stage of the retail lifecycle, Retail360 empowers teams to make data-backed decisions and remain competitive in the fast-paced retail landscape.",
     mainImage: "./assets/images/apps/retail.jpg",
     businessImage: "./assets/images/apps/retail_outcome.jpg",
     keyFeatures: [
       {
-        title: "Omnichannel Analytics",
-        description: "Track and analyze customer interactions across all sales channels."
+        title: "Holistic Visibility",
+        description: "Get a 360° view of your retail business—from marketing to sales, inventory, and customer retention."
       },
       {
-        title: "Inventory Intelligence",
-        description: "Optimize stock levels and reduce carrying costs with smart inventory management."
+        title: "Proactive Monitoring",
+        description: "Identify opportunities and challenges in real-time to maximize profitability."
       },
       {
-        title: "Customer Insights",
-        description: "Understand shopping patterns and preferences to personalize experiences."
+        title: "Retail-Specific Insights",
+        description: "Dashboards and KPIs tailored for retail-specific challenges."
       },
       {
-        title: "Store Performance",
-        description: "Monitor and improve individual store metrics and overall chain performance."
+        title: "Enhanced Collaboration",
+        description: "Centralize data and insights to align teams across locations and departments."
       },
       {
-        title: "Promotional Impact",
-        description: "Measure and optimize marketing campaign effectiveness."
+        title: "Customer-Centric Approach",
+        description: "Optimize the customer journey with data-driven strategies."
       },
       {
-        title: "Demand Forecasting",
-        description: "Predict future demand patterns using AI-powered analytics."
+        title: "Future-Ready Analytics",
+        description: "Use predictive and prescriptive analytics to stay ahead of market trends"
       }
     ],
     businessOutcomes: [
       {
-        title: "Enhanced Customer Experience",
-        description: "Deliver personalized shopping experiences across all channels."
-      },
-      {
-        title: "Optimized Inventory",
-        description: "Reduce stockouts and overstock situations."
-      },
-      {
         title: "Increased Sales",
-        description: "Drive revenue through data-driven merchandising decisions."
+        description: "Maximize revenue with insights into customer behavior and product performance."
       },
       {
-        title: "Operational Efficiency",
-        description: "Streamline store operations and reduce costs."
+        title: "Improved Customer Satisfaction",
+        description: "Enhance the shopping experience and increase customer loyalty."
       },
       {
-        title: "Marketing ROI",
-        description: "Improve promotional effectiveness and marketing spend."
+        title: "Inventory Optimization",
+        description: "Balance supply and demand to reduce stockouts and excess inventory."
       },
       {
-        title: "Competitive Advantage",
-        description: "Stay ahead with predictive insights and trends analysis."
+        title: "Cost Efficiency",
+        description: "Identify inefficiencies and streamline operations."
+      },
+      {
+        title: "Data-Driven Decisions",
+        description: "Empower decision-makers with actionable data for better outcomes."
       }
     ]
   },
   "Food Beverage 360°": {
-    description: "Food & Beverage360 is a specialized analytics solution for the F&B industry. It provides comprehensive insights into production, quality control, supply chain, and customer preferences, helping businesses maintain quality while optimizing operations.",
+    description: "F&B 360 is a comprehensive, data driven analytics solution specifically tailored for the food and beverage industry. It provides actionable insights into all aspects of operations, enabling businesses to optimize performance, enhance customer experiences, and drive revenue growth. With dashboards designed for every facet of the industry, F&B 360 empowers decisionmakers to stay competitive in a dynamic market.",
     mainImage: "./assets/images/apps/foot_beverage.jpg",
     businessImage: "./assets/images/apps/food_outcomes.jpg",
     keyFeatures: [
       {
-        title: "Quality Control",
-        description: "Monitor and maintain product quality throughout the production process."
+        title: "Holistic Insights",
+        description: "Gain a 360degree view of financial health, inventory, customer behavior, and operational efficiency."
       },
       {
-        title: "Supply Chain Visibility",
-        description: "Track ingredients from source to final product with complete traceability."
+        title: "Proactive Strategies",
+        description: "Anticipate market trends and optimize marketing and menu offerings."
       },
       {
-        title: "Production Optimization",
-        description: "Maximize yield and minimize waste in production processes."
+        title: "Enhanced Customer Engagement",
+        description: "Build meaningful connections with your patrons through personalized experiences."
       },
       {
-        title: "Compliance Management",
-        description: "Ensure adherence to food safety regulations and standards."
+        title: "Revenue Maximization",
+        description: "Discover opportunities for cost optimization and increased sales."
       },
       {
-        title: "Recipe Management",
-        description: "Optimize recipes for cost and quality balance."
-      },
-      {
-        title: "Demand Planning",
-        description: "Forecast demand accurately to optimize production schedules."
+        title: "Future Ready Decisions",
+        description: "Leverage predictive analytics to stay ahead of industry trends."
       }
     ],
     businessOutcomes: [
       {
-        title: "Quality Assurance",
-        description: "Maintain consistent product quality and safety."
+        title: "Customer Satisfaction and Loyalty",
+        description: "Improved customer satisfaction and loyalty through better service quality and engagement."
       },
       {
-        title: "Cost Control",
-        description: "Optimize ingredient usage and reduce waste."
+        title: "Revenue Growth",
+        description: "Increased revenue by optimizing menu pricing and cross selling opportunities."
       },
       {
-        title: "Regulatory Compliance",
-        description: "Meet all food safety and regulatory requirements."
+        title: "Cost Efficiency",
+        description: "Reduced operational costs through efficient inventory and resource management."
       },
       {
-        title: "Supply Chain Efficiency",
-        description: "Improve supplier management and inventory control."
+        title: "Marketing Effectiveness",
+        description: "Enhanced marketing ROI through targeted campaigns."
       },
       {
-        title: "Product Innovation",
-        description: "Accelerate new product development and market introduction."
-      },
-      {
-        title: "Customer Satisfaction",
-        description: "Consistently meet customer expectations for quality and taste."
+        title: "Employee Performance",
+        description: "Improved employee performance and retention through focused training and productivity tracking."
       }
     ]
   },
   "Healthcare 360°": {
-    description: "Healthcare360 is a comprehensive analytics platform designed for healthcare providers and organizations. It enables data-driven decision-making in patient care, operations, and resource management while ensuring compliance with healthcare regulations.",
+    description: "Healthcare 360 is a comprehensive, data-driven analytics solution designed specifically for the healthcare industry. It provides actionable insights into all key areas of operations, helping organizations optimize performance, improve patient outcomes, and achieve sustainable growth. With dashboards tailored for every aspect of healthcare, Healthcare 360 empowers teams to make smarter decisions and stay competitive in a dynamic market.",
     mainImage: "./assets/images/apps/healthcare.jpg",
     businessImage: "./assets/images/apps/health_care_outcomes.jpg",
     keyFeatures: [
       {
-        title: "Patient Analytics",
-        description: "Track patient outcomes and optimize care pathways."
+        title: "Holistic Visibility",
+        description: "Get a 360° view of the entire healthcare process—from patient care to inventory, workforce, and financial management."
       },
       {
-        title: "Resource Management",
-        description: "Optimize staff scheduling and resource allocation."
+        title: "Proactive Monitoring",
+        description: "Identify issues and opportunities in real-time to minimize risks and maximize efficiency."
       },
       {
-        title: "Clinical Operations",
-        description: "Improve efficiency in clinical procedures and workflows."
+        title: "Industry-Specific Insights",
+        description: "Tailored dashboards and KPIs for the unique challenges of healthcare."
       },
       {
-        title: "Compliance Monitoring",
-        description: "Ensure adherence to healthcare regulations and standards."
+        title: "Enhanced Collaboration",
+        description: "Align cross-functional teams with centralized data and shared insights."
       },
       {
-        title: "Quality Metrics",
-        description: "Monitor and improve quality of care indicators."
+        title: "Compliance & Innovation",
+        description: "Drive compliance with regulations and innovation with patient care and resource management dashboards."
       },
       {
-        title: "Predictive Analytics",
-        description: "Forecast patient needs and resource requirements."
+        title: "Future-Ready Analytics",
+        description: "Leverage predictive and prescriptive analytics to adapt to evolving demands."
       }
     ],
     businessOutcomes: [
       {
-        title: "Improved Patient Care",
-        description: "Enhance patient outcomes through data-driven decisions."
+        title: "Improved Patient Outcomes",
+        description: "Enhance care quality through data-driven insights."
+      },
+      {
+        title: "Cost Reduction",
+        description: "Identify inefficiencies and minimize expenses."
       },
       {
         title: "Operational Efficiency",
-        description: "Optimize resource utilization and reduce costs."
+        description: "Optimize workflows and reduce administrative overhead."
       },
       {
-        title: "Regulatory Compliance",
-        description: "Maintain compliance with healthcare regulations."
+        title: "Patient Satisfaction",
+        description: "Deliver high-quality care and ensure timely services."
       },
       {
-        title: "Resource Optimization",
-        description: "Better staff and equipment utilization."
+        title: "Compliance",
+        description: "Meet healthcare regulatory standards and improve reporting."
       },
       {
-        title: "Quality Improvements",
-        description: "Enhanced quality of care and patient satisfaction."
-      },
-      {
-        title: "Risk Management",
-        description: "Proactive identification and mitigation of risks."
+        title: "Informed Decision-Making",
+        description: "Provide decision-makers with accurate, actionable data."
       }
     ]
   },
   "Entertainment 360°": {
-    description: "Entertainment360 is an innovative analytics solution for the entertainment industry. It provides insights into audience behavior, content performance, and operational efficiency, helping organizations optimize their entertainment offerings and maximize engagement.",
+    description: "Entertainment 360 is a cutting-edge analytics solution tailored to empower decision-makers in the entertainment industry with actionable insights. Built on the principles of data-driven decision-making, Entertainment 360 helps businesses optimize operations, elevate customer experiences, and unlock new revenue opportunities. Covering everything from bookings and marketing to customer feedback and profitability, Entertainment 360 provides a holistic view of your business operations, enabling smarter, future-ready strategies.",
     mainImage: "./assets/images/apps/entertainment.jpg",
     businessImage: "./assets/images/apps/entertainment_business.jpg",
     keyFeatures: [
       {
-        title: "Audience Analytics",
-        description: "Understand viewer preferences and engagement patterns."
+        title: "All-in-One Insights",
+        description: "Access a complete view of your business—operations, customer behavior, and revenue trends—all in one place."
       },
       {
-        title: "Content Performance",
-        description: "Track and analyze content success metrics."
+        title: "Stay Ahead of the Curve",
+        description: "Predict market trends and fine-tune event planning and marketing strategies for maximum impact."
       },
       {
-        title: "Revenue Analytics",
-        description: "Optimize pricing and revenue streams."
+        title: "Engage Like Never Before",
+        description: "Deliver personalized, meaningful experiences that keep your audience coming back for more."
       },
       {
-        title: "Platform Analytics",
-        description: "Monitor performance across different distribution platforms."
-      },
-      {
-        title: "Engagement Metrics",
-        description: "Track user interaction and satisfaction levels."
-      },
-      {
-        title: "Trend Analysis",
-        description: "Identify emerging trends and audience preferences."
+        title: "Unlock Revenue Potential",
+        description: "Spot new ways to cross-sell, upsell, and reduce costs to achieve higher profitability."
       }
     ],
     businessOutcomes: [
       {
-        title: "Audience Growth",
-        description: "Increase viewer base and engagement."
+        title: "Elevated Customer Loyalty",
+        description: "Boost satisfaction and retention with tailored strategies that resonate with your audience."
       },
       {
-        title: "Content Optimization",
-        description: "Improve content strategy and performance."
+        title: "Revenue Growth",
+        description: "Maximize earnings by fine-tuning pricing, cross-selling, and upselling opportunities."
       },
       {
-        title: "Revenue Maximization",
-        description: "Optimize monetization strategies."
+        title: "Smart Cost Management",
+        description: "Reduce expenses through optimized resource allocation and in-depth expense analysis."
       },
       {
-        title: "Platform Performance",
-        description: "Enhance delivery across all platforms."
-      },
-      {
-        title: "User Satisfaction",
-        description: "Improve overall audience experience."
-      },
-      {
-        title: "Market Position",
-        description: "Strengthen competitive advantage in the market."
+        title: "Optimized Marketing ROI",
+        description: "Focus on high-performing campaigns to achieve better returns on marketing investments."
       }
     ]
   }
