@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import KpiScore from "./manfacturing/KpiScore";
 import InventoryAnalysis from "./manfacturing/InventoryAnalysis";
 import SupplyChain from "./manfacturing/SupplyChain";
+import Quality from "./manfacturing/Quality";
 
 const AppDashboardDetailsPage = () => {
 
@@ -97,6 +98,11 @@ const AppDashboardDetailsPage = () => {
           {
             subProject[0]?.title === "Supply chain and Forecasting Analysis" && (
               <SupplyChain />
+            )
+          }
+          {
+            subProject[0]?.title === "Scrap and Defect Analysis" && (
+              <Quality />
             )
           }
           <div className="container d-flex flex-wrap mt-5">
