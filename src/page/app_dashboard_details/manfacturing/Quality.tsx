@@ -1,6 +1,61 @@
+/* eslint-disable no-mixed-operators */
  
+import { useEffect } from "react";
 import "./style.css";
 const Quality = () => {
+
+  useEffect(() => {
+    document.addEventListener("DOMContentLoaded", function () {
+      let oldId: number | null = null;
+    
+      const tabLinks = document.querySelectorAll(".tabs-controls__link");
+      const cards = document.querySelectorAll(".card");
+    
+      tabLinks.forEach((link) => {
+        
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          
+          // Check if the clicked tab is already active
+          if (link.classList.contains("tabs-controls__link--active")) {
+            return;
+          }
+    
+          const currentId = parseInt(link.getAttribute("data-id") ?? "", 10);
+    
+          // Remove active class from all tabs and add to the current tab
+          document.querySelector(".tabs-controls__link--active")?.classList.remove("tabs-controls__link--active");
+          link.classList.add("tabs-controls__link--active");
+    
+          if (oldId !== null && currentId < oldId) {
+            // Reveal cards when navigating to a previous tab
+            const timing = Array.from(cards).filter((card) => card.classList.contains("hidden")).length * 100;
+    
+            cards.forEach((card, index) => {
+              if (index >= currentId - 1) {
+                setTimeout(() => {
+                  card.classList.remove("hidden");
+                }, timing - index * 100);
+              }
+            });
+          } else {
+            // Hide cards when navigating to a next tab
+            cards.forEach((card, index) => {
+              if (index < currentId - 1) {
+                setTimeout(() => {
+                  card.classList.add("hidden");
+                }, index * 100);
+              }
+            });
+          }
+    
+          oldId = currentId;
+        });
+      });
+    });
+  }, []);
+  
+
   return (
     <div className="container mt-5">
       <div>
@@ -12,23 +67,23 @@ const Quality = () => {
         <section>
           <ul className="tabs-controls">
             <li className="tabs-controls__item">
-              <a href="#" className="tabs-controls__link tabs-controls__link--active" data-id="1">
+              <div className="tabs-controls__link tabs-controls__link--active" data-id="1">
               Scrap Analysis
-              </a>
+              </div>
             </li>
             <li className="tabs-controls__item">
-              <a href="#" className="tabs-controls__link" data-id="2">
-              Defect Rate Analysis</a>
+              <div className="tabs-controls__link" data-id="2">
+              Defect Rate Analysis</div>
             </li>
             <li className="tabs-controls__item">
-              <a href="#" className="tabs-controls__link" data-id="3">
+              <div className="tabs-controls__link" data-id="3">
               First Pass Yield (FPY)
-              </a>
+              </div>
             </li>
             <li className="tabs-controls__item">
-              <a href="#" className="tabs-controls__link" data-id="4">
+              <div className="tabs-controls__link" data-id="4">
               Root Cause Analysis
-              </a>
+              </div>
             </li>
           </ul>
         </section>
