@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { Link, useParams } from "react-router-dom";
 import { apps } from "../../data/apps";
 import Navbar from "../../components/navbar";
@@ -296,7 +297,7 @@ const industryContent: IndustryContentMap = {
 
 const AppSubDashboard = () => {
   const { id } = useParams<{ id: string }>();
-  const project = apps?.filter((item: Project) => item.id === parseInt(id || ''))[0];
+  const project = apps?.filter((item: Project) => item.id === parseInt(id || ""))[0];
   const content = project?.title ? industryContent[project.title as keyof typeof industryContent] : null;
 
   useEffect(() => {
@@ -328,17 +329,17 @@ const AppSubDashboard = () => {
 
         {project.subDashboard.length > 0 && (
           <section className="project-section projectpage-section">
-            <figure className="offer-toplayer mb-0">
-                <img src="./assets/images/offer-toplayer.png" alt="" className="img-fluid" />
-              </figure>
+            {/* <figure className="offer-toplayer mb-0">
+              <img src="./assets/images/offer-toplayer.png" alt="" className="img-fluid" />
+            </figure> */}
             <div className="container">
               <div className="project_wrapper">
                 {content && (
                   <section className="mb-5">
-                     <div style={{ background: 'linear-gradient(to right, #f08832, #ee7a1a, #f3a361)', padding: "20px" }}>
+                    <div style={{ background: "linear-gradient(to right, #f08832, #ee7a1a, #f3a361)", padding: "20px"}}>
                       <h5 className="text-light">What is {project?.title}?</h5>
                       <p className="text-light">{content.description}</p>
-                     </div>
+                    </div>
                     <div className="row position-relative mt-5">
                       <div className="col-lg-6 col-md-6 col-sm-12 mb-4">
                         <img src={content.mainImage} alt={`Why ${project?.title}?`} className="img-fluid rounded" />

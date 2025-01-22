@@ -16,7 +16,7 @@ const KpiScore = () => {
               <div className="domo_app_contentbox">
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-6" onClick={() => setSelected(1)} style={{ cursor:"pointer"}}>
-                    <div className="domo_app-box box-mb">
+                    <div className={selected === 1 ? "domo_app-box box-mb active" : "domo_app-box box-mb"}>
                       <figure className="domo_app-marketicon">
                         <img src="./assets/images/service-marketicon.png" alt="" className="img-fluid" />
                       </figure> 
@@ -25,7 +25,7 @@ const KpiScore = () => {
                   </div>
                   <div style={{ cursor:"pointer"}} className="col-lg-6 col-md-6 col-sm-6 col-6" onClick={() => setSelected(2)} >
                     <div className="box-top">
-                      <div className="domo_app-box box-mb">
+                      <div className={selected === 2 ? "domo_app-box box-mb active" : "domo_app-box box-mb"}>
                         <figure className="domo_app-producticon">
                           <img src="./assets/images/service-producticon.png" alt="" className="img-fluid" />
                         </figure>
@@ -36,7 +36,7 @@ const KpiScore = () => {
                 </div>
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-6 col-6" onClick={() => setSelected(3)} style={{ cursor:"pointer"}}>
-                    <div className="domo_app-box">
+                    <div className={selected === 3 ? "domo_app-box active" : "domo_app-box"}>
                       <figure className="domo_app-designicon">
                         <img src="./assets/images/service-designicon.png" alt="" className="img-fluid" />
                       </figure>
@@ -45,7 +45,7 @@ const KpiScore = () => {
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6 col-6" onClick={() => setSelected(4)} style={{ cursor:"pointer"}}>
                     <div className="box-top">
-                      <div className="domo_app-box">
+                      <div className={selected === 4 ? "domo_app-box active" : "domo_app-box"}>
                         <figure className="domo_app-dataicon">
                           <img src="./assets/images/service-dataicon.png" alt="" className="img-fluid" />
                         </figure>

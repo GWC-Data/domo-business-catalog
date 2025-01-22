@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
  
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import {Link, useParams } from "react-router-dom";
@@ -7,7 +8,6 @@ import { useEffect } from "react";
 import KpiScore from "./manfacturing/KpiScore";
 import InventoryAnalysis from "./manfacturing/InventoryAnalysis";
 import SupplyChain from "./manfacturing/SupplyChain";
-import Quality from "./manfacturing/Quality";
 
 const AppDashboardDetailsPage = () => {
 
@@ -52,7 +52,7 @@ const AppDashboardDetailsPage = () => {
         </figure>
       </div>
 
-      <Link to={`/app/${project[0]?.id}`} className="btn btn-warning m-3 font-weight-bold text-white" style={{ background: "#F37B64"}}>Go to Back</Link>
+      <Link to={`/app/${project[0]?.id}`} className="m-3 font-weight-bold text-white text-decoration-none" style={{ background: "#F37B64", padding: ".4rem 1rem", borderRadius: "5px", display: "inline-flex", alignItems: "center" }}>Go to Back</Link>
 
       {subProject.length > 0 && (
         <section className="blog-posts" style={{paddingTop: "0px"}}>
@@ -100,11 +100,7 @@ const AppDashboardDetailsPage = () => {
               <SupplyChain />
             )
           }
-          {
-            subProject[0]?.title === "Scrap and Defect Analysis" && (
-              <Quality />
-            )
-          }
+          
           <div className="container d-flex flex-wrap mt-5">
             {
               keywords[0].map((item: any, index: number) => (

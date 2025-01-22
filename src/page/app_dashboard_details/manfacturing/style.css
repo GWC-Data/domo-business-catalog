@@ -104,6 +104,13 @@
 .domo_app-section .domo_app-box:hover img{
   filter: brightness(0) invert(1);
 }
+.domo_app-section .domo_app-box.active figure{
+  background: var(--e-global-color-bright-orange);
+} 
+.domo_app-section .domo_app-box.active img{
+  filter: brightness(0) invert(1);
+}
+
 .domo_app-section .domo_app-box .circle {
   background-image: linear-gradient(to right, var(--e-button-gradient-1) 0%, var(--e-button-gradient-2) 100%);
   border-radius: 100px;
@@ -296,10 +303,10 @@
 }
 
 
-/* DESIGN 2 */
+/* ======================= DESIGN 2 ========================================*/
 .design_two{
   position: relative;
-  padding: 0 0 80px 0;
+  padding: 0px;
 }
 .design_two .offer-toplayer{
   position: absolute;
@@ -328,11 +335,12 @@
   top: 138px;
 }
 .design_two .blog_boxcontent{
-  width: 100%;
+  width: 95%;
   border-radius: 10px;
   background: var(--e-global-color-white);
   transition: all 0.3s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   margin: 10px;
 }
 /* .design_two .blog_boxcontent:hover{
@@ -383,6 +391,7 @@
 }
 .design_two .blog_boxcontent .lower_portion_wrapper {
   padding: 30px 30px 30px;
+  height: 350px;
 }
 .design_two .blog_boxcontent .lower_portion_wrapper h4 {
   margin-bottom: 6px;
@@ -463,225 +472,14 @@
 
 
 
-/* ================== DESIGN THREE ======================================= */
-.design_three{
-  position: relative;
-  padding: 80px 0;
-  overflow: hidden;
-}
-.design_three .service-rightlayer{
-  position: absolute;
-  top: 0;
-  right: 110px;
-}
-.design_three .service-leftlayer{
-  position: absolute;
-  bottom: 0;
-  left: 118px;
-}
-.design_three .achievement_content{
-  position: relative;
-  margin-right: -8px;
-}
-.design_three .achievement_content .offer-circleimage{
-  position: absolute;
-  left: -116px;
-  top: 10px;
-}
-.design_three .achievement_content h2{
-  margin-bottom: 16px;
-}
-.design_three .achievement_content p{
-  margin-bottom: 38px;
-}
-.design_three .achievement_content .get_started {
-  background-image: linear-gradient(to right, var(--e-button-gradient-1) 0%, var(--e-button-gradient-2) 100%);
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 600;
-  border-radius: 30px;
-  padding: 15px 25px 15px 43px;
-  text-align: center;
-  display: inline-block;
-  transition: all 0.3s ease-in-out;
-}
-.design_three .achievement_content .get_started figure {
-  display: inline-block;
-  margin-left: 20px;
-}
-.design_three .achievement_content .get_started:hover {
-  background-image: linear-gradient(to right, var(--e-global-color-desaturated-blue) 0%, var(--e-global-color-desaturated-blue) 100%);
-}
-.design_three .achievement_wrapper{
-  position: relative;
-}
-.design_three .achievement_wrapper .achievement-box {
-  background: var(--e-global-color-white);
-  border-radius: 100px;
-  width: 170px;
-  height: 170px;
-  line-height: 170px;
-  display: inline-block;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 1px 21px 46px rgb(0 0 0 / 2%);
-  position: absolute;
-}
-.design_three .achievement_wrapper .achievement-box:hover {
-  background-image: linear-gradient(to right, var(--e-button-gradient-1) 0%, var(--e-button-gradient-2) 100%);
-  transform: translateY(-5px);
-}
-.design_three .achievement_wrapper .achievement-box .achievement-icon{
-  position: absolute;
-  top: -35px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-.design_three .achievement_wrapper .achievement-box:hover img{
-  filter: brightness(0) invert(1);
-}
-.design_three .achievement_wrapper .achievement-box .wrapper{
-  position: absolute;
-  bottom: 26px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-.design_three .achievement_wrapper .achievement-box:hover h3{
-  color: var(--e-global-color-white);
-}
-.design_three .achievement_wrapper .achievement-box p{
-  padding: 0 0;
-  /* line-height: 20px; */
-} 
-.design_three .achievement_wrapper .achievement-box:hover p{
-  color: var(--e-global-color-white);
-} 
-.design_three .achievement_wrapper .achievement-box .number{
-  position: relative;
-  top: 86px;
-}
-.design_three .achievement_wrapper .achievement-box .value{
-  display: inline-block;
-}
-.design_three .achievement_wrapper .achievement-box .plus{
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 700;
-}
-.design_three .achievement_wrapper .achievement-box:hover .plus{
-  color: var(--e-global-color-white);
-}
-.design_three .achievement_wrapper .box1 {
-  top: 58px;
-  left: 22px;
-}
-.design_three .achievement_wrapper .box2 {
-  top: -42px;
-  left: 226px;
-}
-.design_three .achievement_wrapper .box3 {
-  top: 58px;
-  right: 0;
-}
-.design_three .achievement_wrapper .box4 {
-  top: 180px;
-  left: 222px;
-}
-
-@media screen and (max-width: 1440px){
-  .design_three .service-rightlayer {top: -168px; right: 20px;}
-  .design_three .service-leftlayer {bottom: -200px; left: 20px;}
-  .design_three .achievement_content .offer-circleimage {display: none;}
-}
-
-@media only screen and (max-width : 1199px){
-  .design_three {padding: 145px 0 166px;}
-.design_three .service-rightlayer img{width: 170px;}
-.design_three .service-leftlayer {bottom: -188px;}
-.design_three .service-leftlayer img{width: 170px;}
-.design_three .achievement_content h2 {margin-bottom: 10px;}
-.design_three .achievement_content p {margin-bottom: 25px;}
-.design_three .achievement_content .get_started  {font-size: 18px; line-height: 26px; padding: 12px 18px;}
-.design_three .achievement_content .get_started  figure {margin-left: 6px;}
-.design_three .achievement_wrapper .achievement-box {width: 180px; height: 180px; line-height: 180px;}
-.design_three .achievement_wrapper .achievement-box .achievement-icon {top: -34px;}
-.design_three .achievement_wrapper .achievement-box .wrapper {bottom: 24px;}
-.design_three .achievement_wrapper .achievement-box .plus {font-size: 24px; line-height: 24px;}
-.design_three .achievement_wrapper .achievement-box .text {margin-top: 6px;}
-.design_three .achievement_wrapper .achievement-box p {padding: 0 50px;}
-.design_three .achievement_wrapper .box1 {left: -16px;}
-.design_three .achievement_wrapper .box2 {top: -46px; left: 162px;}
-.design_three .achievement_wrapper .box3 {right: -6px;}
-.design_three .achievement_wrapper .box4 {top: 174px; left: 160px;}
-}
-
-@media only screen and (max-width : 991px) {
-  .design_three {padding: 70px 0 176px;}
-.design_three .service-rightlayer img {width: 150px;}
-.design_three .service-leftlayer img {width: 150px;}
-.design_three .achievement_content {text-align: center;}
-.design_three .achievement_content h6 {margin-bottom: 4px;}
-.design_three .achievement_content h2 {padding: 0 98px;}
-.design_three .achievement_content p {margin-bottom: 20px; padding: 0 60px;}
-.design_three .achievement_content .get_started {font-size: 16px; line-height: 24px; padding: 10px 20px;}
-.design_three .achievement_wrapper .achievement-box {position: relative; width: 170px; height: 170px; line-height: 170px;}
-.design_three .achievement_wrapper .achievement-box .icon img{width: 62px;}
-.design_three .achievement_wrapper .achievement-box .icon1 img{width: 46px;}
-.design_three .achievement_wrapper .achievement-box .number {top: 80px;}
-.design_three .achievement_wrapper .achievement-box .plus { font-size: 20px; line-height: 20px;}
-.design_three .achievement_wrapper .box1 {left: 65px; top: 170px;}
-.design_three .achievement_wrapper .box2 {top: 46px; left: 76px;}
-.design_three .achievement_wrapper .box3 {right: -100px; top: 170px;}
-.design_three .achievement_wrapper .box4 {top: 0px; left: 0px;}
-}
-
-@media only screen and (max-width : 767px){
-  .design_three {padding: 60px 0 155px;}
-.design_three .service-rightlayer img {width: 125px;}
-.design_three .service-leftlayer {bottom: -168px;}
-.design_three .service-leftlayer img {width: 125px;}
-.design_three .achievement_content p {margin-bottom: 18px; padding: 0;}
-.design_three .achievement_content .get_started {font-size: 14px; line-height: 20px; padding: 10px 24px;}
-.design_three .achievement_wrapper .achievement-box {width: 160px; height: 160px; line-height: 160px;}
-.design_three .achievement_wrapper .achievement-box .icon img {width: 58px;}
-.design_three .achievement_wrapper .achievement-box .icon1 img {width: 44px;}
-.design_three .achievement_wrapper .achievement-box .wrapper {bottom: 20px;}
-.design_three .achievement_wrapper .achievement-box p {line-height: 18px;}
-.design_three .achievement_wrapper .box1 {left: 58px; top: 80px;}
-.design_three .achievement_wrapper .box2 {top: 42px; left: 116px;}
-.design_three .achievement_wrapper .box3 {right: 42px; top: 230px;}
-.design_three .achievement_wrapper .box4 {top: 100px; left: 60px;}
-}
-
-@media only screen and (max-width : 575px){
-  .design_three {padding: 60px 0 120px}
-.design_three .service-leftlayer {display: none;}
-.design_three .achievement_content h2 {padding: 0;}
-.design_three .achievement_wrapper .achievement-box p {padding: 0 37px;}
-.design_three .achievement_wrapper .achievement-box {width: 140px; height: 140px; line-height: 140px;}
-.design_three .achievement_wrapper .achievement-box .icon img {width: 54px;}
-.design_three .achievement_wrapper .achievement-box .icon1 img {width: 40px;}
-.design_three .achievement_wrapper .achievement-box .number {top: 72px;}
-.design_three .achievement_wrapper .box1 {left: 0px; top: 0px;}
-.design_three .achievement_wrapper .box2 {top: 0px; left: 0px;}
-.design_three .achievement_wrapper .box3 {right: 0px; top: 00px;}
-.design_three .achievement_wrapper .box4 {top: 0px; left: 0px;}
-}
-
-
-
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* ======================================= DESIGN THREE ======================================= */
 .flip-card {
   width: 100%;
   height: 200px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -691,12 +489,10 @@
   border-radius: 10px;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -706,7 +502,6 @@
   border-radius: 10px;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
   color: black;
   background: #ffffff;
@@ -718,7 +513,6 @@
   text-align: center;
 }
 
-/* Style the back side */
 .flip-card-back {
   background: #ffffff;
   color: white;
@@ -734,134 +528,9 @@
   text-align: center;
   border-radius: 100px;
   padding: .8rem;
-  margin-bottom: 1.4rem;
+  margin: 1rem 0;
 }
 .flip-card-front .icon img{
   width: 100%;
   height: 100%;
-}
-
-
-/* ======================== design four =========================== */
-
-.page {
-  width: 100vw;
-  height: 100vh;
-  min-height: 500px;
-  overflow: hidden;
-}
-
-.tabs-controls {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  justify-content: start;
-  align-items: stretch;
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 50px 0 100px;
-  list-style-type: none;
-}
-
-.tabs-controls__link {
-  position: relative;
-  display: block;
-  padding: 16px 32px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #423E37;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.tabs-controls__link:after {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  width: 0;
-  height: 4px;
-  background-color: #423E37;
-  border-radius: 2px;
-  margin: auto;
-  content: "";
-  transition: width 0.4s;
-}
-
-.tabs-controls__link--active:after {
-  width: 100%;
-}
-
-.cards-container {
-  position: relative;
-  z-index: 1;
-  width: 800px;
-  height: calc(100vh - 205px);
-  margin: 0 auto;
-}
-
-.card {
-  position: absolute;
-  width: 500px;
-  height: 300px;
-  background-color: #ffffff;
-  border: 1px solid #423E37;
-  box-shadow: 9px 11px 3px 0px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  padding: 40px;
-  transition: transform 0.3s, opacity 0.2s;
-}
-.card.hidden {
-  z-index: 100;
-  background-color: #fff;
-  color: #fff;
-  opacity: 0;
-  transition: color 0.5s, background-color 0.5s, transform 1s, opacity 0.2s 0.4s;
-}
-.card.hidden h1 {
-  color: #fff;
-  transition: color 0.5s;
-}
-.card.hidden:nth-of-type(1) {
-  transform: rotate(-69deg) translateX(101%) translateY(-52%) scale(1) skewX(4deg) skewY(7deg);
-}
-.card.hidden:nth-of-type(2) {
-  transform: rotate(-11deg) translateX(101%) translateY(-56%) scale(0.4) skewX(4deg) skewY(1deg);
-}
-.card.hidden:nth-of-type(3) {
-  transform: rotate(-62deg) translateX(101%) translateY(-8%) scale(0.5) skewX(2deg) skewY(1deg);
-}
-.card.hidden:nth-of-type(4) {
-  transform: rotate(-29deg) translateX(101%) translateY(-43%) scale(0.8) skewX(1deg) skewY(3deg);
-}
-.card.hidden:nth-of-type(5) {
-  transform: rotate(-83deg) translateX(101%) translateY(-7%) scale(0.7) skewX(6deg) skewY(8deg);
-}
-.card.hidden:nth-of-type(6) {
-  transform: rotate(-27deg) translateX(101%) translateY(-52%) scale(0.3) skewX(1deg) skewY(2deg);
-}
-.card:nth-of-type(1) {
-  z-index: 5;
-  transform: translateX(0px) translateY(0px);
-}
-.card:nth-of-type(2) {
-  z-index: 4;
-  transform: translateX(10px) translateY(10px);
-}
-.card:nth-of-type(3) {
-  z-index: 3;
-  transform: translateX(20px) translateY(20px);
-}
-.card:nth-of-type(4) {
-  z-index: 2;
-  transform: translateX(30px) translateY(30px);
-}
-.card:nth-of-type(5) {
-  z-index: 1;
-  transform: translateX(40px) translateY(40px);
-}
-.card:nth-of-type(6) {
-  z-index: 0;
-  transform: translateX(50px) translateY(50px);
 }
