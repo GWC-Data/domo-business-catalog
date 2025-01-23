@@ -5,9 +5,15 @@ import {Link, useParams } from "react-router-dom";
 import { apps } from "../../data/apps";
 import Navbar from "../../components/navbar";
 import { useEffect } from "react";
-import KpiScore from "./manfacturing/KpiScore";
-import InventoryAnalysis from "./manfacturing/InventoryAnalysis";
-import SupplyChain from "./manfacturing/SupplyChain";
+import KpiScore from "./manfacturing/analysis/KpiScore";
+import InventoryAnalysis from "./manfacturing/analysis/InventoryAnalysis";
+import SupplyChain from "./manfacturing/analysis/SupplyChain";
+import ScrapAndDefect from "./manfacturing/analysis/ScrapAndDefect";
+import MaintenanceAnalysis from "./manfacturing/analysis/MaintenanceAnalysis";
+import LaborAnalysis from "./manfacturing/analysis/LaborAnalysis";
+import EnergyConsumption from "./manfacturing/analysis/EnergyConsumption";
+import FinanceDashboard from "./manfacturing/analysis/FinanceDashboard";
+import Customer from "./manfacturing/analysis/Customer";
 
 const AppDashboardDetailsPage = () => {
 
@@ -98,6 +104,36 @@ const AppDashboardDetailsPage = () => {
           {
             subProject[0]?.title === "Supply chain and Forecasting Analysis" && (
               <SupplyChain />
+            )
+          }
+          {
+            subProject[0]?.title === "Scrap and Defect Analysis" && (
+              <ScrapAndDefect />
+            )
+          }
+          {
+            subProject[0]?.title === "Maintenance Frequency and Downtime Analysis" && (
+              <MaintenanceAnalysis />
+            )
+          }
+          {
+            subProject[0]?.title === "Labor Productivity and Employee Satisfaction analysis" && (
+              <LaborAnalysis />
+            )
+          }
+          {
+            subProject[0]?.title === "Energy Consumption and Carbon footprint analysis" && (
+              <EnergyConsumption />
+            )
+          }
+          {
+            subProject[0]?.title === "Finance Dashboard" && (
+              <FinanceDashboard />
+            )
+          }
+          {
+            subProject[0]?.title === "Customer Satisfaction Dashboard" && (
+              <Customer />
             )
           }
           

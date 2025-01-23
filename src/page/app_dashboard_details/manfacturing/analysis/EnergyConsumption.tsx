@@ -1,15 +1,15 @@
- 
-import Icon1 from "./icons/Inventory Turnover Analysis.png";
-import Icon2 from "./icons/Stock Level Analysis.png";
-import Icon3 from "./icons/Lead Time Analysis.png";
-import Icon4 from "./icons/Supplier Performance Analysis.png";
+import Icon1 from "../icons/Inventory Turnover Analysis.png";
+import Icon2 from "../icons/Stock Level Analysis.png";
+import Icon3 from "../icons/Lead Time Analysis.png";
+import Icon4 from "../icons/Supplier Performance Analysis.png";
 import "./style.css";
-const SupplyChain = () => {
+
+const EnergyConsumption = () => {
   return (
     <div className="container mt-5">
       <div>
-        <h4>Supply chain and Forecasting Analysis</h4>
-        <p>Streamline your supply chain operations to enhance delivery performance, reduce costs, and meet customer expectations.</p>
+        <h4>Energy Consumption and Carbon footprint analysis</h4>
+        <p>Drive operational efficiency while minimizing environmental impact with sustainable energy practices.</p>
       </div>
       <div className="row">
         <div className="col-lg-6 col-md-6 col-sm-12 col-12 p-3">
@@ -19,22 +19,22 @@ const SupplyChain = () => {
                 <div className="icon">
                   <img src={Icon1} alt="" />
                 </div>
-                <h4>Supply Chain Performance Analysis</h4>
-                <p>Evaluate overall supply chain efficiency and delivery reliability.</p>
+                <h4>Energy Consumption Analysis</h4>
+                <p>Optimize energy usage and reduce operational costs through efficient energy management.</p>
               </div>
               <div className="flip-card-back">
                 <ul className="list-unstyled mb-0">
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Improve delivery reliability and order accuracy.
+                    Reduce energy usage by equipment type.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Optimize cost per order.
+                    Lower energy costs per unit produced.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Reduce order fulfillment cycle times.
+                    Improve energy efficiency ratio across operations.
                   </li>
                 </ul>
               </div>
@@ -48,22 +48,22 @@ const SupplyChain = () => {
                 <div className="icon">
                   <img src={Icon2} alt="" />
                 </div>
-                <h4>Supplier Reliability Analysis</h4>
-                <p>Assess and enhance supplier performance for consistent supply chain operations.</p>
+                <h4>Carbon Footprint Analysis</h4>
+                <p>Track and reduce carbon emissions to meet sustainability goals.</p>
               </div>
               <div className="flip-card-back">
                 <ul className="list-unstyled mb-0">
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Increase on-time delivery rates.
+                    Minimize total carbon emissions from operations.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Ensure consistent quality in deliveries.
+                    Reduce emissions per unit produced.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Minimize lead time variability.
+                    Achieve continuous reduction in emissions over time.
                   </li>
                 </ul>
               </div>
@@ -77,22 +77,22 @@ const SupplyChain = () => {
                 <div className="icon">
                   <img src={Icon3} alt="" />
                 </div>
-                <h4>Inventory Flow Analysis</h4>
-                <p>Monitor and optimize inventory movement to reduce disruptions and costs.</p>
+                <h4>Waste Reduction Analysis</h4>
+                <p>Enhance waste management strategies to minimize environmental impact and costs.</p>
               </div>
               <div className="flip-card-back">
                 <ul className="list-unstyled mb-0">
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Improve inventory turnover rates.
+                    Reduce overall waste generated.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Minimize stockout occurrences.
+                    Increase recycling rates to lower waste disposal costs.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Optimize days of supply for better stock management.
+                    Achieve cost savings through waste reduction initiatives.
                   </li>
                 </ul>
               </div>
@@ -106,22 +106,22 @@ const SupplyChain = () => {
                 <div className="icon">
                   <img src={Icon4} alt="" />
                 </div>
-                <h4>Demand Forecasting</h4>
-                <p>Leverage data-driven insights to predict demand and plan efficiently.</p>
+                <h4>Renewable Energy Usage Analysis</h4>
+                <p>Maximize the use of renewable energy sources to support sustainability efforts.</p>
               </div>
               <div className="flip-card-back">
                 <ul className="list-unstyled mb-0">
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Enhance forecast accuracy.
+                    Increase percentage of energy sourced from renewables.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Reduce demand variations and uncertainties.
+                    Optimize cost of renewable energy usage.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Align sales with forecasted projections to improve inventory planning.
+                    Reduce reliance on non-renewable energy sources.
                   </li>
                 </ul>
               </div>
@@ -133,4 +133,4 @@ const SupplyChain = () => {
   );
 };
 
-export default SupplyChain;
+export default EnergyConsumption;
