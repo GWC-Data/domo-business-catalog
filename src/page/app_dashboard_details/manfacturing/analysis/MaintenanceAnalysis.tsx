@@ -1,7 +1,7 @@
 import Icon1 from "../icons/Inventory Turnover Analysis.png";
 import Icon2 from "../icons/Stock Level Analysis.png";
 import Icon3 from "../icons/Lead Time Analysis.png";
-import "./style.css";
+import "./cardstyle4.css";
 
 const MaintenanceAnalysis = () => {
     return (
