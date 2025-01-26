@@ -200,7 +200,7 @@ export const apps = [
         id: 1,
         title: "Optimizing Workflow and Resource Utilization",
         description: "This report provides overview of the hospital performance.",
-        image: "",
+        image: "/assets/images/projects/healthcare_360/Optimizing Workflow and Resource UtilizationOptimizing Workflow and Resource Utilization.png",
         embed: "https://embed.domo.com/embed/pages/ROA6w",
         industry: "Healthcare",
         keywords: "Appointment Scheduling, Patient Flow, Resource Allocation, Department Utilization, Healthcare Efficiency, Operational Metrics, Staff Productivity, Utilization Rates, Patient Overview, Resource Optimization"
@@ -209,7 +209,7 @@ export const apps = [
         id: 2,
         title: "Improving Employee and Patient Efficiency",
         description: "This report provides insights about the Physician attendance, staffs, utilization of resource.",
-        image: "",
+        image: "/assets/images/projects/healthcare_360/Improving Employee and Patient Efficiency.png",
         embed: "https://embed.domo.com/embed/pages/VAGOo",
         industry: "Healthcare",
         keywords: "Workforce Analytics, Employee Performance, Patient Care Efficiency, Logistics Management, Employee Overview, Caregiver Productivity, Workforce Utilization, Logistics Optimization, Performance Insights, Staff Scheduling"
@@ -218,7 +218,7 @@ export const apps = [
         id: 3,
         title: "Evaluating Clinical and Quality Metrics",
         description: "This report speaks about the physicians and their performance.",
-        image: "",
+        image: "/assets/images/projects/healthcare_360/Evaluating Clinical and Quality Metrics.png",
         embed: "https://embed.domo.com/embed/pages/WLJ6o",
         industry: "Healthcare",
         keywords: "Physician Performance, Clinical Metrics, Quality Assessment, Healthcare Quality, Performance Insights, Physician Productivity, Care Quality, Medical Outcomes, Physician Efficiency, Clinical Analysis"
@@ -227,7 +227,7 @@ export const apps = [
         id: 4,
         title: "Managing Stock and Fulfillment Efficiency",
         description: "This dashboard is designed to give healthcare administrators and inventory managers a comprehensive view of their inventory, helping them track supplies, manage stock levels, and optimize ordering processes. It aims to ensure that critical supplies are always available and to streamline inventory management",
-        image: "",
+        image: "/assets/images/projects/healthcare_360/Managing Stock and Fulfillment Efficiency.png",
         embed: "https://embed.domo.com/embed/pages/XLKDV",
         industry: "Healthcare",
         keywords: "Inventory Management, Stock Analysis, Order Fulfillment, Operational Efficiency, Financial Performance, Inventory Optimization, Fulfillment Metrics, Stock Availability, Cost Efficiency, Order Performance"
@@ -236,7 +236,7 @@ export const apps = [
         id: 5,
         title: "Driving Revenue and Cost Optimization",
         description: "A Finance Dashboard for Healthcare 360 is designed to provide a comprehensive view of financial metrics and performance indicators specific to the healthcare sector. It helps in monitoring, analyzing, and managing the financial aspects of healthcare operations.",
-        image: "",
+        image: "/assets/images/projects/healthcare_360/Driving Revenue and Cost Optimization.png",
         embed: "https://embed.domo.com/embed/pages/YWLEY",
         industry: "Healthcare",
         keywords: "Revenue Analysis, Profitability Metrics, Cost Efficiency, Financial Performance, Operational Costs, Revenue Growth, Expense Management, Patient Financials, Operational Metrics, Profit Margins"
@@ -245,7 +245,7 @@ export const apps = [
         id: 6,
         title: "Insights on Medicine, Revenue, and Suppliers",
         description: "This report gives information about the pharmacy sales, stocks, manpower and suppliers.",
-        image: "",
+        image: "/assets/images/projects/healthcare_360/Insights on Medicine, Revenue, and Suppliers.png",
         embed: "https://embed.domo.com/embed/pages/ZYM6g",
         industry: "Healthcare",
         keywords: "Medicine Stock, Revenue Analysis, Supplier Performance, Pharmaceutical Revenue, Inventory Management, Stock Levels, Profitability Metrics, Supplier Efficiency, Cost Analysis, Pharmaceutical Supply"
@@ -254,7 +254,7 @@ export const apps = [
         id: 7,
         title: "Diagnostics and Historical Patient Data",
         description: "The Laboratory & Scan Analysis module is designed to provide comprehensive insights into laboratory results and scan reports for patients. This module aids healthcare providers in diagnosing, monitoring, and managing patient health conditions by offering detailed analyses of various tests and scans.",
-        image: "",
+        image: "/assets/images/projects/healthcare_360/Diagnostics and Historical Patient Data.png",
         embed: "https://embed.domo.com/embed/pages/1WZwq",
         industry: "Healthcare",
         keywords: "Laboratory Analysis, Scan Reports, Patient Data, Historical Data, Diagnostic Insights, Medical Imaging, Test Results, Healthcare Analytics, Scan Performance, Patient Outcomes"
@@ -263,7 +263,7 @@ export const apps = [
         id: 8,
         title: "Reducing Waste and Maximizing Savings",
         description: "This dashboard offers insights into waste generation, disposal, and recycling within a healthcare facility. It aims to track and optimize waste management practices, ensure compliance with regulations, and identify opportunities for reducing waste and improving sustainability.",
-        image: "",
+        image: "/assets/images/projects/healthcare_360/Reducing Waste and Maximizing Savings.png",
         embed: "https://embed.domo.com/embed/pages/5QZyX",
         industry: "Healthcare",
         keywords: "Waste Management, Cost Efficiency, Recycling Savings, Waste Reduction, Environmental Impact, Sustainability Metrics, Operational Efficiency, Waste Disposal, Savings Analysis, Resource Optimization"
@@ -272,7 +272,7 @@ export const apps = [
         id: 9,
         title: "Facility and Equipment Performance Insights",
         description: "The Maintenance Dashboard in the Healthcare, tracks equipment maintenance history, upcoming service schedules, and monitors energy consumption. It helps Facilities Managers optimize upkeep, ensure compliance, and identify cost-saving opportunities through efficient asset management.",
-        image: "",
+        image: "/assets/images/projects/healthcare_360/Facility and Equipment Performance Insights.png",
         embed: "https://embed.domo.com/embed/pages/71Z3B",
         industry: "Healthcare",
         keywords: "Equipment Performance, Maintenance Efficiency, Facility Operations, Environmental Impact, Operational Efficiency, Healthcare Maintenance, Equipment Uptime, Sustainability Metrics, Facility Optimization, Patient Care Efficiency"
@@ -281,7 +281,7 @@ export const apps = [
         id: 10,
         title: "Streamlining Claims and Reimbursements",
         description: "The Insurance Dashboard in healthcare captures detailed insights into insurance companies, claim statuses, and reimbursement timelines, helping streamline operations for Financial and Claims Management teams.",
-        image: "",
+        image: "/assets/images/projects/healthcare_360/Streamlining Claims and Reimbursements.png",
         embed: "https://embed.domo.com/embed/pages/3Q81p",
         industry: "Healthcare",
         keywords: "Claim Processing, Revenue Analysis, Reimbursement Metrics, Insurance Claims, Financial Reimbursement, Operational Efficiency, Claims Performance, Insurance Revenue, Claim Approval, Payment Recovery"
@@ -290,7 +290,7 @@ export const apps = [
         id: 11,
         title: "Improving Feedback and Care Quality",
         description: "This dashboard shows how satisfied patients are with their healthcare experience. It includes key metrics like overall satisfaction scores, wait times, communication with doctors, and cleanliness. The dashboard helps healthcare teams track patient feedback and identify areas that need improvement to ensure better care and service quality.",
-        image: "",
+        image: "/public/assets/images/projects/healthcare_360/Improving Feedback and Care Quality.png",
         embed: "https://embed.domo.com/embed/pages/4QZxJ",
         industry: "Healthcare",
         keywords: "Patient Satisfaction, Patient Feedback, Healthcare Experience, Patient Engagement, Satisfaction Metrics, Service Quality, Patient Insights, Feedback Analysis, Experience Metrics, Care Quality"
