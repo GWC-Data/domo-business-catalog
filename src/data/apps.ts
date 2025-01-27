@@ -422,7 +422,7 @@ export const apps = [
         id: 1,
         title: "Ticket Booking Trends & Performance Analysis",
         description: "Analyzes booking trends, customer preferences, and performance across different events and shows.",
-        image: "",
+        image: "/assets/images/projects/entertainment_360/Ticket Booking Trends & Performance Analysis.png",
         embed: "https://embed.domo.com/embed/pages/xn4KJ",
         industry: "Entertainment & Online Ticketing",
         keywords: "Ticket Booking, Trends, Performance, Sales, Conversion, Booking Patterns, Revenue Tracking, User Behavior"
@@ -431,7 +431,7 @@ export const apps = [
         id: 2,
         title: "Cross-Selling and Upselling Performance Insights",
         description: "Tracks the effectiveness of cross-selling and upselling strategies to increase customer spend.",
-        image: "",
+        image: "/assets/images/projects/entertainment_360/Cross-Selling and Upselling Performance Insights.png",
         embed: "https://embed.domo.com/embed/pages/yogLV",
         industry: "Entertainment & Online Ticketing",
         keywords: "Cross-Selling, Upselling, Revenue Generation, Sales Insights, Marketing Strategy, Customer Engagement, Conversion Rate"
@@ -440,7 +440,7 @@ export const apps = [
         id: 3,
         title: "Customer Segmentation & Behavior Insights",
         description: "Segments customers based on behavior, demographics, and preferences to improve targeting and personalization.",
-        image: "",
+        image: "/assets/images/projects/entertainment_360/Customer Segmentation & Behavior Insights.png",
         embed: "https://embed.domo.com/embed/pages/zvjMr",
         industry: "Entertainment & Online Ticketing",
         keywords: "Customer Segmentation, Behavior Analysis, Demographics, Target Audience, Market Segmentation, Personalization, Consumer Trends"
@@ -449,7 +449,7 @@ export const apps = [
         id: 4,
         title: "Detailed Expense Tracking & Cost Management",
         description: "Provides insights into the company’s expenses, identifying areas of cost-saving and financial efficiency.",
-        image: "",
+        image: "/assets/images/projects/entertainment_360/Detailed Expense Tracking & Cost Management.png",
         embed: "https://embed.domo.com/embed/pages/ANk3B",
         industry: "Entertainment & Online Ticketing",
         keywords: "Cost Management, Financial Analysis, Budgeting, Expense Tracking, Profitability, Cost Efficiency, Spending Insights"
@@ -458,7 +458,7 @@ export const apps = [
         id: 5,
         title: "Customer Feedback & Sentiment Analysis",
         description: "Analyzes customer feedback to gauge satisfaction, identify pain points, and improve services.",
-        image: "",
+        image: "/assets/images/projects/entertainment_360/Customer Feedback & Sentiment Analysis.png",
         embed: "https://embed.domo.com/embed/pages/BN03x",
         industry: "Entertainment & Online Ticketing",
         keywords: "Customer Feedback, Sentiment Analysis, Customer Satisfaction, Reviews, Ratings, Opinion Mining, Customer Insights, Feedback Trends"
@@ -467,7 +467,7 @@ export const apps = [
         id: 6,
         title: "Geographic Distribution & Regional Insights",
         description: "Segments data based on geographic locations to tailor marketing and event strategies for different regions.",
-        image: "",
+        image: "/assets/images/projects/entertainment_360/Geographic Distribution & Regional Insights.png",
         embed: "https://embed.domo.com/embed/pages/D1n3B",
         industry: "Entertainment & Online Ticketing",
         keywords: "Geographic Segmentation, Regional Analysis, Location Insights, Market Distribution, Regional Trends, Local Preferences, Geographic Performance"
@@ -476,7 +476,7 @@ export const apps = [
         id: 7,
         title: "Marketing Campaign Performance & Effectiveness",
         description: "Tracks and evaluates the effectiveness of marketing campaigns and initiatives to boost engagement and sales.",
-        image: "",
+        image: "/assets/images/projects/entertainment_360/Marketing Campaign Performance & Effectiveness.png",
         embed: "https://embed.domo.com/embed/pages/E8o3N",
         industry: "Entertainment & Online Ticketing",
         keywords: "Marketing Campaign, Performance, ROI, Effectiveness, Advertising, Campaign Analytics, Customer Acquisition, Marketing Strategy"
@@ -485,7 +485,7 @@ export const apps = [
         id: 8,
         title: "Movie and Event Performance & Audience Engagement",
         description: "Analyzes the performance and popularity of movies and events to optimize offerings and scheduling.",
-        image: "",
+        image: "/assets/images/projects/entertainment_360/Movie and Event Performance & Audience Engagement.png",
         embed: "https://embed.domo.com/embed/pages/Gvq3y",
         industry: "Entertainment & Online Ticketing",
         keywords: "Movie Analysis, Event Performance, Audience Engagement, Box Office, Viewer Insights, Event Popularity, User Engagement"
@@ -494,7 +494,7 @@ export const apps = [
         id: 9,
         title: "Revenue Trends & Profitability Insights",
         description: "Provides detailed insights into revenue streams and profitability, helping to identify growth opportunities and financial health.",
-        image: "",
+        image: "/assets/images/projects/entertainment_360/Revenue Trends & Profitability Insights.png",
         embed: "https://embed.domo.com/embed/pages/1WoYV",
         industry: "Entertainment & Online Ticketing",
         keywords: "Revenue Analysis, Profitability, Financial Performance, Trends, Profit Margins, Growth, Sales Performance, Revenue Insights"
@@ -503,7 +503,7 @@ export const apps = [
         id: 10,
         title: "Theater Utilization & Seating Efficiency Analysis",
         description: "Focuses on evaluating and optimizing marketing strategies, campaigns, and return on investment for entertainment offerings.",
-        image: "",
+        image: "/assets/images/projects/entertainment_360/Theater Utilization & Seating Efficiency Analysis.png",
         embed: "https://embed.domo.com/embed/pages/JywvD",
         industry: "Entertainment & Online Ticketing",
         keywords: "Theater Utilization, Seating Efficiency, Occupancy Rate, Venue Management, Theater Performance, Capacity Utilization, Audience Distribution"
