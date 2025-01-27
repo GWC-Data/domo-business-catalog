@@ -47,7 +47,7 @@ const ProjectDetailsPage = () => {
         </figure>
       </div>
 
-      <Link to="/project" className="btn btn-warning m-3 font-weight-bold text-white" style={{ background: "#F37B64"}}>Go to Back</Link>
+      <Link to="/project" className="btn btn-warning m-3 font-weight-bold text-white" style={{ background: "#F37B64"}}>Go Back</Link>
 
       {project.length > 0 && (
         <section className="blog-posts" style={{paddingTop: "0px"}}>
