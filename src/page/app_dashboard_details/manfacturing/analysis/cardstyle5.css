@@ -1,28 +1,24 @@
 .customer-container{
-    width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4em;
 }
 .customer-card {
     border-radius: 16px;
     margin: 0 auto;
-    width: 400px;
-    max-width: 100%;
-    max-height: 400px;
+    height: 280px;
     box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
       0px 5px 8px 0px rgba(0, 0, 0, 0.14),
       0px 1px 14px 0px rgba(0, 0, 0, 0.12);
     overflow: hidden;
-    background-color:#d48b04;
     background-size: cover;
   }
   
   .info {
     position: relative;
     width: 100%;
-    height: 400px;
-    background-color: #fff;
+    height: 330px;
+    background-color: #010521;
     transform: translateY(100%)
       translateY(-88px)
       translateZ(0);
@@ -51,13 +47,22 @@
   .customer-card:hover .info:before {
     transform: translateY(0) translateZ(0);
   }
-  
+  .card-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
   .title {
     margin: 0;
-    padding: 24px;
-    font-size: 40px;
-    line-height: 1;
-    color: rgba(0, 0, 0, 0.87);
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .customer-desc{
+    margin: 0;
+    font-size: 10px;
+    color: #ffffff;
   }
   
   .description {
