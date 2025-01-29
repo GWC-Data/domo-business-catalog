@@ -1,6 +1,6 @@
  
 import React, { useState } from "react";
-import "./style.css";
+import "../../style.css";
 const KpiScore = () => {
   const [selected, setSelected] = useState(1);
   return (

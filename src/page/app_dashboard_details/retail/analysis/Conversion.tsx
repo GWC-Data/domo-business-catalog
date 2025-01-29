@@ -1,11 +1,10 @@
 import { useEffect } from "react";
-import "../../style.css";
+import "./Retailstyle.css";
 import Icon1 from "../../icons/Inventory Turnover Analysis.png";
 import Icon2 from "../../icons/Stock Level Analysis.png";
 import Icon3 from "../../icons/Lead Time Analysis.png";
-import Icon4 from "../../icons/Supplier Performance Analysis.png";
 
-const InventoryAnalysis = () => {
+const Conversion = () => {
 
   useEffect(() => {
     // Initialize owl carousel
@@ -57,8 +56,8 @@ const InventoryAnalysis = () => {
   return (
     <div className="container mt-5">
       <div>
-        <h4>Inventory Management Analysis</h4>
-        <p>Balance inventory levels to meet demand, reduce costs, and enhance operational efficiency.</p>
+        <h4>Conversion</h4>
+        <p>Converts engaged customers into paying buyers by optimizing the sales process.</p>
       </div>
       <section className="design_two">
         <div className="container">
@@ -71,22 +70,22 @@ const InventoryAnalysis = () => {
                       <img src={Icon1} alt="" />
                     </div>
                     <div className="lower_portion">
-                      <h4>Inventory Turnover Analysis</h4>
+                      <h4>Sales Funnel Analysis</h4>
                       <p className="text-size-18">
-                        Monitor inventory movement to optimize stock utilization and reduce carrying costs.
+                      Track conversion rates at each stage of the sales funnel.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Improve inventory turnover ratio.
+                          Analyze lead-to-customer conversion rates.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Minimize days sales of inventory (DSI).
+                          Identify bottlenecks in the purchase journey.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Lower inventory carrying costs.
+                          Optimize the funnel for higher sales conversions.
                         </li>
                       </ul>
                     </div>
@@ -100,22 +99,22 @@ const InventoryAnalysis = () => {
                       <img src={Icon2} alt="" />
                     </div>
                     <div className="lower_portion">
-                      <h4>Stock Level Analysis</h4>
+                      <h4>Product Performance</h4>
                       <p className="text-size-18">
-                        Ensure accurate stock levels to avoid disruptions and maintain customer satisfaction.
+                      Evaluate product performance to align inventory and marketing strategies.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Optimize safety stock levels.
+                          Monitor sales by product category and SKU.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Reduce overstock and stock-out scenarios.
+                          Identify fast-moving and slow-moving products.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Track stock levels by product category in real time.
+                          Optimize pricing strategies based on sales trends.
                         </li>
                       </ul>
                     </div>
@@ -129,49 +128,20 @@ const InventoryAnalysis = () => {
                       <img src={Icon3} alt="" />
                     </div>
                     <div className="lower_portion">
-                      <h4>Lead Time Analysis</h4>
-                      <p className="text-size-18">Analyze and improve lead times to enhance supply chain efficiency.</p>
+                      <h4>Cart Abandonment</h4>
+                      <p className="text-size-18">Track abandoned carts to recover lost sales and improve the checkout process.</p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Reduce supplier lead times and variability.
+                          Identify abandonment rates by product and customer segment.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Streamline procurement cycles by material or product.
+                          Analyze reasons for cart abandonment.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Minimize delays in production due to supply gaps.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <div className="blog_boxcontent">
-                  <div className="lower_portion_wrapper">
-                    <div className="icon">
-                      <img src={Icon4} alt="" />
-                    </div>
-                    <div className="lower_portion">
-                      <h4>Supplier Performance Analysis</h4>
-                      <p className="text-size-18">
-                        Evaluate supplier reliability to strengthen procurement strategies.
-                      </p>
-                      <ul className="list-unstyled mb-0">
-                        <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Improve on-time delivery rates.
-                        </li>
-                        <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Enhance supplier quality scores.
-                        </li>
-                        <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Reduce supplier defect rates to improve product quality.
+                          Implement strategies to recover abandoned carts through follow-ups.
                         </li>
                       </ul>
                     </div>
@@ -186,4 +156,4 @@ const InventoryAnalysis = () => {
   );
 };
 
-export default InventoryAnalysis;
+export default Conversion;

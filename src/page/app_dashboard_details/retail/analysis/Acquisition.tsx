@@ -1,14 +1,13 @@
  
 import React, { useState } from "react";
-import "../../style.css";
-
-const LaborAnalysis = () => {
+import "./Retailstyle.css";
+const Acquisition = () => {
   const [selected, setSelected] = useState(1);
   return (
     <div className="container mt-5">
       <div>
-        <h4>Labor Productivity and Employee Satisfaction analysis</h4>
-        <p>Optimize workforce performance and enhance employee satisfaction with data-driven insights.</p>
+        <h4>Acquisition</h4>
+        <p>Focuses on attracting potential customers through various marketing and online channels.</p>
       </div>
       <section className="domo_app-section" >
         <div className="container">
@@ -21,7 +20,7 @@ const LaborAnalysis = () => {
                       <figure className="domo_app-marketicon">
                         <img src="./assets/images/service-marketicon.png" alt="" className="img-fluid" />
                       </figure> 
-                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Labor Productivity Analysis</div>
+                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Marketing Channels Performance</div>
                     </div>   
                   </div>
                   <div style={{ cursor:"pointer"}} className="col-lg-6 col-md-6 col-sm-6 col-6" onClick={() => setSelected(2)} >
@@ -30,7 +29,7 @@ const LaborAnalysis = () => {
                         <figure className="domo_app-producticon">
                           <img src="./assets/images/service-producticon.png" alt="" className="img-fluid" />
                         </figure>
-                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Attendance and Absenteeism Analysis</div>
+                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Social Media Engagement</div>
                       </div>
                     </div>
                   </div>
@@ -41,17 +40,7 @@ const LaborAnalysis = () => {
                       <figure className="domo_app-designicon">
                         <img src="./assets/images/service-designicon.png" alt="" className="img-fluid" />
                       </figure>
-                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Shift Performance Analysis</div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6 col-md-6 col-sm-6 col-6" onClick={() => setSelected(4)} style={{ cursor:"pointer"}}>
-                    <div className="box-top">
-                      <div className={selected === 4 ? "domo_app-box active" : "domo_app-box"}>
-                        <figure className="domo_app-dataicon">
-                          <img src="./assets/images/service-dataicon.png" alt="" className="img-fluid" />
-                        </figure>
-                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Employee Satisfaction and Retention Analysis</div>
-                      </div>
+                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Website Traffic Analysis</div>
                     </div>
                   </div>
                 </div>
@@ -62,22 +51,22 @@ const LaborAnalysis = () => {
                 {
                   selected === 1 && (
                     <React.Fragment>
-                      <h2>Labor Productivity <br /> Analysis</h2>
+                      <h2>Marketing Channels Performance</h2>
                       <p>
-                      Monitor workforce efficiency to improve productivity and cost-effectiveness.
+                      Analyze the effectiveness of marketing channels to optimize spend and reach the right audience.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Increase output per labor hour.
+                          Evaluate channel ROI for campaigns.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Reduce labor cost per unit.
+                          Track customer acquisition costs across channels.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Boost overall workforce efficiency.
+                          Identify high-performing and underperforming channels.
                         </li>
                       </ul>
                     </React.Fragment>
@@ -86,22 +75,22 @@ const LaborAnalysis = () => {
                 {
                   selected === 2 && (
                     <React.Fragment>
-                      <h2>Attendance and Absenteeism Analysis</h2>
+                      <h2>Social Media Engagement </h2>
                       <p>
-                      Track attendance patterns and optimize workforce availability.
+                      Measure engagement across platforms to refine social media strategies.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Improve overall attendance rates.
+                          Monitor likes, shares, and comments by campaign.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Reduce absenteeism and overtime hours.
+                          Track follower growth and audience reach.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Enhance scheduling flexibility and resource allocation.
+                          Analyze the impact of social media efforts on conversions.
                         </li>
                       </ul>
                     </React.Fragment>
@@ -110,52 +99,27 @@ const LaborAnalysis = () => {
                 {
                   selected === 3 && (
                     <React.Fragment>
-                      <h2>Shift Performance Analysis</h2>
+                      <h2>Website Traffic Analysis</h2>
                       <p>
-                      Assess shift performance to balance workload and improve consistency.
+                      Understand how customers interact with your website to improve online performance.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Optimize shift output and performance.
+                          Track sessions, bounce rate, and time on site.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Reduce shift-to-shift variability in productivity.
+                          Identify high-traffic pages and customer pathways.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Improve shift efficiency through data-driven adjustments.
+                          Monitor traffic sources (organic, paid, referral, etc.).
                         </li>
                       </ul>
                     </React.Fragment>
                   )
-                }
-                {
-                  selected === 4 && (
-                    <React.Fragment>
-                      <h2>Employee Satisfaction and Retention Analysis</h2>
-                      <p>
-                      Foster a positive work environment to improve employee retention and satisfaction.
-                      </p>
-                      <ul className="list-unstyled mb-0">
-                        <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Boost employee satisfaction scores.
-                        </li>
-                        <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Increase retention rates and reduce turnover.
-                        </li>
-                        <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Identify and address key factors impacting employee morale.
-                        </li>
-                      </ul>
-                    </React.Fragment>
-                  )
-                }
-               
+                }               
               </div>
             </div>
           </div>
@@ -165,4 +129,4 @@ const LaborAnalysis = () => {
   );
 };
 
-export default LaborAnalysis;
+export default Acquisition;

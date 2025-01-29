@@ -1,14 +1,14 @@
-import Icon1 from "../icons/Inventory Turnover Analysis.png";
-import Icon2 from "../icons/Stock Level Analysis.png";
-import Icon3 from "../icons/Lead Time Analysis.png";
+import Icon1 from "../../icons/Inventory Turnover Analysis.png";
+import Icon2 from "../../icons/Stock Level Analysis.png";
+import Icon3 from "../../icons/Lead Time Analysis.png";
 import "../../cardstyle4.css";
 
-const MaintenanceAnalysis = () => {
+const Retention = () => {
     return (
         <div>
             <div className="container mt-5">
-                <h4>Customer Satisfaction Dashboard</h4>
-                <p>Enhance customer experience and loyalty through data-driven insights into product performance.</p>
+                <h4>Retention</h4>
+                <p>Encourages repeat purchases and builds customer loyalty to increase lifetime value.</p>
             </div>
             <div className="main-container">
             <div className="container1">
@@ -17,18 +17,22 @@ const MaintenanceAnalysis = () => {
                         <div className="content">
                             <img src={Icon1} />
                         </div>
-                        <p className="heading">Delivery Performance Analysis</p>
+                        <p className="heading">Customer Retention</p>
                     </div>
                     <div className="face face2">
                         <div className="content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
-                                    Track on-time delivery rate and delivery accuracy.
+                                    Track churn rates and retention by segment.
                                 </li>
                                 <li className="text text-size-18">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
-                                    Monitor customer complaints related to delivery performance.
+                                    Identify factors driving customer loyalty.
+                                </li>
+                                <li className="text text-size-18">
+                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
+                                    Implement targeted strategies to reduce churn.
                                 </li>
                             </ul>
                         </div>
@@ -39,18 +43,22 @@ const MaintenanceAnalysis = () => {
                         <div className="content">
                             <img src={Icon2} />
                         </div>
-                        <p className="heading">Product Quality Feedback</p>
+                        <p className="heading">Loyalty Program Performance</p>
                     </div>
                     <div className="face face2">
                         <div className="content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
-                                    Analyze customer satisfaction scores and product return rates.
+                                    Track participation rates and reward redemptions.
                                 </li>
                                 <li className="text text-size-18">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
-                                    Address product defect complaints to enhance product quality.
+                                    Measure the contribution of loyalty members to revenue.
+                                </li>
+                                <li className="text text-size-18">
+                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
+                                    Optimize rewards for maximum engagement.
                                 </li>
                             </ul>
                         </div>
@@ -61,18 +69,22 @@ const MaintenanceAnalysis = () => {
                         <div className="content">
                             <img src={Icon3} />
                         </div>
-                        <p className="heading">Net Promoter Score (NPS) Analysis</p>
+                        <p className="heading">Customer Feedback</p>
                     </div>
                     <div className="face face2">
                         <div className="content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
-                                    Track NPS score to assess customer sentiment.
+                                    Track satisfaction scores and review trends.
                                 </li>
                                 <li className="text text-size-18">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
-                                    Improve customer retention and increase referral rate.
+                                    Address key areas for improvement.
+                                </li>
+                                <li className="text text-size-18">
+                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
+                                    Monitor feedback by channel and location.
                                 </li>
                             </ul>
                         </div>
@@ -84,4 +96,4 @@ const MaintenanceAnalysis = () => {
     );
 };
 
-export default MaintenanceAnalysis;
+export default Retention;

@@ -1,15 +1,14 @@
 import Icon1 from "../../icons/Inventory Turnover Analysis.png";
 import Icon2 from "../../icons/Stock Level Analysis.png";
 import Icon3 from "../../icons/Lead Time Analysis.png";
-import Icon4 from "../../icons/Supplier Performance Analysis.png";
-import "../../style.css";
+import "./Retailstyle.css";
 
-const EnergyConsumption = () => {
+const Repurchase = () => {
   return (
     <div className="container mt-5">
       <div>
-        <h4>Energy Consumption and Carbon footprint analysis</h4>
-        <p>Drive operational efficiency while minimizing environmental impact with sustainable energy practices.</p>
+        <h4>Repurchase</h4>
+        <p>Drives additional purchases and brand advocacy through upselling, cross-selling, and referral programs.</p>
       </div>
       <div className="row">
         <div className="col-lg-6 col-md-6 col-sm-12 col-12 p-3">
@@ -19,22 +18,22 @@ const EnergyConsumption = () => {
                 <div className="icon">
                   <img src={Icon1} alt="" />
                 </div>
-                <h4>Energy Consumption Analysis</h4>
-                <p>Optimize energy usage and reduce operational costs through efficient energy management.</p>
+                <h4>Upsell/Cross-Sell</h4>
+                <p>Identify opportunities to boost revenue through upselling and cross-selling.</p>
               </div>
               <div className="flip-card-back">
                 <ul className="list-unstyled mb-0">
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Reduce energy usage by equipment type.
+                    Track additional purchases by segment and product category.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Lower energy costs per unit produced.
+                    Measure the success of promotional bundles and recommendations.  
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Improve energy efficiency ratio across operations.
+                    Identify patterns to enhance product bundling strategies.
                   </li>
                 </ul>
               </div>
@@ -48,22 +47,22 @@ const EnergyConsumption = () => {
                 <div className="icon">
                   <img src={Icon2} alt="" />
                 </div>
-                <h4>Carbon Footprint Analysis</h4>
-                <p>Track and reduce carbon emissions to meet sustainability goals.</p>
+                <h4>Customer Advocacy</h4>
+                <p>Measure customer advocacy and the impact of referrals.</p>
               </div>
               <div className="flip-card-back">
                 <ul className="list-unstyled mb-0">
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Minimize total carbon emissions from operations.
+                    Track referral rates and word-of-mouth impact.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Reduce emissions per unit produced.
+                    Measure Net Promoter Score (NPS) by segment.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Achieve continuous reduction in emissions over time.
+                    Identify brand ambassadors for loyalty campaigns.
                   </li>
                 </ul>
               </div>
@@ -77,51 +76,22 @@ const EnergyConsumption = () => {
                 <div className="icon">
                   <img src={Icon3} alt="" />
                 </div>
-                <h4>Waste Reduction Analysis</h4>
-                <p>Enhance waste management strategies to minimize environmental impact and costs.</p>
+                <h4>Lifetime Value</h4>
+                <p>Analyze customer lifetime value to prioritize high-value segments.</p>
               </div>
               <div className="flip-card-back">
                 <ul className="list-unstyled mb-0">
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Reduce overall waste generated.
+                    Calculate average lifetime revenue by customer segment.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Increase recycling rates to lower waste disposal costs.
+                    Measure the ROI of acquisition and retention efforts.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Achieve cost savings through waste reduction initiatives.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 col-12 p-3">
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <div className="icon">
-                  <img src={Icon4} alt="" />
-                </div>
-                <h4>Renewable Energy Usage Analysis</h4>
-                <p>Maximize the use of renewable energy sources to support sustainability efforts.</p>
-              </div>
-              <div className="flip-card-back">
-                <ul className="list-unstyled mb-0">
-                  <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Increase percentage of energy sourced from renewables.
-                  </li>
-                  <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Optimize cost of renewable energy usage.
-                  </li>
-                  <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Reduce reliance on non-renewable energy sources.
+                    Optimize marketing spend based on CLV insights.
                   </li>
                 </ul>
               </div>
@@ -133,4 +103,4 @@ const EnergyConsumption = () => {
   );
 };
 
-export default EnergyConsumption;
+export default Repurchase;

@@ -2,12 +2,12 @@ import Icon1 from "../../icons/Inventory Turnover Analysis.png";
 import Icon2 from "../../icons/Stock Level Analysis.png";
 import Icon3 from "../../icons/Lead Time Analysis.png";
 
-const FinanceDashboard = () => {
+const ExecutiveView = () => {
     return (
         <div>
             <div className="container mt-5">
-                <h4>Finance Dashboard</h4>
-                <p>Monitor financial health and optimize cost efficiency for manufacturing operations.</p>
+                <h4>Executive View</h4>
+                <p>Provides high-level insights to senior executives on key business metrics and strategic initiatives.</p>
             </div>
             <div className="row"></div>
             <div className="container">
@@ -17,25 +17,24 @@ const FinanceDashboard = () => {
                             <div>
                                 <img src={Icon1} alt="" width="100" />
                             </div>
-                            <h6 className="card__title">Income Statement</h6>
-                            <p className="text-white">Track revenue and profitability to ensure financial stability and efficiency.</p>
+                            <h6 className="card__title">Executive Summary</h6>
+                            <p className="text-white">Provide a high-level view of overall performance for strategic decision-making.</p>
                         </div>
                         <div className="card__overlay"></div>
                         <div className="card__content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Monitor key financial metrics like revenue, EBIT, and NCF.
+                                    Summarize KPIs across departments.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Optimize cash conversion cycle (CCC).
+                                    Highlight risks and opportunities at a glance.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Analyze current ratio and net operating cash flow for better decision-making.
+                                    Enable informed decisions with actionable insights.
                                 </li>
-                                <p className="text-white">Audience: Cost Accountants, Finance Analysts.</p>
                             </ul>
                         </div>
                     </li>
@@ -44,23 +43,23 @@ const FinanceDashboard = () => {
                             <div>
                                 <img src={Icon2} alt="" width="100" />
                             </div>
-                            <h6 className="card__title">Financial Ratio & Liquidity</h6>
-                            <p className="text-white">Evaluate financial health through liquidity and performance ratios.</p>
+                            <h6 className="card__title">Financial Performance</h6>
+                            <p className="text-white">Monitor the financial health of your retail business.</p>
                         </div>
                         <div className="card__overlay"></div>
                         <div className="card__content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Assess liquidity with key ratios such as Current and Quick Ratios.
+                                    Track revenue, profits, and expenses.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Monitor accounts payable and receivable for improved cash flow.
+                                    Monitor cost-to-revenue ratios by channel.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Measure profitability with ROI and Net Profit Margin.
+                                    Identify areas for improving profitability.
                                 </li>
                             </ul>
                         </div>
@@ -70,19 +69,23 @@ const FinanceDashboard = () => {
                             <div>
                                 <img src={Icon3} alt="" width="100" />
                             </div>
-                            <h6 className="card__title">Scrap Expense Analysis</h6>
-                            <p className="text-white">Identify opportunities to reduce costs and improve profitability through scrap management.</p>
+                            <h6 className="card__title">Strategic Initiatives</h6>
+                            <p className="text-white">Track the progress and success of strategic projects.</p>
                         </div>
                         <div className="card__overlay"></div>
                         <div className="card__content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Analyze cost of scrap and its impact on profitability.
+                                    Monitor KPIs tied to strategic goals.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Calculate savings from scrap rate reduction initiatives.
+                                    Measure ROI of major initiatives.
+                                </li>
+                                <li className="text text-size-18 text-white">
+                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
+                                    Align resources and efforts with company objectives.
                                 </li>
                             </ul>
                         </div>
@@ -93,4 +96,4 @@ const FinanceDashboard = () => {
     )
 }
 
-export default FinanceDashboard
+export default ExecutiveView

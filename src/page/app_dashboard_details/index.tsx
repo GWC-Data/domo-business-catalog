@@ -14,6 +14,17 @@ import LaborAnalysis from "./manfacturing/analysis/LaborAnalysis";
 import EnergyConsumption from "./manfacturing/analysis/EnergyConsumption";
 import FinanceDashboard from "./manfacturing/analysis/FinanceDashboard";
 import Customer from "./manfacturing/analysis/Customer";
+import Acquisition from "./retail/analysis/Acquisition";
+import Conversion from "./retail/analysis/Conversion";
+import StockManagement from "./retail/analysis/StockManagement";
+import Retention from "./retail/analysis/Retention";
+import CustomerEngagement from "./retail/analysis/CustomerEngagement";
+import StorePerformance from "./retail/analysis/StorePerformance";
+import ProductPerformance from "./retail/analysis/ProductPerformance";
+import Repurchase from "./retail/analysis/Repurchase";
+import Market from "./retail/analysis/Market";
+import ExecutiveView from "./retail/analysis/ExecutiveView";
+import ProductionVolume from "./manfacturing/analysis/ProductionVolume";
 
 const AppDashboardDetailsPage = () => {
 
@@ -134,6 +145,62 @@ const AppDashboardDetailsPage = () => {
           {
             subProject[0]?.title === "Customer Satisfaction Dashboard" && (
               <Customer />
+            )
+          }
+          {
+            subProject[0]?.title === "Production Volume Dashbaord" && (
+              <ProductionVolume />
+            )
+          }
+          {/*Retail 360*/}
+          {
+            subProject[0]?.title === "Acquisition" && (
+              <Acquisition />
+            )
+          }
+          {
+            subProject[0]?.title === "Conversion" && (
+              <Conversion />
+            )
+          }
+          {
+            subProject[0]?.title === "Stock Management" && (
+              <StockManagement />
+            )
+          }
+          {
+            subProject[0]?.title === "Retention" && (
+              <Retention />
+            )
+          }
+          {
+            subProject[0]?.title === "Customer Engagement" && (
+              <CustomerEngagement />
+            )
+          }
+          {
+            subProject[0]?.title === "Store Performance" && (
+              <StorePerformance />
+            )
+          }
+          {
+            subProject[0]?.title === "Product Performance" && (
+              <ProductPerformance />
+            )
+          }
+          {
+            subProject[0]?.title === "Repurchase" && (
+              <Repurchase />
+            )
+          }
+          {
+            subProject[0]?.title === "Market Intelligence" && (
+              <Market />
+            )
+          }
+          {
+            subProject[0]?.title === "Executive View" && (
+              <ExecutiveView />
             )
           }
           

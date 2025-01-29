@@ -1,14 +1,14 @@
-import Icon1 from "../icons/Inventory Turnover Analysis.png";
-import Icon2 from "../icons/Stock Level Analysis.png";
-import Icon3 from "../icons/Lead Time Analysis.png";
+import Icon1 from "../../icons/Inventory Turnover Analysis.png";
+import Icon2 from "../../icons/Stock Level Analysis.png";
+import Icon3 from "../../icons/Lead Time Analysis.png";
 import "../../cardstyle4.css";
 
-const MaintenanceAnalysis = () => {
+const Market = () => {
     return (
         <div>
             <div className="container mt-5">
-                <h4>Customer Satisfaction Dashboard</h4>
-                <p>Enhance customer experience and loyalty through data-driven insights into product performance.</p>
+                <h4>Market Intelligence</h4>
+                <p>Analyzes market trends, competitor strategies, and consumer behavior to inform business decisions.</p>
             </div>
             <div className="main-container">
             <div className="container1">
@@ -17,18 +17,22 @@ const MaintenanceAnalysis = () => {
                         <div className="content">
                             <img src={Icon1} />
                         </div>
-                        <p className="heading">Delivery Performance Analysis</p>
+                        <p className="heading">Competitor Analysis</p>
                     </div>
                     <div className="face face2">
                         <div className="content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
-                                    Track on-time delivery rate and delivery accuracy.
+                                    Track competitor pricing and promotional strategies.
                                 </li>
                                 <li className="text text-size-18">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
-                                    Monitor customer complaints related to delivery performance.
+                                    Monitor market share and customer sentiment.
+                                </li>
+                                <li className="text text-size-18">
+                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
+                                    Identify gaps and opportunities to outperform competitors.
                                 </li>
                             </ul>
                         </div>
@@ -39,18 +43,22 @@ const MaintenanceAnalysis = () => {
                         <div className="content">
                             <img src={Icon2} />
                         </div>
-                        <p className="heading">Product Quality Feedback</p>
+                        <p className="heading">Consumer Trends</p>
                     </div>
                     <div className="face face2">
                         <div className="content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
-                                    Analyze customer satisfaction scores and product return rates.
+                                    Track buying patterns by demographic.
                                 </li>
                                 <li className="text text-size-18">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
-                                    Address product defect complaints to enhance product quality.
+                                    Identify trends shaping customer demand.
+                                </li>
+                                <li className="text text-size-18">
+                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
+                                    Adjust strategies to align with emerging trends.
                                 </li>
                             </ul>
                         </div>
@@ -61,18 +69,22 @@ const MaintenanceAnalysis = () => {
                         <div className="content">
                             <img src={Icon3} />
                         </div>
-                        <p className="heading">Net Promoter Score (NPS) Analysis</p>
+                        <p className="heading">Geospatial Analysis</p>
                     </div>
                     <div className="face face2">
                         <div className="content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
-                                    Track NPS score to assess customer sentiment.
+                                    Measure regional sales and market penetration.
                                 </li>
                                 <li className="text text-size-18">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
-                                    Improve customer retention and increase referral rate.
+                                    Identify high-potential areas for expansion.
+                                </li>
+                                <li className="text text-size-18">
+                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000" }}></i>
+                                    Track local demand and competitive presence.
                                 </li>
                             </ul>
                         </div>
@@ -84,4 +96,4 @@ const MaintenanceAnalysis = () => {
     );
 };
 
-export default MaintenanceAnalysis;
+export default Market;
