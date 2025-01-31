@@ -25,6 +25,12 @@ import Repurchase from "./retail/analysis/Repurchase";
 import Market from "./retail/analysis/Market";
 import ExecutiveView from "./retail/analysis/ExecutiveView";
 import ProductionVolume from "./manfacturing/analysis/ProductionVolume";
+import Operational from "./healthcare/analysis/Oprational";
+import Employee from "./healthcare/analysis/Employee";
+import Clinical from "./healthcare/analysis/Clinical";
+import ManagingStock from "./healthcare/analysis/ManagingStock";
+import DrivingRevenue from "./healthcare/analysis/DrivingRevenue";
+import Insights from "./healthcare/analysis/Insights";
 
 const AppDashboardDetailsPage = () => {
 
@@ -201,6 +207,37 @@ const AppDashboardDetailsPage = () => {
           {
             subProject[0]?.title === "Executive View" && (
               <ExecutiveView />
+            )
+          }
+          {/*Retail 360*/}
+          {
+            subProject[0]?.title === "Optimizing Workflow and Resource Utilization" && (
+              <Operational />
+            )
+          }
+          {
+            subProject[0]?.title === "Improving Employee and Patient Efficiency" && (
+              <Employee />
+            )
+          }
+          {
+            subProject[0]?.title === "Evaluating Clinical and Quality Metrics" && (
+              <Clinical />
+            )
+          }
+          {
+            subProject[0]?.title === "Managing Stock and Fulfillment Efficiency" && (
+              <ManagingStock />
+            )
+          }
+          {
+            subProject[0]?.title === "Driving Revenue and Cost Optimization" && (
+              <DrivingRevenue />
+            )
+          }
+          {
+            subProject[0]?.title === "Insights on Medicine, Revenue, and Suppliers" && (
+              <Insights />
             )
           }
           
