@@ -2,12 +2,12 @@ import Icon1 from "../../icons/Inventory Turnover Analysis.png";
 import Icon2 from "../../icons/Stock Level Analysis.png";
 import Icon3 from "../../icons/Lead Time Analysis.png";
 
-const DrivingRevenue = () => {
+const CrossSelling = () => {
     return (
         <div>
             <div className="container mt-5">
-                <h4>Driving Revenue and Cost Optimization</h4>
-                <p>Monitor financial health and optimize cost efficiency for healthcare operations.</p>
+                <h4>Cross-Selling and Upselling Performance Insights</h4>
+                <p>Identify and capitalize on opportunities to increase revenue per customer through upselling and cross-selling.</p>
             </div>
             <div className="row"></div>
             <div className="container">
@@ -17,23 +17,23 @@ const DrivingRevenue = () => {
                             <div>
                                 <img src={Icon1} alt="" width="100" />
                             </div>
-                            <h6 className="card__title">Revenue and Expenditure Analysis</h6>
-                            <p className="text-white">Track revenue and profitability to ensure financial stability and efficiency.</p>
+                            <h6 className="card__title">Upselling Opportunities</h6>
+                            <p className="text-white">Maximize revenue by promoting higher-value products or services during the purchase process.</p>
                         </div>
                         <div className="card__overlay"></div>
                         <div className="card__content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Monitor key financial metrics like revenue, EBIT, and NCF.
+                                    Track conversion rates for upsold items like snacks, premium seating, or merchandise to assess effectiveness.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Optimize cash conversion cycle (CCC).
+                                    Introduce combo deals (e.g., ticket + snacks or merchandise bundles) to increase overall transaction value.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Analyze department-wise profitability for better resource allocation.
+                                    Recommend premium options or VIP experiences during checkout to boost average customer spend.
                                 </li>
                             </ul>
                         </div>
@@ -43,23 +43,23 @@ const DrivingRevenue = () => {
                             <div>
                                 <img src={Icon2} alt="" width="100" />
                             </div>
-                            <h6 className="card__title">Claims Processing Analysis</h6>
-                            <p className="text-white">Analyze claims settlement trends to improve financial transparency.</p>
+                            <h6 className="card__title">Cross-Selling Opportunities</h6>
+                            <p className="text-white">Increase revenue through complementary offerings that enhance the customer experience.</p>
                         </div>
                         <div className="card__overlay"></div>
                         <div className="card__content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Improve claims settlement ratio.
+                                    Focus on cross-selling event bundles (e.g., ticket + parking or food/drink vouchers).
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Reduce claim processing times.
+                                    Leverage customer data to suggest relevant add-ons based on previous purchases or preferences.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Minimize rejected claims through process optimization.
+                                    Implement personalized offers based on customer segmentation to increase uptake of cross-sell products.
                                 </li>
                             </ul>
                         </div>
@@ -69,23 +69,19 @@ const DrivingRevenue = () => {
                             <div>
                                 <img src={Icon3} alt="" width="100" />
                             </div>
-                            <h6 className="card__title">Cost Analysis</h6>
-                            <p className="text-white">Identify cost-saving opportunities through detailed financial analysis.</p>
+                            <h6 className="card__title">Customer Satisfaction Through Personalization</h6>
+                            <p className="text-white">Enhance the customer experience with tailored offerings that provide additional value.</p>
                         </div>
                         <div className="card__overlay"></div>
                         <div className="card__content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Reduce operational costs.
+                                    Offer personalized recommendations based on customer preferences and behavior to improve the relevancy of upsell/cross-sell offers.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Optimize budget allocation.
-                                </li>
-                                <li className="text text-size-18 text-white">
-                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Achieve better financial planning.
+                                    Create exclusive packages or bundles that increase perceived value and drive greater customer satisfaction.
                                 </li>
                             </ul>
                         </div>
@@ -96,4 +92,4 @@ const DrivingRevenue = () => {
     )
 }
 
-export default DrivingRevenue;
+export default CrossSelling;

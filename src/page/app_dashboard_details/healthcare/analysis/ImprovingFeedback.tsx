@@ -1,13 +1,13 @@
  import React, { useState } from "react";
 import "../../style.css";
 
-const Operational = () => {
+const ImprovingFeedback = () => {
   const [selected, setSelected] = useState(1);
   return (
     <div className="container mt-5">
       <div>
-        <h4>Optimizing Workflow and Resource Utilization</h4>
-        <p>Analyze and optimize hospital operations to enhance efficiency, reduce costs, and improve patient care.</p>
+        <h4>Improving Feedback and Care Quality</h4>
+        <p>Enhance patient experience and loyalty through data-driven insights into service quality.</p>
       </div>
       <section className="domo_app-section" >
         <div className="container">
@@ -20,7 +20,7 @@ const Operational = () => {
                       <figure className="domo_app-marketicon">
                         <img src="./assets/images/service-marketicon.png" alt="" className="img-fluid" />
                       </figure> 
-                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Bed Utilization Analysis</div>
+                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Net Promoter Score (NPS) Analysis</div>
                     </div>   
                   </div>
                   <div style={{ cursor:"pointer"}} className="col-lg-6 col-md-6 col-sm-6 col-6" onClick={() => setSelected(2)} >
@@ -29,7 +29,7 @@ const Operational = () => {
                         <figure className="domo_app-producticon">
                           <img src="./assets/images/service-producticon.png" alt="" className="img-fluid" />
                         </figure>
-                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Emergency Response Analysis</div>
+                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Feedback Trend Analysis</div>
                       </div>
                     </div>
                   </div>
@@ -40,7 +40,7 @@ const Operational = () => {
                       <figure className="domo_app-designicon">
                         <img src="./assets/images/service-designicon.png" alt="" className="img-fluid" />
                       </figure>
-                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Departmental Efficiency Analysis</div>
+                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Service Quality Metrics</div>
                     </div>
                   </div>
                 </div>
@@ -51,22 +51,22 @@ const Operational = () => {
                 {
                   selected === 1 && (
                     <React.Fragment>
-                      <h2>Bed Utilization Analysis</h2>
+                      <h2>Net Promoter Score (NPS) Analysis</h2>
                       <p>
-                      Monitor bed occupancy rates to optimize resource allocation.
+                      Measure patient loyalty and the likelihood of referrals.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Improve bed turnover rates.
+                          Improve NPS scores to enhance patient sentiment.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Reduce patient wait times for admissions.
+                          Increase referral rates through better care.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Enhance overall patient flow management.
+                          Address feedback to improve patient experience.
                         </li>
                       </ul>
                     </React.Fragment>
@@ -75,22 +75,22 @@ const Operational = () => {
                 {
                   selected === 2 && (
                     <React.Fragment>
-                      <h2>Emergency Response Analysis</h2>
+                      <h2>Feedback Trend Analysis</h2>
                       <p>
-                      Track and optimize emergency response times.
+                      Analyze feedback trends to identify areas of improvement.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Shorten response times to critical incidents.
+                          Address recurring complaints.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Improve emergency resource allocation.
+                          Enhance department-wise service quality.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Enhance patient outcomes during emergencies.
+                          Implement changes based on patient suggestions.
                         </li>
                       </ul>
                     </React.Fragment>
@@ -99,22 +99,22 @@ const Operational = () => {
                 {
                   selected === 3 && (
                     <React.Fragment>
-                      <h2>Departmental Efficiency Analysis</h2>
+                      <h2>Service Quality Metrics</h2>
                       <p>
-                      Gain insights into departmental performance to streamline operations.
+                      Monitor overall patient satisfaction and service quality.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Identify underperforming departments.
+                          Improve satisfaction scores.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Allocate resources to high-demand areas.
+                          Enhance timeliness and efficiency of services.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Monitor efficiency metrics in real-time.
+                          Ensure continuous improvement in patient care.
                         </li>
                       </ul>
                     </React.Fragment>
@@ -129,4 +129,4 @@ const Operational = () => {
   );
 };
 
-export default Operational;
+export default ImprovingFeedback;

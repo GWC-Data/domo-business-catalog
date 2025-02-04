@@ -2,12 +2,12 @@ import Icon1 from "../../icons/Inventory Turnover Analysis.png";
 import Icon2 from "../../icons/Stock Level Analysis.png";
 import Icon3 from "../../icons/Lead Time Analysis.png";
 
-const DrivingRevenue = () => {
+const Streamlining = () => {
     return (
         <div>
             <div className="container mt-5">
-                <h4>Driving Revenue and Cost Optimization</h4>
-                <p>Monitor financial health and optimize cost efficiency for healthcare operations.</p>
+                <h4>Streamlining Claims and Reimbursements</h4>
+                <p>Analyze claims processing, revenue, and reimbursement trends for better financial management and operational transparency.</p>
             </div>
             <div className="row"></div>
             <div className="container">
@@ -17,23 +17,23 @@ const DrivingRevenue = () => {
                             <div>
                                 <img src={Icon1} alt="" width="100" />
                             </div>
-                            <h6 className="card__title">Revenue and Expenditure Analysis</h6>
-                            <p className="text-white">Track revenue and profitability to ensure financial stability and efficiency.</p>
+                            <h6 className="card__title">Claims Settlement Ratio</h6>
+                            <p className="text-white">Monitor and improve claims processing efficiency.</p>
                         </div>
                         <div className="card__overlay"></div>
                         <div className="card__content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Monitor key financial metrics like revenue, EBIT, and NCF.
+                                    Identify reasons for claim rejections and address them.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Optimize cash conversion cycle (CCC).
+                                    Enhance claims approval rates.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Analyze department-wise profitability for better resource allocation.
+                                    Reduce average claim processing time.
                                 </li>
                             </ul>
                         </div>
@@ -43,23 +43,23 @@ const DrivingRevenue = () => {
                             <div>
                                 <img src={Icon2} alt="" width="100" />
                             </div>
-                            <h6 className="card__title">Claims Processing Analysis</h6>
-                            <p className="text-white">Analyze claims settlement trends to improve financial transparency.</p>
+                            <h6 className="card__title">Revenue Trends</h6>
+                            <p className="text-white">Analyze revenue patterns for strategic decision-making.</p>
                         </div>
                         <div className="card__overlay"></div>
                         <div className="card__content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Improve claims settlement ratio.
+                                    Optimize cash flow through efficient claims management.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Reduce claim processing times.
+                                    Monitor monthly reimbursement trends.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Minimize rejected claims through process optimization.
+                                    Improve revenue forecasting accuracy.
                                 </li>
                             </ul>
                         </div>
@@ -69,23 +69,23 @@ const DrivingRevenue = () => {
                             <div>
                                 <img src={Icon3} alt="" width="100" />
                             </div>
-                            <h6 className="card__title">Cost Analysis</h6>
-                            <p className="text-white">Identify cost-saving opportunities through detailed financial analysis.</p>
+                            <h6 className="card__title">Reimbursement Metrics</h6>
+                            <p className="text-white">Ensure timely and accurate reimbursements.</p>
                         </div>
                         <div className="card__overlay"></div>
                         <div className="card__content">
                             <ul className="list-unstyled mb-0">
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Reduce operational costs.
+                                    Track reimbursement cycles by insurer.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Optimize budget allocation.
+                                    Minimize delays in reimbursement approvals.
                                 </li>
                                 <li className="text text-size-18 text-white">
                                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#ffffff" }}></i>
-                                    Achieve better financial planning.
+                                    Enhance insurer-hospital relationships through consistent performance.
                                 </li>
                             </ul>
                         </div>
@@ -96,4 +96,4 @@ const DrivingRevenue = () => {
     )
 }
 
-export default DrivingRevenue;
+export default Streamlining;

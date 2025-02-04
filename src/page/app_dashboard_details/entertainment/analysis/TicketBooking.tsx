@@ -1,14 +1,13 @@
- 
-import React, { useState } from "react";
-import "../../style.css";
+ import React, { useState } from "react";
+import "../../style.css"
 
-const Acquisition = () => {
+const TicketBooking = () => {
   const [selected, setSelected] = useState(1);
   return (
     <div className="container mt-5">
       <div>
-        <h4>Acquisition</h4>
-        <p>Focuses on attracting potential customers through various marketing and online channels.</p>
+        <h4>Ticket Booking Trends & Performance Analysis</h4>
+        <p>Optimize booking trends to enhance customer satisfaction, maximize revenue, and streamline operations.</p>
       </div>
       <section className="domo_app-section" >
         <div className="container">
@@ -21,7 +20,7 @@ const Acquisition = () => {
                       <figure className="domo_app-marketicon">
                         <img src="./assets/images/service-marketicon.png" alt="" className="img-fluid" />
                       </figure> 
-                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Marketing Channels Performance</div>
+                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Operational Efficiency</div>
                     </div>   
                   </div>
                   <div style={{ cursor:"pointer"}} className="col-lg-6 col-md-6 col-sm-6 col-6" onClick={() => setSelected(2)} >
@@ -30,7 +29,7 @@ const Acquisition = () => {
                         <figure className="domo_app-producticon">
                           <img src="./assets/images/service-producticon.png" alt="" className="img-fluid" />
                         </figure>
-                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Social Media Engagement</div>
+                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Customer Loyalty Management</div>
                       </div>
                     </div>
                   </div>
@@ -41,7 +40,7 @@ const Acquisition = () => {
                       <figure className="domo_app-designicon">
                         <img src="./assets/images/service-designicon.png" alt="" className="img-fluid" />
                       </figure>
-                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Website Traffic Analysis</div>
+                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Resource Optimization</div>
                     </div>
                   </div>
                 </div>
@@ -52,22 +51,22 @@ const Acquisition = () => {
                 {
                   selected === 1 && (
                     <React.Fragment>
-                      <h2>Marketing Channels Performance</h2>
+                      <h2>Operational Efficiency</h2>
                       <p>
-                      Analyze the effectiveness of marketing channels to optimize spend and reach the right audience.
+                      Gain insights into peak booking trends and improve conversion rates to enhance booking processes.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Evaluate channel ROI for campaigns.
+                          Increase peak and off-peak booking rates through targeted promotions.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Track customer acquisition costs across channels.
+                          Improve conversion rates from visitors to bookings.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Identify high-performing and underperforming channels.
+                          Enhance system performance to handle high-demand periods seamlessly.
                         </li>
                       </ul>
                     </React.Fragment>
@@ -76,22 +75,22 @@ const Acquisition = () => {
                 {
                   selected === 2 && (
                     <React.Fragment>
-                      <h2>Social Media Engagement </h2>
+                      <h2>Customer Loyalty Management</h2>
                       <p>
-                      Measure engagement across platforms to refine social media strategies.
+                      Foster repeat bookings and build lasting relationships with your audience.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Monitor likes, shares, and comments by campaign.
+                          Implement loyalty programs to incentivize repeat customers.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Track follower growth and audience reach.
+                          Minimize ticket cancellation rates with enhanced booking policies.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Analyze the impact of social media efforts on conversions.
+                          Tailor offers and promotions to encourage customer retention.
                         </li>
                       </ul>
                     </React.Fragment>
@@ -100,22 +99,22 @@ const Acquisition = () => {
                 {
                   selected === 3 && (
                     <React.Fragment>
-                      <h2>Website Traffic Analysis</h2>
+                      <h2>Resource Optimization</h2>
                       <p>
-                      Understand how customers interact with your website to improve online performance.
+                      Ensure efficient resource allocation and operational success during high-demand periods.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Track sessions, bounce rate, and time on site.
+                          Streamline scheduling for optimal resource utilization.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Identify high-traffic pages and customer pathways.
+                          Improve system scalability to handle high traffic during booking spikes.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Monitor traffic sources (organic, paid, referral, etc.).
+                          Reduce idle time during off-peak booking periods.
                         </li>
                       </ul>
                     </React.Fragment>
@@ -130,4 +129,4 @@ const Acquisition = () => {
   );
 };
 
-export default Acquisition;
+export default TicketBooking;

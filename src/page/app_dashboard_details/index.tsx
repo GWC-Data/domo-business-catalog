@@ -25,12 +25,19 @@ import Repurchase from "./retail/analysis/Repurchase";
 import Market from "./retail/analysis/Market";
 import ExecutiveView from "./retail/analysis/ExecutiveView";
 import ProductionVolume from "./manfacturing/analysis/ProductionVolume";
-import Operational from "./healthcare/analysis/Oprational";
 import Employee from "./healthcare/analysis/Employee";
 import Clinical from "./healthcare/analysis/Clinical";
 import ManagingStock from "./healthcare/analysis/ManagingStock";
 import DrivingRevenue from "./healthcare/analysis/DrivingRevenue";
 import Insights from "./healthcare/analysis/Insights";
+import Diagnostics from "./healthcare/analysis/Diagnostics";
+import ReducingWaste from "./healthcare/analysis/ReducingWaste";
+import FacilityEquipment from "./healthcare/analysis/FacilityEquipment";
+import Streamlining from "./healthcare/analysis/Streamlining";
+import OptimizingWorkflow from "./healthcare/analysis/OptimizingWorkflow";
+import ImprovingFeedback from "./healthcare/analysis/ImprovingFeedback";
+import TicketBooking from "./entertainment/analysis/TicketBooking";
+import CrossSelling from "./entertainment/analysis/CrossSelling";
 
 const AppDashboardDetailsPage = () => {
 
@@ -212,7 +219,7 @@ const AppDashboardDetailsPage = () => {
           {/*Retail 360*/}
           {
             subProject[0]?.title === "Optimizing Workflow and Resource Utilization" && (
-              <Operational />
+              <OptimizingWorkflow />
             )
           }
           {
@@ -238,6 +245,42 @@ const AppDashboardDetailsPage = () => {
           {
             subProject[0]?.title === "Insights on Medicine, Revenue, and Suppliers" && (
               <Insights />
+            )
+          }
+          {
+            subProject[0]?.title === "Diagnostics and Historical Patient Data" && (
+              <Diagnostics />
+            )
+          }
+          {
+            subProject[0]?.title === "Reducing Waste and Maximizing Savings" && (
+              <ReducingWaste />
+            )
+          }
+          {
+            subProject[0]?.title === "Facility and Equipment Performance Insights" && (
+              <FacilityEquipment />
+            )
+          }
+          {
+            subProject[0]?.title === "Streamlining Claims and Reimbursements" && (
+              <Streamlining />
+            )
+          }
+          {
+            subProject[0]?.title === "Improving Feedback and Care Quality" && (
+              <ImprovingFeedback />
+            )
+          }
+          {/*Entertainment 360 */}
+          {
+            subProject[0]?.title === "Ticket Booking Trends & Performance Analysis" && (
+              <TicketBooking />
+            )
+          }
+          {
+            subProject[0]?.title === "Cross-Selling and Upselling Performance Insights" && (
+              <CrossSelling />
             )
           }
           

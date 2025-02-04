@@ -4,7 +4,7 @@ import Icon2 from "../../icons/Stock Level Analysis.png";
 import Icon3 from "../../icons/Lead Time Analysis.png";
 import "../../style.css";
 
-const Conversion = () => {
+const CustomerSegmentaion = () => {
 
   useEffect(() => {
     // Initialize owl carousel
@@ -56,8 +56,8 @@ const Conversion = () => {
   return (
     <div className="container mt-5">
       <div>
-        <h4>Conversion</h4>
-        <p>Converts engaged customers into paying buyers by optimizing the sales process.</p>
+        <h4>Customer Segmentation & Behavior Insights</h4>
+        <p>Understand customer groups to optimize engagement, personalization, and revenue growth.</p>
       </div>
       <section className="design_two">
         <div className="container">
@@ -70,22 +70,22 @@ const Conversion = () => {
                       <img src={Icon1} alt="" />
                     </div>
                     <div className="lower_portion">
-                      <h4>Sales Funnel Analysis</h4>
+                      <h4>Segmentation & Profiling Analysis</h4>
                       <p className="text-size-18">
-                      Track conversion rates at each stage of the sales funnel.
+                      Segment customers based on spending habits, demographics, and preferences to tailor marketing efforts.
                       </p>
                       <ul className="list-unstyled mb-0">
-                        <li className="text text-size-18">
+                        <li className="text text-size-15">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Analyze lead-to-customer conversion rates.
+                          Identify high-value customers by segmenting based on spending behavior.
                         </li>
-                        <li className="text text-size-18">
+                        <li className="text text-size-15">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Identify bottlenecks in the purchase journey.
+                          Analyze customer profiles to detect emerging segments for personalized engagement.
                         </li>
-                        <li className="text text-size-18">
+                        <li className="text text-size-15">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Optimize the funnel for higher sales conversions.
+                          Use segmentation data to refine marketing and sales strategies.
                         </li>
                       </ul>
                     </div>
@@ -98,23 +98,23 @@ const Conversion = () => {
                     <div className="icon">
                       <img src={Icon2} alt="" />
                     </div>
-                    <div className="lower_portion">
-                      <h4>Product Performance</h4>
+                    <div className="lower_portion mb-0">
+                      <h4>Personalized Engagement Analysis</h4>
                       <p className="text-size-18">
-                      Evaluate product performance to align inventory and marketing strategies.
+                      Craft targeted campaigns for each customer segment to drive engagement and loyalty.
                       </p>
                       <ul className="list-unstyled mb-0">
-                        <li className="text text-size-18">
+                        <li className="text text-size-10">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Monitor sales by product category and SKU.
+                          Deliver personalized event recommendations and product offers based on customer preferences.
                         </li>
-                        <li className="text text-size-18">
+                        <li className="text text-size-10">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Identify fast-moving and slow-moving products.
+                          Monitor the effectiveness of tailored campaigns to increase conversion rates.
                         </li>
-                        <li className="text text-size-18">
+                        <li className="text text-size-10">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Optimize pricing strategies based on sales trends.
+                          Create exclusive promotions for high-value segments to enhance loyalty.
                         </li>
                       </ul>
                     </div>
@@ -156,4 +156,4 @@ const Conversion = () => {
   );
 };
 
-export default Conversion;
+export default CustomerSegmentaion;

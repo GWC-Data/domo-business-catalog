@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Retailstyle.css";
+import "../../style.css";
 
 const ProductPerformance = () => {
   const [selected, setSelected] = useState(1);

@@ -3,12 +3,12 @@ import Icon2 from "../../icons/Stock Level Analysis.png";
 import Icon3 from "../../icons/Lead Time Analysis.png";
 import "../../style.css";
 
-const Repurchase = () => {
+const ReducingWaste = () => {
   return (
     <div className="container mt-5">
       <div>
-        <h4>Repurchase</h4>
-        <p>Drives additional purchases and brand advocacy through upselling, cross-selling, and referral programs.</p>
+        <h4>Reducing Waste and Maximizing Savings</h4>
+        <p>Drive sustainable waste management practices to minimize environmental impact and costs.</p>
       </div>
       <div className="row">
         <div className="col-lg-6 col-md-6 col-sm-12 col-12 p-3">
@@ -18,22 +18,22 @@ const Repurchase = () => {
                 <div className="icon">
                   <img src={Icon1} alt="" />
                 </div>
-                <h4>Upsell/Cross-Sell</h4>
-                <p>Identify opportunities to boost revenue through upselling and cross-selling.</p>
+                <h4>Waste Reduction Analysis</h4>
+                <p>Enhance waste management strategies to minimize environmental impact and costs.</p>
               </div>
               <div className="flip-card-back">
                 <ul className="list-unstyled mb-0">
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Track additional purchases by segment and product category.
+                    Reduce overall waste generated.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Measure the success of promotional bundles and recommendations.  
+                    Increase recycling rates to lower waste disposal costs.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Identify patterns to enhance product bundling strategies.
+                    Achieve cost savings through waste reduction initiatives.
                   </li>
                 </ul>
               </div>
@@ -47,22 +47,22 @@ const Repurchase = () => {
                 <div className="icon">
                   <img src={Icon2} alt="" />
                 </div>
-                <h4>Customer Advocacy</h4>
-                <p>Measure customer advocacy and the impact of referrals.</p>
+                <h4>Compliance Monitoring</h4>
+                <p>Ensure compliance with waste management regulations.</p>
               </div>
               <div className="flip-card-back">
                 <ul className="list-unstyled mb-0">
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Track referral rates and word-of-mouth impact.
+                    Track regulatory compliance metrics.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Measure Net Promoter Score (NPS) by segment.
+                    Avoid penalties for non-compliance.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Identify brand ambassadors for loyalty campaigns.
+                    Enhance reporting accuracy.
                   </li>
                 </ul>
               </div>
@@ -76,22 +76,22 @@ const Repurchase = () => {
                 <div className="icon">
                   <img src={Icon3} alt="" />
                 </div>
-                <h4>Lifetime Value</h4>
-                <p>Analyze customer lifetime value to prioritize high-value segments.</p>
+                <h4>Recycling Metrics</h4>
+                <p>Monitor recycling efforts to achieve sustainability goals.</p>
               </div>
               <div className="flip-card-back">
                 <ul className="list-unstyled mb-0">
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Calculate average lifetime revenue by customer segment.
+                    Increase recycling percentages.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Measure the ROI of acquisition and retention efforts.
+                    Reduce landfill contributions.
                   </li>
                   <li className="text text-size-18">
                     <i className="fa-solid fa-circle-check mr-2" style={{ color: "#000000"}}></i>
-                    Optimize marketing spend based on CLV insights.
+                    Implement green initiatives effectively.
                   </li>
                 </ul>
               </div>
@@ -103,4 +103,4 @@ const Repurchase = () => {
   );
 };
 
-export default Repurchase;
+export default ReducingWaste;

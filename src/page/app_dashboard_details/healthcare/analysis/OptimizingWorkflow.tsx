@@ -1,14 +1,13 @@
- 
-import React, { useState } from "react";
+ import React, { useState } from "react";
 import "../../style.css";
 
-const Acquisition = () => {
+const OptimizingWorkflow = () => {
   const [selected, setSelected] = useState(1);
   return (
     <div className="container mt-5">
       <div>
-        <h4>Acquisition</h4>
-        <p>Focuses on attracting potential customers through various marketing and online channels.</p>
+        <h4>Optimizing Workflow and Resource Utilization</h4>
+        <p>Analyze and optimize hospital operations to enhance efficiency, reduce costs, and improve patient care.</p>
       </div>
       <section className="domo_app-section" >
         <div className="container">
@@ -21,7 +20,7 @@ const Acquisition = () => {
                       <figure className="domo_app-marketicon">
                         <img src="./assets/images/service-marketicon.png" alt="" className="img-fluid" />
                       </figure> 
-                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Marketing Channels Performance</div>
+                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Bed Utilization Analysis</div>
                     </div>   
                   </div>
                   <div style={{ cursor:"pointer"}} className="col-lg-6 col-md-6 col-sm-6 col-6" onClick={() => setSelected(2)} >
@@ -30,7 +29,7 @@ const Acquisition = () => {
                         <figure className="domo_app-producticon">
                           <img src="./assets/images/service-producticon.png" alt="" className="img-fluid" />
                         </figure>
-                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Social Media Engagement</div>
+                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Emergency Response Analysis</div>
                       </div>
                     </div>
                   </div>
@@ -41,7 +40,7 @@ const Acquisition = () => {
                       <figure className="domo_app-designicon">
                         <img src="./assets/images/service-designicon.png" alt="" className="img-fluid" />
                       </figure>
-                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Website Traffic Analysis</div>
+                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Departmental Efficiency Analysis</div>
                     </div>
                   </div>
                 </div>
@@ -52,22 +51,22 @@ const Acquisition = () => {
                 {
                   selected === 1 && (
                     <React.Fragment>
-                      <h2>Marketing Channels Performance</h2>
+                      <h2>Bed Utilization Analysis</h2>
                       <p>
-                      Analyze the effectiveness of marketing channels to optimize spend and reach the right audience.
+                      Monitor bed occupancy rates to optimize resource allocation.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Evaluate channel ROI for campaigns.
+                          Improve bed turnover rates.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Track customer acquisition costs across channels.
+                          Reduce patient wait times for admissions.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Identify high-performing and underperforming channels.
+                          Enhance overall patient flow management.
                         </li>
                       </ul>
                     </React.Fragment>
@@ -76,22 +75,22 @@ const Acquisition = () => {
                 {
                   selected === 2 && (
                     <React.Fragment>
-                      <h2>Social Media Engagement </h2>
+                      <h2>Emergency Response Analysis</h2>
                       <p>
-                      Measure engagement across platforms to refine social media strategies.
+                      Track and optimize emergency response times.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Monitor likes, shares, and comments by campaign.
+                          Shorten response times to critical incidents.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Track follower growth and audience reach.
+                          Improve emergency resource allocation.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Analyze the impact of social media efforts on conversions.
+                          Enhance patient outcomes during emergencies.
                         </li>
                       </ul>
                     </React.Fragment>
@@ -100,22 +99,22 @@ const Acquisition = () => {
                 {
                   selected === 3 && (
                     <React.Fragment>
-                      <h2>Website Traffic Analysis</h2>
+                      <h2>Departmental Efficiency Analysis</h2>
                       <p>
-                      Understand how customers interact with your website to improve online performance.
+                      Gain insights into departmental performance to streamline operations.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Track sessions, bounce rate, and time on site.
+                          Identify underperforming departments.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Identify high-traffic pages and customer pathways.
+                          Allocate resources to high-demand areas.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Monitor traffic sources (organic, paid, referral, etc.).
+                          Monitor efficiency metrics in real-time.
                         </li>
                       </ul>
                     </React.Fragment>
@@ -130,4 +129,4 @@ const Acquisition = () => {
   );
 };
 
-export default Acquisition;
+export default OptimizingWorkflow;

@@ -23,9 +23,8 @@ const HomePage = () => {
             <div className="row">
               <div className="col-lg-5 col-md-12 col-sm-12 col-12" data-aos="fade-right">
                 <div className="banner_content">
-                  <figure className="banner-line mb-0"><img src="./assets/images/banner-line.png" alt="" className="img-fluid" /></figure>
-                  <h6 className="text-white">WE PROVIDE OUTSOURCED</h6>
-                  <h1 className="text-white">IT Services & Solutions</h1>
+                  <figure className="banner-line"><img src="./assets/images/banner-line.png" alt="" className="img-fluid" /></figure>
+                  <h1 className="text-white mt-4">SOLUTION MATTERS</h1>
                   <p>Empowering Business with Data & AI Insights to Drive Informed Actions.</p>
                   <figure className="banner-circleleft mb-0">
                     <img src="./assets/images/banner-circleleft.png" className="img-fluid" alt="" />
