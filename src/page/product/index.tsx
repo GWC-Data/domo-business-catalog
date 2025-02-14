@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar";
 
 const ProductPage = () => {
@@ -27,7 +28,7 @@ const ProductPage = () => {
                     <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
                   </figure>
                   <h1 className="text-white">Our Products</h1>
-                  <p className="mx-auto" style={{ maxWidth: "800px" }}>
+                  <p className="mx-auto">
                     Discover our range of innovative products designed to meet your needs. 
                     Quality and performance are at the heart of everything we create.
                   </p>
@@ -80,7 +81,8 @@ const ProductPage = () => {
             </div>
           </div>
           
-          <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3">
+          <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3 ">
+            <Link to="/infobeam-ai" className="text-decoration-none">
             <div className="product-card text-center h-100 shadow-lg rounded">
               <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
                 <img 
@@ -92,6 +94,7 @@ const ProductPage = () => {
               </div>
               <p className="px-3 mb-0">Unlock Insights from Unstructured Files</p>
             </div>
+            </Link>
           </div>
           
           <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3">
