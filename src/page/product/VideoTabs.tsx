@@ -15,24 +15,24 @@ const VideoTabs = () => {
   ];
 
   return (
-    <div className="col-12 mt-5">
-      <h4 className="mb-4">Videos</h4>
+    <div>
+      <h4 className="mb-4 text-white text-center">Videos</h4>
       <div className="row">
         {/* Left side tabs */}
-        <div className="col-lg-3 col-md-12 mb-4">
+        <div className="col-lg-3 col-md-4 mb-4">
           <div className="d-flex flex-column gap-3">
             {tabs.map((tab, index) => (
               <div 
                 key={index}
-                className={`cursor-pointer p-4 rounded ${
+                className={`cursor-pointer p-3 rounded mb-2 ${
                   activeTab === index 
-                    ? 'bg-light border-start border-4 border-primary' 
-                    : 'bg-white border-start border-4 border-transparent'
+                    ? 'bg-white' 
+                    : 'active-tab'
                 }`}
                 onClick={() => setActiveTab(index)}
                 style={{ transition: 'all 0.3s ease' }}
               >
-                <h5 className={activeTab === index ? 'text-success mb-0' : 'text-dark mb-0'}>
+                <h5 className={activeTab === index ? 'text-success mb-0 tab-title' : 'text-dark mb-0 tab-title'}>
                   {tab.title}
                 </h5>
               </div>
@@ -41,13 +41,14 @@ const VideoTabs = () => {
         </div>
 
         {/* Right side video */}
-        <div className="col-lg-9 col-md-12">
+        <div className="col-lg-9 col-md-8">
           <div className="bg-white rounded">
             <div className="ratio ratio-16x9">
               <video 
                 key={activeTab}
                 className="rounded w-100"
                 controls
+                loop
                 autoPlay={false}
               >
                 <source src={tabs[activeTab].video} type="video/mp4" />

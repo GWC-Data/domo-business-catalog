@@ -11,12 +11,19 @@
     object-fit: contain;
 }
 
+.flow-chart-container{
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
 /* Add these styles to your infobeam.css file */
 .product-card {
   padding: 1.5rem;
   border-radius: 15px;
   transition: all 0.3s ease;
-  color: white;
+  color: #010521;;
 }
 
 .product-card:hover {
@@ -28,7 +35,7 @@
   background: linear-gradient(140deg, #1f1e35, #f0762a);
 } */
 .product-card.red {
-  background: #f18631;
+  background: #f8f5f5;
 }
 
 .card-title {
@@ -47,16 +54,17 @@
 }
 
 .feature-title {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.5rem;
-  color: white;
+  color: #010521;
+  font-size: 15px;
 }
 
 .feature-list {
-  list-style: none;
   padding-left: 1rem;
   margin-bottom: 0.5rem;
   font-size: 15px;
+  font-weight: 500;
 }
 
 .feature-list li {
@@ -84,4 +92,11 @@
   .card-content {
       font-size: 0.85rem;
   }
+}
+
+.tab-title{
+  font-size: 15px;
+}
+.active-tab{
+  background-color: #d6d6d6;
 }
