@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import Icon1 from "../../icons/Inventory Turnover Analysis.png";
 import Icon2 from "../../icons/Stock Level Analysis.png";
-import Icon3 from "../../icons/Lead Time Analysis.png";
 import "../../style.css";
 
-const CustomerSegmentaion = () => {
+const GeographicDistribution = () => {
 
   useEffect(() => {
     // Initialize owl carousel
@@ -56,8 +55,8 @@ const CustomerSegmentaion = () => {
   return (
     <div className="container mt-5">
       <div>
-        <h4>Customer Segmentation & Behavior Insights</h4>
-        <p>Understand customer groups to optimize engagement, personalization, and revenue growth.</p>
+        <h4>Geographic Distribution & Regional Insights</h4>
+        <p>Uncover regional trends to tailor strategies and boost ticket sales across different locations.</p>
       </div>
       <section className="design_two">
         <div className="container">
@@ -70,22 +69,22 @@ const CustomerSegmentaion = () => {
                       <img src={Icon1} alt="" />
                     </div>
                     <div className="lower_portion">
-                      <h4>Segmentation & Profiling Analysis</h4>
+                      <h4>Regional Sales Performance</h4>
                       <p className="text-size-18">
-                      Segment customers based on spending habits, demographics, and preferences to tailor marketing efforts.
+                      Gain insights into ticket sales by region to identify high-performing and underserved areas.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-15">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Identify high-value customers by segmenting based on spending behavior.
+                          Track ticket sales by region to evaluate market performance.
                         </li>
                         <li className="text text-size-15">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Analyze customer profiles to detect emerging segments for personalized engagement.
+                          Analyze event preferences by geography to optimize content offerings for each area.
                         </li>
                         <li className="text text-size-15">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Use segmentation data to refine marketing and sales strategies.
+                          Study customer demographics by location to better understand regional needs and behaviors.
                         </li>
                       </ul>
                     </div>
@@ -99,49 +98,22 @@ const CustomerSegmentaion = () => {
                       <img src={Icon2} alt="" />
                     </div>
                     <div className="lower_portion mb-0">
-                      <h4>Personalized Engagement Analysis</h4>
+                      <h4>Tailored Marketing Strategies</h4>
                       <p className="text-size-18">
-                      Craft targeted campaigns for each customer segment to drive engagement and loyalty.
+                      Adjust marketing approaches to align with regional trends and maximize sales.
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-10">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Deliver personalized event recommendations and product offers based on customer preferences.
+                          Focus marketing efforts on regions with high growth potential.
                         </li>
                         <li className="text text-size-10">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Monitor the effectiveness of tailored campaigns to increase conversion rates.
+                          Offer location-specific promotions to increase customer engagement.
                         </li>
                         <li className="text text-size-10">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Create exclusive promotions for high-value segments to enhance loyalty.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <div className="blog_boxcontent mb-0">
-                  <div className="lower_portion_wrapper">
-                    <div className="icon">
-                      <img src={Icon3} alt="" />
-                    </div>
-                    <div className="lower_portion">
-                      <h4>Retention & Loyalty Analysis</h4>
-                      <p className="text-size-18">Measure the impact of personalized engagement strategies on customer retention.</p>
-                      <ul className="list-unstyled mb-0">
-                        <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Track retention rates for different customer segments over time.
-                        </li>
-                        <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Monitor customer lifetime value (CLTV) to determine the effectiveness of engagement.
-                        </li>
-                        <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Identify opportunities to improve loyalty through special offers and rewards.
+                          Personalize marketing campaigns based on local preferences and customer behavior.
                         </li>
                       </ul>
                     </div>
@@ -156,4 +128,4 @@ const CustomerSegmentaion = () => {
   );
 };
 
-export default CustomerSegmentaion;
+export default GeographicDistribution;

@@ -16,7 +16,10 @@ const VideoTabs = () => {
 
   return (
     <div>
-      <h4 className="mb-4 text-white text-center">Videos</h4>
+      <div className='col-12 text-center mb-3'>
+        <h4 className="text-white">Unlock AI-Powered Insights in Seconds</h4>
+        <p className='text-white'>This video walks you through the effortless process of uploading files and engaging with InfoBeam AI. Whether it's PDFs, videos, audio, or images, watch how InfoBeam AI transforms your content into meaningful conversations—saving you time and boosting productivity!</p>
+      </div>
       <div className="row">
         {/* Left side tabs */}
         <div className="col-lg-3 col-md-4 mb-4">

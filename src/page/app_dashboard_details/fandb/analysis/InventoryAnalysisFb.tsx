@@ -4,7 +4,7 @@ import Icon2 from "../../icons/Stock Level Analysis.png";
 import Icon3 from "../../icons/Lead Time Analysis.png";
 import "../../style.css";
 
-const CustomerSegmentaion = () => {
+const InventoryAnalysisFb = () => {
 
   useEffect(() => {
     // Initialize owl carousel
@@ -56,8 +56,8 @@ const CustomerSegmentaion = () => {
   return (
     <div className="container mt-5">
       <div>
-        <h4>Customer Segmentation & Behavior Insights</h4>
-        <p>Understand customer groups to optimize engagement, personalization, and revenue growth.</p>
+        <h4>Inventory Analysis</h4>
+        <p>Enhance inventory management by maintaining optimal stock levels, reducing costs, and improving supplier relationships for efficient operations.</p>
       </div>
       <section className="design_two">
         <div className="container">
@@ -70,22 +70,19 @@ const CustomerSegmentaion = () => {
                       <img src={Icon1} alt="" />
                     </div>
                     <div className="lower_portion">
-                      <h4>Segmentation & Profiling Analysis</h4>
-                      <p className="text-size-18">
-                      Segment customers based on spending habits, demographics, and preferences to tailor marketing efforts.
-                      </p>
+                      <h4>Inventory Turnover Analysis</h4>
                       <ul className="list-unstyled mb-0">
-                        <li className="text text-size-15">
+                        <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Identify high-value customers by segmenting based on spending behavior.
+                          Evaluate how frequently inventory is sold and replenished over a given period.
                         </li>
-                        <li className="text text-size-15">
+                        <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Analyze customer profiles to detect emerging segments for personalized engagement.
+                          Optimize stock levels to reduce excess inventory and holding costs.
                         </li>
-                        <li className="text text-size-15">
+                        <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Use segmentation data to refine marketing and sales strategies.
+                          Improve cash flow by aligning stock movement with demand trends.
                         </li>
                       </ul>
                     </div>
@@ -98,23 +95,20 @@ const CustomerSegmentaion = () => {
                     <div className="icon">
                       <img src={Icon2} alt="" />
                     </div>
-                    <div className="lower_portion mb-0">
-                      <h4>Personalized Engagement Analysis</h4>
-                      <p className="text-size-18">
-                      Craft targeted campaigns for each customer segment to drive engagement and loyalty.
-                      </p>
+                    <div className="lower_portion">
+                      <h4>Stockout and Overstock Analysis</h4>
                       <ul className="list-unstyled mb-0">
-                        <li className="text text-size-10">
+                        <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Deliver personalized event recommendations and product offers based on customer preferences.
+                          Identify risks of understocking to avoid lost sales opportunities.
                         </li>
-                        <li className="text text-size-10">
+                        <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Monitor the effectiveness of tailored campaigns to increase conversion rates.
+                          Highlight overstock scenarios to minimize wastage and holding expenses.
                         </li>
-                        <li className="text text-size-10">
+                        <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Create exclusive promotions for high-value segments to enhance loyalty.
+                          Implement proactive measures to balance stock levels effectively.
                         </li>
                       </ul>
                     </div>
@@ -128,20 +122,19 @@ const CustomerSegmentaion = () => {
                       <img src={Icon3} alt="" />
                     </div>
                     <div className="lower_portion">
-                      <h4>Retention & Loyalty Analysis</h4>
-                      <p className="text-size-18">Measure the impact of personalized engagement strategies on customer retention.</p>
+                      <h4>Supplier Performance Analysis</h4>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Track retention rates for different customer segments over time.
+                          Track supplier timeliness, product quality, and pricing reliability.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Monitor customer lifetime value (CLTV) to determine the effectiveness of engagement.
+                          Strengthen supply chain efficiency through data-driven insights.
                         </li>
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
-                          Identify opportunities to improve loyalty through special offers and rewards.
+                          Foster better vendor relationships to ensure consistent and cost-effective supply.
                         </li>
                       </ul>
                     </div>
@@ -156,4 +149,4 @@ const CustomerSegmentaion = () => {
   );
 };
 
-export default CustomerSegmentaion;
+export default InventoryAnalysisFb;

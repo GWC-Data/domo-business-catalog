@@ -38,6 +38,18 @@ import OptimizingWorkflow from "./healthcare/analysis/OptimizingWorkflow";
 import ImprovingFeedback from "./healthcare/analysis/ImprovingFeedback";
 import TicketBooking from "./entertainment/analysis/TicketBooking";
 import CrossSelling from "./entertainment/analysis/CrossSelling";
+import CustomerSegmentaion from "./entertainment/analysis/CustomerSegmentation";
+import ExpenseTracking from "./entertainment/analysis/ExpenseTracking";
+import FeedbackAnalysis from "./entertainment/analysis/FeedbackAnalysis";
+import GeographicDistribution from "./entertainment/analysis/GeographicDistribution";
+import MarketingCampaign from "./entertainment/analysis/MarketingCampaign";
+import MovieEvent from "./entertainment/analysis/MovieEvent";
+import RevenueTrends from "./entertainment/analysis/RevenueTrends";
+import TheaterUtilization from "./entertainment/analysis/TheaterUtilization";
+import FinancialPerformance from "./fandb/analysis/FinancialPerformance";
+import InventoryAnalysisFb from "./fandb/analysis/InventoryAnalysisFb";
+import QualityAnalysis from "./fandb/analysis/QualityAnalysis";
+import EmployeePerformance from "./fandb/analysis/EmployeePerformance";
 
 const AppDashboardDetailsPage = () => {
 
@@ -115,6 +127,7 @@ const AppDashboardDetailsPage = () => {
               }
             </div>
           </div>
+          {/*Manufacturing 360 */}
           {
             subProject[0]?.title === "KPI Score card analysis" && (
               <KpiScore />
@@ -216,7 +229,7 @@ const AppDashboardDetailsPage = () => {
               <ExecutiveView />
             )
           }
-          {/*Retail 360*/}
+          {/*Healthcare 360*/}
           {
             subProject[0]?.title === "Optimizing Workflow and Resource Utilization" && (
               <OptimizingWorkflow />
@@ -281,6 +294,72 @@ const AppDashboardDetailsPage = () => {
           {
             subProject[0]?.title === "Cross-Selling and Upselling Performance Insights" && (
               <CrossSelling />
+            )
+          }
+          {
+            subProject[0]?.title === "Customer Segmentation & Behavior Insights" && (
+              <CustomerSegmentaion />
+            )
+          }
+          {
+            subProject[0]?.title === "Detailed Expense Tracking & Cost Management" && (
+              <ExpenseTracking />
+            )
+          }
+          {
+            subProject[0]?.title === "Customer Feedback & Sentiment Analysis" && (
+              <FeedbackAnalysis />
+            )
+          }
+          {
+            subProject[0]?.title === "Geographic Distribution & Regional Insights" && (
+              <GeographicDistribution />
+            )
+          }
+          {
+            subProject[0]?.title === "Marketing Campaign Performance & Effectiveness" && (
+              <MarketingCampaign />
+            )
+          }
+          {
+            subProject[0]?.title === "Movie and Event Performance & Audience Engagement" && (
+              <MovieEvent />
+            )
+          }
+          {
+            subProject[0]?.title === "Revenue Trends & Profitability Insights" && (
+              <RevenueTrends />
+            )
+          }
+          {
+            subProject[0]?.title === "Theater Utilization & Seating Efficiency Analysis" && (
+              <TheaterUtilization />
+            )
+          }
+          {/*F&B 360*/}
+          {
+            subProject[0]?.title === "Financial Performance" && (
+              <FinancialPerformance />
+            )
+          }
+          {
+            subProject[0]?.title === "Inventory Analysis" && (
+              <InventoryAnalysisFb/>
+            )
+          }
+          {
+            subProject[0]?.title === "Quality Analysis" && (
+              <QualityAnalysis/>
+            )
+          }
+          {
+            subProject[0]?.title === "Employee Performance" && (
+              <EmployeePerformance/>
+            )
+          }
+          {
+            subProject[0]?.title === "Sales Analysis" && (
+              <EmployeePerformance/>
             )
           }
           

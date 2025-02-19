@@ -17,7 +17,7 @@ const ProductPage = () => {
           <img src="./assets/images/sub-bannerleftlayer.png" alt="" className="img-fluid" />
         </figure>
         
-        <Navbar activeNav="project" />
+        <Navbar activeNav="product" />
         
         <section className="banner-section">
           <div className="container">

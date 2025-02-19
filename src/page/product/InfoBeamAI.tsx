@@ -11,7 +11,7 @@ const InfoBeamAI = () => {
                     <img src="./assets/images/sub-bannerleftlayer.png" alt="" className="img-fluid" />
                 </figure>
 
-                <Navbar activeNav="project" />
+                <Navbar activeNav="product" />
 
                 <section className="banner-section">
                     <div className="container">
@@ -21,10 +21,9 @@ const InfoBeamAI = () => {
                                     <figure className="project-rightcircle service-rightcircle mb-0 position-absolute end-0 top-0">
                                         <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
                                     </figure>
-                                    <h1 className="text-white">Our Products</h1>
+                                    <h1 className="text-white">InfoBeam AI</h1>
                                     <p className="mx-auto">
-                                        Discover our range of innovative products designed to meet your needs.
-                                        Quality and performance are at the heart of everything we create.
+                                    Transform your files into intelligent insights! Upload documents, videos, audio, or images and chat with AI for instant responses. Experience seamless automation and AI-powered efficiency today!
                                     </p>
                                 </div>
                             </div>
@@ -58,8 +57,11 @@ const InfoBeamAI = () => {
                         <figure className="gwc_domo-dotimage mb-0">
                             <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
                         </figure>
-                        <div className="col-12 mt-5">
-                            <h4 className="mb-4 text-white text-center">What's Included in InfoBeam AI?</h4>
+                        <div className="col-12 mt-3">
+                            <div className="col-12 text-center mb-3">
+                                <h4 className="text-white">What's Included in InfoBeam AI?</h4>
+                                <p className="text-white">InfoBeam AI is an intelligent chatbot solution designed to help organizations streamline information retrieval from custom-uploaded files. It includes the following key features</p>
+                            </div>
                             <div className="row">
                                 {/* Card 1: Authentication & Security */}
                                 <div className="col-lg-4 col-md-6 col-12 mb-3">
@@ -223,7 +225,7 @@ const InfoBeamAI = () => {
                         <figure className="gwc_domo-dotimage mb-0">
                             <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
                         </figure>
-                        <div className="col-12 mt-5">
+                        <div className="col-12 mt-3">
                             <VideoTabs />
                         </div>
                         <figure className="gwc_domo-rightlayer mb-0">
