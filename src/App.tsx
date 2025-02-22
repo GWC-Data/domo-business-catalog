@@ -11,6 +11,8 @@ import AppsPage from "./page/app";
 import AppSubDashboard from "./page/app_subdashboard";
 import AppDashboardDetailsPage from "./page/app_dashboard_details";
 import InfoBeamAI from "./page/product/InfoBeamAI";
+import Register from "./page/register";
+import Feedback from "./page/feedback";
 function App() {
   AOS.init();
 
@@ -27,6 +29,8 @@ function App() {
           <Route path="/app/:id" element={<AppSubDashboard />} />
           <Route path="/app/:id/sub-dashboard/:sub_project_id" element={<AppDashboardDetailsPage />} />
           <Route path="/infobeam-ai" element={<InfoBeamAI/>}/>
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/feedback" element={<Feedback/>}/>
         </Routes>
       </HashRouter>
     </>
