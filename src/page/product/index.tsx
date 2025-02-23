@@ -53,63 +53,59 @@ const ProductPage = () => {
         </div>
         
         <div className="row">
-          <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3">
-            <div className="product-card text-center h-100 shadow-lg rounded">
-              <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
-                <img 
-                  src="./assets/images/products/product6.png" 
-                  alt="" 
-                  className="img-fluid"
-                  style={{ objectFit: "cover", maxHeight: "100%" }}
-                />
-              </div>
-              <p className="px-3 mb-0">Migration Agent for Looker, Tableau, and Power BI to DOMO</p>
-            </div>
-          </div>
           
-          <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3">
-            <div className="product-card text-center h-100 shadow-lg rounded">
-              <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
-                <img 
-                  src="./assets/images/products/product2.jpg" 
-                  alt="" 
-                  className="img-fluid"
-                  style={{ objectFit: "cover", maxHeight: "100%" }}
-                />
-              </div>
-              <p className="px-3 mb-0">Governance and Optimization for DOMO</p>
-            </div>
-          </div>
           
           <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3 ">
-            <Link to="/infobeam-ai" className="text-decoration-none">
-            <div className="product-card text-center h-100 shadow-lg rounded">
-              <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
-                <img 
-                  src="./assets/images/products/product3.png" 
-                  alt="" 
-                  className="img-fluid"
-                  style={{ objectFit: "cover", maxHeight: "100%" }}
-                />
+            <Link to="/domoverse" className="text-decoration-none">
+              <div className="product-card text-center h-100 shadow-lg rounded">
+                <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
+                  <h2>Domoverse</h2>
+                </div>
+                <p className="px-3 mb-0">Unlock Insights from Unstructured Files</p>
               </div>
-              <p className="px-3 mb-0">Unlock Insights from Unstructured Files</p>
-            </div>
+            </Link>
+          </div>
+
+          <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3 ">
+            <Link to="/domodocx" className="text-decoration-none">
+              <div className="product-card text-center h-100 shadow-lg rounded">
+                <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
+                  <h2>DOMODocx</h2>
+                </div>
+                <p className="px-3 mb-0">Unlock Insights from Unstructured Files</p>
+              </div>
+            </Link>
+          </div>
+
+          <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3 ">
+            <Link to="/maas" className="text-decoration-none">
+              <div className="product-card text-center h-100 shadow-lg rounded">
+                <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
+                  <h2>MAAS</h2>
+                </div>
+                <p className="px-3 mb-0">Unlock Insights from Unstructured Files</p>
+              </div>
+            </Link>
+          </div>
+
+
+          <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3 ">
+            <Link to="/infobeam-ai" className="text-decoration-none">
+              <div className="product-card text-center h-100 shadow-lg rounded">
+                <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
+                  <img 
+                    src="./assets/images/products/product3.png" 
+                    alt="" 
+                    className="img-fluid"
+                    style={{ objectFit: "cover", maxHeight: "100%" }}
+                  />
+                </div>
+                <p className="px-3 mb-0">Unlock Insights from Unstructured Files</p>
+              </div>
             </Link>
           </div>
           
-          <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3">
-            <div className="product-card text-center h-100 shadow-lg rounded-4">
-              <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
-                <img 
-                  src="./assets/images/products/product4.jpg" 
-                  alt="" 
-                  className="img-fluid"
-                  style={{ objectFit: "cover", maxHeight: "100%" }}
-                />
-              </div>
-              <p className="px-3 mb-0">Comprehensive HR Management System</p>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
