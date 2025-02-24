@@ -50,6 +50,10 @@ import FinancialPerformance from "./fandb/analysis/FinancialPerformance";
 import InventoryAnalysisFb from "./fandb/analysis/InventoryAnalysisFb";
 import QualityAnalysis from "./fandb/analysis/QualityAnalysis";
 import EmployeePerformance from "./fandb/analysis/EmployeePerformance";
+import SalesAnalysis from "./fandb/analysis/SalesAnalysis";
+import MarketingAnalysis from "./fandb/analysis/MarketingAnalysis";
+import FootfallAnalysis from "./fandb/analysis/FootfallAnalysis";
+import CustomerFeedback from "./fandb/analysis/CustomerFeedback";
 
 const AppDashboardDetailsPage = () => {
 
@@ -359,7 +363,22 @@ const AppDashboardDetailsPage = () => {
           }
           {
             subProject[0]?.title === "Sales Analysis" && (
-              <EmployeePerformance/>
+              <SalesAnalysis/>
+            )
+          }
+          {
+            subProject[0]?.title === "Marketing Analysis" && (
+              <MarketingAnalysis/>
+            )
+          }
+          {
+            subProject[0]?.title === "Footfall and Density Analysis" && (
+              <FootfallAnalysis/>
+            )
+          }
+          {
+            subProject[0]?.title === "Customer Feedback" && (
+              <CustomerFeedback/>
             )
           }
           
