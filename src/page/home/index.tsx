@@ -1,11 +1,12 @@
 /* eslint-disable max-len */
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import "./home.css";
 
+
 const HomePage = () => {
-  const [ip, setIp] = useState("");
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -13,11 +14,6 @@ const HomePage = () => {
     });
   },[]);
 
-  useEffect(() => {
-    fetch("https://api64.ipify.org?format=json")
-      .then((res) => res.json())
-      .then((data) => setIp(data.ip));
-  }, []);
   return (
     <>
       <div className="banner_outer">
@@ -68,7 +64,6 @@ const HomePage = () => {
           </div>
         </section>
       </div>
-      Your IP Address: {ip}
       <section className="achievement-section">
         <figure className="service-rightlayer mb-0">
           <img src="./assets/images/service-leftlayer.png" alt="" className="img-fluid" />

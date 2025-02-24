@@ -88,6 +88,9 @@ const Navbar = ({ activeNav }:props) => {
                       <li className="nav-item">
                         <Link to="/app/5" className="dropdown-item nav-link">Entertainment 360°</Link>
                       </li>
+                      <li className="nav-item">
+                        <Link to="/app/6" className="dropdown-item nav-link">HR 360°</Link>
+                      </li>
                     </ul>
                   </div>
                 </li>

@@ -510,4 +510,14 @@ export const apps = [
       },
     ],
   },
+  {
+    id: 6,
+    title: "HR 360°",
+    description:"",
+    image: "/assets/images/projects/apps/hr.png",
+    embed: "",
+    industry: "Employee Management",
+    keywords: "",
+    subDashboard: []
+  }
 ];
