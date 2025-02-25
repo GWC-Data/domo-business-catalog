@@ -54,6 +54,7 @@ import SalesAnalysis from "./fandb/analysis/SalesAnalysis";
 import MarketingAnalysis from "./fandb/analysis/MarketingAnalysis";
 import FootfallAnalysis from "./fandb/analysis/FootfallAnalysis";
 import CustomerFeedback from "./fandb/analysis/CustomerFeedback";
+import SafetyCompliance from "./manfacturing/analysis/SafetyCompliance";
 
 const AppDashboardDetailsPage = () => {
 
@@ -175,6 +176,11 @@ const AppDashboardDetailsPage = () => {
           {
             subProject[0]?.title === "Customer Satisfaction Dashboard" && (
               <Customer />
+            )
+          }
+          {
+            subProject[0]?.title === "Safety and Compliance Dashboard" && (
+              <SafetyCompliance />
             )
           }
           {
