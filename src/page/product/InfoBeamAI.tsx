@@ -3,8 +3,16 @@ import Navbar from "../../components/navbar";
 import "./infobeam.css";
 import VideoTabs from "./VideoTabs";
 import "../home/home.css";
+import { useEffect } from "react";
 
 const InfoBeamAI = () => {
+  useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, []);
+
   return (
     <div>
       <div className="sub-banner sub-banner2">

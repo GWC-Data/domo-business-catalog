@@ -516,8 +516,54 @@ export const apps = [
     description:"",
     image: "/assets/images/projects/apps/hr.png",
     embed: "",
-    industry: "Employee Management",
+    industry: "IT Sector HR management",
     keywords: "",
-    subDashboard: []
+    subDashboard: [
+      {
+        id: 1,
+        title: "Recruitment and Onboarding Insights",
+        description: "Tracks the effectiveness of hiring processes, time to fill roles, onboarding experience, and quality of hire. Provides insights into sourcing, candidate conversion, and new hire performance.",
+        image: "/assets/images/projects/hr_360/Recruitment and Onboarding Insights.png",
+        embed: "https://embed.domo.com/embed/pages/QnPgZ",
+        industry: "IT Sector HR management",
+        keywords: "Recruitment, Onboarding, Candidate Conversion, Hiring Trends, Talent Pipeline, Sourcing Insights"
+      },
+      {
+        id: 2,
+        title: "Workforce Productivity and Performance Insights",
+        description: "Analyzes workforce efficiency,Identifies opportunities for performance optimization and process improvements.",
+        image: "/assets/images/projects/hr_360/Workforce Productivity and Performance Insights.png",
+        embed: "https://embed.domo.com/embed/pages/ROQBY",
+        industry: "IT Sector HR management",
+        keywords: "Productivity Metrics, Workforce Efficiency, Team Management, Resource Allocation, Task Insights"
+      },
+      {
+        id: 3,
+        title: "Compensation and Career Growth Tracker",
+        description: "Monitors salary trends, benefits usage, performance-linked growth, promotions, and pay equity. Ensures alignment with employee satisfaction and retention strategies.",
+        image: "/assets/images/projects/hr_360/Compensation and Career Growth Tracker.png",
+        embed: "https://embed.domo.com/embed/pages/VAXZO",
+        industry: "IT Sector HR management",
+        keywords: "Salary Analysis, Promotions, Pay Equity, Career Growth, Employee Benefits, Compensation Insights"
+      },
+      {
+        id: 4,
+        title: "Employee Retention and Exit Analysis",
+        description: "Tracks employee attrition rates, reasons for exit, and retention strategies. Identifies patterns in employee turnover and areas of improvement for employee satisfaction.",
+        image: "/assets/images/projects/hr_360/Employee Retention and Exit Analysis.png",
+        embed: "https://embed.domo.com/embed/pages/WLYBn",
+        industry: "IT Sector HR management",
+        keywords: "Retention Analysis, Employee Turnover, Attrition Trends, Exit Interviews, Satisfaction Drivers"
+      },
+      {
+        id: 5,
+        title: "Employee Sentiment & Engagement",
+        description: "Analyzes employee feedback, surveys and engagement levels. Provides insights into areas impacting employee satisfaction and productivity.",
+        image: "/assets/images/projects/hr_360/Employee Sentiment & Engagement.png",
+        embed: "https://embed.domo.com/embed/pages/XLZVo",
+        industry: "IT Sector HR management",
+        keywords: "Sentiment Analysis, Employee Feedback, Morale Insights, Engagement Trends, Survey Analytics"
+      },
+    ]
   }
 ];
