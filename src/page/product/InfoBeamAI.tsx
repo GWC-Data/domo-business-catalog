@@ -19,9 +19,7 @@ const InfoBeamAI = () => {
         <figure className="sub-bannerleftlayer mb-0 position-absolute start-0 top-0">
           <img src="./assets/images/sub-bannerleftlayer.png" alt="" className="img-fluid" />
         </figure>
-
         <Navbar activeNav="product" />
-
         <section className="banner-section">
           <div className="container">
             <div className="row justify-content-center">
@@ -32,7 +30,7 @@ const InfoBeamAI = () => {
                   </figure>
                   <h1 className="text-white">InfoBeam AI</h1>
                   <p className="mx-auto">
-                                    Transform your files into intelligent insights! Upload documents, videos, audio, or images and chat with AI for instant responses. Experience seamless automation and AI-powered efficiency today!
+                    Transform your files into intelligent insights! Upload documents, videos, audio, or images and chat with AI for instant responses. Experience seamless automation and AI-powered efficiency today!
                   </p>
                 </div>
               </div>

@@ -55,6 +55,11 @@ import MarketingAnalysis from "./fandb/analysis/MarketingAnalysis";
 import FootfallAnalysis from "./fandb/analysis/FootfallAnalysis";
 import CustomerFeedback from "./fandb/analysis/CustomerFeedback";
 import SafetyCompliance from "./manfacturing/analysis/SafetyCompliance";
+import RecruitementOnboarding from "./hr/analysis/RecruitmentOnboarding";
+import EmployeeRetention from "./hr/analysis/EmployeeRetention";
+import WorkforceProductivity from "./hr/analysis/WorkforceProductivity";
+import Compensation from "./hr/analysis/Compensation";
+import EmployeeSentiment from "./hr/analysis/EmployeeSentiment";
 
 const AppDashboardDetailsPage = () => {
 
@@ -387,6 +392,32 @@ const AppDashboardDetailsPage = () => {
               <CustomerFeedback/>
             )
           }
+          {/*HR 360*/}
+          {
+            subProject[0]?.title === "Recruitment and Onboarding Insights" && (
+              <RecruitementOnboarding/>
+            )
+          } 
+          {
+            subProject[0]?.title === "Workforce Productivity and Performance Insights" && (
+              <WorkforceProductivity/>
+            )
+          } 
+          {
+            subProject[0]?.title === "Compensation and Career Growth Tracker" && (
+              <Compensation/>
+            )
+          }
+          {
+            subProject[0]?.title === "Employee Retention and Exit Analysis" && (
+              <EmployeeRetention/>
+            )
+          }
+          {
+            subProject[0]?.title === "Employee Sentiment & Engagement" && (
+              <EmployeeSentiment/>
+            )
+          }        
           
           <div className="container d-flex flex-wrap mt-5">
             {
