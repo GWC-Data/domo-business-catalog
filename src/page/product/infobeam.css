@@ -100,3 +100,42 @@
 .active-tab{
   background-color: #d6d6d6;
 }
+.domass-image-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.domass-image {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+}
+
+.large-image {
+  max-width: 90%;  /* Adjusts the image size */
+  height: auto;
+}
+
+.content-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.content-list strong {
+  font-weight: bold;
+}
+
+.domass-architecture-image-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

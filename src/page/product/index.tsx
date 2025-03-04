@@ -81,7 +81,7 @@ const ProductPage = () => {
             <Link to="/maas" className="text-decoration-none">
               <div className="product-card text-center h-100 shadow-lg rounded">
                 <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
-                  <h2>MAAS</h2>
+                  <h2>DOMAAS</h2>
                 </div>
                 <p className="px-3 mb-0">Unlock Insights from Unstructured Files</p>
               </div>

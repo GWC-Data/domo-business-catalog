@@ -67,7 +67,7 @@ function App() {
         <Route path="/infobeam-ai" element={<InfoBeamAI />}/>
         <Route path="/domoverse" element={<Domoverse />}/>
         <Route path="/domodocx" element={<DomoDocx />}/>
-        <Route path="/maas" element={<Maas />}/>
+        <Route path="/maas" element={<Maas/>}/>
         {/* </Route> */}
         
       </Routes>
