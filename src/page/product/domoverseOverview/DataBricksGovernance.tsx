@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import "../infobeam.css";
-import '../../home/home.css'
+import "../../home/home.css";
 
 const  DataBricksGovernance = () => {
   return (

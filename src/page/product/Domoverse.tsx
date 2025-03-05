@@ -1,12 +1,13 @@
+/* eslint-disable max-len */
 import { useEffect, useState } from "react";
 import Navbar from "../../components/navbar";
-import './Domoverse.css'
+import "./Domoverse.css";
 import SnowGo from "./domoverseOverview/SnowGo";
-import DataBricksGovernance from "./domoverseOverview/dataBricksGovernance";
+import DataBricksGovernance from "./domoverseOverview/DataBricksGovernance";
 import DomoGoverner from "./domoverseOverview/DomoGoverner";
 
 const Domoverse = () => {
-  const [activeTab, setActiveTab] = useState('SnowGO')
+  const [activeTab, setActiveTab] = useState("SnowGO");
 
   useEffect(() => {
     window.scrollTo({
