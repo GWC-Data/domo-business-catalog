@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable max-len */
 import { useEffect } from "react";
 import Footer from "../../components/footer";
@@ -27,15 +28,17 @@ const HomePage = () => {
     <>
       <div className="banner_outer">
         <Navbar activeNav="home" />
-        {/* <figure className="banner-layerright mb-0">
-          <img src="./assets/images/banner-layerright.png" className="img-fluid" alt="" />
-        </figure> */}
         <section className="banner-section">
-          <div className="container-fluid">
+          <div className="container">
             <div className="row">
               <div className="col-lg-5 col-md-12 col-sm-12 col-12" data-aos="fade-right">
                 <div className="banner_content">
-                  <figure className="banner-line"><img src="./assets/images/banner-line.png" alt="" className="img-fluid" /></figure>
+                  <a className="navbar-brand" href="./index.html">
+                    <figure className="mb-0 banner-logo">
+                      <img src="https://web-assets.domo.com/miyagi/images/logo/brand/color/logo-brand-domopalooza-color.svg" alt="" width="200" className="img-fluid" />
+                    </figure>
+                  </a>
+                  {/* <figure className="banner-line"><img src="./assets/images/banner-line.png" alt="" className="img-fluid" /></figure> */}
                   <h1 className="text-white mt-4">SOLUTION MATTERS</h1>
                   <p>Empowering Business with Data & AI Insights to Drive Informed Actions.</p>
                   <figure className="banner-circleleft mb-0">
@@ -48,20 +51,6 @@ const HomePage = () => {
               </div>
               <div className="col-lg-7 col-md-12 col-sm-12 col-12">
                 <div className="banner_wrapper">
-                  
-                  {/* <figure className="mb-0 banner-image"> */}
-                  {/* <img src="./assets/images/banner_2.png" alt="" className="img-fluid" />  */}
-                  {/* <video autoPlay muted loop className="img-fluid" />
-                      <source src="./assets/images/Homepage.mp4" type="video/mp4" />
-                    </video> */}
-                  {/* </figure> */}
-                  {/* <div className="position-relative">
-                    <a className="popup-vimeo" href="https://video-previews.elements.envatousercontent.com/h264-video-previews/d1c81f1e-849f-4d45-ae57-b61c2f5db34a/25628048.mp4">
-                      <figure className="mb-0 banner-vedioimage">
-                        <img className="thumb img-fluid" src="./assets/images/banner-vedioimage.png" alt="" />
-                      </figure>
-                    </a>
-                  </div> */}
                   <figure className="banner-circleright mb-0">
                     <img src="./assets/images/banner-circleright.png" className="img-fluid" alt="" />
                   </figure>
@@ -76,16 +65,10 @@ const HomePage = () => {
       </div>
 
       <section className="achievement-section">
-        {/* <figure className="service-rightlayer mb-0">
-          <img src="./assets/images/service-leftlayer.png" alt="" className="img-fluid" />
-        </figure> */}
         <div className="container">
           <div className="row">
             <div className="col-lg-5 col-md-12 col-sm-12 col-12">
               <div className="achievement_content" data-aos="fade-right">
-                <figure className="offer-circleimage mb-0">
-                  <img src="./assets/images/offer-circleimage.png" alt="" className="img-fluid" />
-                </figure>
                 <h6>About Us</h6>
                 <h2>Innovate Solution For Success</h2>
                 <p>As a trusted NASSCOM member and a specialist in data analytics and Artificial Intelligence solutions provider, GWC places customer-centricity at the center. Our core values encompass:</p>
@@ -102,7 +85,7 @@ const HomePage = () => {
             </div>
             <div className="col-lg-7 col-md-12 col-sm-12 col-12 mt-5">
               <div className="row ">
-                <div className="col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center">
+                <div className="col-lg-6 col-md-3 col-sm-6 col-6 d-flex align-items-center justify-content-center">
                   <div className="about-box text-center">
                     <figure className="icon achievement-icon">
                       <img src="./assets/images/handshake.png" alt="" className="img-fluid" width={70} />
@@ -113,7 +96,7 @@ const HomePage = () => {
                     </div>
                   </div>
                 </div> 
-                <div className="col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center">
+                <div className="col-lg-6 col-md-3 col-sm-6 col-6 d-flex align-items-center justify-content-center">
                   <div className="about-box text-center">
                     <figure className="icon1 achievement-icon">
                       <img src="./assets/images/maps-and-location.png" alt="" className="img-fluid" width={60} />
@@ -124,7 +107,7 @@ const HomePage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-5 col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center">
+                <div className="col-lg-6 col-md-3 col-sm-6 col-6 d-flex align-items-center justify-content-center">
                   <div className="about-box text-center">
                     <figure className="icon achievement-icon">
                       <img src="./assets/images/avatar.png" alt="" className="img-fluid" width={60} />
@@ -132,13 +115,13 @@ const HomePage = () => {
                     <div className="wrapper text-center">
                       <div className="number number1 d-flex justify-content-center">
                         <h3 className="value counter">200</h3>
-                        <span className="plus">+</span>
+                        <h3 className="plus">+</h3>
                       </div>
                       <p className="text text-size-18 mb-0">Employees</p>
                     </div>
                   </div>
                 </div> 
-                <div className="mt-5 col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center">
+                <div className="col-lg-6 col-md-3 col-sm-6 col-6 d-flex align-items-center justify-content-center">
                   <div className="about-box text-center">
                     <figure className="icon1 achievement-icon">
                       <img src="./assets/images/star-award.png" alt="" className="img-fluid" width={65} />
@@ -146,7 +129,7 @@ const HomePage = () => {
                     <div className="wrapper text-center">
                       <div className="number d-flex justify-content-center">
                         <h3 className="value counter">150</h3>
-                        <span className="plus">+</span>
+                        <h3 className="plus">+</h3>
                       </div>
                       <p className="text text-size-18 mb-0">Solutions</p>
                     </div>
@@ -156,23 +139,17 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        {/* <figure className="service-leftlayer mb-0">
-          <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
-        </figure> */}
       </section>
 
       {/* service-section */}
       <section className="gwc_domo-section" >
-        {/* <figure className="gwc_domo-dotimage mb-0">
-          <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
-        </figure> */}
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-2">
+          <div className="row align-items-center justify-content-center">
+            <div className="homepage-service-box1 col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-2">
               <div className="gwc_domo_contentbox">
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-6 col-6">
-                    <div className="gwc_domo-box box-mb">
+                    <div className="gwc_domo-box">
                       <figure className="gwc_domo-marketicon">
                         <img src="./assets/images/service-marketicon.png" alt="" className="img-fluid" />
                       </figure> 
@@ -182,7 +159,7 @@ const HomePage = () => {
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                     <div className="box-top">
-                      <div className="gwc_domo-box box-mb">
+                      <div className="gwc_domo-box">
                         <figure className="gwc_domo-producticon">
                           <img src="./assets/images/service-producticon.png" alt="" className="img-fluid" />
                         </figure>
@@ -216,8 +193,8 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
-              <div className="gwc_domo_content position-relative" data-aos="fade-right" style={{paddingTop: "120px" }}>
+            <div className="homepage-service-box2 col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
+              <div className="gwc_domo_content position-relative" data-aos="fade-right" >
                 {/* <figure className="gwc_domo-rightcircle mb-0">
                   <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
                 </figure> */}
@@ -232,53 +209,16 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        {/* <figure className="gwc_domo-rightlayer mb-0">
+        <figure className="gwc_domo-rightlayer mb-0">
           <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
-        </figure> */}
+        </figure>
       </section>
 
-      {/* <section className="py-5">
-        <div className="container">
-          <h2 className="mb-4">Partnership</h2>
-          <div className="row text-center mt-5">
-            <div className="col-6 col-md-2 mb-4">
-              <figure>
-                <img src="./assets/images/partners/Picture5.jpg" alt="Partner 1" className="img-fluid" style={{ width: "100%", height: "auto", objectFit: "contain", aspectRatio: "3/2"}} />
-              </figure>
-            </div>
-            <div className="col-6 col-md-2 mb-4">
-              <figure>
-                <img src="./assets/images/partners/Picture6.jpg" alt="Partner 2" className="img-fluid" style={{ width: "100%", height: "auto", objectFit: "contain", aspectRatio: "3/2"}} />
-              </figure>
-            </div>
-            <div className="col-6 col-md-2 mb-4">
-              <figure>
-                <img src="./assets/images/partners/Picture7.jpg" alt="Partner 3" className="img-fluid" style={{ width: "100%", height: "auto", objectFit: "contain", aspectRatio: "3/2"}} />
-              </figure>
-            </div>
-            <div className="col-6 col-md-2 mb-4">
-              <figure>
-                <img src="./assets/images/partners/Picture8.jpg" alt="Partner 4" className="img-fluid" style={{ width: "100%", height: "auto", objectFit: "contain", aspectRatio: "3/2"}} />
-              </figure>
-            </div>
-            <div className="col-6 col-md-2 mb-4">
-              <figure>
-                <img src="./assets/images/partners/Picture9.jpg" alt="Partner 5" className="img-fluid" style={{ width: "100%", height: "auto", objectFit: "contain", aspectRatio: "3/2"}} />
-              </figure>
-            </div>
-            <div className="col-6 col-md-2 mb-4">
-              <figure>
-                <img src="./assets/images/partners/Picture10.jpg" alt="Partner 6" className="img-fluid" style={{ width: "100%", height: "auto", objectFit: "contain", aspectRatio: "3/2"}} />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>     */}
       <section className="py-5">
         <div className="container">
           <h2 className="mb-4 text-center">Partnership</h2>
           <div className="partner-row">
-            {partners.map((partner, index) => (
+            {partners.map((partner: any, index: any) => (
               <div className="partner-logo" key={index}>
                 <img src={partner.src} alt={partner.name} />
               </div>
@@ -286,6 +226,77 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      <div style={{ padding: "100px", background: "#99CCEE"}}>
+        <div className="text-center">
+          <h2>Meet Our Leaders</h2>
+          <p>Our leaders consistently cultivate a culture of success, propelling our ongoing transformation and fostering global growth. They steer our initiatives towards excellence and innovation, driving the organization towards new heights of achievement.
+          </p>
+        </div>
+        <div className="container" >
+          <div className="row text-center mt-5">
+            <div className="col-xl-3 col-sm-6 mb-5">
+              <div className="bg-white rounded shadow-sm pb-2"><img src="https://gwcdata.ai/assets/image1-sDhNJSxR.png" alt=""  className="img-fluid " />
+                <h5 className="mt-3">
+                Naveen Kumar</h5><span className="small text-uppercase text-muted">Founder & CEO</span>
+              </div>
+            </div>
+
+            <div className="col-xl-3 col-sm-6 mb-5">
+              <div className="bg-white rounded shadow-sm pb-2">
+                <img src="https://gwcdata.ai/assets/image8-bByGUths.png" alt="" className="img-fluid" />
+                <h5 className="mt-3">Subash Ramu</h5>
+                <span className="small text-uppercase text-muted">Chief Technology Officer</span>
+                {/* <ul className="social mb-0 list-inline mt-3">
+                  <li className="list-inline-item"><a href="#" className="social-link"><i className="fa fa-facebook-f"></i></a></li>
+                  <li className="list-inline-item"><a href="#" className="social-link"><i className="fa fa-twitter"></i></a></li>
+                  <li className="list-inline-item"><a href="#" className="social-link"><i className="fa fa-instagram"></i></a></li>
+                  <li className="list-inline-item"><a href="#" className="social-link"><i className="fa fa-linkedin"></i></a></li>
+                </ul> */}
+              </div>
+            </div>
+
+            <div className="col-xl-3 col-sm-6 mb-5">
+              <div className="bg-white rounded shadow-sm pb-2">
+                <img src="https://gwcdata.ai/assets/image10-KUNrNCRW.png" alt="" className="img-fluid" />
+                <h5 className="mt-3">Shashank Ravikumar</h5><span className="small text-uppercase text-muted">Chief Strategy Officer</span>
+              </div>
+            </div>
+          
+            <div className="col-xl-3 col-sm-6 mb-5">
+              <div className="bg-white rounded shadow-sm pb-2"><img src="https://gwcdata.ai/assets/image6-6eTzsG-m.png" alt="" className="img-fluid" />
+                <h5 className="mt-3">
+                Prasanna Srinivasan</h5><span className="small text-uppercase text-muted">Chief Operating Officer</span>
+              </div>
+            </div>
+            
+            <div className="col-xl-3 col-sm-6 mb-5">
+              <div className="bg-white rounded shadow-sm pb-2"><img src="https://gwcdata.ai/assets/image7--0aoZUnq.png" alt="" className="img-fluid" />
+                <h5 className="mt-3">Srinath Raja</h5><span className="small text-uppercase text-muted">Chief Data Officer</span>
+              </div>
+            </div>
+            <div className="col-xl-3 col-sm-6 mb-5">
+              <div className="bg-white rounded shadow-sm pb-2"><img src="https://gwcdata.ai/assets/image9-qmh8iztT.png" alt="" className="img-fluid" />
+                <h5 className="mt-3">
+                Santhosh Kumar</h5><span className="small text-uppercase text-muted">Chief Innovation Officer</span>
+              </div>
+            </div>
+            <div className="col-xl-3 col-sm-6 mb-5">
+              <div className="bg-white rounded shadow-sm pb-2"><img src="https://gwcdata.ai/assets/image5-MbGjwAc-.png" alt="" className="img-fluid" />
+                <h5 className="mt-3">
+                Madhu Sudhanan</h5><span className="small text-uppercase text-muted">VP, Data-Engineering</span>
+              </div>
+            </div>
+            <div className="col-xl-3 col-sm-6 mb-5">
+              <div className="bg-white rounded shadow-sm pb-2">
+                <img src="https://gwcdata.ai/assets/image4-SlHsmos4.png" alt="" className="img-fluid" />
+                <h5 className="mt-3">Mamtha Shanmugam</h5>
+                <span className="small text-uppercase text-muted">Associate Director</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );

@@ -1,13 +1,14 @@
+import { getFingerprint } from "../utils/fingerprint";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getFingerprint } from "../../utils/fingerprint";
-import { successToast } from "../../components/Toaster";
 import { useDispatch, useSelector } from "react-redux";
-import { registerFormRequest, registerFormReset } from "../../redux/registerForm/action";
-import { RootState } from "../../redux/store";
+import { RootState } from "../redux/rootReducer";
+import { successToast } from "../components/Toaster";
+import { registerFormRequest, registerFormReset } from "../redux/registerForm/action";
 
-const Register = () => {
+const RegisterModal = () => {
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -24,15 +25,17 @@ const Register = () => {
   useEffect(() => {
     if (data) {
       if (Array.isArray(data)) {
-        data.forEach(item => successToast(item.message));
-        dispatch(registerFormReset());
+        data.forEach((item) => successToast(item.message));
       } else {
-        dispatch(registerFormReset());
         successToast(data?.message);
       }
-      navigate(sessionStorage.getItem("destination") || "/");
+  
+      dispatch(registerFormReset());
+  
+      window.location.reload();
     }
-  },[data, dispatch, navigate]);
+  }, [data, dispatch, navigate]);
+  
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -52,7 +55,7 @@ const Register = () => {
   };
 
   return (
-    <>
+    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
       {
         loading ? <div>loading</div> : (
           <div className="container">
@@ -154,8 +157,8 @@ const Register = () => {
           </div>
         ) 
       } 
-    </>
+    </div>
   );
 };
 
-export default Register;
+export default RegisterModal;

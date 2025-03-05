@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <section className="footer-section">
       <div className="container">
-        <figure className="footer-leftimage mb-0">
+        {/* <figure className="footer-leftimage mb-0">
           <img src="./assets/images/footer-leftimage.png" alt="" className="img-fluid" />
-        </figure>
+        </figure> */}
         <figure className="mb-0 about-leftcircle">
           <img src="./assets/images/about-rightcircle.png" alt="" className="img-fluid" />
         </figure>

@@ -9,14 +9,14 @@ const Navbar = ({ activeNav }:props) => {
   return (
     <header className="header" style={{background: "#fff"}}>
       <div className="main-header">
-        <div className="container-fluid">
+        <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light justify-content-center align-items-center" style={{padding: "0px !important"}}>
             <a className="navbar-brand" href="./index.html"><figure className="mb-0 banner-logo"><img src="./assets/images/logo.svg" alt="" width="200" className="img-fluid" /></figure></a>
-            <a className="navbar-brand mx-5" href="./index.html">
+            {/* <a className="navbar-brand mx-5" href="./index.html">
               <figure className="mb-0 banner-logo">
                 <img src="https://web-assets.domo.com/miyagi/images/logo/brand/color/logo-brand-domopalooza-color.svg" alt="" width="200" className="img-fluid" />
               </figure>
-            </a>
+            </a> */}
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav">
                 <li className={activeNav === "home" ? "nav-item active" : "nav-item"}>

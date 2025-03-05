@@ -252,7 +252,7 @@ p {font-size: 18px; line-height: 28px;}
 .about-section .about_content .text2 {margin-bottom: 25px;}
 .about-section .about_content .read_more {font-size: 18px; line-height: 26px; padding: 12px 22px;}
 .about-section .about_content .read_more figure {margin-left: 6px;}
-.achievement-section {padding: 145px 0 166px;}
+/* .achievement-section {padding: 145px 0 166px;} */
 .achievement-section .service-rightlayer img{width: 170px;}
 .achievement-section .service-leftlayer {bottom: -188px;}
 .achievement-section .service-leftlayer img{width: 170px;}
@@ -628,7 +628,7 @@ button:focus { outline: none;}
 .about-section .about_content .text1 {margin-bottom: 10px; padding: 0 95px;}
 .about-section .about_content .text2 {margin-bottom: 25px; padding: 0 90px;}
 .about-section .about_content .read_more {font-size: 16px; line-height: 24px; padding: 10px 20px;}
-.achievement-section {padding: 70px 0 176px;}
+/* .achievement-section {padding: 70px 0 176px;} */
 .achievement-section .service-rightlayer img {width: 150px;}
 .achievement-section .service-leftlayer img {width: 150px;}
 .achievement-section .achievement_content {text-align: center;}
