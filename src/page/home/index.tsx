@@ -227,26 +227,26 @@ const HomePage = () => {
         </div>
       </section>
 
-      <div style={{ padding: "100px", background: "#99CCEE"}}>
+      <div style={{ padding: "100px", background: "#4A8BBC"}}>
         <div className="text-center">
-          <h2>Meet Our Leaders</h2>
-          <p>Our leaders consistently cultivate a culture of success, propelling our ongoing transformation and fostering global growth. They steer our initiatives towards excellence and innovation, driving the organization towards new heights of achievement.
+          <h2 className="text-white">Meet Our Leaders</h2>
+          <p className="text-white">Our leaders consistently cultivate a culture of success, propelling our ongoing transformation and fostering global growth. They steer our initiatives towards excellence and innovation, driving the organization towards new heights of achievement.
           </p>
         </div>
         <div className="container" >
           <div className="row text-center mt-5">
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm pb-2"><img src="https://gwcdata.ai/assets/image1-sDhNJSxR.png" alt=""  className="img-fluid " />
+              <div className=""><img src="https://gwcdata.ai/assets/image1-sDhNJSxR.png" alt=""  className="img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
                 <h5 className="mt-3">
-                Naveen Kumar</h5><span className="small text-uppercase text-muted">Founder & CEO</span>
+                Naveen Kumar</h5><span className="small text-uppercase text-white">Founder & CEO</span>
               </div>
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm pb-2">
-                <img src="https://gwcdata.ai/assets/image8-bByGUths.png" alt="" className="img-fluid" />
+              <div className="">
+                <img src="https://gwcdata.ai/assets/image8-bByGUths.png" alt="" className="img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
                 <h5 className="mt-3">Subash Ramu</h5>
-                <span className="small text-uppercase text-muted">Chief Technology Officer</span>
+                <span className="small text-uppercase text-white">Chief Technology Officer</span>
                 {/* <ul className="social mb-0 list-inline mt-3">
                   <li className="list-inline-item"><a href="#" className="social-link"><i className="fa fa-facebook-f"></i></a></li>
                   <li className="list-inline-item"><a href="#" className="social-link"><i className="fa fa-twitter"></i></a></li>
@@ -257,41 +257,41 @@ const HomePage = () => {
             </div>
 
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm pb-2">
-                <img src="https://gwcdata.ai/assets/image10-KUNrNCRW.png" alt="" className="img-fluid" />
-                <h5 className="mt-3">Shashank Ravikumar</h5><span className="small text-uppercase text-muted">Chief Strategy Officer</span>
+              <div className="">
+                <img src="https://gwcdata.ai/assets/image10-KUNrNCRW.png" alt="" className="img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
+                <h5 className="mt-3">Shashank Ravikumar</h5><span className="small text-uppercase text-white">Chief Strategy Officer</span>
               </div>
             </div>
           
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm pb-2"><img src="https://gwcdata.ai/assets/image6-6eTzsG-m.png" alt="" className="img-fluid" />
+              <div className=""><img src="https://gwcdata.ai/assets/image6-6eTzsG-m.png" alt="" className="img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
                 <h5 className="mt-3">
-                Prasanna Srinivasan</h5><span className="small text-uppercase text-muted">Chief Operating Officer</span>
+                Prasanna Srinivasan</h5><span className="small text-uppercase text-white">Chief Operating Officer</span>
               </div>
             </div>
             
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm pb-2"><img src="https://gwcdata.ai/assets/image7--0aoZUnq.png" alt="" className="img-fluid" />
-                <h5 className="mt-3">Srinath Raja</h5><span className="small text-uppercase text-muted">Chief Data Officer</span>
+              <div className=""><img src="https://gwcdata.ai/assets/image7--0aoZUnq.png" alt="" className="img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
+                <h5 className="mt-3">Srinath Raja</h5><span className="small text-uppercase text-white">Chief Data Officer</span>
               </div>
             </div>
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm pb-2"><img src="https://gwcdata.ai/assets/image9-qmh8iztT.png" alt="" className="img-fluid" />
+              <div className=""><img src="https://gwcdata.ai/assets/image9-qmh8iztT.png" alt="" className="img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
                 <h5 className="mt-3">
-                Santhosh Kumar</h5><span className="small text-uppercase text-muted">Chief Innovation Officer</span>
+                Santhosh Kumar</h5><span className="small text-uppercase text-white">Chief Innovation Officer</span>
               </div>
             </div>
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm pb-2"><img src="https://gwcdata.ai/assets/image5-MbGjwAc-.png" alt="" className="img-fluid" />
+              <div className=""><img src="https://gwcdata.ai/assets/image5-MbGjwAc-.png" alt="" className="img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
                 <h5 className="mt-3">
-                Madhu Sudhanan</h5><span className="small text-uppercase text-muted">VP, Data-Engineering</span>
+                Madhu Sudhanan</h5><span className="small text-uppercase text-white">VP, Data-Engineering</span>
               </div>
             </div>
             <div className="col-xl-3 col-sm-6 mb-5">
-              <div className="bg-white rounded shadow-sm pb-2">
-                <img src="https://gwcdata.ai/assets/image4-SlHsmos4.png" alt="" className="img-fluid" />
+              <div className="">
+                <img src="https://gwcdata.ai/assets/image4-SlHsmos4.png" alt="" className="img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
                 <h5 className="mt-3">Mamtha Shanmugam</h5>
-                <span className="small text-uppercase text-muted">Associate Director</span>
+                <span className="small text-uppercase text-white">Associate Director</span>
               </div>
             </div>
           </div>
