@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import "../infobeam.css";
-import '../../home/home.css'
+import "../../home/home.css";
 
 const SnowGo = () => {
   return (
@@ -168,13 +168,13 @@ const SnowGo = () => {
               <h4>SnowGO Architecture Overview</h4>
               <p>SnowGO integrates Snowflake with Domo’s federated data system and cloud amplifiers for seamless data access. It processes data through Domo Magic ETL and visualizes insights via dashboards and apps for smarter decision-making.</p>
             </div>
-            <div className="flow-chart-container">
+            {/* <div className="flow-chart-container">
               <img
                 src="./assets/images/products/infobeamAI.drawio.svg"
                 alt="Architecture Diagram"
                 className="architecture-image"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

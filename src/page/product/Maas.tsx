@@ -1,6 +1,7 @@
+/* eslint-disable max-len */
 import Navbar from "../../components/navbar";
-import './mass.css'
-import DomodelVideo from "./DomodelVideo";
+import "./mass.css";
+// import DomodelVideo from "./DomodelVideo";
 
 const Maas = () => {
 
@@ -159,7 +160,7 @@ const Maas = () => {
           </div>
 
           {/*Architecture */}
-          <div className="col-12">
+          {/* <div className="col-12">
             <div className="domass-architecture-image-container">
               <img
                 src="./assets/images/products/domass_ar1.png"
@@ -167,10 +168,10 @@ const Maas = () => {
                 className="img-fluid"
               />
             </div>
-          </div>
+          </div> */}
 
           {/*Video container */}
-          <section className="gwc_domo-section">
+          {/* <section className="gwc_domo-section">
             <figure className="gwc_domo-dotimage mb-0">
               <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
             </figure>
@@ -180,7 +181,7 @@ const Maas = () => {
             <figure className="gwc_domo-rightlayer mb-0">
               <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
             </figure>
-          </section>
+          </section> */}
         </div>
       </div>
     </div>
