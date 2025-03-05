@@ -16,9 +16,9 @@ const Domoverse = () => {
               <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="banner_content text-center position-relative" data-aos="fade-up">
                   <figure className="project-rightcircle service-rightcircle mb-0 position-absolute end-0 top-0">
-                    <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
+                    <img src="./assets/images/banner-circleleft.png" alt="" className="img-fluid" />
                   </figure>
-                  <h1 className="text-white">Domoverse</h1>
+                  <h4 className="h-title">Domoverse</h4>
                 </div>
               </div>
             </div>

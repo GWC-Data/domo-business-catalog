@@ -317,12 +317,8 @@ const AppSubDashboard = () => {
         <div className="sub-banner">
           <Navbar activeNav="app" />
           <div className="container">
-            <div className="row">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-12 mb-5">
-                <div className="banner_content" data-aos="fade-up">
-                  <h1 className="text-white">{project.title}</h1>
-                </div>
-              </div>
+            <div className="banner_content py-5" data-aos="fade-up">
+              <h1 className="text-white">{project.title}</h1>
             </div>
           </div>
         </div>
@@ -336,7 +332,7 @@ const AppSubDashboard = () => {
               <div className="project_wrapper">
                 {content && (
                   <section className="mb-5">
-                    <div style={{ background: "linear-gradient(to right, #f08832, #ee7a1a, #f3a361)", padding: "20px"}}>
+                    <div style={{ background: "linear-gradient(90deg, rgba(122,60,163,1) 0%, rgba(153,204,238,1) 100%)", padding: "20px", borderRadius: "10px"}}>
                       <h5 className="text-light">What is {project?.title}?</h5>
                       <p className="text-light">{content.description}</p>
                     </div>

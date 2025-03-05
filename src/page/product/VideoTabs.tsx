@@ -15,7 +15,7 @@ const VideoTabs = () => {
   ];
 
   return (
-    <div>
+    <div style={{ zIndex: 100 }}>
       <div className='col-12 text-center mb-3'>
         <h4 className="text-white">Unlock AI-Powered Insights in Seconds</h4>
         <p className='text-white'>This video walks you through the effortless process of uploading files and engaging with InfoBeam AI. Whether it's PDFs, videos, audio, or images, watch how InfoBeam AI transforms your content into meaningful conversations—saving you time and boosting productivity!</p>
@@ -52,7 +52,7 @@ const VideoTabs = () => {
                 className="rounded w-100"
                 controls
                 loop
-                autoPlay={false}
+                autoPlay={true}
               >
                 <source src={tabs[activeTab].video} type="video/mp4" />
                 Your browser does not support the video tag.

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 
 const ProductPage = () => {
   useEffect(() => {
@@ -25,9 +26,9 @@ const ProductPage = () => {
               <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="banner_content text-center position-relative" data-aos="fade-up">
                   <figure className="project-rightcircle service-rightcircle mb-0 position-absolute end-0 top-0">
-                    <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
+                    <img src="./assets/images/banner-circleleft.png" alt="" className="img-fluid" />
                   </figure>
-                  <h1 className="text-white">Our Products</h1>
+                  <h4 className="h-title">Our Products</h4>
                   <p className="mx-auto">
                     Discover our range of innovative products designed to meet your needs. 
                     Quality and performance are at the heart of everything we create.
@@ -93,21 +94,16 @@ const ProductPage = () => {
             <Link to="/infobeam-ai" className="text-decoration-none">
               <div className="product-card text-center h-100 shadow-lg rounded">
                 <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
-                  <img 
-                    src="./assets/images/products/product3.png" 
-                    alt="" 
-                    className="img-fluid"
-                    style={{ objectFit: "cover", maxHeight: "100%" }}
-                  />
+                  <h2>INFOBEAM</h2>
                 </div>
                 <p className="px-3 mb-0">Unlock Insights from Unstructured Files</p>
               </div>
             </Link>
           </div>
-          
-          
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

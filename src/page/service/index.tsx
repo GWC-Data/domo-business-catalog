@@ -126,9 +126,10 @@ const ServicePage = () => {
               <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="banner_content" data-aos="fade-up">
                   <figure className="service-rightcircle mb-0">
-                    <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
+                    <img src="./assets/images/banner-circleleft.png" alt="" className="img-fluid" />
                   </figure>
-                  <h1 className="text-white">Our Services</h1>
+                  {/* <h1 className="text-white"></h1> */}
+                  <h4 className="h-title">Our Solutions</h4>
                   <p>Transforming data into actionable insights with tailored DOMO solutions to drive business success.</p>
                 </div>
               </div>

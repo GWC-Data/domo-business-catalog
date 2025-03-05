@@ -25,7 +25,7 @@
 .banner_outer .banner-backgroundup {left: -220px;}
 .banner-section .social-icons ul {left: -96px; top: 70px;}
 .banner-section .banner_wrapper .banner-image {right: 52px;}
-.banner-section .banner_wrapper .banner-image img{width: 630px; border-radius: 230px 230px 0 230px;}
+.banner-section .banner_wrapper .banner-image img{width: 630px; border-radius: 52% 48% 35% 65% / 48% 52% 48% 52%;}
 .banner-section .banner_wrapper .banner-dotright {right: -14px; top: 310px;}
 .banner-section .banner_wrapper .banner-circleright {right: -18px; top: 180px;}
 .banner-section {padding: 202px 56px 290px 92px;}
@@ -36,8 +36,8 @@
 @media screen and (max-width: 1440px){
 h1 {font-size: 66px; line-height: 72px;}
 h6 {letter-spacing: 3.0px;}
-.banner_outer::before {width: 75%;}
-.banner_outer::after {width: 75%;}
+.banner_outer::before {width: 100%;}
+.banner_outer::after {width: 100%;}
 .banner_outer .banner-layerright {right: -70px; top: -150px;}
 .banner_outer .header {padding: 0px 48px;}
 .navbar-nav li {margin: 0 8px;}
@@ -49,7 +49,7 @@ h6 {letter-spacing: 3.0px;}
 .banner-section .banner_content .banner-dotleft {bottom: -106px;}
 .banner-section .banner_content .banner-circleleft {left: -50px; bottom: -78px;}
 .banner-section .banner_wrapper .banner-image {right: 0; top: -84px;}
-.banner-section .banner_wrapper .banner-image img {width: 500px; border-radius: 200px 200px 0 200px;}
+.banner-section .banner_wrapper .banner-image img {width: 500px; border-radius: 52% 48% 35% 65% / 48% 52% 48% 52% ;}
 .banner-section .banner_wrapper .banner-vedioimage {top: -60px; left: 48px;}
 .banner-section .banner_wrapper .banner-vedioimage img{width: 116px;}
 .banner-section .banner_wrapper .banner-circleright {right: -66px; top: 180px;}
@@ -94,7 +94,7 @@ h6 {letter-spacing: 3.0px;}
 .footer-section .about-leftcircle {display: none;}
 .footer-section .footer-dotimage {display: none;}
 .footer-section .footer-leftlayer {display: none;}
-.footer-section::before {width: 70%;}
+.footer-section::before {width: 100%;}
 .footer-section .middle-portion .footer-logo {margin-bottom: 4px;}
 .footer-section .middle-portion .first-column p {margin-bottom: 18px;}
 .footer-section .middle-portion .lower .content span {font-size: 18px; line-height: 26px; margin-bottom: 0;}
@@ -188,7 +188,7 @@ p {font-size: 18px; line-height: 28px;}
 .banner-section .banner_content .banner-circleleft {left: -30px; bottom: -76px;}
 .banner-section .banner_content .banner-circleleft img{width: 40px;}
 .banner-section .banner_wrapper .banner-image {right: 30px; top: -2px;}
-.banner-section .banner_wrapper .banner-image img {width: 450px; border-radius: 170px 170px 0 170px;}
+.banner-section .banner_wrapper .banner-image img {width: 450px; border-radius: 52% 48% 35% 65% / 48% 52% 48% 52% ;}
 .banner-section .banner_wrapper .banner-vedioimage {top: 14px; left: -16px;}
 .banner-section .banner_wrapper .banner-vedioimage img {width: 100px;}
 .banner-section .banner_wrapper .banner-circleright {right: -30px; top: 190px;}

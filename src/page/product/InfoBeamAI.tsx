@@ -7,11 +7,11 @@ import { useEffect } from "react";
 
 const InfoBeamAI = () => {
   useEffect(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }, []);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <div>
@@ -26,9 +26,9 @@ const InfoBeamAI = () => {
               <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="banner_content text-center position-relative" data-aos="fade-up">
                   <figure className="project-rightcircle service-rightcircle mb-0 position-absolute end-0 top-0">
-                    <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
+                    <img src="./assets/images/banner-circleleft.png" alt="" className="img-fluid" />
                   </figure>
-                  <h1 className="text-white">InfoBeam AI</h1>
+                  <h4 className="h-title">InfoBeam AI</h4>
                   <p className="mx-auto">
                     Transform your files into intelligent insights! Upload documents, videos, audio, or images and chat with AI for instant responses. Experience seamless automation and AI-powered efficiency today!
                   </p>
@@ -229,15 +229,15 @@ const InfoBeamAI = () => {
 
           {/*Video container */}
           <section className="gwc_domo-section">
-            <figure className="gwc_domo-dotimage mb-0">
+            {/* <figure className="gwc_domo-dotimage mb-0">
               <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
-            </figure>
+            </figure> */}
             <div className="col-12 mt-3">
               <VideoTabs />
             </div>
-            <figure className="gwc_domo-rightlayer mb-0">
+            {/* <figure className="gwc_domo-rightlayer mb-0">
               <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
-            </figure>
+            </figure> */}
           </section>
 
         </div>

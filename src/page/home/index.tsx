@@ -14,13 +14,22 @@ const HomePage = () => {
     });
   },[]);
 
+  const partners = [
+    { name: "databricks", src: "./assets/images/partners/Picture5.jpg" },
+    { name: "snowflake", src: "./assets/images/partners/Picture6.jpg" },
+    { name: "google-cloud", src: "./assets/images/partners/Picture7.jpg" },
+    { name: "aws", src: "./assets/images/partners/Picture8.jpg" },
+    { name: "azure", src: "./assets/images/partners/Picture9.jpg" },
+    { name: "salesforce", src: "./assets/images/partners/Picture10.jpg" },
+  ];
+
   return (
     <>
       <div className="banner_outer">
         <Navbar activeNav="home" />
-        <figure className="banner-layerright mb-0">
+        {/* <figure className="banner-layerright mb-0">
           <img src="./assets/images/banner-layerright.png" className="img-fluid" alt="" />
-        </figure>
+        </figure> */}
         <section className="banner-section">
           <div className="container-fluid">
             <div className="row">
@@ -39,12 +48,13 @@ const HomePage = () => {
               </div>
               <div className="col-lg-7 col-md-12 col-sm-12 col-12">
                 <div className="banner_wrapper">
-                  <figure className="mb-0 banner-image">
-                    <img src="./assets/images/banner_2.png" alt="" className="img-fluid" />
-                    {/* <video autoPlay muted loop className="img-fluid" />
+                  
+                  {/* <figure className="mb-0 banner-image"> */}
+                  {/* <img src="./assets/images/banner_2.png" alt="" className="img-fluid" />  */}
+                  {/* <video autoPlay muted loop className="img-fluid" />
                       <source src="./assets/images/Homepage.mp4" type="video/mp4" />
                     </video> */}
-                  </figure>
+                  {/* </figure> */}
                   {/* <div className="position-relative">
                     <a className="popup-vimeo" href="https://video-previews.elements.envatousercontent.com/h264-video-previews/d1c81f1e-849f-4d45-ae57-b61c2f5db34a/25628048.mp4">
                       <figure className="mb-0 banner-vedioimage">
@@ -64,10 +74,11 @@ const HomePage = () => {
           </div>
         </section>
       </div>
+
       <section className="achievement-section">
-        <figure className="service-rightlayer mb-0">
+        {/* <figure className="service-rightlayer mb-0">
           <img src="./assets/images/service-leftlayer.png" alt="" className="img-fluid" />
-        </figure>
+        </figure> */}
         <div className="container">
           <div className="row">
             <div className="col-lg-5 col-md-12 col-sm-12 col-12">
@@ -78,76 +89,86 @@ const HomePage = () => {
                 <h6>About Us</h6>
                 <h2>Innovate Solution For Success</h2>
                 <p>As a trusted NASSCOM member and a specialist in data analytics and Artificial Intelligence solutions provider, GWC places customer-centricity at the center. Our core values encompass:</p>
-                <ul className="list-unstyled mb-0">
-                  <li className="text"><i className="fa-solid fa-circle-check mr-2"></i>Problem-solving prowess</li>
-                  <li className="text"><i className="fa-solid fa-circle-check mr-2"></i>Continuous pursuit of value addition</li>
-                  <li className="text"><i className="fa-solid fa-circle-check mr-2"></i>A strong emphasis on technology</li>
-                  <li className="text"><i className="fa-solid fa-circle-check mr-2"></i>Innovation in everything</li>
-                  <li className="text"><i className="fa-solid fa-circle-check mr-2"></i>Being an extended arm for business partners</li>
-                </ul>
+                <div className="aboutus-list">
+                  <ul className="list-unstyled mb-0 text-left">
+                    <li className="text"><i className="fa-solid fa-circle-check mr-2" style={{ color: "#569C3C"}}></i>Problem-solving prowess</li>
+                    <li className="text"><i className="fa-solid fa-circle-check mr-2" style={{ color: "#569C3C"}}></i>Continuous pursuit of value addition</li>
+                    <li className="text"><i className="fa-solid fa-circle-check mr-2" style={{ color: "#569C3C"}}></i>A strong emphasis on technology</li>
+                    <li className="text"><i className="fa-solid fa-circle-check mr-2" style={{ color: "#569C3C"}}></i>Innovation in everything</li>
+                    <li className="text"><i className="fa-solid fa-circle-check mr-2" style={{ color: "#569C3C"}}></i>Being an extended arm for business partners</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="col-lg-7 col-md-12 col-sm-12 col-12 mt-5">
-              <div className="achievement_wrapper">
-                <div className="achievement-box box1">
-                  <figure className="icon achievement-icon">
-                    <img src="./assets/images/achievement-clienticon.png" alt="" className="img-fluid" />
-                  </figure> 
-                  <div className="wrapper">
-                    <h3>30+</h3>
-                    <p className="text-size-18 mb-0">Customers</p>
+              <div className="row ">
+                <div className="col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center">
+                  <div className="about-box text-center">
+                    <figure className="icon achievement-icon">
+                      <img src="./assets/images/handshake.png" alt="" className="img-fluid" width={70} />
+                    </figure> 
+                    <div className="wrapper text-center">
+                      <h3>30+</h3>
+                      <p className="text-size-18 mb-0">Customers</p>
+                    </div>
                   </div>
                 </div> 
-                <div className="achievement-box box2">
-                  <figure className="icon1 achievement-icon">
-                    <img src="./assets/images/achievement-projecticon.png" alt="" className="img-fluid" />
-                  </figure>
-                  <div className="wrapper">
-                    <h3>7+</h3>
-                    <p className="text-size-18 mb-0">Office Locations</p>
+                <div className="col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center">
+                  <div className="about-box text-center">
+                    <figure className="icon1 achievement-icon">
+                      <img src="./assets/images/maps-and-location.png" alt="" className="img-fluid" width={60} />
+                    </figure>
+                    <div className="wrapper text-center">
+                      <h3>7+</h3>
+                      <p className="text-size-18 mb-0">Office Locations</p>
+                    </div>
                   </div>
                 </div>
-                <div className="achievement-box box3">
-                  <figure className="icon achievement-icon">
-                    <img src="./assets/images/achievement-teamicon.png" alt="" className="img-fluid" />
-                  </figure> 
-                  <div className="wrapper">
-                    <div className="number number1">
-                      <h3 className="value counter">200</h3>
-                      <span className="plus">+</span>
+                <div className="mt-5 col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center">
+                  <div className="about-box text-center">
+                    <figure className="icon achievement-icon">
+                      <img src="./assets/images/avatar.png" alt="" className="img-fluid" width={60} />
+                    </figure> 
+                    <div className="wrapper text-center">
+                      <div className="number number1 d-flex justify-content-center">
+                        <h3 className="value counter">200</h3>
+                        <span className="plus">+</span>
+                      </div>
+                      <p className="text text-size-18 mb-0">Employees</p>
                     </div>
-                    <p className="text text-size-18 mb-0">Employees</p>
                   </div>
                 </div> 
-                <div className="achievement-box box4">
-                  <figure className="icon1 achievement-icon">
-                    <img src="./assets/images/achievement-awardicon.png" alt="" className="img-fluid" />
-                  </figure>
-                  <div className="wrapper">
-                    <div className="number">
-                      <h3 className="value counter">150</h3>
-                      <span className="plus">+</span>
+                <div className="mt-5 col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-center justify-content-center">
+                  <div className="about-box text-center">
+                    <figure className="icon1 achievement-icon">
+                      <img src="./assets/images/star-award.png" alt="" className="img-fluid" width={65} />
+                    </figure>
+                    <div className="wrapper text-center">
+                      <div className="number d-flex justify-content-center">
+                        <h3 className="value counter">150</h3>
+                        <span className="plus">+</span>
+                      </div>
+                      <p className="text text-size-18 mb-0">Solutions</p>
                     </div>
-                    <p className="text text-size-18 mb-0">Solutions</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <figure className="service-leftlayer mb-0">
+        {/* <figure className="service-leftlayer mb-0">
           <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
-        </figure>
+        </figure> */}
       </section>
 
       {/* service-section */}
       <section className="gwc_domo-section" >
-        <figure className="gwc_domo-dotimage mb-0">
+        {/* <figure className="gwc_domo-dotimage mb-0">
           <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
-        </figure>
+        </figure> */}
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-md-1 order-2">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-2">
               <div className="gwc_domo_contentbox">
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-6 col-6">
@@ -195,11 +216,11 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-md-2 order-1">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
               <div className="gwc_domo_content position-relative" data-aos="fade-right" style={{paddingTop: "120px" }}>
-                <figure className="gwc_domo-rightcircle mb-0">
+                {/* <figure className="gwc_domo-rightcircle mb-0">
                   <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
-                </figure>
+                </figure> */}
                 {/* <h6>Our Services</h6> */}
                 <h2>Why gwc for domo</h2>
                 <p>As the implementation partner for Domo, GWC provides intuitive experiences infused with AI, data science, and a robust data foundation. Seamlessly integrating with your current cloud and legacy systems, our solutions ignite curiosity and drive substantial business impact.
@@ -211,48 +232,60 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <figure className="gwc_domo-rightlayer mb-0">
+        {/* <figure className="gwc_domo-rightlayer mb-0">
           <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
-        </figure>
+        </figure> */}
       </section>
 
-      <section className="py-5">
+      {/* <section className="py-5">
         <div className="container">
           <h2 className="mb-4">Partnership</h2>
           <div className="row text-center mt-5">
             <div className="col-6 col-md-2 mb-4">
               <figure>
-                <img src="./assets/images/partners/Picture5.jpg" alt="Partner 1" className="img-fluid" />
+                <img src="./assets/images/partners/Picture5.jpg" alt="Partner 1" className="img-fluid" style={{ width: "100%", height: "auto", objectFit: "contain", aspectRatio: "3/2"}} />
               </figure>
             </div>
             <div className="col-6 col-md-2 mb-4">
               <figure>
-                <img src="./assets/images/partners/Picture6.jpg" alt="Partner 2" className="img-fluid" />
+                <img src="./assets/images/partners/Picture6.jpg" alt="Partner 2" className="img-fluid" style={{ width: "100%", height: "auto", objectFit: "contain", aspectRatio: "3/2"}} />
               </figure>
             </div>
             <div className="col-6 col-md-2 mb-4">
               <figure>
-                <img src="./assets/images/partners/Picture7.jpg" alt="Partner 3" className="img-fluid" />
+                <img src="./assets/images/partners/Picture7.jpg" alt="Partner 3" className="img-fluid" style={{ width: "100%", height: "auto", objectFit: "contain", aspectRatio: "3/2"}} />
               </figure>
             </div>
             <div className="col-6 col-md-2 mb-4">
               <figure>
-                <img src="./assets/images/partners/Picture8.jpg" alt="Partner 4" className="img-fluid" />
+                <img src="./assets/images/partners/Picture8.jpg" alt="Partner 4" className="img-fluid" style={{ width: "100%", height: "auto", objectFit: "contain", aspectRatio: "3/2"}} />
               </figure>
             </div>
             <div className="col-6 col-md-2 mb-4">
               <figure>
-                <img src="./assets/images/partners/Picture9.jpg" alt="Partner 5" className="img-fluid" />
+                <img src="./assets/images/partners/Picture9.jpg" alt="Partner 5" className="img-fluid" style={{ width: "100%", height: "auto", objectFit: "contain", aspectRatio: "3/2"}} />
               </figure>
             </div>
             <div className="col-6 col-md-2 mb-4">
               <figure>
-                <img src="./assets/images/partners/Picture10.jpg" alt="Partner 6" className="img-fluid" />
+                <img src="./assets/images/partners/Picture10.jpg" alt="Partner 6" className="img-fluid" style={{ width: "100%", height: "auto", objectFit: "contain", aspectRatio: "3/2"}} />
               </figure>
             </div>
           </div>
         </div>
-      </section>    
+      </section>     */}
+      <section className="py-5">
+        <div className="container">
+          <h2 className="mb-4 text-center">Partnership</h2>
+          <div className="partner-row">
+            {partners.map((partner, index) => (
+              <div className="partner-logo" key={index}>
+                <img src={partner.src} alt={partner.name} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   );

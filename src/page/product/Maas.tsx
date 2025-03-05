@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import Navbar from "../../components/navbar";
-import './infobeam.css'
+import "./infobeam.css";
 import VideoTabs from "./VideoTabs";
 
 const Maas = () => {
-  const [activeTab, setActiveTab] = useState("looker");
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <div>
@@ -21,9 +27,9 @@ const Maas = () => {
               <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="banner_content text-center position-relative" data-aos="fade-up">
                   <figure className="project-rightcircle service-rightcircle mb-0 position-absolute end-0 top-0">
-                    <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
+                    <img src="./assets/images/banner-circleleft.png" alt="" className="img-fluid" />
                   </figure>
-                  <h1 className="text-white">DOMAAS</h1>
+                  <h4 className="h-title">DOMAAS</h4>
                   <p className="mx-auto">
                     DOMASS (Migration as a Service) Simplifies BI Migration
                   </p>
@@ -86,7 +92,11 @@ const Maas = () => {
               <div className="col-12 mt-3">
                 <div className="col-12 text-center mb-3">
                   <h4 className="text-white">Value Props of DOMASS</h4>
-                  <p className="text-white">DOMAAS automates formula and field conversions, ensuring accurate and efficient migration of dashboards and data models. It reduces migration time by 65%, offering faster deployment with minimal technical expertise required
+                  <p className="text-white">
+                    DOMAAS automates formula and field conversions, 
+                    ensuring accurate and efficient migration of dashboards and data models. 
+                    It reduces migration time by 65%, offering faster deployment with minimal 
+                    technical expertise required
                   </p>
                 </div>
                 <div className="row">

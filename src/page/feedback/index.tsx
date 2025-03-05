@@ -1,4 +1,21 @@
+import { useState } from "react";
+
 const Feedback = () => {
+  const [rating, setRating] = useState(0);
+  const [hover, setHover] = useState(0);
+
+  const handleStarClick = (selectedRating: number) => {
+    setRating(selectedRating);
+  };
+
+  const handleStarHover = (hoverRating: number) => {
+    setHover(hoverRating);
+  };
+
+  const handleStarLeave = () => {
+    setHover(0);
+  };
+
   return (
     <div className="container">
       <div className="row justify-content-center align-items-center min-vh-100">
@@ -20,12 +37,26 @@ const Feedback = () => {
                 </div>
                 <div className="mb-4">
                   <label className="form-label mb-1">Rate Your Experience</label>
-                  <div className="star-rating mb-2">
-                    <i className="fas fa-star" data-rating="1"></i>
-                    <i className="fas fa-star" data-rating="2"></i>
-                    <i className="fas fa-star" data-rating="3"></i>
-                    <i className="fas fa-star" data-rating="4"></i>
-                    <i className="fas fa-star" data-rating="5"></i>
+                  <div className="mb-2 d-flex align-items-center">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <div 
+                        key={star}
+                        onClick={() => handleStarClick(star)}
+                        onMouseEnter={() => handleStarHover(star)}
+                        onMouseLeave={handleStarLeave}
+                        className="fs-3 me-1"
+                        style={{ cursor: "pointer" }}
+                      >
+                        {star <= (hover || rating) ? (
+                          <i className="fas fa-star text-warning"></i>
+                        ) : (
+                          <i className="far fa-star text-secondary"></i>
+                        )}
+                      </div>
+                    ))}
+                    <span className="ms-2 small">
+                      {rating > 0 ? `${rating} of 5` : ""}
+                    </span>
                   </div>
                   <input type="hidden" id="rating" name="rating" value="0" />
                 </div>

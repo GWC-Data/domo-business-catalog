@@ -54,9 +54,9 @@ const ProjectPage = () => {
               <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="banner_content" data-aos="fade-up">
                   <figure className="project-rightcircle service-rightcircle mb-0">
-                    <img src="./assets/images/service-rightcircle.png" alt="" className="img-fluid" />
+                    <img src="./assets/images/banner-circleleft.png" alt="" className="img-fluid" />
                   </figure>
-                  <h1 className="text-white">Our projects</h1>
+                  <h4 className="h-title">Our projects</h4>
                   <p>Explore our diverse range of projects, crafted with precision and creativity. See how we bring ideas to life for our clients.</p>
                 </div>
               </div>
