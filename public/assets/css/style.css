@@ -813,14 +813,14 @@ p {
     margin-bottom: 0;
 }
 .project-section .case-box .content span{
-    font-size: 14px;
+    font-size: 17px;
     line-height: 20px;
     font-weight: 500;
     text-transform: uppercase;
     border-radius: 20px;
-    background-color: #6a6661;
-    padding: 2px 18px;
-    text-align: center;
+    background-color: #7A3CA3;
+    padding: 10px 18px;
+    /* text-align: center; */
     display: inline-block;
     margin-bottom: 12px;
 }
