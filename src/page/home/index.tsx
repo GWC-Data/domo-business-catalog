@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import "./home.css";
+import Confetti from "../../components/Items/Confetti";
 
 
 const HomePage = () => {
@@ -314,6 +315,7 @@ const HomePage = () => {
         </div>
       </div>
       <Footer />
+      <Confetti/>
     </>
   );
 };
