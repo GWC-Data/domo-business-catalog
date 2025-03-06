@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
+// import LuckyWheel from "../../components/Items/LuckyWheel";
 
 const ProductPage = () => {
   useEffect(() => {
@@ -38,6 +39,8 @@ const ProductPage = () => {
             </div>
           </div>
         </section>
+
+
         
         <figure className="banner-circleright mb-0 position-absolute end-0 bottom-0">
           <img src="./assets/images/banner-circleright.png" className="img-fluid" alt="" />
@@ -102,6 +105,10 @@ const ProductPage = () => {
           </div>
         </div>
       </div>
+
+      {/* <div className="container">
+        <LuckyWheel/>
+      </div> */}
 
       <Footer />
     </div>
