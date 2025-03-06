@@ -77,15 +77,15 @@ const StorePerformance = () => {
                                             </p>
                                             <ul className="list-unstyled mb-0">
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Monitor sales trends by region and store.
                                                 </li>
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Identify low-performing stores for targeted improvements.
                                                 </li>
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Measure revenue per square foot.
                                                 </li>
                                             </ul>
@@ -106,15 +106,15 @@ const StorePerformance = () => {
                                             </p>
                                             <ul className="list-unstyled mb-0">
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Monitor daily and seasonal traffic trends.
                                                 </li>
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Track conversion rates from foot traffic to sales.
                                                 </li>
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Optimize staffing and promotional strategies.
                                                 </li>
                                             </ul>
@@ -133,15 +133,15 @@ const StorePerformance = () => {
                                             <p className="text-size-18">Ensure operational efficiency across all retail locations.</p>
                                             <ul className="list-unstyled mb-0">
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Monitor operational costs and performance.
                                                 </li>
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Optimize scheduling and resource allocation.
                                                 </li>
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Identify areas for cost reduction and efficiency improvements.
                                                 </li>
                                             </ul>
@@ -162,15 +162,15 @@ const StorePerformance = () => {
                                             </p>
                                             <ul className="list-unstyled mb-0">
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Track sales uplift from merchandising efforts.
                                                 </li>
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Measure the impact of seasonal displays.
                                                 </li>
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Optimize store layouts for better customer experience.
                                                 </li>
                                             </ul>
@@ -191,15 +191,15 @@ const StorePerformance = () => {
                                             </p>
                                             <ul className="list-unstyled mb-0">
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Monitor response times and satisfaction levels.
                                                 </li>
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Track resolution rates for customer complaints.
                                                 </li>
                                                 <li className="text text-size-18">
-                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                                                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3" }}></i>
                                                     Identify training opportunities for store staff.
                                                 </li>
                                             </ul>

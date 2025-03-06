@@ -1,6 +1,8 @@
 /* eslint-disable max-len */
+import { RiAccountPinCircleLine } from "react-icons/ri";
 import "../infobeam.css";
 import "../../home/home.css";
+
 
 const SnowGo = () => {
   return (
@@ -21,7 +23,10 @@ const SnowGo = () => {
                 {/* Card 1: Account Overview */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
                   <div className="product-card red h-100 ">
-                    <h5 className="card-title">Account Overview</h5>
+                    <div className="d-flex align-items-center justify-content-between">
+                      <RiAccountPinCircleLine className="icon" />
+                      <h5 className="card-title m-0">Account Overview</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Optimize Usage:</p>
@@ -157,9 +162,6 @@ const SnowGo = () => {
                 </div>
               </div>
             </div>
-            <figure className="gwc_domo-rightlayer mb-0">
-              <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
-            </figure>
           </section>
 
           {/*Flowchart Diagram*/}
@@ -168,14 +170,19 @@ const SnowGo = () => {
               <h4>SnowGO Architecture Overview</h4>
               <p>SnowGO integrates Snowflake with Domo’s federated data system and cloud amplifiers for seamless data access. It processes data through Domo Magic ETL and visualizes insights via dashboards and apps for smarter decision-making.</p>
             </div>
-            {/* <div className="flow-chart-container">
+            <div className="flow-chart-container">
               <img
-                src="./assets/images/products/infobeamAI.drawio.svg"
+                src="./assets/images/products/Snowflake Governance.drawio.svg"
                 alt="Architecture Diagram"
                 className="architecture-image"
               />
-            </div> */}
+            </div>
           </div>
+          <div>
+          </div>
+        </div>
+        <div className="mt-4">
+            <iframe src="https://embed.domo.com/embed/pages/zvroO" width="100%" height="1000" frameBorder={"0"}></iframe>
         </div>
       </div>
     </div>

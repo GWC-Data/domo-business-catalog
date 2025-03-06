@@ -57,15 +57,15 @@ const ProductPerformance = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Monitor sales volume by product.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Identify seasonal trends in product performance.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Allocate resources to high-performing product lines.
                         </li>
                       </ul>
@@ -81,15 +81,15 @@ const ProductPerformance = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Analyze AOV by segment and channel.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Measure the impact of discounts and promotions on AOV.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Identify opportunities for upselling and cross-selling.
                         </li>
                       </ul>
@@ -105,15 +105,15 @@ const ProductPerformance = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Track return rates by product and reason.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Analyze patterns to address common issues.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Improve product quality and descriptions to lower returns.
                         </li>
                       </ul>

@@ -76,15 +76,15 @@ const Diagnostics = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Monitor daily test volumes.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Balance workloads among lab staff.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Identify high-demand tests for resource planning.
                         </li>
                       </ul>
@@ -105,15 +105,15 @@ const Diagnostics = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Reduce average turnaround times.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Enhance patient satisfaction through timely diagnostics.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Optimize lab processes to meet demand.
                         </li>
                       </ul>
@@ -132,15 +132,15 @@ const Diagnostics = () => {
                       <p className="text-size-18">Ensure optimal use of lab resources to avoid bottlenecks.</p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Monitor lab equipment utilization rates.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Address capacity constraints effectively.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Plan for future capacity needs.
                         </li>
                       </ul>

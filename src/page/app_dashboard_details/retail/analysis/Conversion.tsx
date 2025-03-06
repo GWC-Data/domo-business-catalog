@@ -76,15 +76,15 @@ const Conversion = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3"}}></i>
                           Analyze lead-to-customer conversion rates.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3"}}></i>
                           Identify bottlenecks in the purchase journey.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3"}}></i>
                           Optimize the funnel for higher sales conversions.
                         </li>
                       </ul>
@@ -105,15 +105,15 @@ const Conversion = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3"}}></i>
                           Monitor sales by product category and SKU.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3"}}></i>
                           Identify fast-moving and slow-moving products.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3"}}></i>
                           Optimize pricing strategies based on sales trends.
                         </li>
                       </ul>
@@ -132,15 +132,15 @@ const Conversion = () => {
                       <p className="text-size-18">Track abandoned carts to recover lost sales and improve the checkout process.</p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3"}}></i>
                           Identify abandonment rates by product and customer segment.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3"}}></i>
                           Analyze reasons for cart abandonment.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#7a3ca3"}}></i>
                           Implement strategies to recover abandoned carts through follow-ups.
                         </li>
                       </ul>

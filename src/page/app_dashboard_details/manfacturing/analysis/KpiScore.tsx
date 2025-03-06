@@ -67,15 +67,15 @@ const KpiScore = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     Improve perfect order fulfillment rates.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     Shorten customer order cycle times.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     Enhance supply chain responsiveness and agility.
                         </li>
                       </ul>
@@ -91,15 +91,15 @@ const KpiScore = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Optimize stock levels to balance supply and demand.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Reduce lead times and improve replenishment strategies.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Minimize return rates and stock-outs.
                         </li>
                       </ul>
@@ -115,15 +115,15 @@ const KpiScore = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Reduce holding and operational costs.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Minimize stock-out scenarios.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Achieve greater accuracy in inventory tracking.
                         </li>
                       </ul>
@@ -139,15 +139,15 @@ const KpiScore = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Reduce freight costs and improve cost efficiency.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Achieve higher freight billing accuracy.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Minimize delays and ensure on-time shipments.
                         </li>
                       </ul>

@@ -1,17 +1,18 @@
 .architecture-image-container {
-    width: 100%;
-    max-width: 1800px;
-    margin: 0 auto;
-    padding: 2rem 0;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+
 }
 
 .architecture-image {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
-.flow-chart-container{
+.flow-chart-container {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
@@ -23,12 +24,13 @@
   padding: 1.5rem;
   border-radius: 15px;
   transition: all 0.3s ease;
-  color: #010521;;
+  color: #010521;
+  ;
 }
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* .product-card.red {
@@ -87,30 +89,33 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .product-card {
-      padding: 1.25rem;
+    padding: 1.25rem;
   }
-  
+
   .card-title {
-      font-size: 1.1rem;
+    font-size: 1.1rem;
   }
-  
+
   .card-content {
-      font-size: 0.85rem;
+    font-size: 0.85rem;
   }
 }
 
-.tab-title{
+.tab-title {
   font-size: 15px;
 }
-.active-tab{
+
+.active-tab {
   background-color: #d6d6d6;
 }
+
 .domass-image-container {
   width: 100%;
   max-width: 1800px;
   margin: 0 auto;
   padding: 2rem 0;
 }
+
 .domass-image {
   width: 50%;
   height: auto;
@@ -134,13 +139,4 @@
 
 .content-list strong {
   font-weight: bold;
-}
-
-.domass-architecture-image-container {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }

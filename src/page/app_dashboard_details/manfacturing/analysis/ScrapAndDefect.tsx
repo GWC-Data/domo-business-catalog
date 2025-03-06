@@ -77,15 +77,15 @@ const ScrapAndDefect = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Reduce scrap rate across production lines.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Lower the cost of scrap materials.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Identify high-scrap production lines for targeted improvement.
                         </li>
                       </ul>
@@ -106,15 +106,15 @@ const ScrapAndDefect = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Decrease overall defect rates.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Identify and categorize defect types.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Monitor defects by shift and production line for actionable insights.
                         </li>
                       </ul>
@@ -133,15 +133,15 @@ const ScrapAndDefect = () => {
                       <p className="text-size-18">Maximize first-pass success rates to reduce rework and improve efficiency.</p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Improve FPY rates across products.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Lower rework and associated costs.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Optimize yield performance by product type.
                         </li>
                       </ul>
@@ -162,15 +162,15 @@ const ScrapAndDefect = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Increase root cause identification rates.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Reduce time to resolution for quality problems.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Minimize recurrence of quality issues.
                         </li>
                       </ul>

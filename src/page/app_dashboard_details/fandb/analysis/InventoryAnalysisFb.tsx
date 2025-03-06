@@ -73,15 +73,15 @@ const InventoryAnalysisFb = () => {
                       <h4>Inventory Turnover Analysis</h4>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2 tick-mark"></i>
                           Evaluate how frequently inventory is sold and replenished over a given period.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2 tick-mark"></i>
                           Optimize stock levels to reduce excess inventory and holding costs.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2 tick-mark"></i>
                           Improve cash flow by aligning stock movement with demand trends.
                         </li>
                       </ul>
@@ -99,15 +99,15 @@ const InventoryAnalysisFb = () => {
                       <h4>Stockout and Overstock Analysis</h4>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2 tick-mark"></i>
                           Identify risks of understocking to avoid lost sales opportunities.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2 tick-mark"></i>
                           Highlight overstock scenarios to minimize wastage and holding expenses.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2 tick-mark"></i>
                           Implement proactive measures to balance stock levels effectively.
                         </li>
                       </ul>
@@ -125,15 +125,15 @@ const InventoryAnalysisFb = () => {
                       <h4>Supplier Performance Analysis</h4>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2 tick-mark"></i>
                           Track supplier timeliness, product quality, and pricing reliability.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2 tick-mark"></i>
                           Strengthen supply chain efficiency through data-driven insights.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2 tick-mark"></i>
                           Foster better vendor relationships to ensure consistent and cost-effective supply.
                         </li>
                       </ul>

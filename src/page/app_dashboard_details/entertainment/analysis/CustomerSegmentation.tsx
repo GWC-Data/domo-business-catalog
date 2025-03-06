@@ -76,15 +76,15 @@ const CustomerSegmentaion = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-15">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Identify high-value customers by segmenting based on spending behavior.
                         </li>
                         <li className="text text-size-15">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Analyze customer profiles to detect emerging segments for personalized engagement.
                         </li>
                         <li className="text text-size-15">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Use segmentation data to refine marketing and sales strategies.
                         </li>
                       </ul>
@@ -105,15 +105,15 @@ const CustomerSegmentaion = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-10">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Deliver personalized event recommendations and product offers based on customer preferences.
                         </li>
                         <li className="text text-size-10">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Monitor the effectiveness of tailored campaigns to increase conversion rates.
                         </li>
                         <li className="text text-size-10">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Create exclusive promotions for high-value segments to enhance loyalty.
                         </li>
                       </ul>
@@ -132,15 +132,15 @@ const CustomerSegmentaion = () => {
                       <p className="text-size-18">Measure the impact of personalized engagement strategies on customer retention.</p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Track retention rates for different customer segments over time.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Monitor customer lifetime value (CLTV) to determine the effectiveness of engagement.
                         </li>
                         <li className="text text-size-18">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Identify opportunities to improve loyalty through special offers and rewards.
                         </li>
                       </ul>

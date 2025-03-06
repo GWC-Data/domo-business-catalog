@@ -24,7 +24,7 @@ const Maas = () => {
                   </figure>
                   <h1 className="text-white">DOMAAS</h1>
                   <p className="mx-auto">
-                    DOMASS (Migration as a Service) Simplifies BI Migration
+                  DOMAAS is a smart migration solution that extracts key details from dashboards across different BI tools and presents them in Domo's format. It automates dataset insights, SQL-based ER diagrams, and visual mappings for a seamless transition. Businesses can migrate without disruption, reducing cost and complexity.
                   </p>
                 </div>
               </div>
@@ -78,100 +78,174 @@ const Maas = () => {
 
           {/* cards*/}
           <div>
-            <section className="gwc_domo-section">
-              <figure className="gwc_domo-dotimage mb-0">
-                <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
-              </figure>
-              <div className="col-12 mt-3">
-                <div className="col-12 text-center mb-3">
-                  <h4 className="text-white">Value Props of DOMASS</h4>
-                  <p className="text-white">DOMAAS automates formula and field conversions, ensuring accurate and efficient migration of dashboards and data models. It reduces migration time by 65%, offering faster deployment with minimal technical expertise required
-                  </p>
+          <section className="gwc_domo-section">
+            <figure className="gwc_domo-dotimage mb-0">
+              <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
+            </figure>
+            <div className="col-12 mt-3">
+              <div className="col-12 text-center mb-3">
+                <h4 className="text-white">What's Included in DOMASS?</h4>
+              </div>
+              <div className="row">
+                {/* Card 1: Automated BI Migration Insights*/}
+                <div className="col-lg-4 col-md-6 col-12 mb-3">
+                  <div className="product-card red h-100 ">
+                    <h5 className="card-title">Automated BI Migration Insights</h5>
+                    <div className="card-content">
+                      <div className="feature-block">
+                        <p className="feature-title">Seamless Dashboard Analysis</p>
+                        <ul className="feature-list">
+                          <li>Extracts key details from Power BI, Tableau, and other BI tools.</li>
+                          <li>Documents datasets, reports, and relationships for smooth transiti</li>
+                        </ul>
+                      </div>
+                      <div className="feature-block">
+                        <p className="feature-title">One-Click Documentation</p>
+                        <ul className="feature-list">
+                          <li>Eliminates manual effort with AI-powered insights.</li>
+                          <li>Provides structured reports for quick migration reference.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="row">
-                  {/* Card 1: Authentication & Security */}
-                  <div className="col-lg-4 col-md-6 col-12 mb-3">
-                    <div className="product-card red h-100 ">
-                      <h5 className="card-title">Automation Migration Accelerators</h5>
-                      <div className="card-content">
-                        <p>DOMAAS accelerates automation by seamlessly converting formulas and fields, reducing manual mapping errors and streamlining migration.</p>
+
+                {/* Card 2: Comprehensive Dataset Insights */}
+                <div className="col-lg-4 col-md-6 col-12 mb-3">
+                  <div className="product-card red h-100">
+                    <h5 className="card-title">Comprehensive Dataset Insights</h5>
+                    <div className="card-content">
+                      <div className="feature-block">
+                        <p className="feature-title">Dataset Information Extraction</p>
+                        <ul className="feature-list">
+                          <li>Analyzes dataset structures, column details, and metadata.</li>
+                          <li>Provides a clear breakdown of data sources and connections.</li>
+                        </ul>
+                      </div>
+                      <div className="feature-block">
+                        <p className="feature-title">SQL ER Diagram Generation</p>
+                        <ul className="feature-list">
+                          <li>Automatically generates ER diagrams based on SQL queries.</li>
+                          <li>Helps in understanding dataset relationships visually.</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  {/* Card 2: File Management */}
-                  <div className="col-lg-4 col-md-6 col-12 mb-3">
-                    <div className="product-card red h-100 ">
-                      <h5 className="card-title">Fast Migration 60% Migration TAT Improvement</h5>
-                      <div className="card-content">
-                        <p>Ensures rapid migration of dashboards and data models to DOMO, preserving all relationships and data structures while improving migration TAT by 60%,
-                        </p>
+                {/* Card 3: Accurate Dashboard Replication */}
+                <div className="col-lg-4 col-md-6 col-12 mb-3">
+                  <div className="product-card red h-100">
+                    <h5 className="card-title">Accurate Dashboard Replication</h5>
+                    <div className="card-content">
+                      <div className="feature-block">
+                        <p className="feature-title">Visual Insights & Structure</p>
+                        <ul className="feature-list">
+                          <li>Captures and documents key visual elements from dashboards.</li>
+                          <li>Ensures all charts, tables, and filters are mapped accurately.</li>
+                        </ul>
+                      </div>
+                      <div className="feature-block">
+                        <p className="feature-title">Beast Mode & Calculation Documentation</p>
+                        <ul className="feature-list">
+                          <li>Extracts and presents all custom calculations used in dashboards.</li>
+                          <li>Ensures a smooth transition of calculated fields.</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  {/* Card 3: AI-Powered Chatbot */}
-                  <div className="col-lg-4 col-md-6 col-12 mb-3">
-                    <div className="product-card red h-100 ">
-                      <h5 className="card-title">40% Reduction in Migration Cost</h5>
-                      <div className="card-content">
-                        <p>DOMAAS reduces migration costs by 40% by enabling users with SQL knowledge to manage the process, eliminating the need for expertise in LookML or DAX
-                        </p>
+                {/* Card 4: Minimized Downtime & Disruption */}
+                <div className="col-lg-4 col-md-6 col-12 mb-3">
+                  <div className="product-card red h-100">
+                    <h5 className="card-title">Minimized Downtime & Disruption</h5>
+                    <div className="card-content">
+                      <div className="feature-block">
+                        <p className="feature-title">Zero-Interruption Documentation</p>
+                        <ul className="feature-list">
+                          <li>Ensures smooth business operations while gathering insight</li>
+                          <li>Provides real-time tracking of documented details.</li>
+                        </ul>
+                      </div>
+                      <div className="feature-block">
+                        <p className="feature-title">Risk-Free Data Handling</p>
+                        <ul className="feature-list">
+                          <li>Securely extracts metadata without affecting live dashboards.</li>
+                          <li>Verifies accuracy of extracted information before migration.</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  {/* Card 4: Domo AppDB */}
-                  <div className="col-lg-4 col-md-6 col-12 mb-3">
-                    <div className="product-card red h-100 ">
-                      <h5 className="card-title">Predictable Outcomes Low Manual Intervention</h5>
-                      <div className="card-content">
-                        <p>Automates much of the migration process, reducing costs and the time required to transition to DOMO ensuring faster deployment, <strong>65% of time saved</strong></p>
+                {/* Card 5: Optimized Cost & Investment */}
+                <div className="col-lg-4 col-md-6 col-12 mb-3">
+                  <div className="product-card red h-100">
+                    <h5 className="card-title">Optimized Cost & Investment</h5>
+                    <div className="card-content">
+                      <div className="feature-block">
+                        <p className="feature-title">Automated Cost Efficiency</p>
+                        <ul className="feature-list">
+                          <li>Reduces expenses by automating documentation processes.</li>
+                          <li>Minimizes reliance on manual reporting efforts.</li>
+                        </ul>
+                      </div>
+                      <div className="feature-block">
+                        <p className="feature-title">Long-Term ROI Benefits</p>
+                        <ul className="feature-list">
+                          <li>Increases efficiency with structured migration insights.</li>
+                          <li>Helps businesses make informed decisions before migrating.</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  {/* Card 5: API Integration */}
-                  <div className="col-lg-4 col-md-6 col-12 mb-3">
-                    <div className="product-card red h-100 ">
-                      <h5 className="card-title">Technical Expertise Source - Target Mapping</h5>
-                      <div className="card-content">
-                        <p>Automatically maps source-to-target data by generating ER diagrams for each dashboard visual, offering clear insights into data connections.</p>
+                {/* Card 6: User-Friendly Adoption & Integration */}
+                <div className="col-lg-4 col-md-6 col-12 mb-3">
+                  <div className="product-card red h-100">
+                    <h5 className="card-title">User-Friendly Adoption & Integration</h5>
+                    <div className="card-content">
+                      <div className="feature-block">
+                        <p className="feature-title">Familiar UI & Validation</p>
+                        <ul className="feature-list">
+                          <li>Retains existing dashboard structures for easy transition.</li>
+                          <li>Side-by-side comparison ensures accurate documentation.</li>
+                        </ul>
                       </div>
-                    </div>
-                  </div>
-
-                  {/* Card 6: Real-Time AI Processing */}
-                  <div className="col-lg-4 col-md-6 col-12 mb-3">
-                    <div className="product-card red h-100 ">
-                      <h5 className="card-title">Scalable for Large Migrations</h5>
-                      <div className="card-content">
-                        <p>DOMAAS efficiently handles large-scale migrations, ensuring seamless data
-                          transfer, optimized performance and regardless of complexity.</p>
+                      <div className="feature-block">
+                        <p className="feature-title">Built-in Training & Support</p>
+                        <ul className="feature-list">
+                          <li>Provides structured insights for smooth user adoption.</li>
+                          <li>Reduces learning curve for new users migrating to Domo.</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <figure className="gwc_domo-rightlayer mb-0">
-                <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
-              </figure>
-            </section>
+            </div>
+            <figure className="gwc_domo-rightlayer mb-0">
+              <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
+            </figure>
+          </section>
           </div>
 
           {/*Architecture */}
-          {/* <div className="col-12">
-            <div className="domass-architecture-image-container">
+          <div className="col-12 mt-5">
+          <div className="flow-chart-container">
+              <h4 className='mb-1 text-center'>Architecture Diagram</h4>
               <img
-                src="./assets/images/products/domass_ar1.png"
+                src="./assets/images/products/DOMAAS.drawio.svg"
                 alt="Architecture Diagram"
-                className="img-fluid"
+                className="architecture-image"
               />
             </div>
-          </div> */}
+          </div>
 
           {/*Video container */}
-          {/* <section className="gwc_domo-section">
+           {/* <section className="gwc_domo-section">
             <figure className="gwc_domo-dotimage mb-0">
               <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
             </figure>

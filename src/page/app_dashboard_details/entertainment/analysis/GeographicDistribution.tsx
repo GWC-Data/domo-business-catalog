@@ -75,15 +75,15 @@ const GeographicDistribution = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-15">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Track ticket sales by region to evaluate market performance.
                         </li>
                         <li className="text text-size-15">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Analyze event preferences by geography to optimize content offerings for each area.
                         </li>
                         <li className="text text-size-15">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Study customer demographics by location to better understand regional needs and behaviors.
                         </li>
                       </ul>
@@ -104,15 +104,15 @@ const GeographicDistribution = () => {
                       </p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-10">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Focus marketing efforts on regions with high growth potential.
                         </li>
                         <li className="text text-size-10">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Offer location-specific promotions to increase customer engagement.
                         </li>
                         <li className="text text-size-10">
-                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                          <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                           Personalize marketing campaigns based on local preferences and customer behavior.
                         </li>
                       </ul>

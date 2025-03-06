@@ -51,12 +51,13 @@ const Domoverse = () => {
         </figure>
       </div>
 
-      {/* Circular Content Section */}
+      {/* Rectangle Content Section */}
       <div className="container-fluid mt-5">
         <div className="row justify-content-center">
           {/* Circle 1 */}
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center mb-4">
             <div className="circle-container first">
+              <img src="./assets/images/product_logos/Snowflake-Symbol.png" alt="snowGo" style={{ width: "50px", height: "50px", objectFit: "contain" }} />
               <h5>SnowGO Overview</h5>
               <p>
               SnowGO is a tool for managing Snowflake environments, giving you clear visibility, control, cost-saving options, and security compliance. It connects Snowflake with Domo to provide instant insights and easy-to-use dashboards for better decisions.
@@ -67,6 +68,7 @@ const Domoverse = () => {
           {/* Circle 2 */}
           <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center mb-4">
             <div className="circle-container second">
+            <img src="./assets/images/product_logos/Databrickslogo.jpg" alt="snowGo" style={{ width: "50px", height: "50px", objectFit: "contain" }} />
               <h5>Databricks Governance Overview</h5>
               <p>
               The Databricks Governance Dashboard provides a centralized view of governance and operational metrics, enabling teams to monitor usage, optimize performance, enforce security, and ensure compliance.
@@ -78,6 +80,7 @@ const Domoverse = () => {
           {/* Circle 3 */}
           <div className="col-xl-4 col-lg-6 col-sm-12 d-flex justify-content-center mb-4">
             <div className="circle-container third">
+            <img src="./assets/images/product_logos/Domologo.png" alt="snowGo" style={{ width: "50px", height: "50px", objectFit: "contain", marginBottom:"3px"}} />
               <h5>Domo Governor Summary</h5>
               <p>
               Domo Governor is a powerful platform designed to enhance Domo instance management through centralized governance, automation, and actionable insights. It helps organizations streamline operations, optimize resources, and maintain intelligent oversight.

@@ -149,7 +149,7 @@ const  DataBricksGovernance = () => {
                         <p className="feature-title">Proactive Alerts:</p>
                         <ul className="feature-list">
                           <li>Get real-time alerts to resolve issues before they impact operations.</li>
-                          <li>•	Maintain stability with proactive issue management.</li>
+                          <li>Maintain stability with proactive issue management.</li>
                         </ul>
                       </div>
                     </div>
@@ -157,9 +157,6 @@ const  DataBricksGovernance = () => {
                 </div>
               </div>
             </div>
-            <figure className="gwc_domo-rightlayer mb-0">
-              <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
-            </figure>
           </section>
 
           {/*Flowchart Diagram*/}
@@ -168,14 +165,17 @@ const  DataBricksGovernance = () => {
               <h4>Databricks Governance Architecture Overview</h4>
               <p>The architecture integrates Databricks with Domo's federated data and cloud amplifiers for seamless data access. Data is transformed using Domo Magic ETL and visualized in dashboards and apps to support efficient decision-making.</p>
             </div>
-            {/* <div className="flow-chart-container">
+            <div className="flow-chart-container">
               <img
-                src="./assets/images/products/infobeamAI.drawio.svg"
+                src="./assets/images/products/Data bricks Governance.drawio.svg"
                 alt="Architecture Diagram"
                 className="architecture-image"
               />
-            </div> */}
+            </div>
           </div>
+        </div>
+        <div className="mt-4">
+            <iframe src="https://embed.domo.com/embed/pages/Gv15J" width="100%" height="1000" frameBorder={"0"}></iframe>
         </div>
       </div>
     </div>

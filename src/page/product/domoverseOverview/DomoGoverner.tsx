@@ -19,9 +19,9 @@ const DomoGoverner = () => {
               </div>
               <div className="row">
                 {/* Card 1: Account Overview */}
-                <div className="col-lg-4 col-md-6 col-12 mb-3">
+                <div className="col-lg-4 col-md-6 col-12 mb-3" >
                   <div className="product-card red h-100 ">
-                    <h5 className="card-title">. Credit-Based Governance</h5>
+                    <h5 className="card-title">Credit-Based Governance</h5>
                     <div className="card-content">
                       <div className="feature-block">
                         <ul className="feature-list">
@@ -73,9 +73,6 @@ const DomoGoverner = () => {
                 </div>
               </div>
             </div>
-            <figure className="gwc_domo-rightlayer mb-0">
-              <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
-            </figure>
           </section>
 
           {/*Flowchart Diagram*/}
@@ -84,14 +81,17 @@ const DomoGoverner = () => {
               <h4>Domo Governor Architecture Overview</h4>
               <p>Domo Governor integrates with Domo's core instance to centralize management and governance. Automated workflows and real-time monitoring provide seamless oversight, while dashboards deliver actionable insights for optimized operations.</p>
             </div>
-            {/* <div className="flow-chart-container">
+            <div className="flow-chart-container">
               <img
-                src="./assets/images/products/infobeamAI.drawio.svg"
+                src="./assets/images/products/Domo Governance.drawio.svg"
                 alt="Architecture Diagram"
                 className="architecture-image"
               />
-            </div> */}
+            </div>
           </div>
+        </div>
+        <div className="mt-4">
+            <iframe src="https://embed.domo.com/cards/ANRPl" width="100%" height="650" frameBorder={"0"}></iframe>
         </div>
       </div>
     </div>

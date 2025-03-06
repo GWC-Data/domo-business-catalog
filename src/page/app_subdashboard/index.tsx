@@ -345,7 +345,7 @@ const AppSubDashboard = () => {
                         <ul className="list-unstyled mb-0">
                           {content.keyFeatures.map((feature, index) => (
                             <li key={index} className="text text-size-18 mb-1">
-                              <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                              <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3" }}></i>
                               <strong>{feature.title}: </strong>
                               {feature.description}
                             </li>
@@ -359,7 +359,7 @@ const AppSubDashboard = () => {
                         <ul className="list-unstyled mb-0">
                           {content.businessOutcomes.map((outcome, index) => (
                             <li key={index} className="text text-size-18 mb-1">
-                              <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027" }}></i>
+                              <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3" }}></i>
                               <strong>{outcome.title}: </strong>
                               {outcome.description}
                             </li>

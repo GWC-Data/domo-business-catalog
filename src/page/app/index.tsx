@@ -94,27 +94,27 @@ const AppsPage = () => {
               <p>
                 <ul className="list-unstyled mb-0">
                   <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     <strong>Comprehensive Insights: </strong> Gain a complete 360° view of your business data for better decision-making.
                   </li>
                   <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     <strong>Real-Time Monitoring: </strong> Stay updated with live analytics that empower proactive actions.
                   </li>
                   <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     <strong>Industry-Specific Customization: </strong> Tailored analytics solutions for every industry to address unique challenges.
                   </li>
                   <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     <strong>Unified Data Ecosystem: </strong> Seamlessly integrate data from multiple sources into a single platform.
                   </li>
                   <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     <strong>Enhanced Collaboration: </strong> Enable teams to access and share insights, driving strategic alignment.
                   </li>
                   <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     <strong>Future-Ready Decisions: </strong> Leverage predictive and prescriptive analytics to stay ahead in the competitive landscape.
                   </li>
                 </ul>
@@ -125,32 +125,32 @@ const AppsPage = () => {
               <p>
                 <ul className="list-unstyled mb-0">
                   <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     <strong>Improved Efficiency: </strong>
                     Optimize operations with actionable insights and reduce bottlenecks.
                   </li>
                   <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     <strong>Revenue Growth: </strong>
                     Unlock opportunities by identifying high-performing areas and growth potential.
                   </li>
                   <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     <strong>Cost Reduction: </strong>
                     Detect inefficiencies, reduce wastage, and maximize resource utilization.
                   </li>
                   <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     <strong>Customer Satisfaction:</strong>
                     Deliver personalized experiences by understanding customer behaviors and needs.
                   </li>
                   <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     <strong>Scalability: </strong>
                     Enable sustainable growth by adapting analytics to your evolving business demands.
                   </li>
                   <li className="text text-size-18">
-                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "#F67027"}}></i>
+                    <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
                     <strong>Data-Driven Culture: </strong>
                     Empower teams to make informed decisions backed by accurate data.
                   </li>

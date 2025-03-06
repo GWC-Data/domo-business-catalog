@@ -1,11 +1,11 @@
 .circle-container {
     width: 500px;
-    height: 300px;
+    height: 370px;
     border-radius: 10%;
     background: #f8f9fa;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -13,13 +13,13 @@
     overflow-wrap: break-word;
 }
 .first{
-    border:6px solid #2d4c6d;
+    border:3px dotted #21b3e6;
 }
 .second{
-    border:6px solid #008e84;
+    border:3px dotted #ee3d2c;
 }
 .third{
-    border:6px solid #d44846;
+    border:3px dotted #9ccaeb;
 }
 
 .circle-container h5 {
@@ -33,7 +33,7 @@
 @media screen and (max-width:576px) {
     .circle-container{
         width: 500px;
-        height: 200px;
+        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -79,4 +79,11 @@
 .tab3{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+.card-logo-name{
+    display: flex;
+}
+.icon{
+    width: 30px;
+    height: 30px;
 }

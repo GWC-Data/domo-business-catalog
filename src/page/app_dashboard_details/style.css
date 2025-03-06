@@ -456,7 +456,7 @@
 }
 
 .design_two .icon {
-  background-color: #ee8953;
+  background-color: #7a3ca3;
   width: 70px;
   height: 70px;
   line-height: 60px;
@@ -464,6 +464,9 @@
   border-radius: 100px;
   padding: .8rem;
   margin-bottom: 1.4rem;
+}
+.tick-mark{
+  color: #7a3ca3;
 }
 .design_two .icon img{
   width: 100%;
@@ -593,7 +596,7 @@
 
 
 .flip-card-front .icon {
-  background-color: #ee8953;
+  background-color: #7a3ca3;
   width: 70px;
   height: 70px;
   text-align: center;
@@ -637,7 +640,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000;
+  border:none;
+  border-radius: 20px;
   
   &::before {
     content: "";
@@ -652,15 +656,15 @@
   }
   
   &:nth-child(1) {
-    background-image: linear-gradient(45deg, #F6B784,#f08731);
+    background-image: linear-gradient(20deg, #7a3ca3, #ab78cd);
   }
   
   &:nth-child(2) {
-    background-image: linear-gradient(45deg,#F6B784, #f08731);
+    background-image: linear-gradient(20deg, #7a3ca3, #ab78cd);
   }
   
   &:nth-child(3) {
-    background-image: linear-gradient(45deg,#F6B784, #f08731);
+    background-image: linear-gradient(20deg, #7a3ca3, #ab78cd);
   }
 }
 
@@ -736,15 +740,15 @@
   }
   
   .card:nth-child(1) & {
-    background-image: linear-gradient(20deg,#010521, #02093a, #f08731);
+    background-image: linear-gradient(20deg,#1d1e22, #02093a, #7a3ca3);
   }
   
   .card:nth-child(2) & {
-    background-image: linear-gradient(45deg,#010521, #02093a, #f08731);
+    background-image: linear-gradient(20deg,#1d1e22, #02093a, #7a3ca3);
   }
   
   .card:nth-child(3) & {
-    background-image: linear-gradient(45deg,#010521, #02093a, #f08731);
+    background-image: linear-gradient(20deg,#1d1e22, #02093a, #7a3ca3);
   }
 }
 
