@@ -26,7 +26,7 @@ const DomoGoverner = () => {
                 {/* Card 1: Effortless Documentation */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3  ">
                   <div className=" h-100 p-3 bg-white">
-                    <h5 className="card-title mb-3">Effortless Documentation</h5>
+                    <h5 className="card-title mb-3 flex-row">Effortless Documentation</h5>
                     <div className="card-body p-0">
                       <ul className="feature-list">
                         <li className="mb-2">Visual-Based Report Generation.</li>
