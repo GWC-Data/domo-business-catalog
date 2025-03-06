@@ -118,9 +118,11 @@ p {
     top: 0;
     /* border-radius: 0 0 600px 0; */
     /* background: #6A1B9A; */
-    background: rgb(122,60,163);
-    background: linear-gradient(90deg, rgba(122,60,163,1) 0%, rgba(153,204,238,1) 100%);
-    opacity: 70%;
+    /* background: rgb(122,60,163);
+    background: linear-gradient(90deg, rgba(122,60,163,1) 0%, rgba(153,204,238,1) 100%); */
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+    opacity: 80%;
     /* background: var(--e-global-color-very-dark-mostly-black-blue); */
 }
 

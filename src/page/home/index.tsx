@@ -30,15 +30,10 @@ const HomePage = () => {
         <Navbar activeNav="home" />
         <section className="banner-section">
           <div className="container">
-            <div className="row">
+            <div className="row justify-content-between align-items-center">
               <div className="col-lg-5 col-md-12 col-sm-12 col-12" data-aos="fade-right">
                 <div className="banner_content">
-                  <a className="navbar-brand" href="./index.html">
-                    <figure className="mb-0 banner-logo">
-                      <img src="https://web-assets.domo.com/miyagi/images/logo/brand/color/logo-brand-domopalooza-color.svg" alt="" width="200" className="img-fluid" />
-                    </figure>
-                  </a>
-                  {/* <figure className="banner-line"><img src="./assets/images/banner-line.png" alt="" className="img-fluid" /></figure> */}
+                  <figure className="banner-line"><img src="./assets/images/banner-line.png" alt="" className="img-fluid" /></figure>
                   <h1 className="text-white mt-4">SOLUTION MATTERS</h1>
                   <p>Empowering Business with Data & AI Insights to Drive Informed Actions.</p>
                   <figure className="banner-circleleft mb-0">
@@ -50,6 +45,13 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="col-lg-7 col-md-12 col-sm-12 col-12">
+                <div className="w-100 d-flex justify-content-center align-items-center">
+                  <a className="navbar-brand" href="./index.html">
+                    <figure className="mb-0 banner-logo">
+                      <img src="https://web-assets.domo.com/miyagi/images/logo/brand/color/logo-brand-domopalooza-color.svg" alt="" width="400" className="img-fluid" />
+                    </figure>
+                  </a>
+                </div>
                 <div className="banner_wrapper">
                   <figure className="banner-circleright mb-0">
                     <img src="./assets/images/banner-circleright.png" className="img-fluid" alt="" />
@@ -241,8 +243,8 @@ const HomePage = () => {
                 Naveen Kumar</h5><span className="small text-uppercase text-white">Founder & CEO</span>
               </div>
               <ul className="social mb-0 list-inline mt-3">
-                  <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
-                </ul>
+                <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
+              </ul>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className="">
@@ -260,8 +262,8 @@ const HomePage = () => {
                 <h5 className="mt-3">Shashank Ravikumar</h5><span className="small text-uppercase text-white">Chief Strategy Officer</span>
               </div>
               <ul className="social mb-0 list-inline mt-3">
-                  <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
-                </ul>
+                <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
+              </ul>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className=""><img src="https://gwcdata.ai/assets/image6-6eTzsG-m.png" alt="" className="rounded-circle img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
@@ -269,16 +271,16 @@ const HomePage = () => {
                 Prasanna Srinivasan</h5><span className="small text-uppercase text-white">Chief Operating Officer</span>
               </div>
               <ul className="social mb-0 list-inline mt-3">
-                  <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
-                </ul>
+                <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
+              </ul>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className=""><img src="https://gwcdata.ai/assets/image7--0aoZUnq.png" alt="" className="rounded-circle img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
                 <h5 className="mt-3">Srinath Raja</h5><span className="small text-uppercase text-white">Chief Data Officer</span>
               </div>
               <ul className="social mb-0 list-inline mt-3">
-                  <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
-                </ul>
+                <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
+              </ul>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className=""><img src="https://gwcdata.ai/assets/image9-qmh8iztT.png" alt="" className="rounded-circle img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
@@ -286,8 +288,8 @@ const HomePage = () => {
                 Santhosh Kumar</h5><span className="small text-uppercase text-white">Chief Innovation Officer</span>
               </div>
               <ul className="social mb-0 list-inline mt-3">
-                  <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
-                </ul>
+                <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
+              </ul>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className=""><img src="https://gwcdata.ai/assets/image5-MbGjwAc-.png" alt="" className="rounded-circle img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
@@ -295,8 +297,8 @@ const HomePage = () => {
                 Madhu Sudhanan</h5><span className="small text-uppercase text-white">VP, Data-Engineering</span>
               </div>
               <ul className="social mb-0 list-inline mt-3">
-                  <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
-                </ul>
+                <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
+              </ul>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className="">
@@ -305,8 +307,8 @@ const HomePage = () => {
                 <span className="small text-uppercase text-white">Associate Director</span>
               </div>
               <ul className="social mb-0 list-inline mt-3">
-                  <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
-                </ul>
+                <li className="list-inline-item"><a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
