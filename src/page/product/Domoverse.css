@@ -86,4 +86,34 @@
 .icon{
     width: 30px;
     height: 30px;
+    color: #29b5e8;
+}
+.domoverse-product-card {
+    padding: 1.5rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    color: #010521;
+    background-color: white
+}
+.snowgo-card-title{
+    color: #29b5e8;
+    font-size: 19px;
+}
+.databricks-card-title{
+    color: #ee3d2c;
+    font-size: 19px;
+}
+.domo-card-title{
+    color: #909fd7;
+    font-size: 19px;
+}
+.databricks-icon{
+    width: 30px;
+    height: 30px;
+    color: #ee3d2c;
+}
+.domo-icon{
+    width: 30px;
+    height: 30px;
+    color: #909fd7;
 }

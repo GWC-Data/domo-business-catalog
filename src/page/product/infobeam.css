@@ -19,13 +19,11 @@
   padding: 2rem 0;
 }
 
-/* Add these styles to your infobeam.css file */
 .product-card {
   padding: 1.5rem;
   border-radius: 15px;
   transition: all 0.3s ease;
   color: #010521;
-  ;
 }
 
 .product-card:hover {
@@ -33,9 +31,6 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* .product-card.red {
-  background: linear-gradient(140deg, #1f1e35, #f0762a);
-} */
 .product-card.red {
   background: #f8f5f5;
 }

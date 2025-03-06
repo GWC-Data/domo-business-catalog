@@ -1,7 +1,11 @@
 /* eslint-disable max-len */
 import { RiAccountPinCircleLine } from "react-icons/ri";
-import "../infobeam.css";
+import { TiDatabase } from "react-icons/ti";
+import { MdOutlineQueryStats, MdOutlineWarehouse} from "react-icons/md";
+import { AiOutlineSafety } from "react-icons/ai";
+import { IoAlertSharp } from "react-icons/io5";
 import "../../home/home.css";
+import '../Domoverse.css';
 
 
 const SnowGo = () => {
@@ -16,16 +20,16 @@ const SnowGo = () => {
             </figure>
             <div className="col-12 mt-3">
               <div className="col-12 text-center mb-3">
-                <h4 className="text-white">What’s Included in SnowGO?</h4>
+                <h4 className="text-white">What's Included in SnowGO?</h4>
                 <p className="text-white">SnowGO comes packed with features like account usage insights, query performance monitoring, cost management, data pipeline tracking, security compliance, and proactive alerts to streamline your Snowflake governance.</p>
               </div>
               <div className="row">
                 {/* Card 1: Account Overview */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100 ">
-                    <div className="d-flex align-items-center justify-content-between">
-                      <RiAccountPinCircleLine className="icon" />
-                      <h5 className="card-title m-0">Account Overview</h5>
+                  <div className="domoverse-product-card h-100 ">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <RiAccountPinCircleLine className="icon mr-2" />
+                      <h5 className="snowgo-card-title m-0">Account Overview</h5>
                     </div>
                     <div className="card-content">
                       <div className="feature-block">
@@ -48,8 +52,11 @@ const SnowGo = () => {
 
                 {/* Card 2: Data Governance */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Data Governance</h5>
+                  <div className="domoverse-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <TiDatabase  className="icon mr-2" />
+                      <h5 className="snowgo-card-title m-0">Data Governance</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Ensure Compliance:</p>
@@ -71,8 +78,11 @@ const SnowGo = () => {
 
                 {/* Card 3: Query Performance*/}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Query Performance</h5>
+                  <div className="domoverse-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <MdOutlineQueryStats className="icon mr-2" />
+                      <h5 className="snowgo-card-title m-0">Query Performance</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Boost Efficiency:</p>
@@ -94,8 +104,11 @@ const SnowGo = () => {
 
                 {/* Card 4: Warehouse Performance */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Warehouse Performance</h5>
+                  <div className="domoverse-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <MdOutlineWarehouse className="icon mr-2" />
+                      <h5 className="snowgo-card-title m-0">Warehouse Performance</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Right-Size Warehouses:</p>
@@ -117,8 +130,11 @@ const SnowGo = () => {
 
                 {/* Card 5: Security & Compliance */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Security & Compliance</h5>
+                  <div className="domoverse-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <AiOutlineSafety className="icon mr-2" />
+                      <h5 className="snowgo-card-title m-0">Security & Compliance</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Stay Secure:</p>
@@ -140,8 +156,11 @@ const SnowGo = () => {
 
                 {/* Card 6: Alerts & Anomalies */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Alerts & Anomalies</h5>
+                  <div className="domoverse-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <IoAlertSharp className="icon mr-2" />
+                      <h5 className="snowgo-card-title m-0">Security & Compliance</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Proactive Monitoring:</p>
