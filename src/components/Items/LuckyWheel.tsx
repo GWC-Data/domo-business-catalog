@@ -57,23 +57,11 @@ const LuckyWheel: React.FC = () => {
   const [lastRotation, setLastRotation] = useState<number>(0);
   const [showModal, setShowModal] = useState<boolean>(false);
   const [modalMessage, setModalMessage] = useState<string>('');
-  const [isLoading, setIsLoading] = useState<boolean>(true);
   
   const lastClickTimeRef = useRef<number>(0);
   const wheelRef = useRef<HTMLDivElement>(null);
 
   // Security check
-  const securityCheck = useCallback(() => {
-    try {
-      if (window.self !== window.top && !(window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.native)) {
-        window.top.location = window.self.location;
-      }
-    } catch (error) {
-      console.error('Security check failed:', error);
-      setModalMessage('This page cannot be embedded in an iframe.');
-      setShowModal(true);
-    }
-  }, []);
 
   // Send message to native app
   const sendMessageToNative = useCallback((message: MessageToNative) => {
