@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import LuckyWheel from "../../components/Items/LuckyWheel";
+// import LuckyWheel from "../../components/Items/LuckyWheel";
 
 const ProductPage = () => {
   useEffect(() => {
