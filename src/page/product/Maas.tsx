@@ -1,4 +1,10 @@
 /* eslint-disable max-len */
+import { SiInductiveautomation } from "react-icons/si";
+import { MdOutlineDatasetLinked } from "react-icons/md";
+import { FaAccusoft } from "react-icons/fa";
+import { RxCountdownTimer } from "react-icons/rx";
+import { GrOptimize } from "react-icons/gr";
+import { FaUserFriends } from "react-icons/fa";
 import Navbar from "../../components/navbar";
 import "./mass.css";
 // import DomodelVideo from "./DomodelVideo";
@@ -89,8 +95,11 @@ const Maas = () => {
               <div className="row">
                 {/* Card 1: Automated BI Migration Insights*/}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100 ">
-                    <h5 className="card-title">Automated BI Migration Insights</h5>
+                  <div className="domass-product-card h-100 ">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <SiInductiveautomation className="domass-icon mr-2" />
+                      <h5 className="domass-card-title m-0">Account Overview</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Seamless Dashboard Analysis</p>
@@ -112,8 +121,11 @@ const Maas = () => {
 
                 {/* Card 2: Comprehensive Dataset Insights */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Comprehensive Dataset Insights</h5>
+                  <div className="domass-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <MdOutlineDatasetLinked className="domass-icon mr-2" />
+                      <h5 className="domass-card-title m-0">Comprehensive Dataset Insights</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Dataset Information Extraction</p>
@@ -135,8 +147,11 @@ const Maas = () => {
 
                 {/* Card 3: Accurate Dashboard Replication */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Accurate Dashboard Replication</h5>
+                  <div className="domass-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <FaAccusoft className="domass-icon mr-2" />
+                      <h5 className="domass-card-title m-0">Accurate Dashboard Replication</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Visual Insights & Structure</p>
@@ -158,8 +173,11 @@ const Maas = () => {
 
                 {/* Card 4: Minimized Downtime & Disruption */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Minimized Downtime & Disruption</h5>
+                  <div className="domass-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <RxCountdownTimer className="domass-icon mr-2" />
+                      <h5 className="domass-card-title m-0">Minimized Downtime & Disruption</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Zero-Interruption Documentation</p>
@@ -181,8 +199,11 @@ const Maas = () => {
 
                 {/* Card 5: Optimized Cost & Investment */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Optimized Cost & Investment</h5>
+                  <div className="domass-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <GrOptimize className="domass-icon mr-2" />
+                      <h5 className="domass-card-title m-0">Minimized Downtime & Disruption</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Automated Cost Efficiency</p>
@@ -204,8 +225,11 @@ const Maas = () => {
 
                 {/* Card 6: User-Friendly Adoption & Integration */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">User-Friendly Adoption & Integration</h5>
+                  <div className="domass-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <FaUserFriends className="domass-icon mr-2" />
+                      <h5 className="domass-card-title m-0">User-Friendly Adoption & Integration</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Familiar UI & Validation</p>

@@ -1,4 +1,7 @@
 /* eslint-disable max-len */
+import { MdOutlineCreditScore } from "react-icons/md";
+import { RiSecurePaymentLine } from "react-icons/ri";
+import { GrDocumentPerformance } from "react-icons/gr";
 import "../infobeam.css";
 import "../../home/home.css";
 
@@ -18,10 +21,13 @@ const DomoGoverner = () => {
                 <p className="text-white">Domo Governor includes features like centralized governance tools, automation workflows, real-time alerts, resource usage tracking, and actionable insights to optimize your Domo instance.</p>
               </div>
               <div className="row">
-                {/* Card 1: Account Overview */}
+                {/* Card 1: Credit-Based Governance */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3" >
-                  <div className="product-card red h-100 ">
-                    <h5 className="card-title">Credit-Based Governance</h5>
+                  <div className="domoverse-product-card h-100 ">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <MdOutlineCreditScore className="domo-icon mr-2" />
+                      <h5 className="domo-card-title m-0">Account Overview</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <ul className="feature-list">
@@ -38,8 +44,11 @@ const DomoGoverner = () => {
 
                 {/* Card 2: Data Security & Management */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Data Security & Management</h5>
+                  <div className="domoverse-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <RiSecurePaymentLine className="domo-icon mr-2" />
+                      <h5 className="domo-card-title m-0">Data Security & Management</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <ul className="feature-list">
@@ -56,8 +65,11 @@ const DomoGoverner = () => {
 
                 {/* Card 3: Performance Optimization*/}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Performance Optimization</h5>
+                  <div className="domoverse-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <GrDocumentPerformance className="domo-icon mr-2" />
+                      <h5 className="domo-card-title m-0">Performance Optimization</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <ul className="feature-list">

@@ -1,5 +1,8 @@
 /* eslint-disable max-len */
-import "../infobeam.css";
+import { MdOutlineDataUsage, MdOutlineSecurity ,MdSupervisorAccount  } from "react-icons/md";
+import { SiGooglebigquery } from "react-icons/si";
+import { RiDatabaseLine } from "react-icons/ri";
+import { TbAlertSquareRounded } from "react-icons/tb";
 import "../../home/home.css";
 
 const  DataBricksGovernance = () => {
@@ -20,8 +23,11 @@ const  DataBricksGovernance = () => {
               <div className="row">
                 {/* Card 1: Account Overview */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100 ">
-                    <h5 className="card-title">Account Overview</h5>
+                  <div className="domoverse-product-card h-100 ">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <MdSupervisorAccount className="databricks-icon mr-2" />
+                        <h5 className="databricks-card-title m-0">Account Overview</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Track Usage:</p>
@@ -43,8 +49,11 @@ const  DataBricksGovernance = () => {
 
                 {/* Card 2: Data Governance */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Data Governance</h5>
+                  <div className="domoverse-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <MdOutlineDataUsage className="databricks-icon mr-2" />
+                        <h5 className="databricks-card-title m-0">Data Governance</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Enforce Policies:</p>
@@ -66,8 +75,11 @@ const  DataBricksGovernance = () => {
 
                 {/* Card 3: Query Performance*/}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Query Performance</h5>
+                  <div className="domoverse-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <SiGooglebigquery className="databricks-icon mr-2" />
+                        <h5 className="databricks-card-title m-0">Query Performance</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Monitor Trends:</p>
@@ -89,8 +101,11 @@ const  DataBricksGovernance = () => {
 
                 {/* Card 4: Warehouse Performance */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Warehouse Performance</h5>
+                  <div className="domoverse-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <RiDatabaseLine className="databricks-icon mr-2" />
+                        <h5 className="databricks-card-title m-0">Warehouse Performance</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Resource Utilization:</p>
@@ -112,8 +127,11 @@ const  DataBricksGovernance = () => {
 
                 {/* Card 5: Security & Compliance */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Security & Compliance</h5>
+                  <div className="domoverse-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <MdOutlineSecurity className="databricks-icon mr-2" />
+                        <h5 className="databricks-card-title m-0">Security & Compliance</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Secure Access:</p>
@@ -135,8 +153,11 @@ const  DataBricksGovernance = () => {
 
                 {/* Card 6: Alerts & Anomalies */}
                 <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="product-card red h-100">
-                    <h5 className="card-title">Alerts & Anomalies</h5>
+                  <div className="domoverse-product-card h-100">
+                    <div className="d-flex align-items-center justify-content-start mb-2">
+                      <TbAlertSquareRounded className="databricks-icon mr-2" />
+                        <h5 className="databricks-card-title m-0">Security & Compliance</h5>
+                    </div>
                     <div className="card-content">
                       <div className="feature-block">
                         <p className="feature-title">Detect Issues:</p>
