@@ -1,7 +1,7 @@
 .circle-container {
-    width: 500px;
-    height: 300px;
-    border-radius: 10%;
+    width: 330px;
+    height: 150px;
+    border-radius: 8px;
     background: #f8f9fa;
     display: flex;
     flex-direction: column;
@@ -13,14 +13,22 @@
     overflow-wrap: break-word;
 }
 .first{
-    border:6px solid #2d4c6d;
+    border:1px solid #2d4c6d;
 }
 .second{
-    border:6px solid #008e84;
+    border:1px solid #008e84;
 }
 .third{
-    border:6px solid #d44846;
+    border:1px solid #d44846;
 }
+.four{
+    border:1px solid #569C3C;
+}
+.five{
+    border:1px solid #A82593;
+}
+
+
 
 .circle-container h5 {
     font-size: 1.2rem;
