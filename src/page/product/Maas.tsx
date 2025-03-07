@@ -249,7 +249,8 @@ const Maas = () => {
       {/*Architecture */}
       <div className="container mt-5">
         <div className="flow-chart-container">
-          <h2 className='mb-1 text-center mb-5'>Architecture Diagram</h2>
+          <h2 className='mb-1 text-center'>Architecture Diagram</h2>
+          <p>DOMAAS connects directly to BI tools, extracting dashboard metadata and dataset structures with automation. It generates SQL ER diagrams and organizes insights into Domo's format for a streamlined, disruption-free migration.</p>
           <img
             src="./assets/images/products/DOMAAS.drawio.svg"
             alt="Architecture Diagram"
