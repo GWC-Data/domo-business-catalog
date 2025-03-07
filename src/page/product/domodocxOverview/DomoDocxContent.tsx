@@ -4,7 +4,6 @@ import "../../home/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleRight,
-  faCheckCircle,
   faFileAlt,
   faUsers,
   faChartLine,
