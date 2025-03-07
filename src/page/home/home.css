@@ -673,3 +673,10 @@
 .about-box .achievement-icon {
   padding-top: .5rem;
 }
+.team-img {
+  filter: grayscale(0%);
+}
+
+.team-img:hover {
+  filter: grayscale(100%)
+}
