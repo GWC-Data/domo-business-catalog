@@ -1,10 +1,9 @@
 /* eslint-disable max-len */
 import { SiInductiveautomation } from "react-icons/si";
 import { MdOutlineDatasetLinked } from "react-icons/md";
-import { FaAccusoft } from "react-icons/fa";
+import { FaAccusoft, FaUserFriends } from "react-icons/fa";
 import { RxCountdownTimer } from "react-icons/rx";
 import { GrOptimize } from "react-icons/gr";
-import { FaUserFriends } from "react-icons/fa";
 import Navbar from "../../components/navbar";
 import "./mass.css";
 // import DomodelVideo from "./DomodelVideo";
@@ -47,9 +46,8 @@ const Maas = () => {
       </div>
 
       {/*Content */}
-      <div className="container-fluid mt-5">
-        <div className="row align-items-center">
-          {/* Left Side - Image */}
+      <div className="container mt-5">
+        <div className="row">
           <div className="col-lg-6 col-md-12 text-center">
             <div className="domass-image-container">
               <img
@@ -59,8 +57,6 @@ const Maas = () => {
               />
             </div>
           </div>
-
-          {/* Right Side - Content */}
           <div className="col-lg-6 col-md-12">
             <ul className="content-list">
               <li>
@@ -80,206 +76,185 @@ const Maas = () => {
               </li>
             </ul>
           </div>
+        </div>
+      </div>
 
 
-          {/* cards*/}
-          <div>
-          <section className="gwc_domo-section">
-            <figure className="gwc_domo-dotimage mb-0">
-              <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
-            </figure>
-            <div className="col-12 mt-3">
-              <div className="col-12 text-center mb-3">
-                <h4 className="text-white">What's Included in DOMASS?</h4>
-              </div>
-              <div className="row">
-                {/* Card 1: Automated BI Migration Insights*/}
-                <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="domass-product-card h-100 ">
-                    <div className="d-flex align-items-center justify-content-start mb-2">
-                      <SiInductiveautomation className="domass-icon mr-2" />
-                      <h5 className="domass-card-title m-0">Account Overview</h5>
-                    </div>
-                    <div className="card-content">
-                      <div className="feature-block">
-                        <p className="feature-title">Seamless Dashboard Analysis</p>
-                        <ul className="feature-list">
-                          <li>Extracts key details from Power BI, Tableau, and other BI tools.</li>
-                          <li>Documents datasets, reports, and relationships for smooth transiti</li>
-                        </ul>
-                      </div>
-                      <div className="feature-block">
-                        <p className="feature-title">One-Click Documentation</p>
-                        <ul className="feature-list">
-                          <li>Eliminates manual effort with AI-powered insights.</li>
-                          <li>Provides structured reports for quick migration reference.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+      {/* cards*/}
+      <section className="gwc_domo-section">
+        <div className="container mt-3">
+          <div className="text-center mb-3">
+            <h2 className="text-white mb-5">What's Included in DOMASS?</h2>
+          </div>
+          <div className="row">
+            {/* Card 1: Automated BI Migration Insights*/}
+            <div className="col-lg-4 col-md-6 col-12 mb-3">
+              <div className="domass-product-card h-100 ">
+                <div className="d-flex align-items-center justify-content-start mb-2">
+                  <SiInductiveautomation className="domass-icon mr-2" />
+                  <h5 className="domass-card-title m-0">Account Overview</h5>
                 </div>
-
-                {/* Card 2: Comprehensive Dataset Insights */}
-                <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="domass-product-card h-100">
-                    <div className="d-flex align-items-center justify-content-start mb-2">
-                      <MdOutlineDatasetLinked className="domass-icon mr-2" />
-                      <h5 className="domass-card-title m-0">Comprehensive Dataset Insights</h5>
-                    </div>
-                    <div className="card-content">
-                      <div className="feature-block">
-                        <p className="feature-title">Dataset Information Extraction</p>
-                        <ul className="feature-list">
-                          <li>Analyzes dataset structures, column details, and metadata.</li>
-                          <li>Provides a clear breakdown of data sources and connections.</li>
-                        </ul>
-                      </div>
-                      <div className="feature-block">
-                        <p className="feature-title">SQL ER Diagram Generation</p>
-                        <ul className="feature-list">
-                          <li>Automatically generates ER diagrams based on SQL queries.</li>
-                          <li>Helps in understanding dataset relationships visually.</li>
-                        </ul>
-                      </div>
-                    </div>
+                <div className="card-content">
+                  <div className="feature-block">
+                    <p className="feature-title">Seamless Dashboard Analysis</p>
+                    <ul className="feature-list">
+                      <li>Extracts key details from Power BI, Tableau, and other BI tools.</li>
+                      <li>Documents datasets, reports, and relationships for smooth transiti</li>
+                    </ul>
                   </div>
-                </div>
-
-                {/* Card 3: Accurate Dashboard Replication */}
-                <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="domass-product-card h-100">
-                    <div className="d-flex align-items-center justify-content-start mb-2">
-                      <FaAccusoft className="domass-icon mr-2" />
-                      <h5 className="domass-card-title m-0">Accurate Dashboard Replication</h5>
-                    </div>
-                    <div className="card-content">
-                      <div className="feature-block">
-                        <p className="feature-title">Visual Insights & Structure</p>
-                        <ul className="feature-list">
-                          <li>Captures and documents key visual elements from dashboards.</li>
-                          <li>Ensures all charts, tables, and filters are mapped accurately.</li>
-                        </ul>
-                      </div>
-                      <div className="feature-block">
-                        <p className="feature-title">Beast Mode & Calculation Documentation</p>
-                        <ul className="feature-list">
-                          <li>Extracts and presents all custom calculations used in dashboards.</li>
-                          <li>Ensures a smooth transition of calculated fields.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Card 4: Minimized Downtime & Disruption */}
-                <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="domass-product-card h-100">
-                    <div className="d-flex align-items-center justify-content-start mb-2">
-                      <RxCountdownTimer className="domass-icon mr-2" />
-                      <h5 className="domass-card-title m-0">Minimized Downtime & Disruption</h5>
-                    </div>
-                    <div className="card-content">
-                      <div className="feature-block">
-                        <p className="feature-title">Zero-Interruption Documentation</p>
-                        <ul className="feature-list">
-                          <li>Ensures smooth business operations while gathering insight</li>
-                          <li>Provides real-time tracking of documented details.</li>
-                        </ul>
-                      </div>
-                      <div className="feature-block">
-                        <p className="feature-title">Risk-Free Data Handling</p>
-                        <ul className="feature-list">
-                          <li>Securely extracts metadata without affecting live dashboards.</li>
-                          <li>Verifies accuracy of extracted information before migration.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Card 5: Optimized Cost & Investment */}
-                <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="domass-product-card h-100">
-                    <div className="d-flex align-items-center justify-content-start mb-2">
-                      <GrOptimize className="domass-icon mr-2" />
-                      <h5 className="domass-card-title m-0">Minimized Downtime & Disruption</h5>
-                    </div>
-                    <div className="card-content">
-                      <div className="feature-block">
-                        <p className="feature-title">Automated Cost Efficiency</p>
-                        <ul className="feature-list">
-                          <li>Reduces expenses by automating documentation processes.</li>
-                          <li>Minimizes reliance on manual reporting efforts.</li>
-                        </ul>
-                      </div>
-                      <div className="feature-block">
-                        <p className="feature-title">Long-Term ROI Benefits</p>
-                        <ul className="feature-list">
-                          <li>Increases efficiency with structured migration insights.</li>
-                          <li>Helps businesses make informed decisions before migrating.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Card 6: User-Friendly Adoption & Integration */}
-                <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="domass-product-card h-100">
-                    <div className="d-flex align-items-center justify-content-start mb-2">
-                      <FaUserFriends className="domass-icon mr-2" />
-                      <h5 className="domass-card-title m-0">User-Friendly Adoption & Integration</h5>
-                    </div>
-                    <div className="card-content">
-                      <div className="feature-block">
-                        <p className="feature-title">Familiar UI & Validation</p>
-                        <ul className="feature-list">
-                          <li>Retains existing dashboard structures for easy transition.</li>
-                          <li>Side-by-side comparison ensures accurate documentation.</li>
-                        </ul>
-                      </div>
-                      <div className="feature-block">
-                        <p className="feature-title">Built-in Training & Support</p>
-                        <ul className="feature-list">
-                          <li>Provides structured insights for smooth user adoption.</li>
-                          <li>Reduces learning curve for new users migrating to Domo.</li>
-                        </ul>
-                      </div>
-                    </div>
+                  <div className="feature-block">
+                    <p className="feature-title">One-Click Documentation</p>
+                    <ul className="feature-list">
+                      <li>Eliminates manual effort with AI-powered insights.</li>
+                      <li>Provides structured reports for quick migration reference.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <figure className="gwc_domo-rightlayer mb-0">
-              <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
-            </figure>
-          </section>
-          </div>
 
-          {/*Architecture */}
-          <div className="col-12 mt-5">
-          <div className="flow-chart-container">
-              <h4 className='mb-1 text-center'>Architecture Diagram</h4>
-              <img
-                src="./assets/images/products/DOMAAS.drawio.svg"
-                alt="Architecture Diagram"
-                className="architecture-image"
-              />
+            {/* Card 2: Comprehensive Dataset Insights */}
+            <div className="col-lg-4 col-md-6 col-12 mb-3">
+              <div className="domass-product-card h-100">
+                <div className="d-flex align-items-center justify-content-start mb-2">
+                  <MdOutlineDatasetLinked className="domass-icon mr-2" />
+                  <h5 className="domass-card-title m-0">Comprehensive Dataset Insights</h5>
+                </div>
+                <div className="card-content">
+                  <div className="feature-block">
+                    <p className="feature-title">Dataset Information Extraction</p>
+                    <ul className="feature-list">
+                      <li>Analyzes dataset structures, column details, and metadata.</li>
+                      <li>Provides a clear breakdown of data sources and connections.</li>
+                    </ul>
+                  </div>
+                  <div className="feature-block">
+                    <p className="feature-title">SQL ER Diagram Generation</p>
+                    <ul className="feature-list">
+                      <li>Automatically generates ER diagrams based on SQL queries.</li>
+                      <li>Helps in understanding dataset relationships visually.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3: Accurate Dashboard Replication */}
+            <div className="col-lg-4 col-md-6 col-12 mb-3">
+              <div className="domass-product-card h-100">
+                <div className="d-flex align-items-center justify-content-start mb-2">
+                  <FaAccusoft className="domass-icon mr-2" />
+                  <h5 className="domass-card-title m-0">Accurate Dashboard Replication</h5>
+                </div>
+                <div className="card-content">
+                  <div className="feature-block">
+                    <p className="feature-title">Visual Insights & Structure</p>
+                    <ul className="feature-list">
+                      <li>Captures and documents key visual elements from dashboards.</li>
+                      <li>Ensures all charts, tables, and filters are mapped accurately.</li>
+                    </ul>
+                  </div>
+                  <div className="feature-block">
+                    <p className="feature-title">Beast Mode & Calculation Documentation</p>
+                    <ul className="feature-list">
+                      <li>Extracts and presents all custom calculations used in dashboards.</li>
+                      <li>Ensures a smooth transition of calculated fields.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 4: Minimized Downtime & Disruption */}
+            <div className="col-lg-4 col-md-6 col-12 mb-3">
+              <div className="domass-product-card h-100">
+                <div className="d-flex align-items-center justify-content-start mb-2">
+                  <RxCountdownTimer className="domass-icon mr-2" />
+                  <h5 className="domass-card-title m-0">Minimized Downtime & Disruption</h5>
+                </div>
+                <div className="card-content">
+                  <div className="feature-block">
+                    <p className="feature-title">Zero-Interruption Documentation</p>
+                    <ul className="feature-list">
+                      <li>Ensures smooth business operations while gathering insight</li>
+                      <li>Provides real-time tracking of documented details.</li>
+                    </ul>
+                  </div>
+                  <div className="feature-block">
+                    <p className="feature-title">Risk-Free Data Handling</p>
+                    <ul className="feature-list">
+                      <li>Securely extracts metadata without affecting live dashboards.</li>
+                      <li>Verifies accuracy of extracted information before migration.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 5: Optimized Cost & Investment */}
+            <div className="col-lg-4 col-md-6 col-12 mb-3">
+              <div className="domass-product-card h-100">
+                <div className="d-flex align-items-center justify-content-start mb-2">
+                  <GrOptimize className="domass-icon mr-2" />
+                  <h5 className="domass-card-title m-0">Minimized Downtime & Disruption</h5>
+                </div>
+                <div className="card-content">
+                  <div className="feature-block">
+                    <p className="feature-title">Automated Cost Efficiency</p>
+                    <ul className="feature-list">
+                      <li>Reduces expenses by automating documentation processes.</li>
+                      <li>Minimizes reliance on manual reporting efforts.</li>
+                    </ul>
+                  </div>
+                  <div className="feature-block">
+                    <p className="feature-title">Long-Term ROI Benefits</p>
+                    <ul className="feature-list">
+                      <li>Increases efficiency with structured migration insights.</li>
+                      <li>Helps businesses make informed decisions before migrating.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 6: User-Friendly Adoption & Integration */}
+            <div className="col-lg-4 col-md-6 col-12 mb-3">
+              <div className="domass-product-card h-100">
+                <div className="d-flex align-items-center justify-content-start mb-2">
+                  <FaUserFriends className="domass-icon mr-2" />
+                  <h5 className="domass-card-title m-0">User-Friendly Adoption & Integration</h5>
+                </div>
+                <div className="card-content">
+                  <div className="feature-block">
+                    <p className="feature-title">Familiar UI & Validation</p>
+                    <ul className="feature-list">
+                      <li>Retains existing dashboard structures for easy transition.</li>
+                      <li>Side-by-side comparison ensures accurate documentation.</li>
+                    </ul>
+                  </div>
+                  <div className="feature-block">
+                    <p className="feature-title">Built-in Training & Support</p>
+                    <ul className="feature-list">
+                      <li>Provides structured insights for smooth user adoption.</li>
+                      <li>Reduces learning curve for new users migrating to Domo.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/*Video container */}
-           {/* <section className="gwc_domo-section">
-            <figure className="gwc_domo-dotimage mb-0">
-              <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
-            </figure>
-            <div className="col-12 mt-3">
-              <DomodelVideo />
-            </div>
-            <figure className="gwc_domo-rightlayer mb-0">
-              <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
-            </figure>
-          </section> */}
+      {/*Architecture */}
+      <div className="container mt-5">
+        <div className="flow-chart-container">
+          <h2 className='mb-1 text-center mb-5'>Architecture Diagram</h2>
+          <img
+            src="./assets/images/products/DOMAAS.drawio.svg"
+            alt="Architecture Diagram"
+            className="architecture-image"
+          />
         </div>
       </div>
     </div>

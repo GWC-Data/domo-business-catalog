@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const VideoTabs = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -15,10 +15,13 @@ const VideoTabs = () => {
   ];
 
   return (
-    <div style={{ zIndex: 100 }}>
+    <div className='container' style={{ zIndex: 100 }}>
       <div className='col-12 text-center mb-3'>
-        <h4 className="text-white">Unlock AI-Powered Insights in Seconds</h4>
-        <p className='text-white'>This video walks you through the effortless process of uploading files and engaging with InfoBeam AI. Whether it's PDFs, videos, audio, or images, watch how InfoBeam AI transforms your content into meaningful conversations—saving you time and boosting productivity!</p>
+        <h2 className="text-white">Unlock AI-Powered Insights in Seconds</h2>
+        <p className='text-white mt-5'>
+          This video walks you through the effortless process of uploading files and engaging with InfoBeam AI. 
+          Whether it's PDFs, videos, audio, or images, watch how InfoBeam AI transforms your content into meaningful conversations—saving you time and boosting productivity!
+        </p>
       </div>
       <div className="row">
         {/* Left side tabs */}
@@ -28,14 +31,12 @@ const VideoTabs = () => {
               <div 
                 key={index}
                 className={`cursor-pointer p-3 rounded mb-2 ${
-                  activeTab === index 
-                    ? 'bg-white' 
-                    : 'active-tab'
+                  activeTab === index ? "active-tab" : "bg-white"
                 }`}
                 onClick={() => setActiveTab(index)}
-                style={{ transition: 'all 0.3s ease' }}
+                style={{ transition: "all 0.3s ease" }}
               >
-                <h5 className={activeTab === index ? 'text-success mb-0 tab-title' : 'text-dark mb-0 tab-title'}>
+                <h5 className={activeTab === index ? "text-white mb-0 tab-title" : "text-black mb-0 tab-title"}>
                   {tab.title}
                 </h5>
               </div>
