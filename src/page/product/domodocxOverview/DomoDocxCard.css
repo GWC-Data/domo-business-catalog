@@ -1,0 +1,65 @@
+.feature-card {
+  background: #fff;
+  padding: 15px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.rounded_icon{
+    position: absolute;
+    top: -30px;
+    /* left: 135px; */
+    right: -20px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 3px;
+    width: 60px;
+    height: 60px;
+    background-color: #7A3CA3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title-icon {
+  font-size: 20px;
+  color: #ffff;
+}
+
+.feature-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-icon1 {
+  font-size: 12px;
+  color: #7A3CA3;
+}
