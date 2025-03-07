@@ -57,9 +57,9 @@ const HomePage = () => {
                   <figure className="banner-circleright mb-0">
                     <img src="./assets/images/banner-circleright.png" className="img-fluid" alt="" />
                   </figure>
-                  <figure className="banner-dotright mb-0">
+                  {/* <figure className="banner-dotright mb-0">
                     <img src="./assets/images/banner-dotright.png" className="img-fluid" alt="" />
-                  </figure>
+                  </figure> */}
                 </div>
               </div>
             </div>
@@ -89,9 +89,9 @@ const HomePage = () => {
             <div className="col-lg-7 col-md-12 col-sm-12 col-12 mt-5">
               <div className="row ">
                 <div className="col-lg-6 col-md-3 col-sm-6 col-6 d-flex align-items-center justify-content-center">
-                  <div className="about-box text-center">
-                    <figure className="icon achievement-icon">
-                      <img src="./assets/images/handshake.png" alt="" className="img-fluid" width={70} />
+                  <div className="about-box text-center d-flex align-items-center justify-content-center flex-column">
+                    <figure className="icon1 achievement-icon">
+                      <img src="./assets/images/handshake.png" alt="" className="img-fluid" width={65} />
                     </figure> 
                     <div className="wrapper text-center">
                       <h3>30+</h3>
@@ -100,7 +100,7 @@ const HomePage = () => {
                   </div>
                 </div> 
                 <div className="col-lg-6 col-md-3 col-sm-6 col-6 d-flex align-items-center justify-content-center">
-                  <div className="about-box text-center">
+                  <div className="about-box text-center d-flex align-items-center justify-content-center flex-column">
                     <figure className="icon1 achievement-icon">
                       <img src="./assets/images/maps-and-location.png" alt="" className="img-fluid" width={60} />
                     </figure>
@@ -111,9 +111,9 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-3 col-sm-6 col-6 d-flex align-items-center justify-content-center">
-                  <div className="about-box text-center">
-                    <figure className="icon achievement-icon">
-                      <img src="./assets/images/avatar.png" alt="" className="img-fluid" width={60} />
+                  <div className="about-box text-center d-flex align-items-center justify-content-center flex-column">
+                    <figure className="icon1 achievement-icon">
+                      <img src="./assets/images/avatar.png" alt="" className="img-fluid" width={55} />
                     </figure> 
                     <div className="wrapper text-center">
                       <div className="number number1 d-flex justify-content-center">
@@ -125,7 +125,7 @@ const HomePage = () => {
                   </div>
                 </div> 
                 <div className="col-lg-6 col-md-3 col-sm-6 col-6 d-flex align-items-center justify-content-center">
-                  <div className="about-box text-center">
+                  <div className="about-box text-center d-flex align-items-center justify-content-center flex-column">
                     <figure className="icon1 achievement-icon">
                       <img src="./assets/images/star-award.png" alt="" className="img-fluid" width={65} />
                     </figure>
@@ -217,9 +217,9 @@ const HomePage = () => {
         </figure>
       </section>
 
-      <section className="py-5">
+      <section className="py-5" style={{ margin: "100px 0"}}>
         <div className="container">
-          <h2 className="mb-4 text-center">Partnership</h2>
+          <h2 className="mb-4 text-center mb-5">Partnership</h2>
           <div className="partner-row">
             {partners.map((partner: any, index: any) => (
               <div className="partner-logo" key={index}>
@@ -231,12 +231,12 @@ const HomePage = () => {
       </section>
 
       <div style={{ padding: "100px 0", background: "#4A8BBC"}}>
-        <div className="text-center">
-          <h2 className="text-white">Meet Our Leaders</h2>
-          <p className="text-white">Our leaders consistently cultivate a culture of success, propelling our ongoing transformation and fostering global growth. They steer our initiatives towards excellence and innovation, driving the organization towards new heights of achievement.
-          </p>
-        </div>
         <div className="container" >
+          <div className="text-center">
+            <h2 className="text-white">Meet Our Leaders</h2>
+            <p className="text-white">Our leaders consistently cultivate a culture of success, propelling our ongoing transformation and fostering global growth. They steer our initiatives towards excellence and innovation, driving the organization towards new heights of achievement.
+            </p>
+          </div>
           <div className="row text-center mt-5">
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className=""><img src="https://gwcdata.ai/assets/image1-sDhNJSxR.png" alt=""  className="rounded-circle img-fluid bg-white" style={{filter: "grayscale(100%)"}} />
