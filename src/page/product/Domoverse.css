@@ -61,8 +61,7 @@
 }
 
 .active-tab{
-    background-color:#7a3ca3 ;
-    border: 1px solid #ffffff;
+    background-color:#353535 ;
     color: white;
 }
 .active-tab:focus{
