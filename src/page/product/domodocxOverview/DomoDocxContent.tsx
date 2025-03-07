@@ -1,19 +1,31 @@
 /* eslint-disable max-len */
 import "../infobeam.css";
 import "../../home/home.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngleRight,
+  faCheckCircle,
+  faFileAlt,
+  faUsers,
+  faChartLine,
+  faDatabase,
+  faUnlockAlt,
+  faStream,
+} from "@fortawesome/free-solid-svg-icons";
+import "./DomoDocxCard.css";
 
 const DomoGoverner = () => {
   return (
-    <div>
-      <div className="container-fluid mt-5 mb-3">
+    < >
+      <div className=" gwc_domo-section">
         <div className="row">
           {/* cards*/}
-          <section className="gwc_domo-section">
+          <section className="container">
             <figure className="gwc_domo-dotimage mb-0">
               <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
             </figure>
-            <div className="col-12 mt-3">
-              <div className="col-12 text-center mb-3">
+            <div className="col-12 mt-3 ">
+              <div className="col-12 text-center mb-3 ">
                 <h4 className="text-white">What's Included in DOMO DOCX?</h4>
                 <p className="text-white">
                   Domo Docx is a documentation tool that captures visuals from dashboards, compiles
@@ -22,114 +34,190 @@ const DomoGoverner = () => {
                   reports.
                 </p>
               </div>
-              <div className="row">
+              <div className="row " style={{marginTop:"60px"}}>
                 {/* Card 1: Effortless Documentation */}
-                <div className="col-lg-4 col-md-6 col-12 mb-3  ">
-                  <div className=" h-100 p-3 bg-white">
-                    <h5 className="card-title mb-3 flex-row">Effortless Documentation</h5>
-                    <div className="card-body p-0">
+                <div className="col-lg-4 col-md-6 col-12 mb-5 ">
+                  <div className="feature-card">
+                    <div className="rounded_icon">
+                      <FontAwesomeIcon icon={faFileAlt} className="title-icon me-2" />
+                    </div>
+                      <h5 className="feature-title">
+                         Effortless
+                        Documentation
+                      </h5>
+                    <div className="feature-card-body">
                       <ul className="feature-list">
-                        <li className="mb-2">Visual-Based Report Generation.</li>
-                        <li className="mb-2">
-                          Captures images of dashboard visuals and compiles them into
-                          well-structured reports.
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Visual-Based Report Generation.
                         </li>
-                        <li className="mb-2">
-                          Captures images of dashboard visuals and compiles them into
-                          well-structured reports.
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Captures
+                          images of dashboard visuals into reports.
                         </li>
-                        <li className="mb-2">Eliminates the need for manual documentation.</li>
-                        <li className="mb-2">Updated Versions Dashboard Capture.</li>
-                        <li className="mb-2">Ensures reports reflect the latest dashboard visuals.</li>
-                        <li className="mb-2">Keeps documentation updated with current data.</li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Eliminates the need for manual documentation.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Updated
+                          Versions Dashboard Capture.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Ensures
+                          reports reflect the latest visuals.
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </div>
 
                 {/* Card 2: Unrestricted Access & Storage */}
-                <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="bg-white h-100 p-3">
-                    <h5 className="card-title mb-3">Unrestricted Access & Storage</h5>
-                    <div className="card-body p-0">
+                <div className="col-lg-4 col-md-6 col-12 mb-5">
+                  <div className="feature-card">
+                  <div className="rounded_icon">
+                  <FontAwesomeIcon icon={faUnlockAlt} className="title-icon me-2" />
+                  </div>
+                      <h5 className="feature-title">
+                        Unrestricted Access & Storage
+                      </h5>
+                    <div className="feature-card-body">
                       <ul className="feature-list">
-                        <li className="mb-2">Open Access for All Users.</li>
-                        <li className="mb-2">
-                          No role-based restrictions—any user can create and access reports.
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Open
+                          Access for All Users.
                         </li>
-                        <li className="mb-2">Simplifies the documentation process across teams.</li>
-                        <li className="mb-2">Historical Data Storage</li>
-                        <li className="mb-2">Stores past reports in Domo AppDB for future reference.</li>
-                        <li className="mb-2">Allows easy tracking of previous documents.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Card 3: Simplified Report Structuring*/}
-                <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className=" bg-white h-100 p-3">
-                    <h5 className="card-title mb-3">Simplified Report Structuring</h5>
-                    <div className="card-body p-0">
-                      <ul className="feature-list">
-                        <li className="mb-2">Organized & Consistent Documentation</li>
-                        <li className="mb-2">Maintains uniform formatting for clear and professional reports.</li>
-                        <li className="mb-2">Ensures structured documentation without complexity.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Card 4: Enhanced Workflow & Collaboration*/}
-                <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="bg-white h-100 p-3">
-                    <h5 className="card-title mb-3">Enhanced Workflow & Collaboration</h5>
-                    <div className="card-body p-0">
-                      <ul className="feature-list">
-                        <li className="mb-2">Easy Report Sharing.</li>
-                        <li className="mb-2">Enables users to retrieve and share reports effortlessly.</li>
-                        <li className="mb-2">Improves accessibility and collaboration within teams.</li>
-                        <li className="mb-2">Efficient Workflow Management</li>
-                        <li className="mb-2">Reduces manual effort in creating reports.</li>
-                        <li className="mb-2">Speeds up report generation for quick decision-making.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Card 5: Reliable Data Storage & Compliance*/}
-                <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="bg-white h-100 p-3">
-                    <h5 className="card-title mb-3">Reliable Data Storage & Compliance</h5>
-                    <div className="card-body p-0">
-                      <ul className="feature-list">
-                        <li className="mb-2">Secure Document History.</li>
-                        <li className="mb-2">Retains records of generated reports for easy audit trails.</li>
-                        <li className="mb-2">Helps in maintaining a reference log of previous documentation.</li>
-                        <li className="mb-2">Consistent & Well-Structured Reporting.</li>
-                        <li className="mb-2">
-                          Ensures reports maintain a standard format for better readability.
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> No
+                          role-based restrictions—any user can create reports.
                         </li>
-                        <li className="mb-2">Reduces inconsistencies in document structuring.</li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Simplifies documentation across teams.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Stores
+                          past reports in Domo AppDB.
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </div>
 
-                {/* Card 6: Seamless Integration with Domo*/}
-                <div className="col-lg-4 col-md-6 col-12 mb-3">
-                  <div className="bg-white h-100 p-3">
-                    <h5 className="card-title mb-3">Seamless Integration with Domo</h5>
-                    <div className="card-body p-0">
+                {/* Card 3: Simplified Report Structuring */}
+                <div className="col-lg-4 col-md-6 col-12 mb-5">
+                  <div className="feature-card">
+                  <div className="rounded_icon">
+                  <FontAwesomeIcon icon={faStream} className="title-icon me-2" />
+
+                  </div>
+                      <h5 className="feature-title">
+                      Simplified Report Structuring
+                      </h5>
+                    <div className="feature-card-body">
                       <ul className="feature-list">
-                        <li className="mb-2">Dashboard Compatibility.</li>
-                        <li className="mb-2">Works effortlessly with all Domo dashboards.</li>
-                        <li className="mb-2">
-                          Extracts and compiles relevant visuals for effective documentation.
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Organized & Consistent Documentation.
                         </li>
-                        <li className="mb-2">Scalable & Customizable.</li>
-                        <li className="mb-2">Adapts to different reporting needs.</li>
-                        <li className="mb-2">Supports flexibility for various business use cases.</li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Uniform
+                          formatting for clarity.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Ensures
+                          structured documentation.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 4: Enhanced Workflow & Collaboration */}
+                <div className="col-lg-4 col-md-6 col-12 mb-5">
+                  <div className="feature-card">
+                  <div className="rounded_icon">
+                  <FontAwesomeIcon icon={faUsers} className="title-icon me-2" /> 
+
+                  </div>
+                    <div className="feature-card-header">
+                      <h5 className="feature-title">
+                         Enhanced
+                        Workflow & Collaboration
+                      </h5>
+                    </div>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Easy
+                          Report Sharing.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Improves
+                          accessibility and collaboration.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Efficient Workflow Management.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 5: Reliable Data Storage & Compliance */}
+                <div className="col-lg-4 col-md-6 col-12 mb-5">
+                  <div className="feature-card">
+                  <div className="rounded_icon">
+                  <FontAwesomeIcon icon={faDatabase} className="title-icon me-2" /> 
+                  </div>
+                      <h5 className="feature-title">
+                        Reliable
+                        Data Storage & Compliance
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Secure
+                          Document History.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Retains
+                          records of generated reports.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Ensures
+                          a standard reporting format.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 6: Seamless Integration with Domo */}
+                <div className="col-lg-4 col-md-6 col-12 mb-5">
+                  <div className="feature-card">
+                  <div className="rounded_icon">
+                  <FontAwesomeIcon icon={faChartLine} className="title-icon me-2" /> 
+                  </div>
+                      <h5 className="feature-title">
+                        Seamless
+                        Integration with Domo
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Dashboard Compatibility.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Works
+                          with all Domo dashboards.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> Supports
+                          various business use cases.
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -142,7 +230,7 @@ const DomoGoverner = () => {
           </section>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
