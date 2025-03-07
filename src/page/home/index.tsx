@@ -393,7 +393,7 @@ const HomePage = () => {
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className="">
                 <img
-                  src="https://gwcdata.ai/assets/image6-6eTzsG-m.png"
+                  src="https://www.gwcdata.ai/assets/image6-sU0pYUjX.png"
                   alt=""
                   className="rounded-circle img-fluid bg-white team-img"
                 />
