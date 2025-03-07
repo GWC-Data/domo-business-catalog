@@ -1074,6 +1074,7 @@ p {
 .blog-section .blog_boxcontent{
     width: 100%;
     border-radius: 10px;
+    border: 1px solid #ccc;
     background: var(--e-global-color-white);
     transition: all 0.3s ease-in-out;
 }
