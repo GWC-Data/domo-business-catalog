@@ -52,7 +52,7 @@ const HomePage = () => {
                       <img
                         src="https://web-assets.domo.com/miyagi/images/logo/brand/color/logo-brand-domopalooza-color.svg"
                         alt=""
-                        width="400"
+                        width="500"
                         className="img-fluid"
                       />
                     </figure>
