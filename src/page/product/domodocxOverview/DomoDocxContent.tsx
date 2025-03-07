@@ -223,9 +223,9 @@ const DomoGoverner = () => {
                 </div>
               </div>
             </div>
-            <figure className="gwc_domo-rightlayer mb-0">
+            {/* <figure className="gwc_domo-rightlayer mb-0">
               <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
-            </figure>
+            </figure> */}
           </section>
         </div>
       </div>
