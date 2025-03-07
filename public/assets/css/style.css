@@ -2682,7 +2682,7 @@ p {
     font-size: 130px;
     font-family: "Inter", sans-serif;
     color: #ff000000;
-    -webkit-text-stroke: .4px;
+    -webkit-text-stroke: .8px;
     -webkit-text-stroke-color: #ffffff;
     stroke: #ffffff;
     /* margin-bottom: -80px; */

@@ -1,184 +1,296 @@
 /* eslint-disable max-len */
+import "../infobeam.css";
+import "../../home/home.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngleRight,
+} from "@fortawesome/free-solid-svg-icons";
+import "../domodocxOverview/DomoDocxCard.css";
 import { RiAccountPinCircleLine } from "react-icons/ri";
 import { TiDatabase } from "react-icons/ti";
 import { MdOutlineQueryStats, MdOutlineWarehouse} from "react-icons/md";
 import { AiOutlineSafety } from "react-icons/ai";
 import { IoAlertSharp } from "react-icons/io5";
-import "../../home/home.css";
-import "../Domoverse.css";
 
-
-const SnowGo = () => {
+const DomoGoverner = () => {
   return (
-    <div>
-      {/* cards*/}
-      <section className="gwc_domo-section">
-        <div className="container mt-3">
-          <div className="col-12 text-center mb-3">
-            <h2 className="text-white mb-5">What's Included in SnowGO?</h2>
-            <p className="text-white">SnowGO comes packed with features like account usage insights, query performance monitoring, cost management, data pipeline tracking, security compliance, and proactive alerts to streamline your Snowflake governance.</p>
-          </div>
-          <div className="row">
-            {/* Card 1: Account Overview */}
-            <div className="col-lg-4 col-md-6 col-12 mb-3">
-              <div className="domoverse-product-card h-100 ">
-                <div className="d-flex align-items-center justify-content-start mb-2">
-                  <RiAccountPinCircleLine className="icon mr-2" />
-                  <h5 className="snowgo-card-title m-0">Account Overview</h5>
-                </div>
-                <div className="card-content">
-                  <div className="feature-block">
-                    <p className="feature-title">Optimize Usage:</p>
-                    <ul className="feature-list">
-                      <li>Gain insights into storage costs, compute usage, and user activity.</li>
-                      <li>Identify largest tables and track database trends for smarter decisions.</li>
-                    </ul>
-                  </div>
-                  <div className="feature-block">
-                    <p className="feature-title">Manage Costs:</p>
-                    <ul className="feature-list">
-                      <li>Spot cost drivers and forecast expenses.</li>
-                      <li>Control spending with clear visibility into usage patterns.</li>
-                    </ul>
-                  </div>
-                </div>
+    < >
+      <div className=" " >
+        <div className="row" style={{backgroundColor:"#29B5E8"}}>
+          {/* cards*/}
+          <section className="container" >
+            <figure className="gwc_domo-dotimage mb-0">
+              <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
+            </figure>
+            <div className="col-12 mt-3 ">
+              <div className="col-12 text-center mb-3 ">
+                <h2 className="text-white">What's Included in SnowGO?</h2>
+                <p className="text-white">
+                SnowGO comes packed with features like account usage insights, query performance monitoring, cost management, data pipeline tracking, security compliance, and proactive alerts to streamline your Snowflake governance.
+                </p>
               </div>
-            </div>
+              <div className="row " style={{marginTop:"60px"}}>
+                {/* Card 1: Account Overview */}
+                <div className="col-lg-4 col-md-6 col-12 mb-5 ">
+                  <div className="feature-card">
+                    <div className="rounded_icon">
+                      <RiAccountPinCircleLine className="icon " />
+                    </div>
+                      <h2 className="feature-title">
+                      Account Overview
+                      </h2>
+                      <h5 className="feature-title">
+                      Optimize Usage:
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Gain insights into storage costs, compute usage, and user activity.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> 
+                          Identify largest tables and track database trends for smarter decisions.
+                        </li>
+                      </ul>
+                    </div>
+                    <h5 className="feature-title">
+                    Manage Costs:
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Spot cost drivers and forecast expenses.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> 
+                          Control spending with clear visibility into usage patterns.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-            {/* Card 2: Data Governance */}
-            <div className="col-lg-4 col-md-6 col-12 mb-3">
-              <div className="domoverse-product-card h-100">
-                <div className="d-flex align-items-center justify-content-start mb-2">
-                  <TiDatabase  className="icon mr-2" />
-                  <h5 className="snowgo-card-title m-0">Data Governance</h5>
-                </div>
-                <div className="card-content">
-                  <div className="feature-block">
-                    <p className="feature-title">Ensure Compliance:</p>
-                    <ul className="feature-list">
-                      <li>Maintain accuracy and reliability with data freshness tracking.</li>
-                      <li>Stay compliant by monitoring metadata and schema changes.</li>
-                    </ul>
+                {/* Card 2: Data Governance  */}
+                <div className="col-lg-4 col-md-6 col-12 mb-5 ">
+                  <div className="feature-card">
+                    <div className="rounded_icon">
+                      <TiDatabase className="icon " />
+                    </div>
+                      <h2 className="feature-title">
+                      Data Governance
+                      </h2>
+                      <h5 className="feature-title">
+                      Ensure Compliance:
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Maintain accuracy and reliability with data freshness tracking.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> 
+                          Stay compliant by monitoring metadata and schema changes.
+                        </li>
+                      </ul>
+                    </div>
+                    <h5 className="feature-title">
+                    Eliminate Waste:
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Identify redundant datasets and outdated views.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> 
+                          Streamline your data environment for maximum efficiency.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div className="feature-block">
-                    <p className="feature-title">Eliminate Waste:</p>
-                    <ul className="feature-list">
-                      <li>Identify redundant datasets and outdated views.</li>
-                      <li>Streamline your data environment for maximum efficiency.</li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
-            </div>
 
-            {/* Card 3: Query Performance*/}
-            <div className="col-lg-4 col-md-6 col-12 mb-3">
-              <div className="domoverse-product-card h-100">
-                <div className="d-flex align-items-center justify-content-start mb-2">
-                  <MdOutlineQueryStats className="icon mr-2" />
-                  <h5 className="snowgo-card-title m-0">Query Performance</h5>
-                </div>
-                <div className="card-content">
-                  <div className="feature-block">
-                    <p className="feature-title">Boost Efficiency:</p>
-                    <ul className="feature-list">
-                      <li>Track inefficient queries and execution trends.</li>
-                      <li>Detect bottlenecks and improve resource utilization.</li>
-                    </ul>
+                {/* Card 3: Query Performance */}
+                <div className="col-lg-4 col-md-6 col-12 mb-5 ">
+                  <div className="feature-card">
+                    <div className="rounded_icon">
+                      <MdOutlineQueryStats className="icon " />
+                    </div>
+                      <h2 className="feature-title">
+                      Query Performance
+                      </h2>
+                      <h5 className="feature-title">
+                      Boost Efficiency:
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Track inefficient queries and execution trends.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> 
+                          Detect bottlenecks and improve resource utilization.
+                        </li>
+                      </ul>
+                    </div>
+                    <h5 className="feature-title">
+                    Monitor Utilization:
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          See top users, warehouse performance, and query success rates.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> 
+                          Optimize query performance for faster results.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div className="feature-block">
-                    <p className="feature-title">Monitor Utilization:</p>
-                    <ul className="feature-list">
-                      <li>See top users, warehouse performance, and query success rates.</li>
-                      <li>Optimize query performance for faster results.</li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
-            </div>
 
-            {/* Card 4: Warehouse Performance */}
-            <div className="col-lg-4 col-md-6 col-12 mb-3">
-              <div className="domoverse-product-card h-100">
-                <div className="d-flex align-items-center justify-content-start mb-2">
-                  <MdOutlineWarehouse className="icon mr-2" />
-                  <h5 className="snowgo-card-title m-0">Warehouse Performance</h5>
-                </div>
-                <div className="card-content">
-                  <div className="feature-block">
-                    <p className="feature-title">Right-Size Warehouses:</p>
-                    <ul className="feature-list">
-                      <li>Optimize warehouse sizing and scaling events to match needs.</li>
-                      <li>Monitor concurrency levels for seamless operations.</li>
-                    </ul>
+                {/* Card 4: Warehouse Performance */}
+                <div className="col-lg-4 col-md-6 col-12 mb-5 ">
+                  <div className="feature-card">
+                    <div className="rounded_icon">
+                      <MdOutlineWarehouse className="icon " />
+                    </div>
+                      <h2 className="feature-title">
+                      Warehouse Performance
+                      </h2>
+                      <h5 className="feature-title">
+                      Right-Size Warehouses:
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Optimize warehouse sizing and scaling events to match needs.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> 
+                          Monitor concurrency levels for seamless operations.
+                        </li>
+                      </ul>
+                    </div>
+                    <h5 className="feature-title">
+                    Cut Costs:
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Track credit consumption and reduce idle time.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> 
+                          Highlight inefficiencies to drive cost savings.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div className="feature-block">
-                    <p className="feature-title">Cut Costs:</p>
-                    <ul className="feature-list">
-                      <li>Track credit consumption and reduce idle time.</li>
-                      <li>Highlight inefficiencies to drive cost savings.</li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
-            </div>
 
-            {/* Card 5: Security & Compliance */}
-            <div className="col-lg-4 col-md-6 col-12 mb-3">
-              <div className="domoverse-product-card h-100">
-                <div className="d-flex align-items-center justify-content-start mb-2">
-                  <AiOutlineSafety className="icon mr-2" />
-                  <h5 className="snowgo-card-title m-0">Security & Compliance</h5>
-                </div>
-                <div className="card-content">
-                  <div className="feature-block">
-                    <p className="feature-title">Stay Secure:</p>
-                    <ul className="feature-list">
-                      <li>Monitor logins, role changes, and suspicious activities.</li>
-                      <li>Ensure your environment adheres to compliance policies.</li>
-                    </ul>
+                {/* Card 5: Security & Compliance */}
+                <div className="col-lg-4 col-md-6 col-12 mb-5 ">
+                  <div className="feature-card">
+                    <div className="rounded_icon">
+                      <AiOutlineSafety className="icon " />
+                    </div>
+                      <h2 className="feature-title">
+                      Security & Compliance
+                      </h2>
+                      <h5 className="feature-title">
+                      Stay Secure:
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Monitor logins, role changes, and suspicious activities.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> 
+                          Ensure your environment adheres to compliance policies.
+                        </li>
+                      </ul>
+                    </div>
+                    <h5 className="feature-title">
+                    Control Access:
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Manage privileges to prevent unauthorized access.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> 
+                          Protect sensitive data with robust security measures.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div className="feature-block">
-                    <p className="feature-title">Control Access:</p>
-                    <ul className="feature-list">
-                      <li>Manage privileges to prevent unauthorized access.</li>
-                      <li>Protect sensitive data with robust security measures.</li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
-            </div>
 
-            {/* Card 6: Alerts & Anomalies */}
-            <div className="col-lg-4 col-md-6 col-12 mb-3">
-              <div className="domoverse-product-card h-100">
-                <div className="d-flex align-items-center justify-content-start mb-2">
-                  <IoAlertSharp className="icon mr-2" />
-                  <h5 className="snowgo-card-title m-0">Security & Compliance</h5>
-                </div>
-                <div className="card-content">
-                  <div className="feature-block">
-                    <p className="feature-title">Proactive Monitoring:</p>
-                    <ul className="feature-list">
-                      <li>Detect anomalies in queries, credit usage, and logins.</li>
-                      <li>Generates responses instantly from content</li>
-                    </ul>
-                  </div>
-                  <div className="feature-block">
-                    <p className="feature-title">Stay Ahead:</p>
-                    <ul className="feature-list">
-                      <li>Identify failed queries and inactive databases.</li>
-                      <li>Resolve issues before they impact performance.</li>
-                    </ul>
+                {/* Card 6: Alerts & Anomalies */}
+                <div className="col-lg-4 col-md-6 col-12 mb-5 ">
+                  <div className="feature-card">
+                    <div className="rounded_icon">
+                      <IoAlertSharp className="icon " />
+                    </div>
+                      <h2 className="feature-title">
+                      Alerts & Anomalies
+                      </h2>
+                      <h5 className="feature-title">
+                      Proactive Monitoring:
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Detect anomalies in queries, credit usage, and logins.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> 
+                          Generates responses instantly from content
+                        </li>
+                      </ul>
+                    </div>
+                    <h5 className="feature-title">
+                    Stay Ahead:
+                      </h5>
+                    <div className="feature-card-body">
+                      <ul className="feature-list">
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+                          Identify failed queries and inactive databases.
+                        </li>
+                        <li>
+                          <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" /> 
+                          Resolve issues before they impact performance.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            {/* <figure className="gwc_domo-rightlayer mb-0">
+              <img src="./assets/images/service-rightlayer.png" alt="" className="img-fluid" />
+            </figure> */}
+          </section>
+      
         </div>
-      </section>
-      {/*Flowchart Diagram*/}
-      <div className="container mt-5">
+           {/*Flowchart Diagram*/}
+        <div className="container mt-5">
         <div className='col-lg-12 col-md-6 col-12 mb-3 text-center'>
           <h2 className="mb-5">SnowGO Architecture Overview</h2>
           <p>SnowGO integrates Snowflake with Domo’s federated data system and cloud amplifiers for seamless data access. It processes data through Domo Magic ETL and visualizes insights via dashboards and apps for smarter decision-making.</p>
@@ -191,11 +303,12 @@ const SnowGo = () => {
           />
         </div>
       </div>
-      <div className="mt-4">
+      <div className="mt-4 mb-2">
         <iframe src="https://embed.domo.com/embed/pages/0YwzL" width="100%" height="1000" frameBorder={"0"}></iframe>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 
-export default SnowGo;
+export default DomoGoverner;
