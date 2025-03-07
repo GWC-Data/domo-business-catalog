@@ -4,6 +4,12 @@ import "./infobeam.css";
 import VideoTabs from "./VideoTabs";
 import "../home/home.css";
 import { useEffect } from "react";
+import "../../components/Items/Card.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDatabase,
+  faUser, faFolder, faMagic
+} from "@fortawesome/free-solid-svg-icons";
 
 const InfoBeamAI = () => {
   useEffect(() => {
@@ -46,15 +52,52 @@ const InfoBeamAI = () => {
         </figure>
       </div>
 
-      <div className="container mt-5">
-        {/*Architecture Image */}
-        <div className="">
-          <div className="architecture-image-container">
-            <img
-              src="./assets/images/products/Architecture_01.png"
-              alt="Architecture Diagram"
-              className="architecture-image"
-            />
+
+      {/* Circular Content Section */}
+      <div className="container mt-5" >
+        <div className="row justify-content-center">
+          {/* Card 1 */}
+          <div className="card">
+            <FontAwesomeIcon icon={faUser} className="feature-icon_card me-2 mr-1 card-title" />
+            <p className="card-title">
+              User
+            </p>
+            <p className="small-desc">
+              User can interact with the chatbot via text or voice messages.Admins have full access to upload,update and manage file,while regular users can only with the AI.
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className="card">
+            <FontAwesomeIcon icon={faFolder} className="feature-icon_card me-2 mr-1 card-title  " />
+            <p className="card-title">
+              File Manager
+            </p>
+            <p className="small-desc">
+              Handles file uploads and management,allowing only admins to perform CRUD operations.Ensures that each PDF file is under 1MB to maintain system efficiency and quick AI responses.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="card">
+            <FontAwesomeIcon icon={faDatabase} className="feature-icon_card me-2 mr-1 card-title" />
+            <p className="card-title">
+              Domo AppDB
+            </p>
+            <p className="small-desc">
+              Stores uploaded file metadata such as file URI and mimetype.Acts as a data repository,enabling quick retrieval of file content for AI processing.
+            </p>
+          </div>
+
+          {/* Card 4 */}
+          <div className="card">
+            <FontAwesomeIcon icon={faMagic} className="feature-icon_card me-2 mr-1 card-title" />
+            <p className="card-title">
+              Multimodal AI
+            </p>
+            <p className="small-desc">
+              Processes user queries and extracts relevant information from the stored files.
+            </p>
           </div>
         </div>
       </div>
