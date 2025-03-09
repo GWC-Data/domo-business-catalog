@@ -84,9 +84,6 @@ const ProjectPage = () => {
                 <h6>RECENT PROJECTS</h6>
                 <h2>Our Latest Case Studies</h2>
                 <p>Explore our latest projects showcasing innovation and excellence. Discover how we deliver tailored solutions for diverse industries.</p>
-                <figure className="offer-circleimage mb-0">
-                  <img src="./assets/images/offer-circleimage.png" alt="" className="img-fluid" />
-                </figure>
               </div>
             </div>
             

@@ -40,8 +40,6 @@ const ProductPage = () => {
           </div>
         </section>
 
-
-        
         <figure className="banner-circleright mb-0 position-absolute end-0 bottom-0">
           <img src="./assets/images/banner-circleright.png" className="img-fluid" alt="" />
         </figure>
@@ -57,49 +55,47 @@ const ProductPage = () => {
         </div>
         
         <div className="row">
-          
-          
           <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3 ">
             <Link to="/domoverse" className="text-decoration-none">
-              <div className="product-card text-center h-100 shadow-lg rounded">
-                <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
+              <div className="product-card text-center h-100 border rounded">
+                <div className="d-flex align-items-center justify-content-center my-3">
                   <h2>Domoverse</h2>
                 </div>
-                <p className="px-3 mb-0">Unlock Insights from Unstructured Files</p>
+                <p className="mb-0">Unlock Insights from Unstructured Files</p>
               </div>
             </Link>
           </div>
 
           <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3 ">
             <Link to="/domodocx" className="text-decoration-none">
-              <div className="product-card text-center h-100 shadow-lg rounded">
-                <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
+              <div className="product-card text-center h-100 border rounded">
+                <div className="d-flex align-items-center justify-content-center my-3">
                   <h2>DOMODocx</h2>
                 </div>
-                <p className="px-3 mb-0">Unlock Insights from Unstructured Files</p>
+                <p className="mb-0">Unlock Insights from Unstructured Files</p>
               </div>
             </Link>
           </div>
 
           <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3 ">
             <Link to="/maas" className="text-decoration-none">
-              <div className="product-card text-center h-100 shadow-lg rounded">
-                <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
+              <div className="product-card text-center h-100 border rounded">
+                <div className="d-flex align-items-center justify-content-center my-3" >
                   <h2>DOMAAS</h2>
                 </div>
-                <p className="px-3 mb-0">Unlock Insights from Unstructured Files</p>
+                <p className=" mb-0">Unlock Insights from Unstructured Files</p>
               </div>
             </Link>
           </div>
 
 
-          <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3 ">
+          <div className="col-lg-4 col-md-4 col-sm-12 col-12 p-3 my-3">
             <Link to="/infobeam-ai" className="text-decoration-none">
-              <div className="product-card text-center h-100 shadow-lg rounded">
-                <div className="d-flex align-items-center justify-content-center" style={{ height: "180px" }}>
-                  <h2>INFOBEAM</h2>
+              <div className="product-card text-center h-100 border rounded">
+                <div className="d-flex align-items-center justify-content-center my-3">
+                  <h2>INFOBEAM AI</h2>
                 </div>
-                <p className="px-3 mb-0">Unlock Insights from Unstructured Files</p>
+                <p className="mb-0">Unlock Insights from Unstructured Files</p>
               </div>
             </Link>
           </div>
