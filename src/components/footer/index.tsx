@@ -8,9 +8,9 @@ const Footer = () => {
         {/* <figure className="footer-leftimage mb-0">
           <img src="./assets/images/footer-leftimage.png" alt="" className="img-fluid" />
         </figure> */}
-        <figure className="mb-0 about-leftcircle">
+        {/* <figure className="mb-0 about-leftcircle">
           <img src="./assets/images/about-rightcircle.png" alt="" className="img-fluid" />
-        </figure>
+        </figure> */}
         <div className="middle-portion">
           <div className="row">
             <div className="col-lg-4 col-md-5 col-sm-6 col-12">
@@ -163,9 +163,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <figure className="footer-dotimage mb-0">
+        {/* <figure className="footer-dotimage mb-0">
           <img src="./assets/images/footer-dotimage.png" alt="" className="img-fluid" />
-        </figure>
+        </figure> */}
         <figure className="footer-leftlayer mb-0">
           <img src="./assets/images/footer-leftlayer.png" alt="" className="img-fluid" />
         </figure>
