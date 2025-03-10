@@ -5,7 +5,9 @@ import VideoTabs from "./VideoTabs";
 import "../home/home.css";
 import { useEffect } from "react";
 import "../../components/Items/Card.css";
+import { RiShieldKeyholeLine, RiFolderOpenLine, RiChatSmileLine, RiDatabaseLine, RiCodeLine, RiCpuLine } from "react-icons/ri";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import {
   faDatabase,
   faUser, faFolder, faMagic
@@ -52,55 +54,140 @@ const InfoBeamAI = () => {
         </figure>
       </div>
 
-
       {/* Circular Content Section */}
-      <div className="container mt-5" >
+      <div className="container mt-5">
         <div className="row justify-content-center">
-          {/* Card 1 */}
-          <div className="card">
-            <FontAwesomeIcon icon={faUser} className="feature-icon_card me-2 mr-1 card-title" />
-            <p className="card-title">
-              User
-            </p>
-            <p className="small-desc">
-              User can interact with the chatbot via text or voice messages.Admins have full access to upload,update and manage file,while regular users can only with the AI.
-            </p>
+          {/* First Row */}
+          <div className="col-md-3 mb-4 d-flex">
+            <div
+              className="border p-4 d-flex flex-column align-items-start h-100"
+              style={{
+                width: "100%",
+                borderRadius: "1rem",
+                border: "2px solid #05060f",
+                boxShadow: "5px 5px 0px #05060f",
+                overflow: "hidden",
+                backgroundColor: "#fff",
+                transition: "transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
+                cursor: "pointer",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "translateY(-5px)";
+                e.currentTarget.style.boxShadow = "8px 8px 0px #05060f";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow = "5px 5px 0px #05060f";
+              }}
+            >
+              <p className="card-title d-flex align-items-center fw-bold" style={{ fontSize: "16px"  }}>
+                <FontAwesomeIcon icon={faUser} className="me-2 mr-1" style={{ fontSize: "15px" }} />
+                User
+              </p>
+              <p className="small-desc text-muted" style={{ fontSize: "0.9rem", lineHeight: "1.5" }}>
+                Users can interact with the chatbot via text or voice messages. Admins have full access to upload, update, and manage files, while regular users can only interact with the AI.
+              </p>
+            </div>
           </div>
 
-          {/* Card 2 */}
-          <div className="card">
-            <FontAwesomeIcon icon={faFolder} className="feature-icon_card me-2 mr-1 card-title  " />
-            <p className="card-title">
-              File Manager
-            </p>
-            <p className="small-desc">
-              Handles file uploads and management,allowing only admins to perform CRUD operations.Ensures that each PDF file is under 1MB to maintain system efficiency and quick AI responses.
-            </p>
+          <div className="col-md-3 mb-4 d-flex">
+            <div
+              className="border p-4 d-flex flex-column align-items-start h-100"
+              style={{
+                width: "100%",
+                borderRadius: "1rem",
+                border: "2px solid #05060f",
+                boxShadow: "5px 5px 0px #05060f",
+                overflow: "hidden",
+                backgroundColor: "#fff",
+                transition: "transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
+                cursor: "pointer",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "translateY(-5px)";
+                e.currentTarget.style.boxShadow = "8px 8px 0px #05060f";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow = "5px 5px 0px #05060f";
+              }}
+            >
+              <p className="card-title d-flex align-items-center fw-bold" style={{ fontSize: "16px" }}>
+                <FontAwesomeIcon icon={faFolder} className="me-2 mr-1" style={{ fontSize: "15px"  }}/>
+                File Manager
+              </p>
+              <p className="small-desc text-muted" style={{ fontSize: "0.9rem", lineHeight: "1.5" }}>
+                Handles file uploads and management, allowing only admins to perform CRUD operations. Ensures that each PDF file is under 1MB to maintain system efficiency and quick AI responses.
+              </p>
+            </div>
           </div>
 
-          {/* Card 3 */}
-          <div className="card">
-            <FontAwesomeIcon icon={faDatabase} className="feature-icon_card me-2 mr-1 card-title" />
-            <p className="card-title">
-              Domo AppDB
-            </p>
-            <p className="small-desc">
-              Stores uploaded file metadata such as file URI and mimetype.Acts as a data repository,enabling quick retrieval of file content for AI processing.
-            </p>
+          <div className="col-md-3 mb-4 d-flex">
+            <div
+              className="border p-4 d-flex flex-column align-items-start h-100"
+              style={{
+                width: "100%",
+                borderRadius: "1rem",
+                border: "2px solid #05060f",
+                boxShadow: "5px 5px 0px #05060f",
+                overflow: "hidden",
+                backgroundColor: "#fff",
+                transition: "transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
+                cursor: "pointer",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "translateY(-5px)";
+                e.currentTarget.style.boxShadow = "8px 8px 0px #05060f";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow = "5px 5px 0px #05060f";
+              }}
+            >
+              <p className="card-title d-flex align-items-center fw-bold" style={{ fontSize: "16px" }}>
+                <FontAwesomeIcon icon={faDatabase} className="me-2 mr-1" style={{ fontSize: "15px"  }}/>
+                Domo AppDB
+              </p>
+              <p className="small-desc text-muted" style={{ fontSize: "0.9rem", lineHeight: "1.5" }}>
+                Stores uploaded file metadata such as file URI and mimetype. Acts as a data repository, enabling quick retrieval of file content for AI processing.
+              </p>
+            </div>
           </div>
 
-          {/* Card 4 */}
-          <div className="card">
-            <FontAwesomeIcon icon={faMagic} className="feature-icon_card me-2 mr-1 card-title" />
-            <p className="card-title">
-              Multimodal AI
-            </p>
-            <p className="small-desc">
-              Processes user queries and extracts relevant information from the stored files.
-            </p>
+          <div className="col-md-3 mb-4 d-flex">
+            <div
+              className="border p-4 d-flex flex-column align-items-start h-100"
+              style={{
+                width: "100%",
+                borderRadius: "1rem",
+                border: "2px solid #05060f",
+                boxShadow: "5px 5px 0px #05060f",
+                overflow: "hidden",
+                backgroundColor: "#fff",
+                transition: "transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
+                cursor: "pointer",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "translateY(-5px)";
+                e.currentTarget.style.boxShadow = "8px 8px 0px #05060f";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow = "5px 5px 0px #05060f";
+              }}
+            >
+              <p className="card-title d-flex align-items-center fw-bold" style={{ fontSize: "16px" }}>
+                <FontAwesomeIcon icon={faMagic} className="me-2 mr-1" style={{ fontSize: "15px"  }}/>
+                Multimodal AI
+              </p>
+              <p className="small-desc text-muted" style={{ fontSize: "0.9rem", lineHeight: "1.5" }}>
+                Processes user queries and extracts relevant information from the stored files.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+
 
       {/* cards*/}
       <section className="gwc_domo-section">
@@ -110,141 +197,170 @@ const InfoBeamAI = () => {
             <p className="text-white">InfoBeam AI is an intelligent chatbot solution designed to help organizations streamline information retrieval from custom-uploaded files. It includes the following key features</p>
           </div>
           <div className="row">
-            {/* Card 1: Authentication & Security */}
-            <div className="col-lg-4 col-md-6 col-12 mb-3">
-              <div className="product-card red h-100 ">
-                <h5 className="card-title">Authentication & Security</h5>
-                <div className="card-content">
-                  <div className="feature-block">
-                    <p className="feature-title">Role-Based Access Control:</p>
-                    <ul className="feature-list">
-                      <li>Admins: Upload, manage, and delete files</li>
-                      <li>Users: Chat with AI but cannot modify files</li>
-                    </ul>
-                  </div>
-                  <div className="feature-block">
-                    <p className="feature-title">Security Features:</p>
-                    <ul className="feature-list">
-                      <li>Secure login system with encrypted authentication</li>
-                      <li>Restricted access ensures only authorized users modify content</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+  {/* Card 1: Authentication & Security */}
+  <div className="col-lg-4 col-md-6 col-12 mb-5">
+    <div className="feature-card">
+      <div className="rounded_icon">
+        <RiShieldKeyholeLine className="icon" /> {/* Icon for Authentication & Security */}
+      </div>
+      <h2 className="feature-title">Authentication & Security</h2>
+      <div className="feature-card-body">
+        <ul className="feature-list">
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Role-Based Access Control: Admins can upload, manage, and delete files; Users can chat with AI but cannot modify files.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Secure login system with encrypted authentication.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Restricted access ensures only authorized users modify content.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-            {/* Card 2: File Management */}
-            <div className="col-lg-4 col-md-6 col-12 mb-3">
-              <div className="product-card red h-100">
-                <h5 className="card-title">File Management</h5>
-                <div className="card-content">
-                  <div className="feature-block">
-                    <p className="feature-title">Manage AI Knowledge Base</p>
-                    <ul className="feature-list">
-                      <li>Admins can upload, update, and delete files</li>
-                      <li>AI references uploaded files to generate responses</li>
-                    </ul>
-                  </div>
-                  <div className="feature-block">
-                    <p className="feature-title">Supported File Types & Restrictions</p>
-                    <ul className="feature-list">
-                      <li>PDF, Video, Audio, Image formats accepted</li>
-                      <li>Maximum file size: 2MB per file</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+  {/* Card 2: File Management */}
+  <div className="col-lg-4 col-md-6 col-12 mb-5">
+    <div className="feature-card">
+      <div className="rounded_icon">
+        <RiFolderOpenLine className="icon" /> {/* Icon for File Management */}
+      </div>
+      <h2 className="feature-title">File Management</h2>
+      <div className="feature-card-body">
+        <ul className="feature-list">
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Admins can upload, update, and delete files.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            AI references uploaded files to generate responses.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Supported file types: PDF, Video, Audio, Image.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Maximum file size: 2MB per file.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-            {/* Card 3: AI-Powered Chatbot */}
-            <div className="col-lg-4 col-md-6 col-12 mb-3">
-              <div className="product-card red h-100">
-                <h5 className="card-title">AI-Powered Chatbot</h5>
-                <div className="card-content">
-                  <div className="feature-block">
-                    <p className="feature-title">Interactive Chat System</p>
-                    <ul className="feature-list">
-                      <li>Text Chat: Type queries based on uploaded files</li>
-                      <li>Voice Chat: Ask questions using speech-to-text</li>
-                      <li>Text-to-Speech: AI reads responses aloud</li>
-                    </ul>
-                  </div>
-                  <div className="feature-block">
-                    <p className="feature-title">Context-Aware Responses</p>
-                    <ul className="feature-list">
-                      <li>AI fetches answers only from uploaded files</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+  {/* Card 3: AI-Powered Chatbot */}
+  <div className="col-lg-4 col-md-6 col-12 mb-5">
+    <div className="feature-card">
+      <div className="rounded_icon">
+        <RiChatSmileLine className="icon" /> {/* Icon for AI-Powered Chatbot */}
+      </div>
+      <h2 className="feature-title">AI-Powered Chatbot</h2>
+      <div className="feature-card-body">
+        <ul className="feature-list">
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Text Chat: Type queries based on uploaded files.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Voice Chat: Ask questions using speech-to-text.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Text-to-Speech: AI reads responses aloud.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            AI fetches answers only from uploaded files.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-            {/* Card 4: Domo AppDB */}
-            <div className="col-lg-4 col-md-6 col-12 mb-3">
-              <div className="product-card red h-100">
-                <h5 className="card-title">Domo AppDB</h5>
-                <div className="card-content">
-                  <div className="feature-block">
-                    <p className="feature-title">Secure & Scalable Storage</p>
-                    <ul className="feature-list">
-                      <li>Stores uploaded files, URIs, and MIME types</li>
-                      <li>Ensures fast retrieval for chatbot interactions</li>
-                    </ul>
-                  </div>
-                  <div className="feature-block">
-                    <p className="feature-title">Optimized Data Flow</p>
-                    <ul className="feature-list">
-                      <li>Helps AI fetch the right file content for questions</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+  {/* Card 4: Domo AppDB */}
+  <div className="col-lg-4 col-md-6 col-12 mb-5">
+    <div className="feature-card">
+      <div className="rounded_icon">
+        <RiDatabaseLine className="icon" /> {/* Icon for Domo AppDB */}
+      </div>
+      <h2 className="feature-title">Domo AppDB</h2>
+      <div className="feature-card-body">
+        <ul className="feature-list">
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Stores uploaded files, URIs, and MIME types.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Ensures fast retrieval for chatbot interactions.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Helps AI fetch the right file content for questions.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-            {/* Card 5: API Integration */}
-            <div className="col-lg-4 col-md-6 col-12 mb-3">
-              <div className="product-card red h-100">
-                <h5 className="card-title">API Integration</h5>
-                <div className="card-content">
-                  <div className="feature-block">
-                    <p className="feature-title">Seamless Backend Connectivity</p>
-                    <ul className="feature-list">
-                      <li>Handles File Uploads from frontend to Gemini AI</li>
-                      <li>Stores file metadata in Domo AppDB</li>
-                    </ul>
-                  </div>
-                  <div className="feature-block">
-                    <p className="feature-title">Optimized Performance</p>
-                    <ul className="feature-list">
-                      <li>Ensures real-time AI access to document data</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+  {/* Card 5: API Integration */}
+  <div className="col-lg-4 col-md-6 col-12 mb-5">
+    <div className="feature-card">
+      <div className="rounded_icon">
+        <RiCodeLine className="icon" /> {/* Icon for API Integration */}
+      </div>
+      <h2 className="feature-title">API Integration</h2>
+      <div className="feature-card-body">
+        <ul className="feature-list">
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Handles File Uploads from frontend to Gemini AI.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Stores file metadata in Domo AppDB.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Ensures real-time AI access to document data.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-            {/* Card 6: Real-Time AI Processing */}
-            <div className="col-lg-4 col-md-6 col-12 mb-3">
-              <div className="product-card red h-100">
-                <h5 className="card-title">Real-Time AI Processing</h5>
-                <div className="card-content">
-                  <div className="feature-block">
-                    <p className="feature-title">Instant Query Handling</p>
-                    <ul className="feature-list">
-                      <li>AI processes user questions in real-time</li>
-                      <li>Generates responses instantly from content</li>
-                    </ul>
-                  </div>
-                  <div className="feature-block">
-                    <p className="feature-title">Optimized for Speed</p>
-                    <ul className="feature-list">
-                      <li>Ensures quick AI retrieval of information</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  {/* Card 6: Real-Time AI Processing */}
+  <div className="col-lg-4 col-md-6 col-12 mb-5">
+    <div className="feature-card">
+      <div className="rounded_icon">
+        <RiCpuLine className="icon" /> {/* Icon for Real-Time AI Processing */}
+      </div>
+      <h2 className="feature-title">Real-Time AI Processing</h2>
+      <div className="feature-card-body">
+        <ul className="feature-list">
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            AI processes user questions in real-time.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Generates responses instantly from content.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faAngleRight} className="feature-icon1" />{" "}
+            Ensures quick AI retrieval of information.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </section>
 
