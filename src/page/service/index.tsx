@@ -148,7 +148,7 @@ const ServicePage = () => {
           <img src="./assets/images/offer-toplayer.png" alt="" className="img-fluid" />
         </figure>
         <div className="container">
-          <div className="row">
+          {/* <div className="row">
             <div className="col-12">
               <div className="blog_content" data-aos="fade-right">
                 <figure className="offer-circleimage mb-0">
@@ -156,7 +156,7 @@ const ServicePage = () => {
                 </figure>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="row">
             <div className="owl-carousel owl-theme" style={{ height: "400px" }}>
               {blogPosts.map((post, index) => (
