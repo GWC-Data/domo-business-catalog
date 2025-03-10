@@ -1,4 +1,4 @@
-/* eslint-disable max-len */
+ 
 import "../infobeam.css";
 import "../../home/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,7 +25,7 @@ const DomoGoverner = () => {
             </figure>
             <div className="col-12 mt-3 ">
               <div className="col-12 text-center mb-3 ">
-                <h4 className="text-white">What's Included in DOMO DOCX?</h4>
+                <h2 className="text-white mb-4">What's Included in DOMO DOCX?</h2>
                 <p className="text-white">
                   Domo Docx is a documentation tool that captures visuals from dashboards, compiles
                   them into structured reports, and stores historical Document for easy access. It
@@ -40,10 +40,10 @@ const DomoGoverner = () => {
                     <div className="rounded_icon">
                       <FontAwesomeIcon icon={faFileAlt} className="title-icon me-2" />
                     </div>
-                      <h5 className="feature-title">
+                    <h5 className="feature-title">
                          Effortless
                         Documentation
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -74,12 +74,12 @@ const DomoGoverner = () => {
                 {/* Card 2: Unrestricted Access & Storage */}
                 <div className="col-lg-4 col-md-6 col-12 mb-5">
                   <div className="feature-card">
-                  <div className="rounded_icon">
-                  <FontAwesomeIcon icon={faUnlockAlt} className="title-icon me-2" />
-                  </div>
-                      <h5 className="feature-title">
+                    <div className="rounded_icon">
+                      <FontAwesomeIcon icon={faUnlockAlt} className="title-icon me-2" />
+                    </div>
+                    <h5 className="feature-title">
                         Unrestricted Access & Storage
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -106,13 +106,13 @@ const DomoGoverner = () => {
                 {/* Card 3: Simplified Report Structuring */}
                 <div className="col-lg-4 col-md-6 col-12 mb-5">
                   <div className="feature-card">
-                  <div className="rounded_icon">
-                  <FontAwesomeIcon icon={faStream} className="title-icon me-2" />
+                    <div className="rounded_icon">
+                      <FontAwesomeIcon icon={faStream} className="title-icon me-2" />
 
-                  </div>
-                      <h5 className="feature-title">
+                    </div>
+                    <h5 className="feature-title">
                       Simplified Report Structuring
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -135,10 +135,10 @@ const DomoGoverner = () => {
                 {/* Card 4: Enhanced Workflow & Collaboration */}
                 <div className="col-lg-4 col-md-6 col-12 mb-5">
                   <div className="feature-card">
-                  <div className="rounded_icon">
-                  <FontAwesomeIcon icon={faUsers} className="title-icon me-2" /> 
+                    <div className="rounded_icon">
+                      <FontAwesomeIcon icon={faUsers} className="title-icon me-2" /> 
 
-                  </div>
+                    </div>
                     <div className="feature-card-header">
                       <h5 className="feature-title">
                          Enhanced
@@ -167,13 +167,13 @@ const DomoGoverner = () => {
                 {/* Card 5: Reliable Data Storage & Compliance */}
                 <div className="col-lg-4 col-md-6 col-12 mb-5">
                   <div className="feature-card">
-                  <div className="rounded_icon">
-                  <FontAwesomeIcon icon={faDatabase} className="title-icon me-2" /> 
-                  </div>
-                      <h5 className="feature-title">
+                    <div className="rounded_icon">
+                      <FontAwesomeIcon icon={faDatabase} className="title-icon me-2" /> 
+                    </div>
+                    <h5 className="feature-title">
                         Reliable
                         Data Storage & Compliance
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -196,13 +196,13 @@ const DomoGoverner = () => {
                 {/* Card 6: Seamless Integration with Domo */}
                 <div className="col-lg-4 col-md-6 col-12 mb-5">
                   <div className="feature-card">
-                  <div className="rounded_icon">
-                  <FontAwesomeIcon icon={faChartLine} className="title-icon me-2" /> 
-                  </div>
-                      <h5 className="feature-title">
+                    <div className="rounded_icon">
+                      <FontAwesomeIcon icon={faChartLine} className="title-icon me-2" /> 
+                    </div>
+                    <h5 className="feature-title">
                         Seamless
                         Integration with Domo
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>

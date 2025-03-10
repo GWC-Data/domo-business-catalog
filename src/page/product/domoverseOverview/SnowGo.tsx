@@ -16,15 +16,15 @@ const DomoGoverner = () => {
   return (
     < >
       <div className=" " >
-        <div className="row" style={{backgroundColor:"#29B5E8"}}>
+        <div className="row mt-5" style={{backgroundColor:"#29B5E8", padding:"100px 0px"}}>
           {/* cards*/}
-          <section className="container" >
+          <section className="container">
             <figure className="gwc_domo-dotimage mb-0">
               <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
             </figure>
-            <div className="col-12 mt-3 ">
-              <div className="col-12 text-center mb-3 ">
-                <h2 className="text-white">What's Included in SnowGO?</h2>
+            <div className="col-12">
+              <div className="col-12 text-center" style={{ marginBottom: "100px" }}>
+                <h2 className="text-white mb-4">What's Included in SnowGO?</h2>
                 <p className="text-white">
                 SnowGO comes packed with features like account usage insights, query performance monitoring, cost management, data pipeline tracking, security compliance, and proactive alerts to streamline your Snowflake governance.
                 </p>
@@ -34,14 +34,14 @@ const DomoGoverner = () => {
                 <div className="col-lg-4 col-md-6 col-12 mb-5 ">
                   <div className="feature-card">
                     <div className="rounded_icon">
-                      <RiAccountPinCircleLine className="icon " />
+                      <RiAccountPinCircleLine className="icon text-white" />
                     </div>
-                      <h2 className="feature-title">
+                    <h2 className="feature-title">
                       Account Overview
-                      </h2>
-                      <h5 className="feature-title">
+                    </h2>
+                    <h5 className="feature-title">
                       Optimize Usage:
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -56,7 +56,7 @@ const DomoGoverner = () => {
                     </div>
                     <h5 className="feature-title">
                     Manage Costs:
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -76,14 +76,14 @@ const DomoGoverner = () => {
                 <div className="col-lg-4 col-md-6 col-12 mb-5 ">
                   <div className="feature-card">
                     <div className="rounded_icon">
-                      <TiDatabase className="icon " />
+                      <TiDatabase className="icon text-white" />
                     </div>
-                      <h2 className="feature-title">
+                    <h2 className="feature-title">
                       Data Governance
-                      </h2>
-                      <h5 className="feature-title">
+                    </h2>
+                    <h5 className="feature-title">
                       Ensure Compliance:
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -98,7 +98,7 @@ const DomoGoverner = () => {
                     </div>
                     <h5 className="feature-title">
                     Eliminate Waste:
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -118,14 +118,14 @@ const DomoGoverner = () => {
                 <div className="col-lg-4 col-md-6 col-12 mb-5 ">
                   <div className="feature-card">
                     <div className="rounded_icon">
-                      <MdOutlineQueryStats className="icon " />
+                      <MdOutlineQueryStats className="icon text-white" />
                     </div>
-                      <h2 className="feature-title">
+                    <h2 className="feature-title">
                       Query Performance
-                      </h2>
-                      <h5 className="feature-title">
+                    </h2>
+                    <h5 className="feature-title">
                       Boost Efficiency:
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -140,7 +140,7 @@ const DomoGoverner = () => {
                     </div>
                     <h5 className="feature-title">
                     Monitor Utilization:
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -160,14 +160,14 @@ const DomoGoverner = () => {
                 <div className="col-lg-4 col-md-6 col-12 mb-5 ">
                   <div className="feature-card">
                     <div className="rounded_icon">
-                      <MdOutlineWarehouse className="icon " />
+                      <MdOutlineWarehouse className="icon text-white " />
                     </div>
-                      <h2 className="feature-title">
+                    <h2 className="feature-title">
                       Warehouse Performance
-                      </h2>
-                      <h5 className="feature-title">
+                    </h2>
+                    <h5 className="feature-title">
                       Right-Size Warehouses:
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -182,7 +182,7 @@ const DomoGoverner = () => {
                     </div>
                     <h5 className="feature-title">
                     Cut Costs:
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -202,14 +202,14 @@ const DomoGoverner = () => {
                 <div className="col-lg-4 col-md-6 col-12 mb-5 ">
                   <div className="feature-card">
                     <div className="rounded_icon">
-                      <AiOutlineSafety className="icon " />
+                      <AiOutlineSafety className="icon text-white " />
                     </div>
-                      <h2 className="feature-title">
+                    <h2 className="feature-title">
                       Security & Compliance
-                      </h2>
-                      <h5 className="feature-title">
+                    </h2>
+                    <h5 className="feature-title">
                       Stay Secure:
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -224,7 +224,7 @@ const DomoGoverner = () => {
                     </div>
                     <h5 className="feature-title">
                     Control Access:
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -244,14 +244,14 @@ const DomoGoverner = () => {
                 <div className="col-lg-4 col-md-6 col-12 mb-5 ">
                   <div className="feature-card">
                     <div className="rounded_icon">
-                      <IoAlertSharp className="icon " />
+                      <IoAlertSharp className="icon text-white " />
                     </div>
-                      <h2 className="feature-title">
+                    <h2 className="feature-title">
                       Alerts & Anomalies
-                      </h2>
-                      <h5 className="feature-title">
+                    </h2>
+                    <h5 className="feature-title">
                       Proactive Monitoring:
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -266,7 +266,7 @@ const DomoGoverner = () => {
                     </div>
                     <h5 className="feature-title">
                     Stay Ahead:
-                      </h5>
+                    </h5>
                     <div className="feature-card-body">
                       <ul className="feature-list">
                         <li>
@@ -289,23 +289,28 @@ const DomoGoverner = () => {
           </section>
       
         </div>
-           {/*Flowchart Diagram*/}
-        <div className="container mt-5">
-        <div className='col-lg-12 col-md-6 col-12 mb-3 text-center'>
-          <h2 className="mb-5">SnowGO Architecture Overview</h2>
-          <p>SnowGO integrates Snowflake with Domo’s federated data system and cloud amplifiers for seamless data access. It processes data through Domo Magic ETL and visualizes insights via dashboards and apps for smarter decision-making.</p>
+        {/*Flowchart Diagram*/}
+
+        <div className="container" style={{padding: "100px 0px"}}>
+          <div className="col-12">
+            <div className="col-lg-12 col-md-6 col-12 mb-3 text-center ">
+              <h2 className="mb-4">SnowGO Architecture</h2>
+              <p>SnowGO integrates Snowflake with Domo’s federated data system and cloud amplifiers for seamless data access. It processes data through Domo Magic ETL and visualizes insights via dashboards and apps for smarter decision-making.</p>
+
+            </div>
+            <div className="flow-chart-container">
+              <img
+                src="./assets/images/products/Snowflake Governance.drawio.svg"
+                alt="Architecture Diagram"
+                className="architecture-image"
+              />
+            </div>
+          </div>
         </div>
-        <div className="flow-chart-container">
-          <img
-            src="./assets/images/products/Snowflake Governance.drawio.svg"
-            alt="Architecture Diagram"
-            className="architecture-image"
-          />
+
+        <div className="mt-4 mb-2">
+          <iframe src="https://embed.domo.com/embed/pages/0YwzL" width="100%" height="1000" frameBorder={"0"}></iframe>
         </div>
-      </div>
-      <div className="mt-4 mb-2">
-        <iframe src="https://embed.domo.com/embed/pages/0YwzL" width="100%" height="1000" frameBorder={"0"}></iframe>
-      </div>
       </div>
     </>
   );

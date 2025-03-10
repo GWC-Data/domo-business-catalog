@@ -52,7 +52,7 @@ const HomePage = () => {
                       <img
                         src="https://web-assets.domo.com/miyagi/images/logo/brand/color/logo-brand-domopalooza-color.svg"
                         alt=""
-                        width="400"
+                        width="500"
                         className="img-fluid"
                       />
                     </figure>
@@ -127,7 +127,7 @@ const HomePage = () => {
                       />
                     </figure>
                     <div className="wrapper text-center">
-                      <h3>30+</h3>
+                      <h3>60+</h3>
                       <p className="text-size-18 mb-0">Customers</p>
                     </div>
                   </div>
@@ -327,7 +327,7 @@ const HomePage = () => {
       <div style={{ padding: "100px 0", background: "#7daccf" }}>
         <div className="container">
           <div className="text-center">
-            <h2 className="text-white">Meet Our Teams</h2>
+            <h2 className="text-white mb-5">Meet Our Teams</h2>
             <p className="text-white">
               Our leaders consistently cultivate a culture of success, propelling our ongoing
               transformation and fostering global growth. They steer our initiatives towards

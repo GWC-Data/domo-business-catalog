@@ -34,9 +34,9 @@ const DataBricksGovernance = () => {
                     <div className="rounded_icon">
                       <MdOutlineCreditScore className="icon " />
                     </div>
-                      <h2 className="feature-title">
+                    <h2 className="feature-title">
                       Credit-Based Governance
-                      </h2>
+                    </h2>
                       
                     <div className="feature-card-body">
                       <ul className="feature-list">
@@ -71,9 +71,9 @@ const DataBricksGovernance = () => {
                     <div className="rounded_icon">
                       <RiSecurePaymentLine className="icon " />
                     </div>
-                      <h2 className="feature-title">
+                    <h2 className="feature-title">
                       Data Security & Management
-                      </h2>
+                    </h2>
                       
                     <div className="feature-card-body">
                       <ul className="feature-list">
@@ -108,9 +108,9 @@ const DataBricksGovernance = () => {
                     <div className="rounded_icon">
                       <GrDocumentPerformance className="icon " />
                     </div>
-                      <h2 className="feature-title">
+                    <h2 className="feature-title">
                       Performance Optimization
-                      </h2>
+                    </h2>
                       
                     <div className="feature-card-body">
                       <ul className="feature-list">
@@ -147,23 +147,23 @@ const DataBricksGovernance = () => {
           </section>
       
         </div>
-       {/*Flowchart Diagram*/}
-       <div className="container mt-5">
-        <div className='col-lg-12 col-md-6 col-12 mb-3 text-center'>
-          <h2 className="mb-5">Domo Governor Architecture Overview</h2>
-          <p>Domo Governor integrates with Domo's core instance to centralize management and governance. Automated workflows and real-time monitoring provide seamless oversight, while dashboards deliver actionable insights for optimized operations.</p>
+        {/*Flowchart Diagram*/}
+        <div className="container mt-5">
+          <div className='col-lg-12 col-md-6 col-12 mb-3 text-center'>
+            <h2 className="mb-5">Domo Governor Architecture Overview</h2>
+            <p>Domo Governor integrates with Domo's core instance to centralize management and governance. Automated workflows and real-time monitoring provide seamless oversight, while dashboards deliver actionable insights for optimized operations.</p>
+          </div>
+          <div className="flow-chart-container">
+            <img
+              src="./assets/images/products/Domo Governance.drawio.svg"
+              alt="Architecture Diagram"
+              className="architecture-image"
+            />
+          </div>
         </div>
-        <div className="flow-chart-container">
-          <img
-            src="./assets/images/products/Domo Governance.drawio.svg"
-            alt="Architecture Diagram"
-            className="architecture-image"
-          />
+        <div className="mt-4">
+          <iframe src="https://embed.domo.com/cards/ANRPl" width="100%" height="650" frameBorder={"0"}></iframe>
         </div>
-      </div>
-      <div className="mt-4">
-        <iframe src="https://embed.domo.com/cards/ANRPl" width="100%" height="650" frameBorder={"0"}></iframe>
-      </div>
       </div>
     </>
   );

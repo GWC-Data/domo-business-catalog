@@ -104,7 +104,7 @@ const AppDashboardDetailsPage = () => {
         </figure>
       </div>
 
-      <Link to={`/app/${project[0]?.id}`} className="m-3 font-weight-bold text-white text-decoration-none" style={{ background: "#F37B64", padding: ".4rem 1rem", borderRadius: "5px", display: "inline-flex", alignItems: "center" }}>Go Back</Link>
+      <Link to={`/app/${project[0]?.id}`} className="btn m-3 font-weight-bold text-white" style={{ background: "#99ccee", border: "1px solid #99ccee"}}>Go Back</Link>
 
       {subProject.length > 0 && (
         <section className="blog-posts" style={{paddingTop: "0px"}}>

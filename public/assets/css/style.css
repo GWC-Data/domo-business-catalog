@@ -803,11 +803,12 @@ p {
 }
 .project-section .case-box .content{
     position: absolute;
-    padding: 0 32px;
-    margin-top: -124px;
+    padding: 0 15px;
+    bottom: 10px;
+    /* margin-top: -150px; */
 }
 .project-section .case-box .content h5{
-    margin-bottom: -10px;
+    margin-bottom: 10px;
 }
 .project-section .case-box .content .text-size-18{
     display: inline-block;
@@ -1461,7 +1462,7 @@ p {
 .sub-banner .banner-section .banner_content p{
     font-size: 22px;
     line-height: 30px;
-    padding: 0 260px;
+    /* padding: 0 260px; */
     margin-bottom: 34px;
     color: var(--e-global-color-light-white);
 }
@@ -2682,7 +2683,7 @@ p {
     font-size: 130px;
     font-family: "Inter", sans-serif;
     color: #ff000000;
-    -webkit-text-stroke: .8px;
+    -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #ffffff;
     stroke: #ffffff;
     /* margin-bottom: -80px; */
