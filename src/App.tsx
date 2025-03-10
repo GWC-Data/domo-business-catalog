@@ -18,6 +18,8 @@ import Feedback from "./page/feedback";
 import Domoverse from "./page/product/Domoverse";
 import DomoDocx from "./page/product/DomoDocx";
 import Maas from "./page/product/Maas";
+
+import LuckyWheel from "./components/Items/LuckyWheel";
 // import axios from "axios";
 // import api from "./api";
 // import { getFingerprint } from "./utils/fingerprint";
@@ -68,6 +70,7 @@ function App() {
         <Route path="/domoverse" element={<Domoverse />}/>
         <Route path="/domodocx" element={<DomoDocx />}/>
         <Route path="/maas" element={<Maas/>}/>
+        <Route path="/luckywheel" element={<LuckyWheel/>}/>
         {/* </Route> */}
         
       </Routes>
