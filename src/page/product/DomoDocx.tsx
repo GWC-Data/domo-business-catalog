@@ -137,6 +137,17 @@ const DomoDocx = () => {
             DOMO DOCX is designed to streamline access to internal data through AI-powered chat
             interactions. The architecture consists of multiple interconnected modules to
             efficiently manage files, process user prompts, and generate AI-based responses.
+
+          </p>
+        </div>
+        <div className="flow-chart-container">
+          <h4 className="mb-1 text-center">Architecture Diagram</h4>
+          <img
+            src="https://storage.googleapis.com/profile-pictures-wordpress/users/b13b57dc-1e53-47f3-b9d0-5b4754d42df8.jpeg"
+            alt="Architecture Diagram"
+            className="architecture-image"
+          />
+
             </p>
           </div>
           <div className="flow-chart-container">
@@ -146,6 +157,7 @@ const DomoDocx = () => {
               className="architecture-image"
             />
           </div>
+
         </div>
       </div>
     </div>
