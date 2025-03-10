@@ -21,7 +21,7 @@ const ConfettiAnimation: React.FC = () => {
       return () => clearInterval(interval);
     }, []);
   
-    return <div>Confetti Animation is running!</div>;
+    return "";
   };
 
 export default ConfettiAnimation;

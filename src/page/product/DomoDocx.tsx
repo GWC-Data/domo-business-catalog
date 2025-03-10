@@ -136,7 +136,7 @@ const DomoDocx = () => {
         <div className="flow-chart-container">
           <h4 className="mb-1 text-center">Architecture Diagram</h4>
           <img
-            src="./assets/images/products/DOMO_Doc_Generator_drawio.svg"
+            src="https://storage.googleapis.com/profile-pictures-wordpress/users/b13b57dc-1e53-47f3-b9d0-5b4754d42df8.jpeg"
             alt="Architecture Diagram"
             className="architecture-image"
           />
