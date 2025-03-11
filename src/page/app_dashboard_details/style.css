@@ -254,7 +254,7 @@
 .domo_app-section .domo_app_contentbox .domo_app-box {padding: 20px; margin-bottom: -20px; text-align: center;}
 .domo_app-section .domo_app-box h4 {padding-right: 0; margin-bottom: 4px;}
 .domo_app-section .domo_app-box p {margin-bottom: 14px;}
-.domo_app-section .domo_app_contentbox .domo_app-box figure {height: 85px;width: 85px; line-height: 85px; margin-bottom: 10px;}
+.domo_app-section .domo_app_contentbox .domo_app-box figure {height: 70px;width: 70px; line-height: 70px; margin-bottom: 10px;}
 .domo_app-section .domo_app_contentbox .domo_app-box figure img {width: 50px;}
 .domo_app-section .domo_app-box .circle {height: 40px; width: 40px; line-height: 40px;}
 .domo_app-section .domo_app-box .circle:before {font-size: 16px; padding-top: 0;}
@@ -265,6 +265,10 @@
 .domo_app-section .domo_app_content .text1 {margin-bottom: 25px;}
 .domo_app-section .domo_app_content ul li .circle {display: none;}
 .domo_app-section .domo_app_content .get_started {font-size: 16px; line-height: 24px; padding: 10px 16px;}
+.domo_app-section .domo_app-rightlayer,
+.domo_app-section .domo_app-dotimage {
+  display: none !important;
+}
 }
 
 
@@ -287,12 +291,17 @@
 .domo_app-section .domo_app_content .get_started figure {margin-left: 4px;}
 .domo_app-section .domo_app_content .get_started figure img{width: 16px;}
 .domo_app-section .domo_app_content .domo_app-rightcircle img {width: 35px;}
+.domo_app-section .domo_app_contentbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all items */
+}
 }
 
 @media only screen and (max-width : 575px){
   .domo_app-section {padding: 0px 0 60px;}
   .domo_app-section .domo_app-leftlayer img {width: 120px;}
-.domo_app-section .domo_app_content {padding-top: 30px;}
+.domo_app-section .domo_app_content {padding-top: 10px;}
 .domo_app-section .domo_app_content h2 {padding: 0; margin-bottom: 5px;}
 .domo_app-section .domo_app_content p {margin-bottom: 14px; padding: 0;}
 .domo_app-section .domo_app_content .text {font-size: 14px; line-height: 22px;}
@@ -591,7 +600,7 @@
   background: #ffffff;
   color: white;
   transform: rotateY(180deg);
-  padding: 4rem 1rem 1rem 3rem;
+  padding: 2rem 1rem 1rem 3rem;
 }
 
 

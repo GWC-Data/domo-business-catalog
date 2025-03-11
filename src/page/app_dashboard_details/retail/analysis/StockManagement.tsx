@@ -69,7 +69,7 @@ const StockManagement = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 col-12 p-3">
+        <div className="col-lg-6 col-md-6 col-sm-12 col-12 p-3 mx-auto">
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
