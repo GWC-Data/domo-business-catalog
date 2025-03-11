@@ -292,6 +292,59 @@ const industryContent: IndustryContentMap = {
         description: "Focus on high-performing campaigns to achieve better returns on marketing investments."
       }
     ]
+  },
+  "HR 360°": {
+    description: "HR360 is a comprehensive, data-driven analytics solution designed specifically for human resources. It empowers HR teams with insights to optimize workforce performance, improve employee engagement, and drive organizational growth. With dashboards that cover the entire employee lifecycle, HR360 helps HR professionals make data-backed decisions to enhance productivity, reduce turnover, and foster a positive work environment.",
+    mainImage: "./assets/images/apps/hr_business.jpg",
+    businessImage: "./assets/images/apps/hr.jpg",
+    keyFeatures: [
+      {
+        title: "Holistic Visibility",
+        description: "Gain a 360° view of your workforce—from recruitment to retention, training, and performance."
+      },
+      {
+        title: "Proactive Monitoring",
+        description: "Identify trends and issues in real-time to manage talent effectively."
+      },
+      {
+        title: "HR-Specific Insights",
+        description: "Dashboards and KPIs tailored for human resources management."
+      },
+      {
+        title: "Enhanced Collaboration",
+        description: "Centralize data and insights to align HR, management, and employees."
+      },
+      {
+        title: "Employee-Centric Approach",
+        description: "Develop strategies to improve employee satisfaction and well-being."
+      },
+      {
+        title: "Future-Ready Analytics",
+        description: "Use predictive analytics to anticipate HR needs and trends."
+      }
+    ],
+    businessOutcomes: [
+      {
+        title: "Employee Satisfaction & Retention",
+        description: "Foster a positive work environment and reduce turnover through engagement strategies."
+      },
+      {
+        title: "Workforce Productivity",
+        description: "Optimize performance with data-driven training and talent management."
+      },
+      {
+        title: "Cost Optimization",
+        description: "Reduce recruitment and operational costs by streamlining HR processes."
+      },
+      {
+        title: "Strategic Workforce Planning",
+        description: "Leverage analytics to anticipate hiring needs and skill gaps."
+      },
+      {
+        title: "HR Efficiency",
+        description: "Automate administrative tasks and enhance decision-making with real-time insights."
+      }
+    ]
   }
 };
 

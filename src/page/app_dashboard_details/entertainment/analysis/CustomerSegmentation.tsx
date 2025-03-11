@@ -65,7 +65,7 @@ const CustomerSegmentaion = () => {
             <div className="owl-carousel owl-theme">
               <div className="item">
                 <div className="blog_boxcontent">
-                  <div className="lower_portion_wrapper">
+                  <div className="lower_portion_wrapper w-auto h-auto">
                     <div className="icon">
                       <img src={Icon1} alt="" />
                     </div>
@@ -94,7 +94,7 @@ const CustomerSegmentaion = () => {
               </div>
               <div className="item">
                 <div className="blog_boxcontent">
-                  <div className="lower_portion_wrapper">
+                  <div className="lower_portion_wrapper w-auto h-auto">
                     <div className="icon">
                       <img src={Icon2} alt="" />
                     </div>
@@ -122,8 +122,8 @@ const CustomerSegmentaion = () => {
                 </div>
               </div>
               <div className="item">
-                <div className="blog_boxcontent mb-0">
-                  <div className="lower_portion_wrapper">
+                <div className="blog_boxcontent">
+                  <div className="lower_portion_wrapper w-auto h-auto">
                     <div className="icon">
                       <img src={Icon3} alt="" />
                     </div>
