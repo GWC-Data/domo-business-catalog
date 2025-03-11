@@ -1,68 +1,78 @@
-import React, { useState } from "react";
+import { useEffect } from "react";
 import "../../style.css";
+import Icon1 from "../../icons/Inventory Turnover Analysis.png";
+import Icon2 from "../../icons/Stock Level Analysis.png";
+import Icon3 from "../../icons/Lead Time Analysis.png";
+import Icon4 from "../../icons/Supplier Performance Analysis.png";
 
 const LaborAnalysis = () => {
-  const [selected, setSelected] = useState(1);
+
+  useEffect(() => {
+    // Initialize owl carousel
+    const initCarousel = () => {
+      const $ = window.jQuery;
+      if ($ && $.fn.owlCarousel) {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 15,
+          nav: false,
+          responsive: {
+            0: {
+              items: 1
+            },
+            576: {
+              items: 1
+            },
+            768: {
+              items: 2
+            },
+            992: {
+              items: 2
+            }
+          },
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true
+        });
+      }
+    };
+  
+    initCarousel();
+  
+    // If not successful, try again after a short delay
+    const timer = setTimeout(() => {
+      initCarousel();
+    }, 500);
+  
+    // Cleanup function
+    return () => {
+      clearTimeout(timer);
+      const $ = window.jQuery;
+      if ($ && $.fn.owlCarousel) {
+        $(".owl-carousel").owlCarousel("destroy");
+      }
+    };
+  }, []);
+
   return (
     <div className="container mt-5">
       <div>
         <h4>Labor Productivity and Employee Satisfaction analysis</h4>
         <p>Optimize workforce performance and enhance employee satisfaction with data-driven insights.</p>
       </div>
-      <section className="domo_app-section" >
+      <section className="design_two">
         <div className="container">
-          <div className="row" style={{ padding:"50px 0"}}>
-            <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-md-1 order-2">
-              <div className="domo_app_contentbox">
-                <div className="row">
-                  <div className="col-lg-6 col-md-6 col-sm-6" onClick={() => setSelected(1)} style={{ cursor:"pointer"}}>
-                    <div className={selected === 1 ? "domo_app-box box-mb active" : "domo_app-box box-mb"}>
-                      <figure className="domo_app-marketicon">
-                        <img src="./assets/images/service-marketicon.png" alt="" className="img-fluid" />
-                      </figure> 
-                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Labor Productivity Analysis</div>
-                    </div>   
-                  </div>
-                  <div style={{ cursor:"pointer"}} className="col-lg-6 col-md-6 col-sm-6 col-6" onClick={() => setSelected(2)} >
-                    <div className="box-top">
-                      <div className={selected === 2 ? "domo_app-box box-mb active" : "domo_app-box box-mb"}>
-                        <figure className="domo_app-producticon">
-                          <img src="./assets/images/service-producticon.png" alt="" className="img-fluid" />
-                        </figure>
-                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Attendance and Absenteeism Analysis</div>
-                      </div>
+          <div className="row">
+            <div className="owl-carousel owl-theme">
+              <div className="item">
+                <div className="blog_boxcontent">
+                  <div className="lower_portion_wrapper">
+                    <div className="icon">
+                      <img src={Icon1} alt="" />
                     </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-lg-6 col-md-6 col-sm-6 col-6" onClick={() => setSelected(3)} style={{ cursor:"pointer"}}>
-                    <div className={selected === 3 ? "domo_app-box active" : "domo_app-box"}>
-                      <figure className="domo_app-designicon">
-                        <img src="./assets/images/service-designicon.png" alt="" className="img-fluid" />
-                      </figure>
-                      <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Shift Performance Analysis</div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6 col-md-6 col-sm-6 col-6" onClick={() => setSelected(4)} style={{ cursor:"pointer"}}>
-                    <div className="box-top">
-                      <div className={selected === 4 ? "domo_app-box active" : "domo_app-box"}>
-                        <figure className="domo_app-dataicon">
-                          <img src="./assets/images/service-dataicon.png" alt="" className="img-fluid" />
-                        </figure>
-                        <div className="font-weight-bold" style={{fontSize: "1.3rem"}}>Employee Satisfaction and Retention Analysis</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-md-2 order-1">
-              <div className="domo_app_content position-relative" data-aos="fade-right" style={{paddingTop: "120px" }}>
-                {
-                  selected === 1 && (
-                    <React.Fragment>
-                      <h2>Labor Productivity <br /> Analysis</h2>
-                      <p>
+                    <div className="lower_portion">
+                      <h4>Labor Productivity Analysis</h4>
+                      <p className="text-size-18">
                       Monitor workforce efficiency to improve productivity and cost-effectiveness.
                       </p>
                       <ul className="list-unstyled mb-0">
@@ -79,14 +89,19 @@ const LaborAnalysis = () => {
                           Boost overall workforce efficiency.
                         </li>
                       </ul>
-                    </React.Fragment>
-                  )
-                }
-                {
-                  selected === 2 && (
-                    <React.Fragment>
-                      <h2>Attendance and Absenteeism Analysis</h2>
-                      <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="blog_boxcontent">
+                  <div className="lower_portion_wrapper">
+                    <div className="icon">
+                      <img src={Icon2} alt="" />
+                    </div>
+                    <div className="lower_portion">
+                      <h4>Attendance and Absenteeism Analysis</h4>
+                      <p className="text-size-18">
                       Track attendance patterns and optimize workforce availability.
                       </p>
                       <ul className="list-unstyled mb-0">
@@ -103,16 +118,19 @@ const LaborAnalysis = () => {
                           Enhance scheduling flexibility and resource allocation.
                         </li>
                       </ul>
-                    </React.Fragment>
-                  )
-                }
-                {
-                  selected === 3 && (
-                    <React.Fragment>
-                      <h2>Shift Performance Analysis</h2>
-                      <p>
-                      Assess shift performance to balance workload and improve consistency.
-                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="blog_boxcontent mb-0">
+                  <div className="lower_portion_wrapper">
+                    <div className="icon">
+                      <img src={Icon3} alt="" />
+                    </div>
+                    <div className="lower_portion">
+                      <h4>Shift Performance Analysis</h4>
+                      <p className="text-size-18">Assess shift performance to balance workload and improve consistency.</p>
                       <ul className="list-unstyled mb-0">
                         <li className="text text-size-18">
                           <i className="fa-solid fa-circle-check mr-2" style={{ color: "7a3ca3"}}></i>
@@ -127,14 +145,19 @@ const LaborAnalysis = () => {
                           Improve shift efficiency through data-driven adjustments.
                         </li>
                       </ul>
-                    </React.Fragment>
-                  )
-                }
-                {
-                  selected === 4 && (
-                    <React.Fragment>
-                      <h2>Employee Satisfaction and Retention Analysis</h2>
-                      <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="blog_boxcontent">
+                  <div className="lower_portion_wrapper">
+                    <div className="icon">
+                      <img src={Icon4} alt="" />
+                    </div>
+                    <div className="lower_portion">
+                      <h4>Employee Satisfaction and Retention Analysis</h4>
+                      <p className="text-size-18">
                       Foster a positive work environment to improve employee retention and satisfaction.
                       </p>
                       <ul className="list-unstyled mb-0">
@@ -151,10 +174,9 @@ const LaborAnalysis = () => {
                           Identify and address key factors impacting employee morale.
                         </li>
                       </ul>
-                    </React.Fragment>
-                  )
-                }
-               
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

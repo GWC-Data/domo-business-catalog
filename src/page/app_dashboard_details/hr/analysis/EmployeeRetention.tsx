@@ -21,13 +21,13 @@ const EmployeeRetention = () => {
                 <figure className="gwc_domo-dotimage mb-0">
                     <img src="./assets/images/gwc_domo-dotimage.png" alt="" className="img-fluid" />
                 </figure>
-                <div className="col-12 mt-3">
+                <div className="col-12">
                     <div className="col-12 mb-3">
                         <h4 className="text-white">Employee Retention Dashboard</h4>
                         <p className="text-white">Track turnover rates and the factors influencing retention to reduce attrition.</p>
                     </div>
                     <div className="row">
-                        <ul className="list-unstyled mb-0 p-5">
+                        <ul className="list-unstyled mb-0 p-4">
                             <li className="text-white text-size-18 ">
                                 <i className="fa-solid fa-circle-check mr-2 text-white"></i>
                                 Analyze turnover by department, location, and tenure.
