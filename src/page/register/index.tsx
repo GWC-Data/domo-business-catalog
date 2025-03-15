@@ -6,8 +6,13 @@ import { successToast } from "../../components/Toaster";
 import { useDispatch, useSelector } from "react-redux";
 import { registerFormRequest, registerFormReset } from "../../redux/registerForm/action";
 import { RootState } from "../../redux/store";
+import "./register.css";
 
-const Register = () => {
+interface RegisterModalProps {
+  onClose: () => void;
+}
+
+const Register = ({ onClose }: RegisterModalProps) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -26,18 +31,20 @@ const Register = () => {
       if (Array.isArray(data)) {
         data.forEach(item => successToast(item.message));
         dispatch(registerFormReset());
+        onClose(); // Close modal
       } else {
         dispatch(registerFormReset());
         successToast(data?.message);
+        onClose(); // Close modal
       }
-      navigate(sessionStorage.getItem("destination") || "/");
     }
-  },[data, dispatch, navigate]);
+  },[data, dispatch, navigate, onClose]);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
       
     const fingerprint = await getFingerprint();
+    localStorage.setItem("fingerprint", fingerprint);    
 
     const data = {
       fingerprint,
@@ -55,101 +62,82 @@ const Register = () => {
     <>
       {
         loading ? <div>loading</div> : (
-          <div className="container">
-            <div className="row justify-content-center mt-2 mb-3">
-              <div className="col-md-5">
-                <div className="">
-                  <div className="card-body">
-                    <div className="text-center mb-3">
-                      <img
-                        src="https://gwcdata.ai/assets/Logo-ZfpyJ_J5.svg"
-                        alt="Company Logo"
-                        className="img-fluid mb-2"
-                        style={{ maxWidth: "150px" }}
-                      />
-                    </div>
-                    <form onSubmit={handleSubmit}>
-                      <h4 className="text-center mb-3">Register</h4>
-                      <div className="mb-2">
-                        <label htmlFor="name" className="form-label mb-1">
-                              Full Name
-                        </label>
-                        <input
-                          type="text"
-                          value={name}
-                          onChange={(e) => setName(e.target.value)}
-                          className="form-control"
-                          id="name"
-                          placeholder="Enter your full name"
-                          required
-                        />
-                      </div>
-                      <div className="mb-2">
-                        <label htmlFor="email" className="form-label mb-1">
-                              Email Address
-                        </label>
-                        <input
-                          type="email"
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                          className="form-control"
-                          id="email"
-                          placeholder="Enter your email"
-                          required
-                        />
-                      </div>
-                      <div className="mb-2">
-                        <label htmlFor="company" className="form-label mb-1">
-                              Company Name
-                        </label>
-                        <input
-                          type="text"
-                          value={company}
-                          onChange={(e) => setCompany(e.target.value)}
-                          className="form-control"
-                          id="company"
-                          placeholder="Enter your company name"
-                          required
-                        />
-                      </div>
-                      <div className="mb-2">
-                        <label htmlFor="position" className="form-label mb-1">
-                              Position
-                        </label>
-                        <input
-                          type="text"
-                          value={position}
-                          onChange={(e) => setPosition(e.target.value)}
-                          className="form-control"
-                          id="position"
-                          placeholder="Enter your role"
-                          required
-                        />
-                      </div>
-
-                      <div className="mb-4">
-                        <label htmlFor="location" className="form-label mb-1">
-                              Location
-                        </label>
-                        <input
-                          type="text"
-                          value={location}
-                          onChange={(e) => setLocation(e.target.value)}
-                          className="form-control"
-                          id="location"
-                          placeholder="Enter your Location"
-                          required
-                        />
-                      </div>
-                      <div className="d-grid">
-                        <button type="submit" className="btn btn-primary">
-                              Register
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+          <div className="wrapper" style={{ backgroundImage: "url('./assets/images/bg-registration-form-2.jpg')"}}>
+            <div className="inner">
+              <div className="text-center mb-3">
+                <img
+                  src="./assets/images/gwc.svg"
+                  alt="Company Logo"
+                  className="img-fluid"
+                  style={{ maxWidth: "150px" }}
+                />
               </div>
+              <form onSubmit={handleSubmit}>
+                <h3>Registration Form</h3>
+                
+                <div className="form-wrapper">
+                  <label htmlFor="name">Full Name</label>
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="form-control"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+                 
+                <div className="form-wrapper">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div className="form-wrapper">
+                  <label htmlFor="">Company</label>
+                  <input
+                    type="text"
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                    className="form-control"
+                    id="company"
+                    placeholder="Enter your company name"
+                    required
+                  />
+                </div>
+                <div className="form-wrapper">
+                  <label htmlFor="">Position</label>
+                  <input
+                    type="text"
+                    value={position}
+                    onChange={(e) => setPosition(e.target.value)}
+                    className="form-control"
+                    id="position"
+                    placeholder="Enter your role"
+                    required
+                  />
+                </div>
+                <div className="form-wrapper">
+                  <label htmlFor="">Location</label>
+                  <input
+                    type="text"
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
+                    className="form-control"
+                    id="location"
+                    placeholder="Enter your Location"
+                    required
+                  />
+                </div>
+                <button type="submit" className="register-button">Register Now</button>
+              </form>
             </div>
           </div>
         ) 

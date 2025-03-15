@@ -339,7 +339,7 @@ const HomePage = () => {
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className="">
                 <img
-                  src="https://gwcdata.ai/assets/image1-sDhNJSxR.png"
+                  src="./assets/images/team/naveen.png"
                   alt=""
                   className="rounded-circle img-fluid bg-white team-img"
                 />
@@ -348,7 +348,7 @@ const HomePage = () => {
               </div>
               <ul className="social mb-0 list-inline mt-3">
                 <li className="list-inline-item">
-                  <a href="#" className="social-link">
+                  <a href="https://www.linkedin.com/in/naveenkumarnawinkrp/" target="_blank" className="social-link">
                     <i className="fa-brands fa-linkedin"></i>
                   </a>
                 </li>
@@ -357,7 +357,7 @@ const HomePage = () => {
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className="">
                 <img
-                  src="https://gwcdata.ai/assets/image8-bByGUths.png"
+                  src="./assets/images/team/subash.png"
                   alt=""
                   className="rounded-circle img-fluid bg-white team-img"
                 />
@@ -365,7 +365,7 @@ const HomePage = () => {
                 <div className="small text-uppercase text-white">Chief Technology Officer</div>
                 <ul className="social mb-0 list-inline mt-3">
                   <li className="list-inline-item">
-                    <a href="#" className="social-link">
+                    <a href="https://www.linkedin.com/in/subash-ramu-92553784/" target="_blank" className="social-link">
                       <i className="fa-brands fa-linkedin"></i>
                     </a>
                   </li>
@@ -375,7 +375,7 @@ const HomePage = () => {
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className="">
                 <img
-                  src="https://gwcdata.ai/assets/image10-KUNrNCRW.png"
+                  src="./assets/images/team/shanhank.png"
                   alt=""
                   className="rounded-circle img-fluid bg-white team-img"
                 />
@@ -384,7 +384,7 @@ const HomePage = () => {
               </div>
               <ul className="social mb-0 list-inline mt-3">
                 <li className="list-inline-item">
-                  <a href="#" className="social-link">
+                  <a href="https://www.linkedin.com/in/shashank-ravikumar-780649125/" target="_blank" className="social-link">
                     <i className="fa-brands fa-linkedin"></i>
                   </a>
                 </li>
@@ -393,7 +393,7 @@ const HomePage = () => {
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className="">
                 <img
-                  src="https://www.gwcdata.ai/assets/image6-sU0pYUjX.png"
+                  src="./assets/images/team/prasanna.png"
                   alt=""
                   className="rounded-circle img-fluid bg-white team-img"
                 />
@@ -402,7 +402,7 @@ const HomePage = () => {
               </div>
               <ul className="social mb-0 list-inline mt-3">
                 <li className="list-inline-item">
-                  <a href="#" className="social-link">
+                  <a href="https://www.linkedin.com/in/prasanna-srinivasan-a533b062/" target="_blank" className="social-link">
                     <i className="fa-brands fa-linkedin"></i>
                   </a>
                 </li>
@@ -411,7 +411,7 @@ const HomePage = () => {
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className="">
                 <img
-                  src="https://gwcdata.ai/assets/image7--0aoZUnq.png"
+                  src="./assets/images/team/srinath.png"
                   alt=""
                   className="rounded-circle img-fluid bg-white team-img"
                 />
@@ -420,7 +420,7 @@ const HomePage = () => {
               </div>
               <ul className="social mb-0 list-inline mt-3">
                 <li className="list-inline-item">
-                  <a href="#" className="social-link">
+                  <a href="https://www.linkedin.com/in/srinath-raja-8a5710115/" target="_blank" className="social-link">
                     <i className="fa-brands fa-linkedin"></i>
                   </a>
                 </li>
@@ -429,7 +429,7 @@ const HomePage = () => {
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className="">
                 <img
-                  src="./assets/images/image9-qmh8iztT-removebg-preview.png"
+                  src="./assets/images/team/santhosh.png"
                   alt=""
                   className="rounded-circle img-fluid bg-white team-img"
                 />
@@ -438,7 +438,7 @@ const HomePage = () => {
               </div>
               <ul className="social mb-0 list-inline mt-3">
                 <li className="list-inline-item">
-                  <a href="#" className="social-link">
+                  <a href="https://www.linkedin.com/in/santhosh-kumar-5a3ba3121/" target="_blank" className="social-link">
                     <i className="fa-brands fa-linkedin"></i>
                   </a>
                 </li>
@@ -447,7 +447,7 @@ const HomePage = () => {
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className="">
                 <img
-                  src="https://gwcdata.ai/assets/image5-MbGjwAc-.png"
+                  src="./assets/images/team/madhu.png"
                   alt=""
                   className="rounded-circle img-fluid bg-white team-img"
                 />
@@ -456,7 +456,7 @@ const HomePage = () => {
               </div>
               <ul className="social mb-0 list-inline mt-3">
                 <li className="list-inline-item">
-                  <a href="#" className="social-link">
+                  <a href="https://www.linkedin.com/in/madhu-sudhanan-mahendran-a00b4477/" target="_blank" className="social-link">
                     <i className="fa-brands fa-linkedin"></i>
                   </a>
                 </li>
@@ -465,7 +465,7 @@ const HomePage = () => {
             <div className="col-lg-3 col-sm-4 col-md-3 col-6 mb-5">
               <div className="">
                 <img
-                  src="https://gwcdata.ai/assets/image4-SlHsmos4.png"
+                  src="./assets/images/team/mamtha.png"
                   alt=""
                   className="rounded-circle img-fluid bg-white team-img"
                 />
@@ -474,7 +474,7 @@ const HomePage = () => {
               </div>
               <ul className="social mb-0 list-inline mt-3">
                 <li className="list-inline-item">
-                  <a href="#" className="social-link">
+                  <a href="https://www.linkedin.com/in/mamtha-shanmugam-43ba8016a/" target="_blank" className="social-link">
                     <i className="fa-brands fa-linkedin"></i>
                   </a>
                 </li>

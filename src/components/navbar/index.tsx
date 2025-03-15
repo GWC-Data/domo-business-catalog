@@ -47,9 +47,7 @@ const Navbar = ({ activeNav }: props) => {
                 </li>
                 <li
                   className={
-                    activeNav === "app"
-                      ? "nav-space nav-item dropdown active ml-2"
-                      : "nav-space nav-item dropdown ml-2"
+                    activeNav === "app" ? "nav-space nav-item dropdown active ml-2" : "nav-space nav-item dropdown ml-2"
                   }
                 >
                   <Link
