@@ -65,7 +65,7 @@ const Register = ({ onClose }: RegisterModalProps) => {
 
   return (
     <>
-      <div className="wrapper" style={{ backgroundImage: "url('./assets/images/bg-registration-form-2.jpg')"}}>
+      <div className="container-wrapper" style={{ backgroundImage: "url('./assets/images/bg-registration-form-2.jpg')"}}>
         <div className="inner">
           <div className="text-center mb-3">
             <img
