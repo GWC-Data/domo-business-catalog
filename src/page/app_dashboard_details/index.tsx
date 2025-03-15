@@ -1,4 +1,4 @@
-/* eslint-disable max-len */
+ 
  
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import {Link, useParams } from "react-router-dom";

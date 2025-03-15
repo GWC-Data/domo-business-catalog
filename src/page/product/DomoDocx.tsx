@@ -50,70 +50,70 @@ const DomoDocx = () => {
       </div>
       <div  >
 
-      <h5 className="text-center mt-4">Key Features of Domo Docx</h5>
-      {/* Circular Content Section */}
-      <div className="container mt-5" >
-        <div className="row justify-content-center">
-          {/* Card 1 */}
-          <div className="card">
+        <h5 className="text-center mt-4">Key Features of Domo Docx</h5>
+        {/* Circular Content Section */}
+        <div className="container mt-5" >
+          <div className="row justify-content-center">
+            {/* Card 1 */}
+            <div className="card">
               <FontAwesomeIcon icon={faFileExport} className="feature-icon_card me-2 mr-1 card-title" />
-            <p className="card-title">
+              <p className="card-title">
               Seamless Document Generation
-            </p>
-            <p className="small-desc">
+              </p>
+              <p className="small-desc">
               Instantly compiles visuals from Domo dashboards into structured reports, eliminating
               manual effort.
-            </p>
-          </div>
+              </p>
+            </div>
 
-          {/* Card 2 */}
-          <div className="card">
+            {/* Card 2 */}
+            <div className="card">
               <FontAwesomeIcon icon={faDatabase} className="feature-icon_card me-2 mr-1 card-title  " />
-            <p className="card-title">
+              <p className="card-title">
               Historical Document Storage
-            </p>
-            <p className="small-desc">
+              </p>
+              <p className="small-desc">
               Saves past reports in Domo AppDB, enabling users to access and track previous
               documentation.
-            </p>
-          </div>
+              </p>
+            </div>
 
-          {/* Card 3 */}
-          <div className="card">
+            {/* Card 3 */}
+            <div className="card">
               <FontAwesomeIcon icon={faSyncAlt} className="feature-icon_card me-2 mr-1 card-title" />
-            <p className="card-title">
+              <p className="card-title">
               Real-Time Data Capture
-            </p>
-            <p className="small-desc">
+              </p>
+              <p className="small-desc">
               Ensures reports always reflect the latest dashboard visuals for up-to-date
               documentation.
-            </p>
-          </div>
+              </p>
+            </div>
 
-          {/* Card 4 */}
-          <div className="card">
+            {/* Card 4 */}
+            <div className="card">
               <FontAwesomeIcon icon={faUniversalAccess} className="feature-icon_card me-2 mr-1 card-title" />
-            <p className="card-title">
+              <p className="card-title">
               Easy Accessibility
-            </p>
-            <p className="small-desc">
+              </p>
+              <p className="small-desc">
               Open to all users without restrictions, allowing effortless document creation and
               retrieval.
-            </p>
-          </div>
+              </p>
+            </div>
 
-          {/* Card 5 */}
-          <div className="card">
+            {/* Card 5 */}
+            <div className="card">
               <FontAwesomeIcon icon={faTable} className="feature-icon_card me-2 mr-1 card-title" />
-            <p className="card-title">
+              <p className="card-title">
               Consistent & Structured Reports
-            </p>
-            <p className="small-desc">
+              </p>
+              <p className="small-desc">
               Maintains uniform formatting for clear, professional documentation every time.
-            </p>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
       </div>
       {/* Tabs Section */}
       <div className="tabs-container mt-4">
@@ -124,24 +124,24 @@ const DomoDocx = () => {
 
       {/*Flowchart Diagram*/}
       <div className="container">
-      <div className="col-12 mt-5  ">
-        <div className="col-lg-12 col-md-6 col-12 mb-3 text-center ">
-          <h4>DOMO DOCX - Architecture Overview</h4>
-          <p>
+        <div className="col-12 mt-5  ">
+          <div className="col-lg-12 col-md-6 col-12 mb-3 text-center ">
+            <h4>DOMO DOCX - Architecture Overview</h4>
+            <p>
             DOMO DOCX is designed to streamline access to internal data through AI-powered chat
             interactions. The architecture consists of multiple interconnected modules to
             efficiently manage files, process user prompts, and generate AI-based responses.
-          </p>
+            </p>
+          </div>
+          <div className="flow-chart-container">
+            <h4 className="mb-1 text-center">Architecture Diagram</h4>
+            <img
+              src="./assets/images/products/DOMO_Doc_Generator_drawio.svg"
+              alt="Architecture Diagram"
+              className="architecture-image"
+            />
+          </div>
         </div>
-        <div className="flow-chart-container">
-          <h4 className="mb-1 text-center">Architecture Diagram</h4>
-          <img
-            src="./assets/images/products/DOMO_Doc_Generator_drawio.svg"
-            alt="Architecture Diagram"
-            className="architecture-image"
-          />
-        </div>
-      </div>
       </div>
     </div>
   );
