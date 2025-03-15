@@ -17,60 +17,79 @@ const Feedback = () => {
   };
 
   return (
-    <div className="container">
-      <div className="row justify-content-center align-items-center min-vh-100">
-        <div className="col-lg-6 col-md-8 col-sm-10">
-          <div className="">
-            <div className="card-body p-5">
-              <div className="text-center mb-3">
-                <img src="https://gwcdata.ai/assets/Logo-ZfpyJ_J5.svg" alt="Company Logo"
-                  className="img-fluid mb-2" style={{maxWidth: "150px"}} />
-              </div>
-              <form className="">
-                <div className="form-floating mb-3">
-                  <label htmlFor="fullName" className="form-label mb-1">Full Name</label>
-                  <input type="text" className="form-control" id="fullName" placeholder="Enter Full Name" required minLength={2} />
-                </div>
-                <div className="form-floating mb-3">
-                  <label htmlFor="email" className="form-label mb-1">Email Address</label>
-                  <input type="email" className="form-control" id="email" placeholder="example@company.com" required />
-                </div>
-                <div className="mb-4">
-                  <label className="form-label mb-1">Rate Your Experience</label>
-                  <div className="mb-2 d-flex align-items-center">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <div 
-                        key={star}
-                        onClick={() => handleStarClick(star)}
-                        onMouseEnter={() => handleStarHover(star)}
-                        onMouseLeave={handleStarLeave}
-                        className="fs-3 me-1"
-                        style={{ cursor: "pointer" }}
-                      >
-                        {star <= (hover || rating) ? (
-                          <i className="fas fa-star text-warning"></i>
-                        ) : (
-                          <i className="far fa-star text-secondary"></i>
-                        )}
-                      </div>
-                    ))}
-                    <span className="ms-2 small">
-                      {rating > 0 ? `${rating} of 5` : ""}
-                    </span>
+    <div className="wrapper" style={{ backgroundImage: "url('./assets/images/bg-registration-form-2.jpg')"}}>
+      <div className="inner">
+        <div className="text-center mb-3">
+          <img
+            src="./assets/images/gwc.svg"
+            alt="Company Logo"
+            className="img-fluid"
+            style={{ maxWidth: "150px" }}
+          />
+        </div>
+        <form>
+          <h3>Feedback</h3>
+                
+          <div className="form-wrapper">
+            <label htmlFor="name">Full Name</label>
+            <input
+              type="text"
+              className="form-control"
+              id="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+                 
+          <div className="form-wrapper">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div className="form-wrapper">
+            <div className="">
+              <label className="form-label mb-1">Rate Your Experience</label>
+              <div className="mb-2 d-flex align-items-center">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <div 
+                    key={star}
+                    onClick={() => handleStarClick(star)}
+                    onMouseEnter={() => handleStarHover(star)}
+                    onMouseLeave={handleStarLeave}
+                    className="fs-3 me-1"
+                    style={{ cursor: "pointer" }}
+                  >
+                    {star <= (hover || rating) ? (
+                      <i className="fas fa-star text-warning"></i>
+                    ) : (
+                      <i className="far fa-star text-secondary"></i>
+                    )}
                   </div>
-                  <input type="hidden" id="rating" name="rating" value="0" />
-                </div>
-                <div className="form-floating mb-4">
-                  <label htmlFor="feedback" className="form-label mb-1">Your Feedback</label>
-                  <textarea className="form-control" id="feedback" placeholder="Enter Your Feedback" style={{height: "120px"}}></textarea>
-                </div>
-                <div className="d-grid">
-                  <button type="submit" className="btn btn-primary">Submit</button>
-                </div>
-              </form>
+                ))}
+                <span className="ms-2 small">
+                  {rating > 0 ? `${rating} of 5` : ""}
+                </span>
+              </div>
+              <input type="hidden" id="rating" name="rating" value="0" />
             </div>
           </div>
-        </div>
+          <div className="form-wrapper">
+            <label htmlFor="feedback">Position</label>
+            <textarea
+              className="form-control"
+              id="feedback" 
+              placeholder="Enter Your Feedback" 
+              style={{height: "120px"}}
+              required
+            ></textarea>
+          </div>
+          <button type="submit" className="register-button">Submit</button>
+        </form>
       </div>
     </div>
   );

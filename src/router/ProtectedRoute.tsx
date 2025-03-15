@@ -1,32 +1,55 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { Navigate, Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getFingerprint } from "../utils/fingerprint";
-import { useSelector } from "react-redux";
-import { RootState } from "../redux/rootReducer";
+import { Outlet } from "react-router-dom";
+import Register from "../page/register";
 
 const ProtectedRoute = () => {
   const [isVerified, setIsVerified] = useState<boolean | null>(null);
+  const [showModal, setShowModal] = useState(false);
 
-  const auth = useSelector((state: RootState) => state.auth);
-  const { data } = auth;
+  const checkFingerprint = () => {
+    const fingerprint = localStorage.getItem("fingerprint");
+    if (fingerprint) {
+      setIsVerified(true);
+      setShowModal(false);
+    } else {
+      setIsVerified(false);
+      setShowModal(true);
+    }
+  };
 
   useEffect(() => {
-    if (isVerified !== null) return; // Prevent unnecessary re-runs
+    checkFingerprint(); // Initial check on mount
 
-    const checkUser = async () => {
-      const fingerprint = await getFingerprint();
-      const user = data?.find((user: any) => user.fingerprint === fingerprint);
-
-      setIsVerified(user?.fingerprint === fingerprint);
+    // Listen for storage changes (detect localStorage delete)
+    const handleStorageChange = () => {
+      checkFingerprint();
     };
 
-    checkUser();
-  }, [data, isVerified]); // Only run once when `isVerified` is null
+    window.addEventListener("storage", handleStorageChange);
 
-  if (isVerified === null) return null; // Prevent flashing
+    return () => {
+      window.removeEventListener("storage", handleStorageChange);
+    };
+  }, []);
 
-  return isVerified ? <Outlet /> : <Navigate to="/register" replace />;
+  if (isVerified === null) return null; // Prevent flickering before the check completes
+
+  if (isVerified) {
+    return <Outlet />; // ✅ Render protected content
+  }
+
+  return (
+    <>
+      {showModal && (
+        <Register
+          onClose={() => {
+            setShowModal(false);
+            checkFingerprint(); // 🔄 Recheck fingerprint after closing modal
+          }}
+        />
+      )}
+    </>
+  );
 };
 
 export default ProtectedRoute;
