@@ -23,8 +23,14 @@ const Feedback = () => {
           <img
             src="./assets/images/gwc.svg"
             alt="Company Logo"
-            className="img-fluid"
+            className="img-fluid mr-3 col-md-6 col-12"
             style={{ maxWidth: "150px" }}
+          />
+          <img
+            src="./assets/images/domopalooza.svg"
+            alt="domopalooza"
+            className="img-fluid col-md-6 col-12"
+            style={{ maxWidth: "170px" }}
           />
         </div>
         <form>

@@ -62,17 +62,17 @@ const Register = ({ onClose }: RegisterModalProps) => {
     <>
       <div className="wrapper" style={{ backgroundImage: "url('./assets/images/bg-registration-form-2.jpg')"}}>
         <div className="inner">
-          <div className="text-center mb-3 d-flex justify-content-center align-items-center md:justify-center">
+          <div className="text-center mb-3">
             <img
               src="./assets/images/gwc.svg"
               alt="Company Logo"
-              className="img-fluid mr-3"
+              className="img-fluid mr-3 col-md-6 col-12"
               style={{ maxWidth: "150px" }}
             />
             <img
               src="./assets/images/domopalooza.svg"
               alt="domopalooza"
-              className="img-fluid"
+              className="img-fluid col-md-6 col-12"
               style={{ maxWidth: "170px" }}
             />
           </div>
