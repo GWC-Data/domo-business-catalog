@@ -61,7 +61,7 @@ const ProductPage = () => {
                 <div className="d-flex align-items-center justify-content-center my-3">
                   <h2>Domoverse</h2>
                 </div>
-                <p className="mb-0">Unlock Insights from Unstructured Files</p>
+                <p className="mb-0">Centralized Governance for Security & Performance</p>
               </div>
             </Link>
           </div>
@@ -72,7 +72,7 @@ const ProductPage = () => {
                 <div className="d-flex align-items-center justify-content-center my-3">
                   <h2>DOMODocx</h2>
                 </div>
-                <p className="mb-0">Unlock Insights from Unstructured Files</p>
+                <p className="mb-0">Effortless Reporting from Dynamic Dashboards</p>
               </div>
             </Link>
           </div>
@@ -83,7 +83,7 @@ const ProductPage = () => {
                 <div className="d-flex align-items-center justify-content-center my-3" >
                   <h2>DOMAAS</h2>
                 </div>
-                <p className=" mb-0">Unlock Insights from Unstructured Files</p>
+                <p className=" mb-0">Seamless Migration with Automated Insights</p>
               </div>
             </Link>
           </div>
