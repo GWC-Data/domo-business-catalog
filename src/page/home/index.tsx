@@ -47,7 +47,7 @@ const HomePage = () => {
               </div>
               <div className="col-lg-7 col-md-12 col-sm-12 col-12">
                 <div className="w-100 d-flex justify-content-center align-items-center">
-                  <a className="navbar-brand" href="./index.html">
+                  <a className="" href="./index.html">
                     <figure className="mb-0 banner-logo">
                       <img
                         src="./assets/images/domopalooza.svg"

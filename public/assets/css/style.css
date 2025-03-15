@@ -108,7 +108,14 @@ p {
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 400px;
+}
+
+@media(min-width: 768px){
+    .banner_outer{
+        height: 100vh;
+    }
+    
 }
 .banner_outer::before{
     content: "";
