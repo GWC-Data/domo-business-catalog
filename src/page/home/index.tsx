@@ -50,7 +50,7 @@ const HomePage = () => {
                   <a className="navbar-brand" href="./index.html">
                     <figure className="mb-0 banner-logo">
                       <img
-                        src="https://web-assets.domo.com/miyagi/images/logo/brand/color/logo-brand-domopalooza-color.svg"
+                        src="./assets/images/domopalooza.svg"
                         alt=""
                         width="500"
                         className="img-fluid"
