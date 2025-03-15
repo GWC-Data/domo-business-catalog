@@ -1,8 +1,33 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { feedbackFormRequest, feedbackFormReset } from "../../redux/feedbackForm/action";
+import { RootState } from "../../redux/rootReducer";
+import { successToast } from "../../components/Toaster";
 
 const Feedback = () => {
+  const dispatch = useDispatch();
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
+
+  const [comment, setComment] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const feedbackForm = useSelector((state: RootState) => state.feedbackForm);
+  const { loading, data } = feedbackForm;
+
+  useEffect(() => {
+    if (data) {
+      if (Array.isArray(data)) {
+        data.forEach(item => successToast(item.message));
+        dispatch(feedbackFormReset());
+      } else {
+        dispatch(feedbackFormReset());
+        successToast(data?.message);
+      }
+    }
+  },[data, dispatch]);
+
 
   const handleStarClick = (selectedRating: number) => {
     setRating(selectedRating);
@@ -14,6 +39,25 @@ const Feedback = () => {
 
   const handleStarLeave = () => {
     setHover(0);
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // Handle form submission here
+    const data = {
+      rating,
+      comment,
+      name,
+      email,
+    };
+
+    dispatch(feedbackFormRequest(data));
+
+    // Reset form fields
+    setRating(0);
+    setComment("");
+    setName("");
+    setEmail("");
   };
 
   return (
@@ -33,24 +77,28 @@ const Feedback = () => {
             style={{ maxWidth: "170px" }}
           />
         </div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <h3>Feedback</h3>
                 
           <div className="form-wrapper">
             <label htmlFor="name">Full Name</label>
             <input
               type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               className="form-control"
               id="name"
               placeholder="Enter your full name"
               required
             />
           </div>
-                 
+              
           <div className="form-wrapper">
             <label htmlFor="email">Email</label>
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="form-control"
               id="email"
               placeholder="Enter your email"
@@ -85,8 +133,10 @@ const Feedback = () => {
             </div>
           </div>
           <div className="form-wrapper">
-            <label htmlFor="feedback">Position</label>
+            <label htmlFor="feedback">Describe Your Feedback</label>
             <textarea
+              value={comment}
+              onChange={(e) => setComment(e.target.value)}
               className="form-control"
               id="feedback" 
               placeholder="Enter Your Feedback" 
@@ -94,7 +144,13 @@ const Feedback = () => {
               required
             ></textarea>
           </div>
-          <button type="submit" className="register-button">Submit</button>
+          {
+            loading ? (
+              <button type="button" className="register-button" disabled>Loading...</button>
+            ) : (
+              <button type="submit" className="register-button">Register Now</button>
+            )
+          }
         </form>
       </div>
     </div>
