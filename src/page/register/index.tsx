@@ -56,6 +56,11 @@ const Register = ({ onClose }: RegisterModalProps) => {
     };
 
     dispatch(registerFormRequest(data));
+    setName(""); // Clear input fields
+    setEmail("");
+    setLocation("");
+    setCompany("");
+    setPosition("");
   };
 
   return (
