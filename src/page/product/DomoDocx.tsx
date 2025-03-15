@@ -9,8 +9,17 @@ import {
   faUniversalAccess,
   faTable,
 } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 
 const DomoDocx = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+    
   return (
     <div className="">
       <div className="sub-banner sub-banner2">
