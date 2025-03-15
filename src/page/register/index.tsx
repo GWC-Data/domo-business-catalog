@@ -60,88 +60,96 @@ const Register = ({ onClose }: RegisterModalProps) => {
 
   return (
     <>
-      {
-        loading ? <div>loading</div> : (
-          <div className="wrapper" style={{ backgroundImage: "url('./assets/images/bg-registration-form-2.jpg')"}}>
-            <div className="inner">
-              <div className="text-center mb-3">
-                <img
-                  src="./assets/images/gwc.svg"
-                  alt="Company Logo"
-                  className="img-fluid"
-                  style={{ maxWidth: "150px" }}
-                />
-              </div>
-              <form onSubmit={handleSubmit}>
-                <h3>Registration Form</h3>
-                
-                <div className="form-wrapper">
-                  <label htmlFor="name">Full Name</label>
-                  <input
-                    type="text"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="form-control"
-                    id="name"
-                    placeholder="Enter your full name"
-                    required
-                  />
-                </div>
-                 
-                <div className="form-wrapper">
-                  <label htmlFor="email">Email</label>
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="form-control"
-                    id="email"
-                    placeholder="Enter your email"
-                    required
-                  />
-                </div>
-                <div className="form-wrapper">
-                  <label htmlFor="">Company</label>
-                  <input
-                    type="text"
-                    value={company}
-                    onChange={(e) => setCompany(e.target.value)}
-                    className="form-control"
-                    id="company"
-                    placeholder="Enter your company name"
-                    required
-                  />
-                </div>
-                <div className="form-wrapper">
-                  <label htmlFor="">Position</label>
-                  <input
-                    type="text"
-                    value={position}
-                    onChange={(e) => setPosition(e.target.value)}
-                    className="form-control"
-                    id="position"
-                    placeholder="Enter your role"
-                    required
-                  />
-                </div>
-                <div className="form-wrapper">
-                  <label htmlFor="">Location</label>
-                  <input
-                    type="text"
-                    value={location}
-                    onChange={(e) => setLocation(e.target.value)}
-                    className="form-control"
-                    id="location"
-                    placeholder="Enter your Location"
-                    required
-                  />
-                </div>
-                <button type="submit" className="register-button">Register Now</button>
-              </form>
-            </div>
+      <div className="wrapper" style={{ backgroundImage: "url('./assets/images/bg-registration-form-2.jpg')"}}>
+        <div className="inner">
+          <div className="text-center mb-3 d-flex justify-content-center align-items-center md:justify-center">
+            <img
+              src="./assets/images/gwc.svg"
+              alt="Company Logo"
+              className="img-fluid mr-3"
+              style={{ maxWidth: "150px" }}
+            />
+            <img
+              src="./assets/images/domopalooza.svg"
+              alt="domopalooza"
+              className="img-fluid"
+              style={{ maxWidth: "170px" }}
+            />
           </div>
-        ) 
-      } 
+          <form onSubmit={handleSubmit}>
+            <h3>Registration Form</h3>
+            
+            <div className="form-wrapper">
+              <label htmlFor="name">Full Name</label>
+              <input
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="form-control"
+                id="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+              
+            <div className="form-wrapper">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="form-control"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div className="form-wrapper">
+              <label htmlFor="">Company</label>
+              <input
+                type="text"
+                value={company}
+                onChange={(e) => setCompany(e.target.value)}
+                className="form-control"
+                id="company"
+                placeholder="Enter your company name"
+                required
+              />
+            </div>
+            <div className="form-wrapper">
+              <label htmlFor="">Position</label>
+              <input
+                type="text"
+                value={position}
+                onChange={(e) => setPosition(e.target.value)}
+                className="form-control"
+                id="position"
+                placeholder="Enter your role"
+                required
+              />
+            </div>
+            <div className="form-wrapper">
+              <label htmlFor="">Location</label>
+              <input
+                type="text"
+                value={location}
+                onChange={(e) => setLocation(e.target.value)}
+                className="form-control"
+                id="location"
+                placeholder="Enter your Location"
+                required
+              />
+            </div>
+            {
+              loading ? (
+                <button type="button" className="register-button" disabled>Loading...</button>
+              ) : (
+                <button type="submit" className="register-button">Register Now</button>
+              )
+            }
+          </form>
+        </div>
+      </div>
     </>
   );
 };
