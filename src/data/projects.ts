@@ -40,16 +40,16 @@ export const projects = [
     industry: "Telecommunication",
     keywords: "Service Monitor, Fault Resolving Analysis, Customer Satisfaction, SLA, Customer Communication, Installation Timeline, Root Cause Analysis",
   },
-  {
-    id: 5,
-    title: "Driving Innovation: Automotive Product Performance",
-    description:
-    "Product Analysis identified high-performing vehicle models, helping to optimize inventory and marketing strategies. Sales Metrics tracked key performance indicators, offering insights into sales trends and opportunities for growth. Sales Targets were set based on historical data and market conditions, driving focused efforts to meet company goals. The Sales Funnel analysis highlighted customer journey stages, helping to refine lead generation and conversion strategies, ultimately boosting sales efficiency and performance.",
-    image: "/assets/images/projects/Driving Innovation_ Automotive Product Performance.png",
-    embed: "https://embed.domo.com/embed/pages/k5J25",
-    industry: "Automobile",
-    keywords: "Product Analysis, Sales Metrics, Sales Target, Sales Funnel.",
-  },
+  // {
+  //   id: 5,
+  //   title: "Driving Innovation: Automotive Product Performance",
+  //   description:
+  //   "Product Analysis identified high-performing vehicle models, helping to optimize inventory and marketing strategies. Sales Metrics tracked key performance indicators, offering insights into sales trends and opportunities for growth. Sales Targets were set based on historical data and market conditions, driving focused efforts to meet company goals. The Sales Funnel analysis highlighted customer journey stages, helping to refine lead generation and conversion strategies, ultimately boosting sales efficiency and performance.",
+  //   image: "/assets/images/projects/Driving Innovation_ Automotive Product Performance.png",
+  //   embed: "https://embed.domo.com/embed/pages/k5J25",
+  //   industry: "Automobile",
+  //   keywords: "Product Analysis, Sales Metrics, Sales Target, Sales Funnel.",
+  // },
   {
     id: 6,
     title: "The Real Estate: From Inquiry to Ownership",

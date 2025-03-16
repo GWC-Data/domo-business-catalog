@@ -95,11 +95,11 @@ const Navbar = ({ activeNav }: props) => {
                     </ul>
                   </div>
                 </li>
-                <li className={activeNav === "luckywheel" ? "nav-item active" : "nav-item"}>
+                {/* <li className={activeNav === "luckywheel" ? "nav-item active" : "nav-item"}>
                   <Link to="/luckywheel" className="nav-link">
                     Luckywheel
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <button
