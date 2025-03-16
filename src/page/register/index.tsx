@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getFingerprint } from "../../utils/fingerprint";
 import { successToast } from "../../components/Toaster";
@@ -21,8 +21,8 @@ const Register = ({ onClose }: RegisterModalProps) => {
   const [location, setLocation] = useState("");
   const [company, setCompany] = useState("");
   const [position, setPosition] = useState("");
+  const [error, setError] = useState("");
 
-  
   const registerForm = useSelector((state: RootState) => state.registerForm);
   const { loading, data } = registerForm;
 
@@ -40,8 +40,39 @@ const Register = ({ onClose }: RegisterModalProps) => {
     }
   },[data, dispatch, navigate, onClose]);
 
+  // Regex to match company emails (must have a domain name with at least one dot)
+  const companyEmailRegex = /^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
+
+  // List of blocked public domains
+  const blockedDomains = [
+    "gmail.com", "yahoo.com", "outlook.com", "hotmail.com", 
+    "orkut.com", "aol.com", "icloud.com", "zoho.com", 
+    "protonmail.com", "gmx.com", "yandex.com"
+  ];
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const inputEmail = e.target.value;
+    setEmail(inputEmail);
+
+    // Extract domain from email
+    const domain = inputEmail.split("@")[1];
+
+    // Check if the domain is blocked or does not match the regex
+    if (!companyEmailRegex.test(inputEmail) || (domain && blockedDomains.includes(domain))) {
+      setError("Please enter a valid company email.");
+    } else {
+      setError(""); // Clear error if valid
+    }
+  };
+
+
   const handleSubmit = async (e: any) => {
     e.preventDefault();
+
+    if (error) {
+      alert("Fix the error before submitting.");
+      return;
+    }
       
     const fingerprint = await getFingerprint();
     localStorage.setItem("fingerprint", fingerprint);    
@@ -85,7 +116,7 @@ const Register = ({ onClose }: RegisterModalProps) => {
             <h3>Registration Form</h3>
             
             <div className="form-wrapper">
-              <label htmlFor="name">Full Name</label>
+              <label htmlFor="name">Full Name <span className="text-danger">*</span></label>
               <input
                 type="text"
                 value={name}
@@ -98,19 +129,20 @@ const Register = ({ onClose }: RegisterModalProps) => {
             </div>
               
             <div className="form-wrapper">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Company Email <span className="text-danger">*</span></label>
               <input
                 type="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={handleEmailChange}
                 className="form-control"
                 id="email"
-                placeholder="Enter your email"
+                placeholder="Enter your company email"
                 required
               />
+              {error && <p style={{ color: "red", fontSize: "12px" }}>{error}</p>}
             </div>
             <div className="form-wrapper">
-              <label htmlFor="">Company</label>
+              <label htmlFor="">Company <span className="text-danger">*</span></label>
               <input
                 type="text"
                 value={company}
@@ -122,7 +154,7 @@ const Register = ({ onClose }: RegisterModalProps) => {
               />
             </div>
             <div className="form-wrapper">
-              <label htmlFor="">Position</label>
+              <label htmlFor="">Designation <span className="text-danger">*</span></label>
               <input
                 type="text"
                 value={position}
@@ -134,7 +166,7 @@ const Register = ({ onClose }: RegisterModalProps) => {
               />
             </div>
             <div className="form-wrapper">
-              <label htmlFor="">Location</label>
+              <label htmlFor="">Location <span className="text-danger">*</span></label>
               <input
                 type="text"
                 value={location}
