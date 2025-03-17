@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import Navbar from "../../components/navbar";
 import DOMODOCXCONTENT from "./domodocxOverview/DomoDocxContent";
 import "../../components/Items/Card.css";
@@ -152,6 +153,39 @@ const DomoDocx = () => {
           </div>
         </div>
       </div>
+
+      {/*Video container */}
+      <section style={{ padding: "100px 0", background: "#7daccf" }}>
+        <div className="col-12 mt-3">
+          <div className='container' style={{ zIndex: 100 }}>
+            <div className='col-12 text-center mb-5'>
+              <h2 className="text-white">DomoDocx - Effortless Smart Documentation</h2>
+              <p className='text-white mt-2'>
+                Experience the power of DomoDocx, the smart documentation tool that transforms dashboards into well-structured reports. Watch the demo to see how it captures visuals, generates meaningful descriptions, and compiles everything into a polished document—making reporting seamless and efficient.
+              </p>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <div className="bg-white rounded">
+                  <div className="ratio ratio-16x9">
+                    <video 
+                      key="video"
+                      className="rounded w-100"
+                      controls
+                      loop
+                      autoPlay={true}
+                      muted={true}
+                    >
+                      <source src="./assets/videos/Domo_Docx_Demo_Video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

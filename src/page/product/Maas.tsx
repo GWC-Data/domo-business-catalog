@@ -528,7 +528,7 @@ const Maas = () => {
         <div className="col-12 mt-3">
           <div className='container' style={{ zIndex: 100 }}>
             <div className='col-12 text-center mb-5'>
-              <h2 className="text-white">DOMAAS: Seamless Tableau Migration to Domo</h2>
+              <h2 className="text-white">DOMAAS - Seamless Tableau Migration to Domo</h2>
               <p className='text-white mt-2'>
               Effortlessly migrate Tableau dashboards to Domo with automated dataset insights, SQL-based ER diagrams, and visual mappings. Minimize cost and complexity while ensuring a smooth transition.
               </p>
@@ -543,6 +543,7 @@ const Maas = () => {
                       controls
                       loop
                       autoPlay={true}
+                      muted={true}
                     >
                       <source src="./assets/videos/DOMAAS_Tableau_Demo_Video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
