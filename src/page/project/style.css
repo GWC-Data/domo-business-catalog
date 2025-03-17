@@ -1,0 +1,39 @@
+.case_study_container {
+    max-width: 100%; 
+    margin: 0 auto
+}
+
+.case_study_container-content {
+    max-width: 100%;
+    margin: 0 auto; 
+    background: white;
+}
+
+.case_study_container-items {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 10px
+}
+
+.case_study_container-item {
+    text-align: left;
+    padding: 1rem;
+    width: 50%;
+}
+
+.case_study_challenge,
+.case_study_solution {
+    border-right: 2px solid rgb(224, 197, 243)
+}
+
+.case_study_challenge h3,
+.case_study_solution h3,
+.case_study_impact h3 {
+    color: #7a3ca3;
+}
+
+.case_study_impact div {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.4rem;
+}
