@@ -1,7 +1,6 @@
 /* eslint-disable max-len */
 import Navbar from "../../components/navbar";
 import "./infobeam.css";
-import VideoTabs from "./VideoTabs";
 import "../home/home.css";
 import { useEffect } from "react";
 import "../../components/Items/Card.css";
@@ -422,7 +421,33 @@ const InfoBeamAI = () => {
       {/*Video container */}
       <section style={{ padding: "100px 0", background: "#7daccf" }}>
         <div className="col-12 mt-3">
-          <VideoTabs />
+          <div className='container' style={{ zIndex: 100 }}>
+            <div className='col-12 text-center mb-3'>
+              <h2 className="text-white">Unlock AI-Powered Insights in Seconds</h2>
+              <p className='text-white mt-5'>
+          This video walks you through the effortless process of uploading files and engaging with InfoBeam AI. 
+          Whether it's PDFs, videos, audio, or images, watch how InfoBeam AI transforms your content into meaningful conversations—saving you time and boosting productivity!
+              </p>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <div className="bg-white rounded">
+                  <div className="ratio ratio-16x9">
+                    <video 
+                      key="video"
+                      className="rounded w-100"
+                      controls
+                      loop
+                      autoPlay={true}
+                    >
+                      <source src="./assets/videos/InfoBeamAI_Full_Video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
