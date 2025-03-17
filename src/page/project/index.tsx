@@ -6,6 +6,8 @@ import Navbar from "../../components/navbar";
 import { projects } from "../../data/projects";
 import { useEffect, useState } from "react";
 import "./style.css";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 
 declare global {
   interface Window {
@@ -14,6 +16,44 @@ declare global {
   }
 }
 const ProjectPage = () => {
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
+    initial: 0,
+    loop: true, // Enable infinite scrolling
+    breakpoints: {
+      "(min-width: 400px)": {
+        slides: { perView: 1, spacing: 5 },
+      },
+      "(min-width: 668px)": {
+        slides: { perView: 2, spacing: 5 },
+      },
+      "(min-width: 1000px)": {
+        slides: { perView: 3, spacing: 10 },
+      },
+    },
+    slides: { perView: 1 },
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    created() {
+      setLoaded(true);
+    },
+  });
+
+  useEffect(() => {
+    if (!instanceRef.current) return;
+
+    const interval = setInterval(() => {
+      if (instanceRef.current) {
+        instanceRef.current.next(); // Moves to the next slide
+      }
+    }, 2000); // Adjust timing (3000ms = 3s per slide)
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [instanceRef]);
+
   const blogPosts = [
     {
       id: 1,
@@ -96,56 +136,56 @@ const ProjectPage = () => {
       id: 12,
       title: "Parents At Work",
       industry: "Human Resources Technology",
-      image: "../../../public/assets/images/case_study/Parents At Work.jpg",
+      image: "./assets/images/case_study/Parents At Work.jpg",
       link: "./single-post.html",
     },
     {
       id: 13,
       title: "Anyday",
       industry: "Food & Beverage",
-      image: "../../../public/assets/images/case_study/Anyday.jpg",
+      image: "./assets/images/case_study/Anyday.jpg",
       link: "./single-post.html",
     },
     {
       id: 14,
       title: "Level AI",
       industry: "Artificial Intelligence for Customer Support",
-      image: "../../../public/assets/images/case_study/Level AI.jpg",
+      image: "./assets/images/case_study/Level AI.jpg",
       link: "./single-post.html",
     },
     {
       id: 15,
       title: "Slingshot",
       industry: "Marketing",
-      image: "../../../public/assets/images/case_study/Slingshot.jpg",
+      image: "./assets/images/case_study/Slingshot.jpg",
       link: "./single-post.html",
     },
     {
       id: 16,
       title: "Taketwo",
       industry: "Travel and Event Management",
-      image: "../../../public/assets/images/case_study/Taketwo.jpg",
+      image: "./assets/images/case_study/Taketwo.jpg",
       link: "./single-post.html",
     },
     {
       id: 17,
       title: "3Forward",
       industry: "Media",
-      image: "../../../public/assets/images/case_study/3Forward.jpg",
+      image: "./assets/images/case_study/3Forward.jpg",
       link: "./single-post.html",
     },
     {
       id: 18,
       title: "Ecom Registry",
       industry: "Finance industry",
-      image: "../../../public/assets/images/case_study/Ecom Registry.jpg",
+      image: "./assets/images/case_study/Ecom Registry.jpg",
       link: "./single-post.html",
     },
     {
       id: 19,
       title: "Accor",
       industry: "Hospitality",
-      image: "../../../public/assets/images/case_study/Accor.jpg",
+      image: "./assets/images/case_study/Accor.jpg",
       link: "./single-post.html",
     },
     {
@@ -461,49 +501,49 @@ const ProjectPage = () => {
   ];
   
   
-  useEffect(() => {
-    // Initialize owl carousel
-    const initCarousel = () => {
-      const $ = window.jQuery;
-      if ($ && $.fn.owlCarousel) {
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          margin: 15,
-          nav: false,
-          responsive: {
-            0: {
-              items: 1
-            },
-            768: {
-              items: 2
-            },
-            1024: {
-              items: 3
-            }
-          },
-          // autoplay: true,
-          // autoplayTimeout: 3000,
-          // autoplayHoverPause: true
-        });
-      }
-    };
+  // useEffect(() => {
+  //   // Initialize owl carousel
+  //   const initCarousel = () => {
+  //     const $ = window.jQuery;
+  //     if ($ && $.fn.owlCarousel) {
+  //       $(".owl-carousel").owlCarousel({
+  //         loop: true,
+  //         margin: 15,
+  //         nav: false,
+  //         responsive: {
+  //           0: {
+  //             items: 1
+  //           },
+  //           768: {
+  //             items: 2
+  //           },
+  //           1024: {
+  //             items: 3
+  //           }
+  //         },
+  //         // autoplay: true,
+  //         // autoplayTimeout: 3000,
+  //         // autoplayHoverPause: true
+  //       });
+  //     }
+  //   };
   
-    initCarousel();
+  //   initCarousel();
   
-    // If not successful, try again after a short delay
-    const timer = setTimeout(() => {
-      initCarousel();
-    }, 500);
+  //   // If not successful, try again after a short delay
+  //   const timer = setTimeout(() => {
+  //     initCarousel();
+  //   }, 500);
   
-    // Cleanup function
-    return () => {
-      clearTimeout(timer);
-      const $ = window.jQuery;
-      if ($ && $.fn.owlCarousel) {
-        $(".owl-carousel").owlCarousel("destroy");
-      }
-    };
-  }, []);
+  //   // Cleanup function
+  //   return () => {
+  //     clearTimeout(timer);
+  //     const $ = window.jQuery;
+  //     if ($ && $.fn.owlCarousel) {
+  //       $(".owl-carousel").owlCarousel("destroy");
+  //     }
+  //   };
+  // }, []);
 
   useEffect(() => {
     window.scrollTo({
@@ -543,7 +583,6 @@ const ProjectPage = () => {
   const [caseStudyData, setCaseStudyData] = useState<any>({});
 
   const handlePostClick = (id: number) => {
-    console.log(id);
     const caseStudy = caseStudyDetails.find((item) => item.id === id);
     if (caseStudy) {
       setCaseStudyData(caseStudy);
@@ -653,8 +692,8 @@ const ProjectPage = () => {
             <p style={{ color: "#f3f3f3" }}>Gain insights from our recent case studies, demonstrating our commitment to delivering impactful solutions. Explore how we solve complex challenges with strategic innovation.</p>
           </div>
           <div>
-            <div className="row">
-              <div className="owl-carousel owl-theme" style={{ height: "400px" }}>
+            <div className="">
+              {/* <div className="owl-carousel owl-theme" style={{ height: "400px" }}>
                 {blogPosts.map((post, index) => (
                   <div className="item" key={index} data-toggle="modal" data-target=".exampleModalCenter" onClick={() => handlePostClick(post?.id)}>
                     <div className="blog_boxcontent">
@@ -673,7 +712,48 @@ const ProjectPage = () => {
                     </div>
                   </div>
                 ))}
+              </div> */}
+              <div className="navigation-wrapper">
+                <div>
+                  <div ref={sliderRef} className="keen-slider" style={{ height: "350px" }}>
+                    {blogPosts.map((post, index) => (
+                      <div className="keen-slider__slide" key={index} data-toggle="modal" data-target=".exampleModalCenter" onClick={() => handlePostClick(post?.id)}>
+                        <div className="blog_boxcontent">
+                          <div className="upper_portion">
+                            <figure className="mb-0">
+                              <img src={post.image} className="article_img" alt={post.title} style={{ width: "100%", height: "200px", objectFit: "cover" }}/>
+                            </figure>
+                          </div>
+                          <div className=" bg-white" style={{ height: "auto", marginTop: "-40px", opacity: "0.9", marginLeft: "10px", marginRight: "10px", padding: "20px" }}>
+                            <div className="">
+                              <h4>{post.title}</h4>
+                              <p className="text-size-16" style={{ marginTop: "-10px", color: "#7a3ca3"}}>{post.industry}</p>
+                              <div className="text-size-16" style={{ marginTop: "-15px", fontWeight: "medium", color: "#000000"}}>More Details</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
+              {loaded && instanceRef.current && (
+                <div className="dots">
+                  {[
+                    ...Array(instanceRef.current.track.details.slides.length).keys(),
+                  ].map((idx) => {
+                    return (
+                      <button
+                        key={idx}
+                        onClick={() => {
+                          instanceRef.current?.moveToIdx(idx);
+                        }}
+                        className={`dot${  currentSlide === idx ? " active" : ""}`}
+                      ></button>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -716,6 +796,7 @@ const ProjectPage = () => {
           </div>
         )
       }
+      
 
       <Footer />
     </>
