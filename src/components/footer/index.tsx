@@ -35,6 +35,11 @@ const Footer = () => {
                       Home
                     </Link>
                   </li>
+                   <li>
+                  <Link to="/rytail" className="text-size-18 text text-decoration-none">
+                    Rytail
+                  </Link>
+                </li>
                   <li>
                     <Link to="/service" className="text-size-18 text text-decoration-none">
                       Services

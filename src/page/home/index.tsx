@@ -5,6 +5,7 @@ import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import "./home.css";
 import Confetti from "../../components/Items/Confetti";
+import chennaiRetailLogo from '../assets/chennai_retail_summit_logo.svg'; // adjust the path if you're deeper in the folder
 
 const HomePage = () => {
   useEffect(() => {
@@ -50,7 +51,7 @@ const HomePage = () => {
                   <a className="" href="./index.html">
                     <figure className="mb-0 banner-logo">
                       <img
-                        src="./assets/images/domopalooza.svg"
+                        src="./assets/images/chennai_retail_summit_logo.png"
                         alt=""
                         width="500"
                         className="img-fluid"

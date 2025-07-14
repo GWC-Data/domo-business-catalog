@@ -18,6 +18,7 @@ import DomoDocx from "./page/product/DomoDocx";
 import Maas from "./page/product/Maas";
 import LuckyWheel from "./components/Items/LuckyWheel";
 import CaseStudies from "./page/case_studies";
+import Rytail from "./page/Rytail/Rytail";
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
           <Route path="/maas" element={<Maas/>}/>
           <Route path="/luckywheel" element={<LuckyWheel/>}/>
           <Route path="/gwc/case-studies" element={<CaseStudies />}/>
+          <Route path="/rytail" element={<Rytail />} />
         </Route>
         
       </Routes>

@@ -30,6 +30,11 @@ const Navbar = ({ activeNav }: props) => {
                     Home
                   </Link>
                 </li>
+                 <li className={activeNav === "rytail" ? "nav-item active" : "nav-item"}>
+                  <Link to="/rytail" className="nav-link navbar-text-color">
+                   Rytail
+                  </Link>
+                </li>
                 <li className={activeNav === "service" ? "nav-item active" : "nav-item"}>
                   <a href="/#/service" className="nav-link">
                     Solutions
