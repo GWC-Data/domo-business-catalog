@@ -152,7 +152,7 @@ const Rytail: React.FC = () => {
         </div>
       </section>
 
-      <section className="how-it-works py-5">
+       <section className="how-it-works py-5">
         <div className="container">
           <h2 className="text text-center mb-4 mb-md-5">
             How <span className="highlight">Rytail</span> Works
@@ -163,9 +163,7 @@ const Rytail: React.FC = () => {
               <img
                 src="https://cdni.iconscout.com/illustration/premium/thumb/demand-planning-illustration-download-in-svg-png-gif-file-formats--successful-strategy-motivation-achieving-goals-product-pack-business-illustrations-6104166.png"
                 alt="Analyze Demand"
-               
-
- className="img-fluid"
+                className="img-fluid"
               />
             </div>
             <div className="col-12 col-md-6">
@@ -195,7 +193,7 @@ const Rytail: React.FC = () => {
           <div className="row align-items-center mb-4 mb-md-5">
             <div className="col-12 col-md-6 text-center mb-3 mb-md-0">
               <img
-                src="https://www.smartwarehousing.com/hubfs/deadstock101/jpg"
+                src="https://www.smartwarehousing.com/hubfs/deadstock101.jpg"
                 alt="Smart Replenishment"
                 className="img-fluid"
               />
@@ -211,7 +209,7 @@ const Rytail: React.FC = () => {
           <div className="row align-items-center flex-md-row-reverse mb-4 mb-md-5">
             <div className="col-12 col-md-6 text-center mb-3 mb-md-0">
               <img
-                src="https://imageswww.contentful.com/jtqsy5pye0zd/KRz0B9vhOHZSVugeKLfHe/83d9ee392acf144f692bc7916ee9b46dseek-higher-conversion-rates_2x.png?fm=webp&w=3840&q=100"
+                src="https://images-www.contentful.com/jtqsy5pye0zd/KRz0B9vhOHZSVugeKLfHe/83d9ee392acf144f692bc7916ee9b46d/Drive_higher_conversion_rates_2x.png?fm=webp&w=3840&q=100"
                 alt="Drive Conversions"
                 className="img-fluid"
               />
