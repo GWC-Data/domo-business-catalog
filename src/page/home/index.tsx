@@ -51,7 +51,7 @@ const HomePage = () => {
                   <a className="" href="./index.html">
                     <figure className="mb-0 banner-logo">
                       <img
-                        src="./assets/images/chennai_retail_summit_logo.png"
+                        src="./assets/images/domopalooza.svg"
                         alt=""
                         width="500"
                         className="img-fluid"
