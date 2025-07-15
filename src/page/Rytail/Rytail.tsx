@@ -44,7 +44,7 @@ const videoContainerStyle: React.CSSProperties = {
   overflow: 'hidden',
   boxShadow: '0 8px 32px rgba(106, 13, 173, 0.15)',
   aspectRatio: '16/9', // Consistent ratio
-  transform: 'translateZ(0)', // GPU boost
+  transform: 'translateZ(0)', 
 };
 
 const videoElementStyle: React.CSSProperties = {

@@ -5,7 +5,7 @@ import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import "./home.css";
 import Confetti from "../../components/Items/Confetti";
-import chennaiRetailLogo from '../assets/chennai_retail_summit_logo.svg'; // adjust the path if you're deeper in the folder
+//import chennaiRetailLogo from '../assets/chennai_retail_summit_logo.svg'; // adjust the path if you're deeper in the folder
 
 const HomePage = () => {
   useEffect(() => {
