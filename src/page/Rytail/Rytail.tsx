@@ -4,9 +4,18 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 
 const Rytail: React.FC = () => {
+
+    useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const videoContainerRef = useRef<HTMLDivElement>(null);
   const [showButton, setShowButton] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -15,13 +24,26 @@ const Rytail: React.FC = () => {
 
     checkMobile();
     window.addEventListener('resize', checkMobile);
-    // window.scrollTo(0, 0); // Uncomment to scroll to top on page load
+
+    // Handle fullscreen change events
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+    document.addEventListener('msfullscreenchange', handleFullscreenChange);
 
     if (videoRef.current) {
       videoRef.current.onended = () => setShowButton(true);
     }
 
-    return () => window.removeEventListener('resize', checkMobile);
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+      document.removeEventListener('fullscreenchange', handleFullscreenChange);
+      document.removeEventListener('webkitfullscreenchange', handleFullscreenChange);
+      document.removeEventListener('msfullscreenchange', handleFullscreenChange);
+    };
   }, []);
 
   const handlePlayPause = () => {
@@ -29,34 +51,55 @@ const Rytail: React.FC = () => {
 
     if (videoRef.current.paused) {
       videoRef.current.play();
-      setShowButton(false); // Hide button when playing
+      setShowButton(false);
     } else {
       videoRef.current.pause();
-      setShowButton(true); // Show button when paused
+      setShowButton(true);
     }
   };
 
-const videoContainerStyle: React.CSSProperties = {
-  position: 'relative',
-  maxWidth: '800px',
-  margin: '0 auto',
-  borderRadius: '16px',
-  overflow: 'hidden',
-  boxShadow: '0 8px 32px rgba(106, 13, 173, 0.15)',
-  aspectRatio: '16/9', // Consistent ratio
-  transform: 'translateZ(0)', 
-};
+  const toggleFullscreen = () => {
+    if (!videoContainerRef.current) return;
 
-const videoElementStyle: React.CSSProperties = {
-  display: 'block',
-  width: '100%',
-  height: '100%',
-  objectFit: 'cover',
-transform: 'scale(1.02)', // ~2% zoom (more subtle)
+    if (!document.fullscreenElement) {
+      if (videoContainerRef.current.requestFullscreen) {
+        videoContainerRef.current.requestFullscreen();
+      } else if ((videoContainerRef.current as any).webkitRequestFullscreen) {
+        (videoContainerRef.current as any).webkitRequestFullscreen();
+      } else if ((videoContainerRef.current as any).msRequestFullscreen) {
+        (videoContainerRef.current as any).msRequestFullscreen();
+      }
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if ((document as any).webkitExitFullscreen) {
+        (document as any).webkitExitFullscreen();
+      } else if ((document as any).msExitFullscreen) {
+        (document as any).msExitFullscreen();
+      }
+    }
+  };
 
-  transformOrigin: 'center', // Ensures even zoom from center
-};
+  const videoContainerStyle: React.CSSProperties = {
+    position: 'relative',
+    maxWidth: '800px',
+    margin: '0 auto',
+    borderRadius: '16px',
+    overflow: 'hidden',
+    boxShadow: '0 8px 32px rgba(106, 13, 173, 0.15)',
+    aspectRatio: '16/9',
+    transform: 'translateZ(0)',
+    cursor: 'pointer',
+  };
 
+  const videoElementStyle: React.CSSProperties = {
+    display: 'block',
+    width: '100%',
+    height: '100%',
+    objectFit: 'contain',
+    transform: 'scale(1.02)',
+    transformOrigin: 'center',
+  };
 
   const playButtonStyle: React.CSSProperties = {
     position: 'absolute',
@@ -80,6 +123,27 @@ transform: 'scale(1.02)', // ~2% zoom (more subtle)
     userSelect: 'none',
     lineHeight: 1,
   };
+
+  const fullscreenButtonStyle: React.CSSProperties = {
+  position: 'absolute',
+  bottom: '10px',
+  right: '10px',
+  backgroundColor: 'rgba(106, 13, 173, 0.9)',
+  border: 'none',
+  borderRadius: '4px',
+  width: '30px',
+  height: '30px',
+  color: 'white',
+  fontSize: '1rem',
+  cursor: 'pointer',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  zIndex: 10,
+  transition: 'opacity 0.3s ease',
+  opacity: isFullscreen ? 0 : 1,
+};
+
 
   return (
     <>
@@ -316,15 +380,13 @@ transform: 'scale(1.02)', // ~2% zoom (more subtle)
             See Rytail in Action
           </h2>
 
-          <div style={videoContainerStyle}>
+          <div ref={videoContainerRef} style={videoContainerStyle}>
             <video
               ref={videoRef}
               width="100%"
               height="100%"
               style={videoElementStyle}
               src="./assets/videos/UI video.mp4"
-              // autoPlay // Uncomment to enable auto-play (may require muted attribute)
-              // muted // Uncomment if using autoPlay for browser compatibility
               onClick={handlePlayPause}
             />
 
@@ -338,6 +400,15 @@ transform: 'scale(1.02)', // ~2% zoom (more subtle)
                 {videoRef.current?.paused ? '▶' : '❚❚'}
               </button>
             )}
+
+            <button
+              id="fullscreenBtn"
+              style={fullscreenButtonStyle}
+              aria-label="Toggle Fullscreen"
+              onClick={toggleFullscreen}
+            >
+              {isFullscreen ? '✕' : '⛶'}
+            </button>
           </div>
 
           <p
