@@ -1,21 +1,23 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useRef, useState, useEffect } from 'react';
+import './rytail.css';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 
 const Rytail: React.FC = () => {
-
-    useEffect(() => {
+  useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }, []);
+
   const videoRef = useRef<HTMLVideoElement>(null);
   const videoContainerRef = useRef<HTMLDivElement>(null);
   const [showButton, setShowButton] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -25,7 +27,6 @@ const Rytail: React.FC = () => {
     checkMobile();
     window.addEventListener('resize', checkMobile);
 
-    // Handle fullscreen change events
     const handleFullscreenChange = () => {
       setIsFullscreen(!!document.fullscreenElement);
     };
@@ -36,6 +37,10 @@ const Rytail: React.FC = () => {
 
     if (videoRef.current) {
       videoRef.current.onended = () => setShowButton(true);
+      videoRef.current.onwaiting = () => setIsLoading(true);
+      videoRef.current.onplaying = () => setIsLoading(false);
+      videoRef.current.oncanplay = () => setIsLoading(false);
+      videoRef.current.onerror = () => setIsLoading(false);
     }
 
     return () => {
@@ -80,71 +85,6 @@ const Rytail: React.FC = () => {
     }
   };
 
-  const videoContainerStyle: React.CSSProperties = {
-    position: 'relative',
-    maxWidth: '800px',
-    margin: '0 auto',
-    borderRadius: '16px',
-    overflow: 'hidden',
-    boxShadow: '0 8px 32px rgba(106, 13, 173, 0.15)',
-    aspectRatio: '16/9',
-    transform: 'translateZ(0)',
-    cursor: 'pointer',
-  };
-
-  const videoElementStyle: React.CSSProperties = {
-    display: 'block',
-    width: '100%',
-    height: '100%',
-    objectFit: 'contain',
-    transform: 'scale(1.02)',
-    transformOrigin: 'center',
-  };
-
-  const playButtonStyle: React.CSSProperties = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    backgroundColor: 'rgba(106, 13, 173, 0.9)',
-    border: 'none',
-    borderRadius: '50%',
-    width: isMobile ? '40px' : '50px',
-    height: isMobile ? '40px' : '50px',
-    color: 'white',
-    fontSize: isMobile ? '1.2rem' : '1.5rem',
-    cursor: 'pointer',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    transition: 'all 0.3s ease',
-    boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
-    zIndex: 10,
-    userSelect: 'none',
-    lineHeight: 1,
-  };
-
-  const fullscreenButtonStyle: React.CSSProperties = {
-  position: 'absolute',
-  bottom: '10px',
-  right: '10px',
-  backgroundColor: 'rgba(106, 13, 173, 0.9)',
-  border: 'none',
-  borderRadius: '4px',
-  width: '30px',
-  height: '30px',
-  color: 'white',
-  fontSize: '1rem',
-  cursor: 'pointer',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  zIndex: 10,
-  transition: 'opacity 0.3s ease',
-  opacity: isFullscreen ? 0 : 1,
-};
-
-
   return (
     <>
       <div className="sub-banner sub-banner4">
@@ -175,113 +115,44 @@ const Rytail: React.FC = () => {
         </figure>
       </div>
 
-      <section className="features-section py-5" style={{ backgroundColor: '#f9f9f9' }}>
+      <section className="features-section py-5">
         <div className="container">
           <h2 className="text-center mb-4 mb-md-5">
-            Why Choose <span style={{ color: '#6a0dad' }}>Rytail</span>?
+            Why Choose <span className="highlight">Rytail</span>?
           </h2>
 
           <div className="row justify-content-center g-4 g-md-5">
-            {/* Feature 1: Demand Insights */}
             <div className="col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
-              <div
-                className="feature-box p-3 p-md-4 h-100 d-flex flex-column"
-                style={{
-                  borderRadius: '12px',
-                  boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
-                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                  background: 'white',
-                  height: '100%',
-                }}
-              >
-                <div
-                  className="mb-3"
-                  style={{
-                    width: '40px',
-                    height: '40px',
-                    borderRadius: '12px',
-                    background: 'rgba(106, 13, 173, 0.1)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                >
-                  <i className="bi bi-graph-up-arrow" style={{ color: '#6a0dad', fontSize: '1.2rem' }}></i>
+              <div className="feature-box p-3 p-md-4 h-100 d-flex flex-column">
+                <div className="feature-icon mb-3">
+                  <i className="bi bi-graph-up-arrow"></i>
                 </div>
-                <h5 className="mb-3" style={{ fontWeight: 600, color: '#2c1a5a', fontSize: '1.1rem' }}>
-                  Real-Time Demand Insights
-                </h5>
-                <p className="mb-0" style={{ color: '#333', fontSize: '0.9rem' }}>
+                <h5 className="mb-3">Real-Time Demand Insights</h5>
+                <p className="mb-0">
                   Gain instant visibility into customer demand to make smarter stocking decisions.
                 </p>
               </div>
             </div>
 
-            {/* Feature 2: AI Replenishment */}
             <div className="col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
-              <div
-                className="feature-box p-3 p-md-4 h-100 d-flex flex-column"
-                style={{
-                  borderRadius: '12px',
-                  boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
-                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                  background: 'white',
-                  height: '100%',
-                }}
-              >
-                <div
-                  className="mb-3"
-                  style={{
-                    width: '40px',
-                    height: '40px',
-                    borderRadius: '12px',
-                    background: 'rgba(106, 13, 173, 0.1)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                >
-                  <i className="bi bi-cpu" style={{ color: '#6a0dad', fontSize: '1.2rem' }}></i>
+              <div className="feature-box p-3 p-md-4 h-100 d-flex flex-column">
+                <div className="feature-icon mb-3">
+                  <i className="bi bi-cpu"></i>
                 </div>
-                <h5 className="mb-3" style={{ fontWeight: 600, color: '#2c1a5a', fontSize: '1.1rem' }}>
-                  Automated Replenishment
-                </h5>
-                <p className="mb-0" style={{ color: '#333', fontSize: '0.9rem' }}>
+                <h5 className="mb-3">Automated Replenishment</h5>
+                <p className="mb-0">
                   Let AI manage your inventory automatically—no more manual guesswork.
                 </p>
               </div>
             </div>
 
-            {/* Feature 3: Aligned Strategies */}
             <div className="col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
-              <div
-                className="feature-box p-3 p-md-4 h-100 d-flex flex-column"
-                style={{
-                  borderRadius: '12px',
-                  boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
-                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                  background: 'white',
-                  height: '100%',
-                }}
-              >
-                <div
-                  className="mb-3"
-                  style={{
-                    width: '40px',
-                    height: '40px',
-                    borderRadius: '12px',
-                    background: 'rgba(106, 13, 173, 0.1)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                >
-                  <i className="bi bi-layers" style={{ color: '#6a0dad', fontSize: '1.2rem' }}></i>
+              <div className="feature-box p-3 p-md-4 h-100 d-flex flex-column">
+                <div className="feature-icon mb-3">
+                  <i className="bi bi-layers"></i>
                 </div>
-                <h5 className="mb-3" style={{ fontWeight: 600, color: '#2c1a5a', fontSize: '1.1rem' }}>
-                  Aligned Strategies
-                </h5>
-                <p className="mb-0" style={{ color: '#333', fontSize: '0.9rem' }}>
+                <h5 className="mb-3">Aligned Strategies</h5>
+                <p className="mb-0">
                   Sync inventory, pricing, and marketing across channels seamlessly.
                 </p>
               </div>
@@ -290,13 +161,12 @@ const Rytail: React.FC = () => {
         </div>
       </section>
 
-      <section className="how-it-works py-5" style={{ backgroundColor: '#fff' }}>
+      <section className="how-it-works py-5">
         <div className="container">
           <h2 className="text text-center mb-4 mb-md-5">
-            How <span style={{ color: '#6a0dad' }}>Rytail</span> Works
+            How <span className="highlight">Rytail</span> Works
           </h2>
 
-          {/* Step 1 */}
           <div className="row align-items-center mb-4 mb-md-5">
             <div className="col-12 col-md-6 text-center mb-3 mb-md-0">
               <img
@@ -306,14 +176,13 @@ const Rytail: React.FC = () => {
               />
             </div>
             <div className="col-12 col-md-6">
-              <h4 style={{ color: '#6a0dad' }}>Step 1: Analyze Demand</h4>
+              <h4 className="step-title">Step 1: Analyze Demand</h4>
               <p style={{ textAlign: 'justify' }}>
                 Rytail analyzes your sales, customer traffic, and behavior data in real-time to identify demand signals across all channels. By spotting patterns and trends, it helps anticipate customer needs, optimize inventory, and make data-driven decisions that enhance efficiency and profitability. This insight enables your business to respond quickly and precisely to market changes.
               </p>
             </div>
           </div>
 
-          {/* Step 2 */}
           <div className="row align-items-center flex-md-row-reverse mb-4 mb-md-5">
             <div className="col-12 col-md-6 text-center mb-3 mb-md-0">
               <img
@@ -323,14 +192,13 @@ const Rytail: React.FC = () => {
               />
             </div>
             <div className="col-12 col-md-6">
-              <h4 style={{ color: '#6a0dad' }}>Step 2: Automate Allocation</h4>
+              <h4 className="step-title">Step 2: Automate Allocation</h4>
               <p style={{ textAlign: 'justify' }}>
                 AI auto-distributes inventory to the right store, right shelf, at the right time—without human guesswork or spreadsheets. This automation reduces errors, optimizes stock levels, and ensures that products are always available where demand is highest, improving overall operational efficiency and customer satisfaction.
               </p>
             </div>
           </div>
 
-          {/* Step 3 */}
           <div className="row align-items-center mb-4 mb-md-5">
             <div className="col-12 col-md-6 text-center mb-3 mb-md-0">
               <img
@@ -340,14 +208,13 @@ const Rytail: React.FC = () => {
               />
             </div>
             <div className="col-12 col-md-6">
-              <h4 style={{ color: '#6a0dad' }}>Step 3: Smart Replenishment</h4>
+              <h4 className="step-title">Step 3: Smart Replenishment</h4>
               <p style={{ textAlign: 'justify' }}>
                 Predictive algorithms accurately forecast product demand and replenish stock automatically, helping to minimize overstocks and avoid missed sales opportunities. This ensures your inventory stays balanced and your customers always find what they need.
               </p>
             </div>
           </div>
 
-          {/* Step 4 */}
           <div className="row align-items-center flex-md-row-reverse mb-4 mb-md-5">
             <div className="col-12 col-md-6 text-center mb-3 mb-md-0">
               <img
@@ -357,7 +224,7 @@ const Rytail: React.FC = () => {
               />
             </div>
             <div className="col-12 col-md-6">
-              <h4 style={{ color: '#6a0dad' }}>Step 4: Drive Conversions</h4>
+              <h4 className="step-title">Step 4: Drive Conversions</h4>
               <p style={{ textAlign: 'justify' }}>
                 Rytail seamlessly syncs your pricing, promotions, and product availability across all channels to boost basket size and minimize customer drop-offs. Whether online or offline, this integrated approach maximizes sales opportunities and improves overall customer experience.
               </p>
@@ -366,34 +233,34 @@ const Rytail: React.FC = () => {
         </div>
       </section>
 
-      <section className="video-section py-5" style={{ backgroundColor: '#f8f9fa', paddingTop: '20px' }}>
+      <section className="video-section py-5">
         <div className="container text-center">
-          <h2
-            style={{
-              color: '#6a0dad',
-              marginBottom: '2rem',
-              fontSize: '2.25rem',
-              fontWeight: 700,
-              letterSpacing: '-0.5px',
-            }}
-          >
+          <h2 className="video-title">
             See Rytail in Action
           </h2>
 
-          <div ref={videoContainerRef} style={videoContainerStyle}>
+          <div className="video-container" ref={videoContainerRef}>
+            {isLoading && (
+              <div className="video-loader">
+                <div className="spinner-border text-primary" role="status">
+                  <span className="visually-hidden">Loading...</span>
+                </div>
+              </div>
+            )}
+            
             <video
               ref={videoRef}
               width="100%"
               height="100%"
-              style={videoElementStyle}
+              className="video-element"
               src="./assets/videos/UI video.mp4"
               onClick={handlePlayPause}
             />
 
-            {showButton && (
+            {showButton && !isLoading && (
               <button
                 id="playPauseBtn"
-                style={playButtonStyle}
+                className="play-button"
                 aria-label="Play/Pause Video"
                 onClick={handlePlayPause}
               >
@@ -401,23 +268,19 @@ const Rytail: React.FC = () => {
               </button>
             )}
 
-            <button
-              id="fullscreenBtn"
-              style={fullscreenButtonStyle}
-              aria-label="Toggle Fullscreen"
-              onClick={toggleFullscreen}
-            >
-              {isFullscreen ? '✕' : '⛶'}
-            </button>
+            {!isLoading && (
+              <button
+                id="fullscreenBtn"
+                className="fullscreen-button"
+                aria-label="Toggle Fullscreen"
+                onClick={toggleFullscreen}
+              >
+                {isFullscreen ? '✕' : '⛶'}
+              </button>
+            )}
           </div>
 
-          <p
-            style={{
-              marginTop: '1.5rem',
-              color: '#6c757d',
-              fontSize: '1.1rem',
-            }}
-          >
+          <p className="video-description">
             See how Rytail can transform your workflow in just 2 minutes
           </p>
         </div>
